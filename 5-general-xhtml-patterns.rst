@@ -1,0 +1,332 @@
+######################
+General XHTML Patterns
+######################
+
+This section covers general patterns used when producing XHTML that are not specific to ebooks.
+
+:html:`id` attributes
+*********************
+
+:html:`id` attributes of :html:`<section>` and :html:`<article>` elements
+=========================================================================
+
+#.	Each :html:`<section>` has an :html:`id` attribute.
+
+#.	:html:`<section>` or :html:`<article>` elements that are direct children of the :html:`<body>` element have an :html:`id` attribute identical to the filename containing that :html:`<section>` or :html:`<article>`, without the trailing extension.
+
+#.	In files containing multiple :html:`<section>` or :html:`<article>` elements, each of those elements has an :html:`id` attribute identical to what the filename *would* be if the section was in an individual file, without the trailing extension.
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<body epub:type="bodymatter z3998:fiction">
+				<article id="the-fox-and-the-grapes" epub:type="se:short-story">
+					<h2 epub:type="title">The Fox and the Grapes</h2>
+					<p>...</p>
+				</article>
+				<article id="the-goose-that-laid-the-golden-eggs" epub:type="se:short-story">
+					<h2 epub:type="title">The Goose That Laid the Golden Eggs</h2>
+					<p>...</p>
+				</article>
+			</body>
+
+:html:`id` attributes of other elements
+=======================================
+
+#.	:html:`id` attributes are generally used to identify parts of the document that a reader may wish to navigate to using a hash in the URL. That generally means major structural divisions. Therefore, elements that are not :html:`<section>` or :html:`<article>` elements do not have an :html:`id` attribute, unless a part of the ebook, like an endnote, refers to a specific point in the book, and a direct link is desirable.
+
+#.	:html:`id` attributes are not used as hooks for CSS styling.
+
+#.	If an element that is not a :html:`<section>` or :html:`<article>` requires an :html:`id` attribute, the attribute’s value is the name of the element followed by :value:`-N`, where :value:`N` is the sequence number of the element start at :value:`1`.
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<p>See <a href="#p-4">this paragraph</a> for more details.</p>
+			<p>...</p>
+			<p>...</p>
+			<p id="p-4">...</p>
+			<p>...</p>
+
+:html:`class` attributes
+************************
+
+Classes denote a group of elements sharing a similar style.
+
+#.	Classes are *not* used as single-use style hooks. There is almost always a way to compose a CSS selector to select a single element without the use of a one-off class.
+
+	.. class:: wrong
+
+		.. code:: css
+
+			.business-card{
+				border: 1px solid;
+				padding: 1em;
+			}
+
+		.. code:: html
+
+			<body epub:type="bodymatter z3998:fiction">
+				<section epub:type="chapter">
+					<p>...</p>
+					<p>...</p>
+					<p>...</p>
+					<p>...</p>
+					<blockquote class="business-card">
+						<p>John Doe, <abbr class="eoc">Esq.</abbr></p>
+					</blockquote>
+				</section>
+			</body>
+
+	.. class:: corrected
+
+		.. code:: css
+
+			#chapter-3 blockquote{
+				border: 1px solid;
+				padding: 1em;
+			}
+
+		.. code:: html
+
+			<body epub:type="bodymatter z3998:fiction">
+				<section id="chapter-3" epub:type="chapter">
+					<p>...</p>
+					<p>...</p>
+					<p>...</p>
+					<p>...</p>
+					<blockquote>
+						<p>John Doe, <abbr class="eoc">Esq.</abbr></p>
+					</blockquote>
+				</section>
+			</body>
+
+#.	Classes are used to style a recurring *class* of elements, i.e. a class of element that appears more than once in an ebook.
+
+	.. class:: corrected
+
+		.. code:: css
+
+			.business-card{
+				border: 1px solid;
+				padding: 1em;
+			}
+
+		.. code:: html
+
+			<body epub:type="bodymatter z3998:fiction">
+				<section id="chapter-3" epub:type="chapter">
+					<p>...</p>
+					<p>...</p>
+					<blockquote class="business-card">
+						<p>Jane Doe, <abbr class="eoc">Esq.</abbr></p>
+					</blockquote>
+					<p>...</p>
+					<p>...</p>
+					<blockquote class="business-card">
+						<p>John Doe, <abbr class="eoc">Esq.</abbr></p>
+					</blockquote>
+				</section>
+			</body>
+
+#.	Class names describe *what* they are styling semantically, *not* the actual style the class is applying.
+
+	.. class:: wrong
+
+		.. code:: css
+
+			.black-border{
+				border: 1px solid;
+				padding: 1em;
+			}
+
+	.. class:: corrected
+
+		.. code:: css
+
+			.business-card{
+				border: 1px solid;
+				padding: 1em;
+			}
+
+:html:`xml:lang` attributes
+***************************
+
+#.	When words are required to be pronounced in a language other than English, the :html:`xml:lang` attribute is used to indicate the IETF language tag in use.
+
+	#.	The :html:`xml:lang` attribute is used even if a word is not required to be italicized. This allows screen readers to understand that a particular word or phrase should be pronounced in a certain way. A :html:`<span xml:lang="TAG">` element is used to wrap text that has non-English pronunciation but that does not need further visual styling.
+
+	#.	The :html:`xml:lang` attribute is included in *any* word that requires special pronunciation, including names of places and titles of books.
+
+	.. class:: corrected
+
+		.. code:: html
+
+			She opened the book titled <i epub:type="se:name.publication.book" xml:lang="la">Mortis Imago</i>.
+
+	#.	The :html:`xml:lang` attribute is applied to the highest-level element possible. If italics are required and moving the :html:`xml:lang` attribute would also remove an :html:`<i>` element, the parent element can be styled with :css:`body [xml|lang]{ font-style: italic; }`.
+
+	.. class:: wrong
+
+		.. code:: html
+
+			<blockquote>
+				<p><i xml:lang="es">“Como estas?” el preguntó.</i></p>
+				<p><i xml:lang="es">“Bien, gracias,” dijo ella.</i></p>
+			</blockquote>
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<blockquote xml:lang="es">
+				<p>“Como estas?” el preguntó.</p>
+				<p>“Bien, gracias,” dijo ella.</p>
+			</blockquote>
+
+The :html:`<title>` element
+***************************
+
+#.	The :html:`<title>` element contains an appropriate description of the local file only. It does not contain the book title.
+
+Titles of files that are an individual chapter or part division
+===============================================================
+
+#.	Convert chapter or part numbers that are in Roman numerals to decimal numbers. Do not convert other Roman numerals that may be in the chapter title.
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<title>Chapter 10</title>
+
+#.	If a chapter or part is only an ordinal and has no title or subtitle, the :html:`<title>` element is :string:`Chapter` followed by the chapter number.
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<title>Chapter 4</title>
+			...
+			<h2 epub:type="title z3998:roman">IV</h2>
+			...
+			<p>The chapter body...</p>
+
+#.	If a chapter or part has a title or subtitle, the :html:`<title>` element is :string:`Chapter`, followed by the chapter number in decimal, followed by a colon and a single space, followed by the title or subtitle.
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<title>Chapter 6: The Reign of Louis XVI</title>
+			...
+			<h2 epub:type="title">
+				<span epub:type="z3998:roman">VI</span>
+				<span epub:type="subtitle">The Reign of Louis <span epub:type="z3998:roman">XVI</span></h2>
+			...
+			<p>The chapter body...</p>
+
+Titles of files that are not chapter or part divisions
+======================================================
+
+#.	Files that are not a chapter or a part division, like a preface, introduction, or epigraph, have a :html:`<title>` element that contains the complete title of the section.
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<title>Preface</title>
+
+#.	If a file contains a section with a title or subtitle, the :html:`<title>` element contains the title, followed by a colon and a single space, followed by the title or subtitle.
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<title>Quevedo and His Works: With an Essay on the Picaresque Novel</title>
+
+Ordered/numbered and unordered lists
+************************************
+
+#.	All :html:`<li>` children of :html:`<ol>` and :html:`<ul>` elements have at least one direct child block-level element. This is usually a :html:`<p>` element, but not necessarily; for example, a :html:`<blockquote>` element might also be appropriate.
+
+	.. class:: wrong
+
+		.. code:: html
+
+			<ul>
+				<li>Don’t forget to feed the pigs.</li>
+			</ul>
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<ul>
+				<li>
+					<p>Don’t forget to feed the pigs.</p>
+				</li>
+			</ul>
+
+Tables
+************************************
+
+#.	:html:`<table>` elements have a direct child :html:`<tbody>` element.
+
+	.. class:: wrong
+
+		.. code:: html
+
+			<table>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+			</table>
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<table>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+					</tr>
+				</tbody>
+			</table>
+
+#.	:html:`<table>` elements may have an optional direct child :html:`<thead>` element, if a table heading is desired.
+
+#.	:html:`<table>` elements that are used to display tabular numerical data, for example columns of sums, have CSS styling for tabular numbers: :css:`{ font-variant-numeric: tabular-nums; }`.
+
+	.. class:: corrected
+
+		.. code:: css
+
+			table td:last-child{
+				text-align: right;
+				font-variant-numeric: tabular-nums;
+			}
+
+		.. code:: html
+
+			<table>
+				<tbody>
+					<tr>
+						<td>Amount 1</td>
+						<td>100</td>
+					</tr>
+					<tr>
+						<td>Amount 2</td>
+						<td>300</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>400</td>
+					</tr>
+				</tbody>
+			</table>
