@@ -16,7 +16,7 @@ For example, the following snippet visually presents a paragraph, followed by a 
 		That demmed, elusive Pimpernel?”</div>
 	</div>
 
-While that snipped might *visually* present the text as a paragraph followed by a quotation of verse, the actual HTML tells us nothing about *what these lines of text actually are*.
+While that snippet might *visually* present the text as a paragraph followed by a quotation of verse, the actual HTML tells us nothing about *what these lines of text actually are*.
 
 Compare the above snippet to this next snippet, which renders almost identically but uses semantically-correct elements and epub’s semantic inflection to tell us *what the text is*:
 
