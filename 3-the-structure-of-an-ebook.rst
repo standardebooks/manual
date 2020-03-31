@@ -86,7 +86,7 @@ Prologue
 
 A prologue is generally found only in works of fiction. It may introduce characters, set up background information, or bring forward a critical part of the action to which the story leads.
 
-A prologue is generally part of the body matter, unless the prologue is a fictional element of a frame narrative. In that case, it may be appropriate to place it in front of the half title and give it a different title, while keeping the :string:`prologue` semantic inflection.
+A prologue is generally part of the body matter, unless the prologue is a fictional element of a frame narrative. In that case, in order to preserve the frame narrative it may be placed in front of the half title and given :value:`frontmatter` semantic inflection, while also keeping the :value:`prologue` semantic inflection. For example, see :italics:`The Narrative of Arthur Gordon Pym of Nantucket </ebooks/edgar-allan-poe/the-narrative-of-arthur-gordon-pym-of-nantucket>`.
 
 Epilogue
 ========
