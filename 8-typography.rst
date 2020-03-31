@@ -43,7 +43,7 @@ Section titles and ordinals
 
 			<h2 epub:type="title">Stave <span epub:type="z3998:roman">III</span></h2>
 
-	In special cases it may be desirable to retain :string:`Chapter` for clarity. For example, `Frankenstein </ebooks/mary-shelley/frankenstein/>`__ has “Chapter” in titles to differentiate between the “Letter” sections.
+	In special cases it may be desirable to retain :string:`Chapter` for clarity. For example, :italics:`Frankenstein </ebooks/mary-shelley/frankenstein/>` has “Chapter” in titles to differentiate between the “Letter” sections.
 
 Italics
 *******
@@ -209,7 +209,7 @@ Italics in names and titles
 
 	-	Publications like books, novels, plays, and pamphlets, *except* “holy texts,” like the Bible or books within the Bible.
 
-	-	Long poems and ballads, like the `Iliad </ebooks/homer/the-iliad/william-cullen-bryant>`__, that are book-length.
+	-	Long poems and ballads, like the :italics:`Iliad </ebooks/homer/the-iliad/william-cullen-bryant>`, that are book-length.
 
 	-	Long musical compositions or audio, like operas, music albums, or radio shows.
 

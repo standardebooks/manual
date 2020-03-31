@@ -178,7 +178,7 @@ The :bash:`se lint` tool makes best guesses to alert the user to potential issue
 Example
 =======
 
-The following is an example of a complete :path:`se-lint-ignore.xml` file from `Tractatus Logico-Philosophicus </ebooks/ludwig-wittgenstein/tractatus-logico-philosophicus/c-k-ogden>`__.
+The following is an example of a complete :path:`se-lint-ignore.xml` file from :italics:`Tractatus Logico-Philosophicus </ebooks/ludwig-wittgenstein/tractatus-logico-philosophicus/c-k-ogden>`.
 
 .. code:: xml
 
