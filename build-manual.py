@@ -158,7 +158,6 @@ def main() -> int:
 			# Pygments doesn't add colors to html that is just a namespaced attribute, like :html:`xml:lang`. Add that here.
 			html = regex.sub(r"""<code class="html">([a-zA-Z\-:]+?)</code>""", r"""<code class="html"><span class="na">\1</span></code>""", html)
 
-			# Add the "data-start-at" attribute, if present
 			root_number = None
 			matches = regex.findall(r"^([0-9]+)\-", filename)
 			if matches:
@@ -207,7 +206,16 @@ def main() -> int:
 			for elem in soup.find_all("", attrs={"id": regex.compile(r"^[0-9\.]+$")}):
 				aside = soup.new_tag("aside")
 				aside["class"] = "number"
-				aside.string = elem["id"]
+
+				# Add a link to the section within the section <aside>, but only if it is not the main section number (like "2" or "8")
+				if regex.match(r"^[0-9]$", elem["id"]):
+					aside.string = elem["id"]
+				else:
+					link = soup.new_tag("a")
+					link["href"] = f"#{elem['id']}"
+					link.string = elem["id"]
+					aside.insert(0, link)
+
 				elem.insert(0, aside)
 
 			html = str(soup)
