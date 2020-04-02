@@ -665,13 +665,13 @@ Measurements
 
 		.. code:: html
 
-			<p>A 12-mm pistol.</p>
+			<p>A 12-<abbr>mm</abbr> pistol.</p>
 
 	.. class:: corrected
 
 		.. code:: html
 
-			<p>A 12:ws:`nbsp`mm pistol.</p>
+			<p>A 12:ws:`nbsp`<abbr>mm</abbr> pistol.</p>
 
 Math
 ====
