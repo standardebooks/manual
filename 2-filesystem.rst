@@ -169,7 +169,7 @@ The :bash:`se lint` tool makes best guesses to alert the user to potential issue
 
 		#.	The value of :html:`<code>` is the error/warning code provided by :bash:`se lint`. This code will be ignored for its parent file(s) when :bash:`se lint` is next run.
 
-		#.	The value of :html:`<reason>` is a prose explanation about why the code was ignored. This is to aid future producers or reviewers in understanding the reasoning behind why a code was ignored.
+		#.	The value of :html:`<reason>` is a prose explanation about why the code was ignored. This aids future producers or reviewers in understanding the reasoning behind why an error code was ignored.
 
 			#.	:html:`<reason>` is required to have a non-whitespace value.
 
