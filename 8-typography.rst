@@ -1025,11 +1025,11 @@ Initials and abbreviations
 
 		<p>He was hired by <abbr class="acronym">NASA</abbr> last week.</p>
 
-#.	Initialisms (terms made up of initials in which each initial is pronounced separately, like ABC, HTML, or CSS) are set with without periods and are wrapped in an :html:`<abbr class="initialism">` element.
+#.	Initialisms (terms made up of initials in which each initial is pronounced separately, like :string:`ABC`, :string:`HTML`, or :string:`CSS`) are set with without periods (*except* :string:`U.S.`, which is set with periods) and are wrapped in an :html:`<abbr class="initialism">` element.
 
 	.. code:: html
 
-		<p>He was hired by the <abbr class="initialism">FBI</abbr> last week.</p>
+		<p>He was hired by the <abbr class="initialism">U.S.</abbr> <abbr class="initialism">FBI</abbr> last week.</p>
 
 #.	Initials of people’s names are each separated by periods and spaces. The group of initials is wrapped in an :html:`<abbr class="name">` element.
 
