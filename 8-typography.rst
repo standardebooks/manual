@@ -909,6 +909,56 @@ Math
 					</m:math>
 				</p>
 
+Money
+=====
+
+#.	Typographically-correct symbols are used for currency symbols.
+
+	.. class:: wrong
+
+		.. code:: html
+
+			<p>The exchange rate was L2 for $1.</p>
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<p>The exchange rate was £2 for $1.</p>
+
+#.	Currency symbols are not abbrevations.
+
+£sd shorthand
+-------------
+
+#.	There is no white space between a number and an £sd currency symbol.
+
+	.. class:: wrong
+
+		.. code:: html
+
+			<p>£ 14 8 s. 2 d. is known as a “tuppence.”</p>
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<p>£14 8<abbr>s.</abbr> 2<abbr>d.</abbr>  is known as a “tuppence.”</p>
+
+#.	Letters used in `£sd shorthand <https://en.wikipedia.org/wiki/%C2%A3sd>`__ are wrapped in :html:`<abbr>` elements..
+
+	.. class:: wrong
+
+		.. code:: html
+
+			<p>£14 8s. 2d. is known as a “tuppence.”</p>
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<p>£14 8<abbr>s.</abbr> 2<abbr>d.</abbr>  is known as a “tuppence.”</p>
+
 Latinisms
 *********
 
