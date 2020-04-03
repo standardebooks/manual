@@ -659,7 +659,7 @@ Measurements
 
 			<p>He was 6′:ws:`nbsp`1″ in height.</p>
 
-#.	When forming a compound of a number and unit of measurement in which the measurement is abbreviated, the number and unit of measurement are separated with a no-break space (:utf:` ` or U+00A0), *not* a dash.
+#.	When forming a compound of a number and unit of measurement in which the measurement is abbreviated, the number and unit of measurement are separated with a no-break space (:utf:` ` or U+00A0), *not* a dash. For exceptions in money, see `8.8.7.3.1 <#8.8.7.3.1>`__.
 
 	.. class:: wrong
 
@@ -931,6 +931,8 @@ Money
 £sd shorthand
 -------------
 
+`£sd shorthand <https://en.wikipedia.org/wiki/%C2%A3sd>`__ is a way of denoting pre-decimal currencies (pounds, shillings, and pence) common in England and other parts of the world until the 1970s.
+
 #.	There is no white space between a number and an £sd currency symbol.
 
 	.. class:: wrong
@@ -943,9 +945,9 @@ Money
 
 		.. code:: html
 
-			<p>£14 8<abbr>s.</abbr> 2<abbr>d.</abbr>  is known as a “tuppence.”</p>
+			<p>£14 8<abbr>s.</abbr> 2<abbr>d.</abbr> is known as a “tuppence.”</p>
 
-#.	Letters used in `£sd shorthand <https://en.wikipedia.org/wiki/%C2%A3sd>`__ are wrapped in :html:`<abbr>` elements..
+#.	Letters used in £sd shorthand are wrapped in :html:`<abbr>` elements.
 
 	.. class:: wrong
 
@@ -957,7 +959,7 @@ Money
 
 		.. code:: html
 
-			<p>£14 8<abbr>s.</abbr> 2<abbr>d.</abbr>  is known as a “tuppence.”</p>
+			<p>£14 8<abbr>s.</abbr> 2<abbr>d.</abbr> is known as a “tuppence.”</p>
 
 Latinisms
 *********
