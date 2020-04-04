@@ -95,7 +95,7 @@ Italics
 Italicizing individual letters
 ==============================
 
-#.	 Individual letters that are read as referring to letters in the alphabet are italicized with the :html:`<i>` element.
+#.	 Individual letters that are read as referring to letters in the alphabet are italicized with an :html:`<i>` element.
 
 	.. code:: html
 
@@ -966,15 +966,15 @@ Latinisms
 
 -	`See here for times </manual/VERSION/8-typography#8.11>`__.
 
-#.	Latinisms (except :italics:`sic`) that can be found in a modern dictionary are not italicized. Examples include e.g., i.e., ad hoc, viz., ibid., etc.. The exception is :italics:`sic`, which is always italicized.
+#.	Latinisms (except :string:`sic`) that can be found in a modern dictionary are not italicized. Examples include :string:`e.g.`, :string:`i.e.`, :string:`ad hoc`, :string:`viz.`, :string:`ibid.`, :string:`etc.`. The exception is :string:`sic`, which is always italicized.
 
 #.	Whole passages of Latin language and Latinisms that aren’t found in a modern dictionary are italicized.
 
-#.	“&c;” is not used, and is replaced with “etc.”
+#.	:string:`&c.` is not used, and is replaced with :string:`etc.`.
 
-#.	For “Ibid.,” `see Endnotes </manual/VERSION/7-high-level-structural-patterns#7.9>`__.
+#.	For :string:`Ibid.`, `see Endnotes </manual/VERSION/7-high-level-structural-patterns#7.9>`__.
 
-#.	Latinisms that are abbreviations are set in lowercase with periods between words and no spaces between them, except BC, AD, BCE, and CE, which are set without periods, in small caps, and wrapped with :html:`<abbr class="era">`:
+#.	Latinisms that are abbreviations are set in lowercase with periods between words and no spaces between them, except :string:`BC`, :string:`AD`, :string:`BCE`, and :string:`CE`, which are set without periods, in small caps, and wrapped with :html:`<abbr class="era">`:
 
 	.. code:: css
 
@@ -995,7 +995,7 @@ Initials and abbreviations
 
 -	`See here for Latinisms including BC and AD </manual/VERSION/8-typography#8.9>`__.
 
-#.	“OK” is set without periods or spaces. It is not an abbreviation.
+#.	:string:`OK` is set without periods or spaces. It is not an abbreviation.
 
 #.	When an abbreviation contains a terminal period, its :html:`<abbr>` element has the additional :value:`eoc` class (End of Clause) if the terminal period is also the last period in clause. Such sentences do not have two consecutive periods.
 
@@ -1013,7 +1013,7 @@ Initials and abbreviations
 
 #.	Initialisms, postal codes, and abbreviated US states are set in all caps, without periods or spaces.
 
-#.	Acronyms (terms made up of initials and pronounced as one word, like NASA, SCUBA, or NATO) are set in small caps, without periods, and are wrapped in an :html:`<abbr class="acronym">` element.
+#.	Acronyms (terms made up of initials and pronounced as one word, like :string:`NASA`, :string:`SCUBA`, or :string:`NATO`) are set in small caps, without periods, and are wrapped in an :html:`<abbr class="acronym">` element.
 
 	.. code:: css
 
@@ -1037,7 +1037,7 @@ Initials and abbreviations
 
 		<p><abbr class="name">H. P.</abbr> Lovecraft described himself as an aged antiquarian.</p>
 
-#.	Academic degrees, except ones that include a lowercase letter (like PhD) are wrapped in an :html:`<abbr class="degree">` element. For example: BA, BD, BFA, BM, BS, DB, DD, DDS, DO, DVM, JD, LHD, LLB, LLD, LLM, MA, MBA, MD, MFA, MS, MSN.
+#.	Academic degrees, except ones that include a lowercase letter (like :string:`PhD`) are wrapped in an :html:`<abbr class="degree">` element. For example: :string:`BA`, :string:`BD`, :string:`BFA`, :string:`BM`, :string:`BS`, :string:`DB`, :string:`DD`, :string:`DDS`, :string:`DO`, :string:`DVM`, :string:`JD`, :string:`LHD`, :string:`LLB`, :string:`LLD`, :string:`LLM`, :string:`MA`, :string:`MBA`, :string:`MD`, :string:`MFA`, :string:`MS`, :string:`MSN`.
 
 	.. code:: html
 
@@ -1049,13 +1049,13 @@ Initials and abbreviations
 
 		<p>Washington <abbr class="postal">DC</abbr>.</p>
 
-#.	Abbreviations that are abbreviations of a single word, and that are not acronyms or initialisms (like Mr., Mrs., or lbs.) are set with :html:`<abbr>`.
+#.	Abbreviations that are abbreviations of a single word, and that are not acronyms or initialisms (like :string:`Mr.`, :string:`Mrs.`, or `lbs.:string:`) are set with :html:`<abbr>`.
 
 	#.	Abbreviations ending in a lowercase letter are set without spaces between the letters, and are ended by a period.
 
 	#.	Abbreviations without lowercase letters are set without spaces and without a trailing period.
 
-	#.	Abbreviations that describes the next word, like Mr., Mrs., Mt., and St., are set with a no-break space (:utf:` ` or U+00A0) between the abbreviation and its target.
+	#.	Abbreviations that describes the next word, like :string:`Mr.`, :string:`Mrs.`, :string:`Mt.`, and :string:`St.`, are set with a no-break space (:utf:` ` or U+00A0) between the abbreviation and its target.
 
 		.. code:: html
 
@@ -1098,13 +1098,13 @@ Times as words
 
 		<p>They took the twelve-thirty train.</p>
 
-#.	Times written in words followed by “a.m.” or “p.m.” are set with a regular space between the time and “a.m.” or “p.m.”.
+#.	Times written in words followed by :string:`a.m.` or :string:`p.m.` are set with a regular space between the time and :string:`a.m.` or :string:`p.m.`.
 
 	.. code:: html
 
 		<p>She wasn’t up till seven <abbr class="time eoc">a.m.</abbr></p>
 
-#.	Military times that are spelled out (for example, in dialog) are set with dashes. Leading zeros are spelled out as “oh”.
+#.	Military times that are spelled out (for example, in dialog) are set with dashes. Leading zeros are spelled out as :string:`oh`.
 
 	.. code:: html
 
@@ -1132,12 +1132,12 @@ Temperatures
 
 #.	The minus sign glyph (:utf:`−` or U+2212), not the hyphen glyph, is used to indicate negative numbers.
 
-#.	Either the degree glyph (:utf:`°` or U+00B0) or the word “degrees” is acceptable. Works that use both are normalize to use the dominant method.
+#.	Either the degree glyph (:utf:`°` or U+00B0) or the word :string:`degrees` is acceptable. Works that use both are normalize to use the dominant method.
 
 Abbreviated units of temperature
 ================================
 
-#.	Units of temperature measurement, like Farenheit or Celcius, may be abbreviated to “F” or “C”.
+#.	Units of temperature measurement, like Farenheit or Celcius, may be abbreviated to :string:`F` or :string:`C`.
 
 #.	Units of temperature measurement do not have trailing periods.
 
@@ -1179,7 +1179,7 @@ Legal cases and terms
 
 #.	Legal cases are set in italics.
 
-#.	Either “versus” or “v.” are acceptable in the name of a legal case; if using “v.”, a period follows the “v.”, and it is wrapped in an :html:`<abbr>` element.
+#.	Either :string:`versus` or :string:`v.` are acceptable in the name of a legal case; if using :string:`v.`, a period follows the :string:`v.`, and it is wrapped in an :html:`<abbr>` element.
 
 	.. code:: html
 
@@ -1201,7 +1201,7 @@ American Morse Code
 
 #.	If two en dashes are placed next to each other, a hair space (:utf:` ` or U+200A) is placed between them to keep the glyphs from merging into a longer dash.
 
-#.	Only in American Morse Code, there are internal gaps used between glyphs in the letters C,O,R, or Z. No-break spaces (:utf:` ` or U+00A0) are used for these gaps.
+#.	Only in American Morse Code, there are internal gaps used between glyphs in the letters C, O, R, or Z. No-break spaces (:utf:` ` or U+00A0) are used for these gaps.
 
 #.	En spaces (U+2002) are used between letters.
 
