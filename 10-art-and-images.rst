@@ -50,6 +50,10 @@ SVG patterns
 
 #.	The :html:`transform` attribute is illegal; transforms are applied to their elements directly.
 
+	.. tip::
+
+		To apply transforms, try the `Inkscape Apply Transforms extension <https://github.com/Klowner/inkscape-applytransforms>`__, or using Inkscape to save as an “Optimized SVG.”
+
 The cover image
 ***************
 
