@@ -1025,11 +1025,25 @@ Initials and abbreviations
 
 		<p>He was hired by <abbr class="acronym">NASA</abbr> last week.</p>
 
-#.	Initialisms (terms made up of initials in which each initial is pronounced separately, like :string:`ABC`, :string:`HTML`, or :string:`CSS`) are set with without periods (*except* :string:`U.S.`, which is set with periods) and are wrapped in an :html:`<abbr class="initialism">` element.
+#.	Initialisms (terms made up of initials in which each initial is pronounced separately, like :string:`ABC`, :string:`HTML`, or :string:`CSS`) are set with without periods (with the following exceptions) and are wrapped in an :html:`<abbr class="initialism">` element.
 
 	.. code:: html
 
 		<p>He was hired by the <abbr class="initialism">U.S.</abbr> <abbr class="initialism">FBI</abbr> last week.</p>
+
+	#.	Initialisms that retain periods:
+
+		-	:string:`U.S.` (United States)
+
+		-	:string:`P.S.` (Post Scriptum, usually found in letters)
+
+		-	:string:`P.P.S.` (Post Post Scriptum)
+
+		-	:string:`P.S.S.` (Post Super Scriptum)
+
+		-	:string:`MS.` (Manuscript)
+
+		-	:string:`MSS.` (Manuscripts)
 
 #.	Initials of people’s names are each separated by periods and spaces. The group of initials is wrapped in an :html:`<abbr class="name">` element.
 
@@ -1037,7 +1051,7 @@ Initials and abbreviations
 
 		<p><abbr class="name">H. P.</abbr> Lovecraft described himself as an aged antiquarian.</p>
 
-#.	Academic degrees, except ones that include a lowercase letter (like :string:`PhD`) are wrapped in an :html:`<abbr class="degree">` element. For example: :string:`BA`, :string:`BD`, :string:`BFA`, :string:`BM`, :string:`BS`, :string:`DB`, :string:`DD`, :string:`DDS`, :string:`DO`, :string:`DVM`, :string:`JD`, :string:`LHD`, :string:`LLB`, :string:`LLD`, :string:`LLM`, :string:`MA`, :string:`MBA`, :string:`MD`, :string:`MFA`, :string:`MS`, :string:`MSN`.
+#.	Academic degrees are wrapped in an :html:`<abbr class="degree">` element. For example: :string:`BA`, :string:`BD`, :string:`BFA`, :string:`BM`, :string:`BS`, :string:`DB`, :string:`DD`, :string:`DDS`, :string:`DO`, :string:`DVM`, :string:`JD`, :string:`LHD`, :string:`LLB`, :string:`LLD`, :string:`LLM`, :string:`MA`, :string:`MBA`, :string:`MD`, :string:`MFA`, :string:`MS`, :string:`MSN`.
 
 	.. code:: html
 
