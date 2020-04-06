@@ -271,7 +271,7 @@ Ordered/numbered and unordered lists
 			</ul>
 
 Tables
-************************************
+******
 
 #.	:html:`<table>` elements have a direct child :html:`<tbody>` element.
 
@@ -330,3 +330,19 @@ Tables
 					</tr>
 				</tbody>
 			</table>
+
+Blockquotes
+***********
+
+-	`See here for poetry </manual/VERSION/7-high-level-structural-patterns#7.5>`__.
+
+#.	:html:`<blockquote>` elements must contain at least one block-level child, like :html:`<p>`.
+
+#.	Blockquotes that have a citation include the citation as a direct child :html:`<cite>` element.
+
+	.. code:: html
+
+		<blockquote>
+			<p>“All things are ready, if our mind be so.”</p>
+			<cite>—<i epub:type="se:name.publication.play">Henry <span epub:type="z3998:roman">V</span></i></cite>
+		</blockquote>
