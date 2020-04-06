@@ -10,7 +10,7 @@ This section covers general patterns used when producing XHTML that are not spec
 :html:`id` attributes of :html:`<section>` and :html:`<article>` elements
 =========================================================================
 
-#.	Each :html:`<section>` has an :html:`id` attribute.
+#.	Each :html:`<section>` and :html:`<article>` element has an :html:`id` attribute.
 
 #.	:html:`<section>` or :html:`<article>` elements that are direct children of the :html:`<body>` element have an :html:`id` attribute identical to the filename containing that :html:`<section>` or :html:`<article>`, without the trailing extension.
 
