@@ -8,11 +8,11 @@ The Standard Ebooks Manual of Style describes a complete approach to editing and
 
 If a rule is not covered in this manual, the directive is to follow the rules in the Chicago Manual of Style, 16th edition.
 
-These rules align closely with the style rules used in modern publishing. However, books from the turn of the 20th century and older may appear to follow a different set of rules. Producers are expected to adjust those older conventions to match this manual.
+These rules align closely with the style rules used in modern publishing. However, books from the turn of the 20th century and older may appear to follow different rules. Producers are expected to adjust those older conventions to match this manual.
 
-Having said that, literature is a complex and multifaceted art, and in the process of converting older books some may call for a bending of a rule, or for an outright exception. Producers should not feel bound to slavishly follow these directives if a book seems to cry out for an exception. As Ralph Waldo Emerson once wrote, “a foolish consistency is the hobgoblin of little minds.” If unsure, producers are urged and welcomed to contact the `Standard Ebooks Editor in Chief <https://groups.google.com/group/standardebooks/>`__ for final-word guidance.
+Having said that, literature is a complex and multifaceted art, and in the process of converting older books some may call for a bending of a rule, or for an outright exception. Producers should not feel bound to slavishly follow these directives if a book seems to cry out for an exception. As Ralph Waldo Emerson once wrote, “a foolish consistency is the hobgoblin of little minds.” If unsure, producers are welcomed to contact the `Standard Ebooks Editor in Chief <https://groups.google.com/group/standardebooks/>`__ for final-word guidance.
 
-To contribute, please `visit the GitHub repository <https://github.com/standardebooks/manual>`__ or `contact the mailing list <https://groups.google.com/group/standardebooks/>`__.
+To contribute to this manual, including reporting issues or suggestions, please `visit the GitHub repository <https://github.com/standardebooks/manual>`__ or `contact the mailing list <https://groups.google.com/group/standardebooks/>`__.
 
 Editor-in-chief: Alex Cabal
 
