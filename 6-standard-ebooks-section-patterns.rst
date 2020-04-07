@@ -344,7 +344,7 @@ The half title page
 
 #.	The half title page contains one :html:`<section id="halftitlepage" epub:type="halftitlepage">` element, which in turn contains one :html:`<h1 epub:type="fulltitle">` element containing the full title of the ebook, including subtitles. The half title page is the only place where an :html:`<h1>` element may appear in a Standard Ebook.
 
-#.	Formatting for the :html:`<h1>` element follows patterns in `7.2.6.6 </manual/VERSION/7-high-level-structural-patterns#7.2.6.6>`__ and `7.2.6.7 </manual/VERSION/7-high-level-structural-patterns#7.2.6.7>`__.
+#.	Formatting for the :html:`<h1>` element follows patterns in `7.2.6.7 </manual/VERSION/7-high-level-structural-patterns#7.2.6.7>`__ and `7.2.6.8 </manual/VERSION/7-high-level-structural-patterns#7.2.6.8>`__.
 
 #.	A complete half title page looks like the following template:
 

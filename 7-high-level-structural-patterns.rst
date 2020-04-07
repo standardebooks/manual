@@ -192,6 +192,14 @@ Header patterns
 
 #.	Half title pages with subtitles:
 
+	.. code:: css
+
+		section[epub|type~="halftitlepage"] span[epub|type~="subtitle"]{
+			display: block;
+			font-size: .75em;
+			font-weight: normal;
+		}
+
 	.. code:: html
 
 		<h1 epub:type="fulltitle">
