@@ -997,6 +997,8 @@ Initials and abbreviations
 
 #.	:string:`OK` is set without periods or spaces. It is not an abbreviation.
 
+#.	:string:`MS.` and `MSS.` are abbreviations but not initialisms. Unlike almost all other abbreviations, they are in all caps and end in a period.
+
 #.	When an abbreviation contains a terminal period, its :html:`<abbr>` element has the additional :value:`eoc` class (End of Clause) if the terminal period is also the last period in clause. Such sentences do not have two consecutive periods.
 
 	.. code:: html
