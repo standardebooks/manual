@@ -734,6 +734,20 @@ Stage direction rows
 
 #.	Personas mentioned in stage direction are wrapped in a :html:`<b epub:type="z3998:persona">` element.
 
+#.	Stage direction in shorthand (for example, :string:`Large French window, R. 3 E.`) is wrapped in an :html:`<abbr epub:type="z3998:stage-direction">` element, with this additional CSS:
+
+	.. code:: css
+
+		abbr[epub|type~="z3998:stage-direction"]{
+			font-style: normal;
+			font-variant: all-small-caps;
+		}
+
+		abbr[epub|type~="z3998:stage-direction"]::before,
+		abbr[epub|type~="z3998:stage-direction"]::after{
+			content: '';
+		}
+
 .. class:: no-numbering
 
 Examples
@@ -744,7 +758,7 @@ Examples
 	<tr>
 		<td/>
 		<td>
-			<i epub:type="z3998:stage-direction"><b epub:type="z3998:persona">Lane</b> is arranging afternoon tea on the table, and after the music has ceased, <b epub:type="z3998:persona">Algernon</b> enters.</i>
+			<i epub:type="z3998:stage-direction">Large French window, <abbr epub:type="z3998:stage-direction" class="eoc">R. 3 E.</abbr> <b epub:type="z3998:persona">Lane</b> is arranging afternoon tea on the table, and after the music has ceased, <b epub:type="z3998:persona">Algernon</b> enters.</i>
 		</td>
 	</tr>
 
