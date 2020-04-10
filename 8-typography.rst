@@ -384,7 +384,7 @@ Punctuation and spacing
 
 			<p>Bosinney ventured: “It’s the first spring day.”</p>
 
-#.	Ampersands in names of things, like firms, are surrounded by no-break spaces (:utf:` ` or U+00A0).
+#.	Ampersands in names of things, like firms, are surrounded by no-break spaces (U+00A0).
 
 	.. code:: html
 
@@ -643,7 +643,7 @@ Measurements
 
 			<p>The board was 4 × 3 × 7 feet.</p>
 
-#.	Feet and inches in shorthand are set using the prime (:utf:`′` or U+2032) or double prime (:utf:`″` or U+2033) glyphs (*not* single or double quotes), with a no-break space (:utf:` ` or U+00A0) separating consecutive feet and inch measurements.
+#.	Feet and inches in shorthand are set using the prime (:utf:`′` or U+2032) or double prime (:utf:`″` or U+2033) glyphs (*not* single or double quotes), with a no-break space (U+00A0) separating consecutive feet and inch measurements.
 
 	.. class:: wrong
 
@@ -659,7 +659,7 @@ Measurements
 
 			<p>He was 6′:ws:`nbsp`1″ in height.</p>
 
-#.	When forming a compound of a number and unit of measurement in which the measurement is abbreviated, the number and unit of measurement are separated with a no-break space (:utf:` ` or U+00A0), *not* a dash. For exceptions in money, see `8.8.7.3.1 <#8.8.7.3.1>`__.
+#.	When forming a compound of a number and unit of measurement in which the measurement is abbreviated, the number and unit of measurement are separated with a no-break space (U+00A0), *not* a dash. For exceptions in money, see `8.8.7.3.1 <#8.8.7.3.1>`__.
 
 	.. class:: wrong
 
@@ -995,27 +995,7 @@ Initials and abbreviations
 
 -	`See here for Latinisms including BC and AD </manual/VERSION/8-typography#8.9>`__.
 
-#.	:string:`OK` is set without periods or spaces. It is not an abbreviation.
-
-#.	:string:`MS.` and `MSS.` are abbreviations but not initialisms. Unlike almost all other abbreviations, they are in all caps and end in a period.
-
-#.	When an abbreviation contains a terminal period, its :html:`<abbr>` element has the additional :value:`eoc` class (End of Clause) if the terminal period is also the last period in clause. Such sentences do not have two consecutive periods.
-
-	.. code:: html
-
-		<p>She loved Italian food like pizza, pasta, <abbr class="eoc">etc.</abbr></p>
-
-	.. code:: html
-
-		<p>He lists his name alphabetically as Johnson, <abbr class="name eoc">R. A.</abbr></p>
-
-	.. code:: html
-
-		<p>His favorite hobby was <abbr class="acronym">SCUBA</abbr>.</p>
-
-#.	Initialisms, postal codes, and abbreviated US states are set in all caps, without periods or spaces.
-
-#.	Acronyms (terms made up of initials and pronounced as one word, like :string:`NASA`, :string:`SCUBA`, or :string:`NATO`) are set in small caps, without periods, and are wrapped in an :html:`<abbr class="acronym">` element.
+#.	Acronyms (terms made up of initials and pronounced as one word, like :string:`NASA`, :string:`SCUBA`, or :string:`NATO`) are set in small caps, without periods, and are wrapped in an :html:`<abbr class="acronym">` element with corresponding CSS.
 
 	.. code:: css
 
@@ -1033,19 +1013,54 @@ Initials and abbreviations
 
 		<p>He was hired by the <abbr class="initialism">U.S.</abbr> <abbr class="initialism">FBI</abbr> last week.</p>
 
-	#.	Initialisms that retain periods:
+#.	When an abbreviation that is not an acronym contains a terminal period, its :html:`<abbr>` element has the additional :value:`eoc` class (End of Clause) if the terminal period is also the last period in clause. Such sentences do not have two consecutive periods.
 
-		-	:string:`U.S.` (United States)
+	.. code:: html
 
-		-	:string:`P.S.` (Post Scriptum, usually found in letters)
+		<p>She loved Italian food like pizza, pasta, <abbr class="eoc">etc.</abbr></p>
 
-		-	:string:`P.P.S.` (Post Post Scriptum)
+	.. code:: html
 
-		-	:string:`P.S.S.` (Post Super Scriptum)
+		<p>He lists his name alphabetically as Johnson, <abbr class="name eoc">R. A.</abbr></p>
 
-		-	:string:`MS.` (Manuscript)
+	.. code:: html
 
-		-	:string:`MSS.` (Manuscripts)
+		<p>His favorite hobby was <abbr class="acronym">SCUBA</abbr>.</p>
+
+#.	Some words may *look* like abbreviations or initialisms, but may actually have unique semantics and typography.
+
+	#.	The following are not abbreviations, and are set without periods or spaces.
+
+		-	:string:`OK`.
+
+		-	:string:`SOS`.
+
+	#.	The following are initialisms, but are set without periods or spaces:
+
+		-	:string:`TV` i.e. television.
+
+		-	Stock ticker symbols.
+
+			.. code:: html
+
+				<p>She bought 125 shares of <abbr class="initialism">XYZ</abbr> corporation.</p>
+
+	#.	:string:`MS.` and :string:`MSS.` are abbreviations (for :string:`manuscript` and :string:`manuscripts`, respectively) but are not initialisms. Unlike almost all other abbreviations, they are in all caps and only have a period at the end.
+
+		.. code:: html
+
+			<p>She was putting the finishing touches on the <abbr>MS.</abbr> of her new novel.</p>
+
+	#.	 is an initialism, but is set without periods or spaces.
+
+	#.	:string:`A.B.C.`, when used in the sense of the alphabet, is not an abbreviation, and is set with periods between the letters. But other uses, like :string:`A.B.C. shops`, *are* abbreviations.
+
+		.. code:: html
+
+			<p>She was learning her A.B.C.s</p>
+			<p>He stopped by the <abbr class="initialism">A.B.C.</abbr> shop.</p>
+
+#.	Initialisms, postal codes, and abbreviated US states are set in all caps, without periods or spaces.
 
 #.	Initials of people’s names are each separated by periods and spaces. The group of initials is wrapped in an :html:`<abbr class="name">` element.
 
@@ -1065,13 +1080,13 @@ Initials and abbreviations
 
 		<p>Washington <abbr class="postal">DC</abbr>.</p>
 
-#.	Abbreviations that are abbreviations of a single word, and that are not acronyms or initialisms (like :string:`Mr.`, :string:`Mrs.`, or `lbs.:string:`) are set with :html:`<abbr>`.
+#.	Abbreviations that are abbreviations of a single word, and that are not acronyms or initialisms (like :string:`Mr.`, :string:`Mrs.`, or :string:`lbs.`) are set with :html:`<abbr>`.
 
 	#.	Abbreviations ending in a lowercase letter are set without spaces between the letters, and are ended by a period.
 
 	#.	Abbreviations without lowercase letters are set without spaces and without a trailing period.
 
-	#.	Abbreviations that describes the next word, like :string:`Mr.`, :string:`Mrs.`, :string:`Mt.`, and :string:`St.`, are set with a no-break space (:utf:` ` or U+00A0) between the abbreviation and its target.
+	#.	Abbreviations that describes the next word, like :string:`Mr.`, :string:`Mrs.`, :string:`Mt.`, and :string:`St.`, are set with a no-break space (U+00A0) between the abbreviation and its target.
 
 		.. code:: html
 
@@ -1095,7 +1110,7 @@ Times as digits
 
 #.	Digits in times are separated by a colon, not a period or comma.
 
-#.	Times written in digits followed by :string:`a.m.` or :string:`p.m.` are set with a no-break space (:utf:` ` or U+00A0) between the digit and :string:`a.m.` or :string:`p.m.`.
+#.	Times written in digits followed by :string:`a.m.` or :string:`p.m.` are set with a no-break space (U+00A0) between the digit and :string:`a.m.` or :string:`p.m.`.
 
 	.. code:: html
 
@@ -1178,7 +1193,7 @@ Scansion
 
 Scansion is the representation of the metrical stresses in lines of verse.
 
-#.	:utf:`×` (U+00d7) indicates an unstressed sylllable and :utf:`/` (U+002f) indicates a stressed syllable. They are separated from each other with no-break spaces (:utf:` ` or U+00A0).
+#.	:utf:`×` (U+00d7) indicates an unstressed sylllable and :utf:`/` (U+002f) indicates a stressed syllable. They are separated from each other with no-break spaces (U+00A0).
 
 	.. code:: html
 
@@ -1217,7 +1232,7 @@ American Morse Code
 
 #.	If two en dashes are placed next to each other, a hair space (:utf:` ` or U+200A) is placed between them to keep the glyphs from merging into a longer dash.
 
-#.	Only in American Morse Code, there are internal gaps used between glyphs in the letters C, O, R, or Z. No-break spaces (:utf:` ` or U+00A0) are used for these gaps.
+#.	Only in American Morse Code, there are internal gaps used between glyphs in the letters C, O, R, or Z. No-break spaces (U+00A0) are used for these gaps.
 
 #.	En spaces (U+2002) are used between letters.
 
