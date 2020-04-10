@@ -95,13 +95,13 @@ Italics
 Italicizing individual letters
 ==============================
 
-#.	 Individual letters that are read as referring to letters in the alphabet are italicized with an :html:`<i>` element.
+#.	 Individual letters that are read as referring to letters in the alphabet are italicized with an :html:`<i epub:type="z3998:grapheme">` element.
 
 	.. code:: html
 
-		<p>He often rolled his <i>r</i>’s.</p>
+		<p>He often rolled his <i epub:type="z3998:grapheme">r</i>’s.</p>
 
-#.	Individual letters that are read as referring names or the shape of the letterform are *not* italicized.
+#.	Individual letters that are read as referring to names or the shape of the letterform are *not* italicized.
 
 	.. code:: html
 
@@ -109,7 +109,7 @@ Italicizing individual letters
 
 	.. code:: html
 
-		<p>She was learning her A B Cs.</p>
+		<p>She was learning her A.B.C.s.</p>
 
 	.. code:: html
 
