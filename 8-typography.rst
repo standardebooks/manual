@@ -673,6 +673,29 @@ Measurements
 
 			<p>A 12:ws:`nbsp`<abbr>mm</abbr> pistol.</p>
 
+Punctuation in abbreviated measurements
+---------------------------------------
+
+`See here for general abbreviation rules that also apply to measurements </manual/VERSION/8-typography#8.10>`__.
+
+#.	Abbreviated `SI units <https://en.wikipedia.org/wiki/International_System_of_Units>`__ are set in lowercase without periods. They are not initialisms.
+
+	.. code:: html
+
+		<p>A 12:ws:`nbsp`<abbr>mm</abbr> pistol.</p>
+
+#.	Abbreviated `English <https://en.wikipedia.org/wiki/English_units>`__, `Imperial <https://en.wikipedia.org/wiki/Imperial_units>`__, or `US customary <https://en.wikipedia.org/wiki/United_States_customary_units>`__ units that are one word are set in lowercase with a trailing period. They are not initialisms.
+
+	.. code:: html
+
+		<p>We had two 9:ws:`nbsp`<abbr>ft.</abbr> sledges, of 41:ws:`nbsp`<abbr>lbs.</abbr> each.</p>
+
+#.	Abbreviated English, Imperial, or US customary units that are more than one word (like :string:`hp` for :string:`horse power` or :string:`mph` for :string:`miles per hour`) are set in lowercase without periods. They are not initialisms.
+
+	.. code:: html
+
+		<p>He drove his 40:ws:`nbsp`<abbr>hp</abbr> car at 20:ws:`nbsp`<abbr>mph</abbr>.</p>
+
 Math
 ====
 
@@ -994,6 +1017,8 @@ Initials and abbreviations
 -	`See here for times </manual/VERSION/8-typography#8.11>`__.
 
 -	`See here for Latinisms including BC and AD </manual/VERSION/8-typography#8.9>`__.
+
+-	`See here for measurements </manual/VERSION/8-typography#8.8>`__.
 
 #.	Acronyms (terms made up of initials and pronounced as one word, like :string:`NASA`, :string:`SCUBA`, or :string:`NATO`) are set in small caps, without periods, and are wrapped in an :html:`<abbr class="acronym">` element with corresponding CSS.
 
