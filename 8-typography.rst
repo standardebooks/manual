@@ -1056,13 +1056,13 @@ Initials and abbreviations
 
 	#.	The following are not abbreviations, and are set without periods or spaces.
 
-		-	:string:`OK`.
+		-	:string:`OK`
 
-		-	:string:`SOS`.
+		-	:string:`SOS`
 
 	#.	The following are initialisms, but are set without periods or spaces:
 
-		-	:string:`TV` i.e. television.
+		-	:string:`TV`, i.e. :string:`television`.
 
 		-	Stock ticker symbols.
 
@@ -1070,13 +1070,19 @@ Initials and abbreviations
 
 				<p>She bought 125 shares of <abbr class="initialism">XYZ</abbr> corporation.</p>
 
-	#.	:string:`MS.` and :string:`MSS.` are abbreviations (for :string:`manuscript` and :string:`manuscripts`, respectively) but are not initialisms. Unlike almost all other abbreviations, they are in all caps and only have a period at the end.
+	#.	The following are abbreviations, but are not initialisms. Unlike almost all other abbreviations, they are in all caps and only have a period at the end.
+
+		-	:string:`MS.` (manuscript)
+
+		-	:string:`MSS.` (manuscripts)
+
+		-	:string:`M.` (Monsier)
+
+		-	:string:`MM.` (Messieurs)
 
 		.. code:: html
 
-			<p>She was putting the finishing touches on the <abbr>MS.</abbr> of her new novel.</p>
-
-	#.	 is an initialism, but is set without periods or spaces.
+			<p><abbr>MM.</abbr>:ws:`nbsp`Guy and Luc were putting the finishing touches on the <abbr>MS.</abbr> of their new novel.</p>
 
 	#.	:string:`A.B.C.`, when used in the sense of the alphabet, is not an abbreviation, and is set with periods between the letters. But other uses, like :string:`A.B.C. shops`, *are* abbreviations.
 
