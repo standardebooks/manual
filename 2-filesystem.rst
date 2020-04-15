@@ -36,8 +36,6 @@ File locations
 
 #.	The ONIX metadata file is located in :path:`./src/epub/onix.xml`. This file is identical for all ebooks.
 
-#.	The ONIX metadata file is located in :path:`./src/epub/onix.xml`. This file is identical for all ebooks.
-
 #.	The :path:`./src/META-INF/` and :path:`./src/mimetype` directory and files are epub structural files that are identical for all ebooks.
 
 #.	The :path:`./LICENSE.md` contains the ebook license and is identical for all ebooks.
