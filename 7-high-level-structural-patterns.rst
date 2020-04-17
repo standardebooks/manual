@@ -680,7 +680,7 @@ Dialog rows
 			<td>I didn’t think it polite to listen, sir.</td>
 		</tr>
 
-#.	When several personas speak at once, or a group of personas ("The Actors") speaks at once, the containing :html:`<tr>` element has the :value:`together` class, and the first :html:`<td>` child has a :html:`rowspan` attribute corresponding to the number of lines spoken together.
+#.	When several personas speak at once, or a group of personas (“The Actors”) speaks at once, the containing :html:`<tr>` element has the :value:`together` class, and the first :html:`<td>` child has a :html:`rowspan` attribute corresponding to the number of lines spoken together.
 
 	.. code:: css
 
