@@ -1282,3 +1282,36 @@ American Morse Code
 
 				<p>– – ·· ·· — ·· – – — · · · — –·· ·· · ·– –</p>
 				<p>My little old cat.</p>
+
+Citations
+*********
+
+#.	Citations are wrapped in a :html:`<cite>` element.
+
+#.	Citations that are the source of a quote are preceded by a space and en em dash, within the :html:`<cite>` element.
+
+	.. code:: html
+
+		<p>“The Moving Finger writes; and, having writ, moves on.” <cite>—<i epub:type="se:name.publication.book">The Rubaiyat of Omar Khayyam</i></cite>.</p>
+
+#.	Citations within a :html:`<blockquote>` element have the :html:`<cite>` element as the last direct child of the :html:`<blockquote>` parent.
+
+	.. class:: wrong
+
+		.. code:: html
+
+			<blockquote>
+				<p>“The Moving Finger writes; and, having writ, moves on.”</p>
+				<p>
+					<cite>—<i epub:type="se:name.publication.book">The Rubaiyat of Omar Khayyam</i></cite>
+				</p>
+			</blockquote>
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<blockquote>
+				<p>“The Moving Finger writes; and, having writ, moves on.”</p>
+				<cite>—<i epub:type="se:name.publication.book">The Rubaiyat of Omar Khayyam</i></cite>
+			</blockquote>
