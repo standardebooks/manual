@@ -2,7 +2,7 @@
 XHTML, CSS, and SVG Code Style
 ##############################
 
-The :bash:`se clean` tool in the `Standard Ebooks toolset <https://github.com/standardebooks/tools>`__ formats XHTML, CSS, and SVG code according to our style guidelines. The vast majority of the time its output is correct and no further modifications to code style are necessary.
+The :bash:`se clean` tool in the `Standard Ebooks toolset <https://standardebooks.org/tools>`__ formats XML, XHTML, CSS, and SVG code according to our style guidelines. The vast majority of the time its output is correct and no further modifications to code style are necessary.
 
 XHTML formatting
 ****************
