@@ -11,6 +11,15 @@ Sectioning
 
 #.	Individual items in a larger collection (like a poem in a poetry collection) are contained in a :html:`<article>` element.
 
+	#.	Collections of very short work, like collections of poems, hav all of their content in a single file, and :css:`page-break` CSS is added to generate page breaks between items:
+
+		.. code:: CSS
+
+			article,
+			section{
+				page-break-after: always;
+			}
+
 #.	In :html:`<section>` or :html:`<articles>` elements that have titles, the first child element is an :html:`<h1>`–:html:`<h6>` element, or a :html:`<header>` element containing the section’s title.
 
 Recomposability
