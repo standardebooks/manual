@@ -56,8 +56,6 @@ There are several elements in the metadata describing the publication date, upda
 
 #.	:html:`<meta property="dcterms:modified">` is a timestamp representing the last time this ebook file was modified. This changes often.
 
-#.	:html:`<meta property="se:revision-number">` is a special SE extension representing the revision number of this ebook file. During production, this number will be 0. When the ebook is first released to the public, the number will increment to 1. Each time :html:`<meta property="dcterms:modified">` changes, the revision number is incremented.
-
 Book titles
 ***********
 
