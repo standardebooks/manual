@@ -853,7 +853,7 @@ Letter headers
 
 #.	The first line of a letter after the salutation is not indented.
 
-#.	Salutations that are within the first line of the letter are wrapped in a :html:`<span epub:type="z3998:salutation>` element (or a :html:`<b epub:type="z3998:salutation>` element if small-caps are desired).
+#.	Salutations that are within the first line of the letter are wrapped in a :html:`<span epub:type="z3998:salutation">` element (or a :html:`<b epub:type="z3998:salutation">` element if small-caps are desired).
 
 	.. code:: html
 
