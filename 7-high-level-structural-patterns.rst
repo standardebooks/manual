@@ -11,9 +11,9 @@ Sectioning
 
 #.	Individual items in a larger collection (like a poem in a poetry collection) are contained in a :html:`<article>` element.
 
-	#.	Collections of very short work, like collections of poems, hav all of their content in a single file, and :css:`page-break` CSS is added to generate page breaks between items:
+	#.	Collections of very short work, like collections of poems, have all of their content in a single file, and :css:`page-break` CSS is added to generate page breaks between items:
 
-		.. code:: CSS
+		.. code:: css
 
 			article,
 			section{
