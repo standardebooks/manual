@@ -95,7 +95,7 @@ Italics
 Italicizing individual letters
 ==============================
 
-#.	 Individual letters that are read as referring to letters in the alphabet are italicized with an :html:`<i epub:type="z3998:grapheme">` element.
+#.	 Individual letters that are read as referring to letters in the alphabet are italicized with an :html:`<i epub:type="z3998:grapheme">` element. They are not followed by periods.
 
 	.. code:: html
 
