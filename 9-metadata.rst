@@ -188,7 +188,9 @@ Along with the Library of Congress categories, a set of SE subjects is included 
 		<meta property="se:subject">Fantasy</meta>
 		<meta property="se:subject">Philosophy</meta>
 
-#.	Standard Ebooks contain at least one SE subject.
+#.	There is at least one SE subject.
+
+#.	SE subjects are in alphabetical order.
 
 All SE subjects
 ~~~~~~~~~~~~~~~
