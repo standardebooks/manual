@@ -1288,7 +1288,7 @@ Citations
 
 #.	Citations are wrapped in a :html:`<cite>` element.
 
-#.	Citations that are the source of a quote are preceded by a space and en em dash, within the :html:`<cite>` element.
+#.	Citations that are the source of a quote are preceded by a space and an em dash, within the :html:`<cite>` element.
 
 	.. code:: html
 
