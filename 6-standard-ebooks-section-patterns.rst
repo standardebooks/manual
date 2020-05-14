@@ -19,7 +19,7 @@ The title string is a sentence listing the title of the ebook, its author, and a
 
 	-	If there is a translator, append :string:`. Translated by`, then the translator name. Multiple translators are handled in the same manner as multiple authors.
 
-	-	If there is an illustrator, append :string:`. Illustrated by`, then the illustrator name. Multiple illustrators are handled in the same manner as mutliple authors.
+	-	If there is an illustrator, append :string:`. Illustrated by`, then the illustrator name. Multiple illustrators are handled in the same manner as multiple authors.
 
 #.	While the title string may contain periods, it never ends in a period.
 
