@@ -294,6 +294,14 @@ Additional book metadata
 
 #.	:html:`<meta property="se:url.vcs.github">` contains the SE GitHub URL for this ebook. This is calculated by taking the string :html:`https://github.com/standardebooks/` and appending the `SE identifier </manual/VERSION/9-metadata#9.2>`__, without :html:`https://standardebooks.org/ebooks/`, and with forward slashes replaced by underscores.
 
+#.	:html:`<meta property="belongs-to-collection" id="collection-N">` contains the name of the collection the ebook belongs to.
+
+	#.	The value for this element must be the same for all ebooks in the collection.
+
+	#.	The :html:`id` attribute is :value:`collection-N` where :value:`N` is a positive integer starting at :value:`1`.
+
+	#.	The element is further refined a :html:`<meta property="collection-type" refines="#collection-N">` element with the value of :html:`set` or :html:`series`. `See the EPUB spec for more details <https://www.w3.org/publishing/epub32/epub-packages.html#sec-collection-type>`__.
+
 Book production notes
 =====================
 
