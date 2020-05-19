@@ -888,13 +888,13 @@ Letter footers
 	.. code:: html
 
 		<footer>
-			<p class="signature z3998:sender"><abbr class="name">R. A.</abbr> Johnson</p>
+			<p epub:type="z3998:sender" class="signature"><abbr class="name">R. A.</abbr> Johnson</p>
 		</footer>
 
 	.. code:: html
 
 		<footer>
-			<p class="z3998:sender"><span class="signature">John Doe</span>, President</p>
+			<p epub:type="z3998:sender"><span class="signature">John Doe</span>, President</p>
 		</footer>
 
 #.	Postscripts have the semantic inflection of :value:`z3998:postscript` and the following CSS:
