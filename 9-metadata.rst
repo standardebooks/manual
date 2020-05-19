@@ -273,6 +273,8 @@ The :html:`<meta property="se:long-description">` element contains a much longer
 
 #.	The long description element is directly followed by: :html:`<meta property="meta-auth" refines="#long-description">https://standardebooks.org</meta>`
 
+#.	The first occurrence of the author’s name is linked to the Standard Ebooks author page. For example, for Arthur Conan Doyle this would look like :html:`<a href="https://standardebooks.org/ebooks/arthur-conan-doyle">Arthur Conan Doyle</a>`. If the long description references other authors, books and story collections that already have pages on Standard Ebooks then the first occurrence of these are linked as well.
+
 Book language
 *************
 
