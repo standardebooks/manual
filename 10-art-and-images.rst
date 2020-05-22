@@ -57,7 +57,7 @@ SVG patterns
 The cover image
 ***************
 
-.. warning::
+.. alert::
 
 	The SE Editor-in-Chief must review and approve of the cover art you select before you can commit it to your repository.
 

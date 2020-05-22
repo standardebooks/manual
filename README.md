@@ -80,14 +80,14 @@ Several additional RST roles are available for use in the manual:
 
 While they are not defined in each `.rst` file to avoid header clutter, they are defined by `build-manual.py` during the build process.
 
-You may also create a tip or warning block:
+You may also create a tip or alert block:
 
 ```rst
 .. tip::
 
 	Here’s a tip!
 
-.. warning::
+.. alert::
 
 	Here’s a warning!
 ```
