@@ -301,6 +301,10 @@ Tables
 
 #.	:html:`<table>` elements may have an optional direct child :html:`<thead>` element, if a table heading is desired.
 
+	#.	:html:`<th>` elements are used in :html:`<thead>` elements, instead of :html:`<td>`.
+
+	#.	:html:`<th>` elements only appear in :html:`<thead>` elements, unless they contain the :html:`scope` attribute set to either :value:`row` or :value:`rowspan`. The :html:`scope` attribute set to those values may be used to semantically identify a table header which applies to a horizontal row instead of a vertical column.
+
 #.	:html:`<table>` elements that are used to display tabular numerical data, for example columns of sums, have CSS styling for tabular numbers: :css:`{ font-variant-numeric: tabular-nums; }`.
 
 	.. class:: corrected
