@@ -1032,11 +1032,11 @@ Initials and abbreviations
 
 		<p>He was hired by <abbr class="acronym">NASA</abbr> last week.</p>
 
-#.	Initialisms (terms made up of initials in which each initial is pronounced separately, like :string:`ABC`, :string:`HTML`, or :string:`CSS`) are set with without periods (with the following exceptions) and are wrapped in an :html:`<abbr class="initialism">` element.
+#.	Initialisms (terms made up of initials in which each initial is pronounced separately, like :string:`M.P.`, :string:`P.S.`, or :string:`U.S.S.R.`) are set with periods and without spaces (with some exceptions that follow) and are wrapped in an :html:`<abbr class="initialism">` element.
 
 	.. code:: html
 
-		<p>He was hired by the <abbr class="initialism">U.S.</abbr> <abbr class="initialism">FBI</abbr> last week.</p>
+		<p>He was hired by the <abbr class="initialism">U.S.</abbr> <abbr class="initialism">F.B.I.</abbr> last week.</p>
 
 #.	When an abbreviation that is not an acronym contains a terminal period, its :html:`<abbr>` element has the additional :value:`eoc` class (End of Clause) if the terminal period is also the last period in clause. Such sentences do not have two consecutive periods.
 
@@ -1076,7 +1076,7 @@ Initials and abbreviations
 
 		-	:string:`MSS.` (manuscripts)
 
-		-	:string:`M.` (Monsier)
+		-	:string:`M.` (Monsieur)
 
 		-	:string:`MM.` (Messieurs)
 
