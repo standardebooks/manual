@@ -891,7 +891,7 @@ Math
 				<p>
 					<m:math alttext="f(x,y)">
 						<m:mi>f</m:mi>
-						<m:mo>⁡:utf:`U+2061`</span><!--hidden U+2061 function application--></m:mo>
+						<m:mo>⁡:utf:`U+2061`<!--hidden U+2061 function application--></m:mo>
 						<m:fenced>
 							<m:mi>x</m:mi>
 							<m:mi>y</m:mi>
@@ -906,7 +906,7 @@ Math
 				<p>
 					<m:math alttext="f(x,y)">
 						<m:mi>f</m:mi>
-						<m:mo>⁡:utf:`U+2061`</span><!--hidden U+2061 function application--></m:mo>
+						<m:mo>⁡:utf:`U+2061`<!--hidden U+2061 function application--></m:mo>
 						<m:row>
 							<m:mo fence="true">(</m:mo>
 							<m:mi>x</m:mi>
