@@ -498,7 +498,8 @@ Unfortunately there’s no great way to semantically format poetry in HTML. As s
 
 		<blockquote epub:type="z3998:poem">
 			<p>
-				<span>...</span></br>
+				<span>...</span>
+				<br/>
 				<span>...</span>
 			</p>
 		</blockquote>
