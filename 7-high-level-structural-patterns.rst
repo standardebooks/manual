@@ -744,6 +744,18 @@ Stage direction rows
 
 #.	Personas mentioned in stage direction are wrapped in a :html:`<b epub:type="z3998:persona">` element.
 
+#.	Stage directions that are added from a different edition are wrapped in an :html:`<i class="editorial" epub:type="z3998:stage-direction">` element, with this additional CSS:
+
+	.. code:: css
+
+		[epub|type~="z3998:stage-direction"].editorial::before{
+			content: "[";
+		}
+
+		[epub|type~="z3998:stage-direction"].editorial::after{
+			content: "]";
+		}
+
 #.	Stage direction in shorthand (for example, :string:`Large French window, R. 3 E.`) is wrapped in an :html:`<abbr epub:type="z3998:stage-direction">` element, with this additional CSS:
 
 	.. code:: css
