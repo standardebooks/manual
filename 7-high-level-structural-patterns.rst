@@ -738,7 +738,7 @@ Stage direction rows
 
 #.	The first child of a row of stage direction is an empty :html:`<td>` element.
 
-#.	The second child of a row of dialog is a :html:`<td>` element containing the stage direction
+#.	The second child of a row of dialog is a :html:`<td>` element containing the stage direction.
 
 #.	Stage direction is wrapped in an :html:`<i epub:type="z3998:stage-direction">` element.
 
