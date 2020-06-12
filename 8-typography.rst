@@ -1194,7 +1194,7 @@ Temperatures
 
 #.	The minus sign glyph (:utf:`−` or U+2212), not the hyphen glyph, is used to indicate negative numbers.
 
-#.	Either the degree glyph (:utf:`°` or U+00B0) or the word :string:`degrees` is acceptable. Works that use both are normalize to use the dominant method.
+#.	Either the degree glyph (:utf:`°` or U+00B0) or the word :string:`degrees` is acceptable. Works that use both are normalized to use the dominant method.
 
 Abbreviated units of temperature
 ================================
