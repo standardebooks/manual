@@ -614,7 +614,8 @@ Plays and drama
 
 	.. code:: css
 
-		[epub|type~="z3998:drama"]{
+		[epub|type~="z3998:drama"],
+		[epub|type~="z3998:drama"] table{
 			border-collapse: collapse;
 		}
 
