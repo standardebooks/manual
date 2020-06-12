@@ -95,13 +95,13 @@ Italics
 Italicizing individual letters
 ==============================
 
-#.	 Individual letters that are read as referring to letters in the alphabet are italicized with an :html:`<i epub:type="z3998:grapheme">` element. They are not followed by periods.
+#.	 Individual letters that used in context as a `grapheme <https://www.merriam-webster.com/dictionary/grapheme>`__ are italicized with an :html:`<i epub:type="z3998:grapheme">` element. They are typically lowercased and not followed by periods.
 
 	.. code:: html
 
 		<p>He often rolled his <i epub:type="z3998:grapheme">r</i>’s.</p>
 
-#.	Individual letters that are read as referring to names or the shape of the letterform are *not* italicized.
+#.	Individual letters that are *not* graphemes (for example letters that might be referring to names, the shapes of the letters themselves, or concepts) are *not* italicized.
 
 	.. code:: html
 
@@ -115,7 +115,7 @@ Italicizing individual letters
 
 		<p>His trident had the shape of an E.</p>
 
-#.	The ordinal :string:`nth` is set with an italicized :string:`n`, and without a hyphen.
+#.	The ordinal :string:`nth` is set with an italicized :string:`n`, without a hyphen.
 
 	.. code:: html
 
