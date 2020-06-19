@@ -267,11 +267,9 @@ The :html:`<meta property="se:long-description">` element contains a much longer
 
 	.. tip::
 
-		An easy way to escape HTML is to compose the long description in regular HTML, then insert it into the :html:`<meta property="se:long-description">` element surrounded by a :html:`<![CDATA[ ... ]]>` element. Then, run the :bash:`se clean` tool, which will remove the :html:`<![CDATA[ ... ]]>` element and escape the contained HTML.
+		The :bash:`se clean` tool will escape HTML in the long description for you. You can write regular HTML in the long description, then run :bash:`se clean` to escape it automatically.
 
 #.	Long description HTML follows the `general code style conventions </manual/VERSION/1-code-style>`__.
-
-#.	The long description element is directly followed by: :html:`<meta property="meta-auth" refines="#long-description">https://standardebooks.org</meta>`
 
 #.	The first occurrence of the author’s name is linked to the Standard Ebooks author page. For example, for Arthur Conan Doyle this would look like :html:`<a href="https://standardebooks.org/ebooks/arthur-conan-doyle">Arthur Conan Doyle</a>`. If the long description references other authors, books and story collections that already have pages on Standard Ebooks then the first occurrence of these are linked as well.
 
