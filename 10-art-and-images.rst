@@ -134,7 +134,7 @@ Because of the difficulty, finding suitable cover at is *all about compromise*. 
 
 Note that in :path:`./images/cover.svg`, the black title and author box always goes in the lower half of the work. Thus, paintings in which some important detail would be obscured by the box cannot be used.
 
--	Before you can go looking for a reproduction of a specific painting to prove its PD status, you have to find a suitable painting to begin with. `Wikiart.org <https://www.wikiart.org/>`__ is a great resource to search for paintings by keyword. Museum online collections are another good place to look for inspiration.
+-	Before you can go looking for a reproduction of a specific painting to prove its PD status, you have to find a suitable painting to begin with. `Wikiart <https://www.wikiart.org/>`__ and `Artvee <https://artvee.com>`__ are great resources for searching for paintings by keyword. Museum online collections are another good place to look for inspiration.
 
 	Once you find a potential candidate you can start researching its PD status.
 
