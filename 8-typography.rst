@@ -351,19 +351,19 @@ Ligatures
 
 Ligatures are two or more letters that are combined into a single letter, usually for stylistic purposes. In general they are not used, and are replaced with their respective characters.
 
-	.. class:: wrong
+.. class:: wrong
 
-		.. code:: html
+	.. code:: html
 
-			<p>Œdipus Rex</p>
-			<p>Archæology</p>
+		<p>Œdipus Rex</p>
+		<p>Archæology</p>
 
-	.. class:: corrected
+.. class:: corrected
 
-		.. code:: html
+	.. code:: html
 
-			<p>Oedipus Rex</p>
-			<p>Archaeology</p>
+		<p>Oedipus Rex</p>
+		<p>Archaeology</p>
 
 Punctuation and spacing
 ***********************
