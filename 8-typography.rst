@@ -690,6 +690,12 @@ Punctuation in abbreviated measurements
 
 		<p>We had two 9:ws:`nbsp`<abbr>ft.</abbr> sledges, of 41:ws:`nbsp`<abbr>lbs.</abbr> each.</p>
 
+	The one exception is :string:`G` (i.e. :string:`G-force`), which is an initialism that is set without a period.
+
+	.. code:: html
+
+		<p>There’s a force of over a hundred thousand <abbr class="initialism">G</abbr>’s.</p>
+
 #.	Abbreviated English, Imperial, or US customary units that are more than one word (like :string:`hp` for :string:`horse power` or :string:`mph` for :string:`miles per hour`) are set in lowercase without periods. They are not initialisms.
 
 	.. code:: html
@@ -699,7 +705,7 @@ Punctuation in abbreviated measurements
 Math
 ====
 
-#.	In works that are not math-oriented or that dont’t have a significant amount of mathematical equations, equations are set using regular HTML and Unicode.
+#.	In works that are not math-oriented or that don’t have a significant amount of mathematical equations, equations are set using regular HTML and Unicode.
 
 	#.	Operators and operands in mathematical equations are separated by a space.
 
@@ -1063,6 +1069,8 @@ Initials and abbreviations
 	#.	The following are initialisms, but are set without periods or spaces:
 
 		-	:string:`TV`, i.e. :string:`television`.
+
+		-	:string:`G`, i.e. :string:`G-force`. Also see `8.8.5.4.2 <#8.8.5.4.2>`__.
 
 		-	Stock ticker symbols.
 
