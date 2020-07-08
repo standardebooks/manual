@@ -1070,7 +1070,7 @@ Initials and abbreviations
 
 		-	:string:`TV`, i.e. :string:`television`.
 
-		-	:string:`G`, i.e. :string:`G-force`. Also see `8.8.5.4.2 <#8.8.5.4.2>`__.
+		-	:string:`G`, when used in the sense of :string:`G-force`. Also see `8.8.5.4.2 <#8.8.5.4.2>`__.
 
 		-	Stock ticker symbols.
 
@@ -1099,21 +1099,25 @@ Initials and abbreviations
 			<p>She was learning her A.B.C.s</p>
 			<p>He stopped by the <abbr class="initialism">A.B.C.</abbr> shop.</p>
 
-#.	Initialisms, postal codes, and abbreviated US states are set in all caps, without periods or spaces.
-
 #.	Initials of people’s names are each separated by periods and spaces. The group of initials is wrapped in an :html:`<abbr class="name">` element.
 
 	.. code:: html
 
 		<p><abbr class="name">H. P.</abbr> Lovecraft described himself as an aged antiquarian.</p>
 
-#.	Academic degrees are wrapped in an :html:`<abbr class="degree">` element. For example: :string:`BA`, :string:`BD`, :string:`BFA`, :string:`BM`, :string:`BS`, :string:`DB`, :string:`DD`, :string:`DDS`, :string:`DO`, :string:`DVM`, :string:`JD`, :string:`LHD`, :string:`LLB`, :string:`LLD`, :string:`LLM`, :string:`MA`, :string:`MBA`, :string:`MD`, :string:`MFA`, :string:`MS`, :string:`MSN`.
+#.	Academic degrees are wrapped in an :html:`<abbr class="degree">` element. Degrees that consist of initials are set with a period between each initial. Degrees that consist of initials followed by abbreviated words are set with a hair space before the word.
 
 	.. code:: html
 
-		<p>Judith Douglas, <abbr class="degree">DDS</abbr>.</p>
+		<p>Judith Douglas, <abbr class="degree eoc">D.D.S</abbr></p>
 
-#.	Abbreviated state names, as well as postal codes, are wrapped in an :html:`<abbr class="postal">` element.
+		<p>Abraham Van Helsing, <abbr class="degree">M.D.</abbr>, <abbr class="degree">D.:ws:`hairsp`Ph.</abbr>, <abbr class="degree">D.:ws:`hairsp`Lit.</abbr>, <abbr>etc.</abbr>, <abbr class="eoc">etc.</abbr></p>
+
+	#.	Some degrees are exceptions:
+
+		- :string:`LL.D.` does not have a period in :string:`LL`, because it indicates the plural :string:`Legum`.
+
+#.	Postal codes and abbreviated US states are set in all caps, without periods or spaces, and are wrapped in an :html:`<abbr class="postal">` element.
 
 	.. code:: html
 
