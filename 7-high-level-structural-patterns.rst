@@ -1129,7 +1129,7 @@ List of Illustrations (the LoI)
 
 If an ebook has any illustrations that are *major structural components* of the work (even just one!), then the ebook includes an :path:`loi.xhtml` file at the end of the ebook. This file lists the illustrations in the ebook, along with a short caption or description.
 
-#.	The LoI is an XHTML file located in :path:`./src/epub/text/loi.xhtml`.
+#.	The LoI is an XHTML file named :path:`./src/epub/text/loi.xhtml`.
 
 #.	The LoI file has the :value:`backmatter` semantic inflection.
 
@@ -1203,7 +1203,7 @@ The noteref is the superscripted number in the body text that links to the endno
 The endnotes file
 =================
 
-#.	Endnotes are in an XHTML file located in :path:`./src/epub/text/endnotes.xhtml`.
+#.	Endnotes are in an XHTML file named :path:`./src/epub/text/endnotes.xhtml`.
 
 #.	The endnotes file has the :value:`backmatter` semantic inflection.
 
@@ -1267,3 +1267,58 @@ Examples
 			</section>
 		</body>
 	</html>
+
+Glossaries
+**********
+
+Glossaries may be included if there are a large number of domain-specific terms that are unlikely to be in a common dictionary, or which have unique meanings to the work.
+
+The glossary file
+=================
+
+#.	Glossaries are in an XHTML file named :path:`./src/epub/text/glossary.xhtml`.
+
+#.	The glossary file has the :value:`backmatter` semantic inflection.
+
+#.	The glossary file contains a single :html:`<section id="glossary" epub:type="glossary">` element, which may contain a title, followed by a :html:`<dl>` element containing the glossary entries.
+
+#.	All glossaries include the following CSS:
+
+	.. code:: css
+
+		dd + dt{
+			margin-top: 1em;
+		}
+
+Glossary entries
+================
+
+#.	The :html:`<dl>` element contains sets of :html:`<dt>` and :html:`<dd>` elements.
+
+#.	The :html:`<dt>` element contains a single :html:`<dfn>` element, which in turn contains the term to be defined.
+
+#.	A :html:`<dd>` element appears after one or more :html:`<dt>` elements, and contains the definition for the preceding :html:`<dt>` element(s). It must contain at least one block-level child, usually :html:`<p>`.
+
+	.. code:: html
+
+		<dt>
+			<dfn>Coccus</dfn>
+		</dt>
+		<dd>
+			<p>The genus of Insects including the Cochineal. In these the male is a minute, winged fly, and the female generally a motionless, berrylike mass.</p>
+		</dd>
+
+#.	:html:`<dt>` may appear more than once for a single glossary entry, if different variations of a term have the same definition.
+
+	.. code:: html
+
+		<dt>
+			<dfn>Compositae</dfn>
+		</dt>
+		<dt>
+			<dfn>Compositous Plants</dfn>
+		</dt>
+		<dd>
+			<p>Plants in which the inflorescence consists of numerous small flowers (florets) brought together into a dense head, the base of which is enclosed by a common envelope. (Examples, the Daisy, Dandelion, <abbr class="eoc">etc.</abbr>)</p>
+		</dd>
+
