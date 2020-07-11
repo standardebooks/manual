@@ -124,7 +124,7 @@ Italicizing individual letters
 Italicizing non-English words and phrases
 =========================================
 
-#.	Non-English words and phrases that are not in `Merriam-Webster <https://www.merriam-webster.com>`__ are italicized.
+#.	Non-English words and phrases that are not in `Merriam-Webster <https://www.merriam-webster.com>`__ are italicized, unless they are in a non-Roman script like Chinese or Japanese.
 
 	.. code:: html
 
