@@ -1058,47 +1058,6 @@ Initials and abbreviations
 
 		<p>His favorite hobby was <abbr class="acronym">SCUBA</abbr>.</p>
 
-#.	Some words may *look* like abbreviations or initialisms, but may actually have unique semantics and typography.
-
-	#.	The following are not abbreviations, and are set without periods or spaces.
-
-		-	:string:`OK`
-
-		-	:string:`SOS`
-
-	#.	The following are initialisms, but are set without periods or spaces:
-
-		-	:string:`TV`, i.e. :string:`television`.
-
-		-	:string:`G`, when used in the sense of :string:`G-force`. Also see `8.8.5.4.2 <#8.8.5.4.2>`__.
-
-		-	Stock ticker symbols.
-
-			.. code:: html
-
-				<p>She bought 125 shares of <abbr class="initialism">XYZ</abbr> corporation.</p>
-
-	#.	The following are abbreviations, but are not initialisms. Unlike almost all other abbreviations, they are in all caps and only have a period at the end.
-
-		-	:string:`MS.` (manuscript)
-
-		-	:string:`MSS.` (manuscripts)
-
-		-	:string:`M.` (Monsieur)
-
-		-	:string:`MM.` (Messieurs)
-
-		.. code:: html
-
-			<p><abbr>MM.</abbr>:ws:`nbsp`Guy and Luc were putting the finishing touches on the <abbr>MS.</abbr> of their new novel.</p>
-
-	#.	:string:`A.B.C.`, when used in the sense of the alphabet, is not an abbreviation, and is set with periods between the letters. But other uses, like :string:`A.B.C. shops`, *are* abbreviations.
-
-		.. code:: html
-
-			<p>She was learning her A.B.C.s</p>
-			<p>He stopped by the <abbr class="initialism">A.B.C.</abbr> shop.</p>
-
 #.	Initials of people’s names are each separated by periods and spaces. The group of initials is wrapped in an :html:`<abbr class="name">` element.
 
 	.. code:: html
@@ -1110,7 +1069,6 @@ Initials and abbreviations
 	.. code:: html
 
 		<p>Judith Douglas, <abbr class="degree eoc">D.D.S</abbr></p>
-
 		<p>Abraham Van Helsing, <abbr class="degree">M.D.</abbr>, <abbr class="degree">D.:ws:`hairsp`Ph.</abbr>, <abbr class="degree">D.:ws:`hairsp`Lit.</abbr>, <abbr>etc.</abbr>, <abbr class="eoc">etc.</abbr></p>
 
 	#.	Some degrees are exceptions:
@@ -1125,7 +1083,7 @@ Initials and abbreviations
 
 #.	Abbreviations that are abbreviations of a single word, and that are not acronyms or initialisms (like :string:`Mr.`, :string:`Mrs.`, or :string:`lbs.`) are set with :html:`<abbr>`.
 
-	#.	Abbreviations ending in a lowercase letter are set without spaces between the letters, and are ended by a period.
+	#.	Abbreviations ending in a lowercase letter are set without spaces between the letters, and have a trailing period.
 
 	#.	Abbreviations without lowercase letters are set without spaces and without a trailing period.
 
@@ -1140,6 +1098,48 @@ Initials and abbreviations
 	.. code:: html
 
 		<p>He traveled <abbr class="compass">S.</abbr>, <abbr class="compass">N. W.</abbr>, then <abbr class="compass eoc">E. S. E.</abbr></p>
+
+Exceptions that are not abbreviations
+=====================================
+
+#.	The following are not abbreviations, and are set without periods or spaces.
+
+	-	:string:`OK`
+
+	-	:string:`SOS`
+
+#.	The following are initialisms, but are set without periods or spaces:
+
+	-	:string:`TV`, i.e. :string:`television`.
+
+	-	:string:`G`, when used in the sense of :string:`G-force`. Also see `8.8.5.4.2 <#8.8.5.4.2>`__.
+
+	-	Stock ticker symbols.
+
+		.. code:: html
+
+			<p>She bought 125 shares of <abbr class="initialism">XYZ</abbr> corporation.</p>
+
+#.	The following are abbreviations, but are not initialisms. Unlike almost all other abbreviations, they are in all caps and only have a period at the end.
+
+	-	:string:`MS.` (manuscript)
+
+	-	:string:`MSS.` (manuscripts)
+
+	-	:string:`M.` (Monsieur)
+
+	-	:string:`MM.` (Messieurs)
+
+	.. code:: html
+
+		<p><abbr>MM.</abbr>:ws:`nbsp`Guy and Luc were putting the finishing touches on the <abbr>MS.</abbr> of their new novel.</p>
+
+#.	:string:`A.B.C.`, when used in the sense of the alphabet, is not an abbreviation, and is set with periods between the letters. But other uses, like :string:`A.B.C. shops`, *are* abbreviations.
+
+	.. code:: html
+
+		<p>She was learning her A.B.C.s</p>
+		<p>He stopped by the <abbr class="initialism">A.B.C.</abbr> shop.</p>
 
 Times
 *****
