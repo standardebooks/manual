@@ -193,7 +193,6 @@ Italicizing or quoting newly-used English words
 	.. code:: html
 
 		<p>English whalers have given this the name “ice blink.”</p>
-
 		<p>The soil consisted of that igneous gravel called <i>tuff</i>.</p>
 
 #.	English neologisms in works where a special vocabulary is a regular part of the narrative are not italicized. For example science fiction works may necessarily contain made-up English technology words, and those are not italicized.
@@ -551,7 +550,6 @@ Numbers, measurements, and math
 		.. code:: html
 
 			<p><abbr>Lat.</abbr> 27° 0' <abbr class="compass">N.</abbr>, <abbr>long.</abbr> 20° 1' <abbr class="compass eoc">W.</abbr></p>
-
 			<p><abbr>Lat.</abbr> 27° 0’ <abbr class="compass">N.</abbr>, <abbr>long.</abbr> 20° 1’ <abbr class="compass eoc">W.</abbr></p>
 
 	.. class:: corrected
@@ -587,18 +585,18 @@ Roman numerals
 
 		.. code:: html
 
-			<p>Henry the <span epub:type="z3998:roman">VIII</span>th had six wives.</p>
+			<p>Henry <span epub:type="z3998:roman">VIII</span>th had six wives.</p>
 
 	.. class:: corrected
 
 		.. code:: html
 
-			<p>Henry the <span epub:type="z3998:roman">VIII</span> had six wives.</p>
+			<p>Henry <span epub:type="z3998:roman">VIII</span> had six wives.</p>
 
 Fractions
 =========
 
-#.	Fractions are set in their appropriate Unicode glyph, if a glyph available; for example, :utf:`½`, :utf:`¼`, :utf:`¾` and U+00BC–U+00BE and U+2150–U+2189.</p>
+#.	Fractions are set in their appropriate Unicode glyph, if a glyph available; for example, :utf:`½`, :utf:`¼`, :utf:`¾` and U+00BC–U+00BE and U+2150–U+2189.
 
 	.. class:: wrong
 
@@ -650,7 +648,6 @@ Measurements
 		.. code:: html
 
 			<p>He was 6':ws:`nbsp`1" in height.</p>
-
 			<p>He was 6’:ws:`nbsp`1” in height.</p>
 
 	.. class:: corrected

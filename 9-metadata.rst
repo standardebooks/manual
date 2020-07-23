@@ -352,7 +352,7 @@ The author metadata block
 
 		This is easily found by visiting the person’s Wikipedia page and looking at the very bottom in the “Authority Control” section, under “LCCN.”
 
-		If you it’s not on Wikipedia, find it directly by visiting the `Library of Congress Names Database <http://id.loc.gov/authorities/names.html>`__.
+		If it’s not on Wikipedia, find it directly by visiting the `Library of Congress Names Database <http://id.loc.gov/authorities/names.html>`__.
 
 #.	:html:`<meta property="role" refines="#author" scheme="marc:relators">` contains the `MARC relator tag <http://www.loc.gov/marc/relators/relacode.html>`__ for the roles the author played in creating this book.
 
