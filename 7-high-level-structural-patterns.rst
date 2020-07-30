@@ -11,13 +11,13 @@ Sectioning
 
 #.	Individual items in a larger collection (like a poem in a poetry collection) are contained in a :html:`<article>` element.
 
-	#.	Collections of very short work, like collections of poems, have all of their content in a single file, and :css:`page-break` CSS is added to generate page breaks between items:
+	#.	Collections of very short work, like collections of poems, have all of their content in a single file, and :css:`break-*` CSS is added to generate page breaks between items:
 
 		.. code:: css
 
 			article,
 			section{
-				page-break-after: always;
+				break-after: page;
 			}
 
 #.	In :html:`<section>` or :html:`<articles>` elements that have titles, the first child element is an :html:`<h1>`–:html:`<h6>` element, or a :html:`<header>` element containing the section’s title.
@@ -1049,9 +1049,9 @@ Images
 			figure.full-page{
 				margin: 0;
 				max-height: 100%;
-				page-break-before: always;
-				page-break-after: always;
-				page-break-inside: avoid;
+				break-before: page;
+				break-after: page;
+				break-inside: avoid;
 				text-align: center;
 			}
 
@@ -1075,9 +1075,9 @@ Examples
 	figure.full-page{
 		margin: 0;
 		max-height: 100%;
-		page-break-before: always;
-		page-break-after: always;
-		page-break-inside: avoid;
+		break-before: page;
+		break-after: page;
+		break-inside: avoid;
 		text-align: center;
 	}
 
