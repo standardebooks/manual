@@ -247,6 +247,11 @@ Titles of files that are not chapter or part divisions
 
 			<title>Quevedo and His Works: With an Essay on the Picaresque Novel</title>
 
+Headers
+*******
+
+#.	:html:`<header>` elements have at least one direct child block-level element. This is usually a :html:`<p>` element, but not necessarily.
+
 Ordered/numbered and unordered lists
 ************************************
 
@@ -350,3 +355,12 @@ Blockquotes
 			<p>“All things are ready, if our mind be so.”</p>
 			<cite>—<i epub:type="se:name.publication.play">Henry <span epub:type="z3998:roman">V</span></i></cite>
 		</blockquote>
+
+Definition lists
+****************
+
+Definition lists, i.e. combinations of the :html:`<dl>`, :html:`<dt>`, and :html:`<dd>` elements, are often found in glossaries.
+
+`See here for glossaries </manual/VERSION/7-high-level-structural-patterns#7.11>`__.
+
+#.	:html:`<dd>` elements have at least one direct child block-level element. This is usually a :html:`<p>` element, but not necessarily.
