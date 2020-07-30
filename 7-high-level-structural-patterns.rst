@@ -1275,6 +1275,19 @@ Glossaries
 
 Glossaries may be included if there are a large number of domain-specific terms that are unlikely to be in a common dictionary, or which have unique meanings to the work.
 
+Glossaries follow the `EPUB Dictionaries and Glossaries 1.0 spec <http://idpf.org/epub/dict/epub-dict.html#sec-2.5.3>`__.
+
+The glossary search key map file
+================================
+
+When including a glossary, a search key map file is required according to the `EPUB Dictionaries and Glossaries 1.0 spec <http://idpf.org/epub/dict/epub-dict.html#sec-2.5.3>`__.
+
+#.	The search key map file is named :path:`./src/epub/glossary-search-key-map.xml`.
+
+#.	The search key map file contains :html:`<value>` elements describing all stemmed variations of the parent search term that occur in the ebook. Variations that don't occur in the ebook are excluded.
+
+#.	If a :html:`<match>` element only has one :html:`<value>` element, the :html:`<value>` element is removed in favor of :html:`<match value="...">`.
+
 The glossary file
 =================
 
@@ -1282,7 +1295,7 @@ The glossary file
 
 #.	The glossary file has the :value:`backmatter` semantic inflection.
 
-#.	The glossary file contains a single :html:`<section id="glossary" epub:type="glossary">` element, which may contain a title, followed by a :html:`<dl>` element containing the glossary entries.
+#.	The glossary file contains a single :html:`<section id="glossary" epub:type="glossary">` element, which may contain a title, followed by a :html:`<dl>` element containing the glossary entries. While the EPUB glossaries spec suggests the :value:`glossary` :html:`epub:type` attribute be placed on the :html:`<dl>` element, in a Standard Ebook it is placed on the :html:`<dl>` element’s parent :html:`<section>` element.
 
 #.	All glossaries include the following CSS:
 
@@ -1296,6 +1309,8 @@ Glossary entries
 ================
 
 #.	The :html:`<dl>` element contains sets of :html:`<dt>` and :html:`<dd>` elements.
+
+#.	The :html:`<dt>` element has :html:`epub:type="glossterm"`.
 
 #.	The :html:`<dt>` element contains a single :html:`<dfn>` element, which in turn contains the term to be defined.
 
@@ -1323,4 +1338,6 @@ Glossary entries
 		<dd>
 			<p>Plants in which the inflorescence consists of numerous small flowers (florets) brought together into a dense head, the base of which is enclosed by a common envelope. (Examples, the Daisy, Dandelion, <abbr class="eoc">etc.</abbr>)</p>
 		</dd>
+
+#.	The :html:`<dd>` element has :html:`epub:type="glossdef"`.
 
