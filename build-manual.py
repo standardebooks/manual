@@ -233,6 +233,9 @@ def main() -> int:
 			html = regex.sub(r".+?<body>", "", html, flags=regex.DOTALL)
 			html = regex.sub(r"</body>.*", "", html, flags=regex.DOTALL)
 
+			# If we use CSS properties like -epub-hyphens, the colorizer considers them errors and adds error coloring. Remove that here.
+			html = regex.sub(r"""<span class="err">-</span><span class="n">(.+?)</span>""", r"""<span class="k">-\1</span>""", html)
+
 			# Convert spaces to tabs
 			html = regex.sub(r"    ", "\t", html)
 
@@ -250,7 +253,7 @@ def main() -> int:
 			# Fill in <title> elements
 			if filename == "index.rst":
 				version = regex.findall(r"\.\. version: (.+)", rst)[0]
-				html = regex.sub(r"MANUAL_TITLE", f"The Standard Ebooks Manual", html)
+				html = regex.sub(r"MANUAL_TITLE", "The Standard Ebooks Manual", html)
 				html = regex.sub(r"<section id=\".+?\"", r"<section", html)
 			else:
 				html = regex.sub(r"MANUAL_TITLE", f"{root_number}. {title} - The Standard Ebooks Manual", html)
