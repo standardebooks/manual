@@ -348,7 +348,9 @@ Chapter headers
 Ligatures
 *********
 
-Ligatures are two or more letters that are combined into a single letter, usually for stylistic purposes. In general they are not used, and are replaced with their respective characters.
+Ligatures are two or more letters that are combined into a single letter, usually for stylistic purposes. In general they are not used in modern English spelling, and are replaced with their expanded characters.
+
+Words in non-English languages like French may use ligatures to differentiate words or pronunciations. In these cases, ligatures are retained.
 
 .. class:: wrong
 
