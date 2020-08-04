@@ -75,9 +75,9 @@ Block-level elements are by default rendered with :css:`{ display: block; }`. Se
 
 	#.	:html:`<ol>`: Denotes an ordered list. Ordered lists are automatically numbered by the renderer.
 
-	#.	:html:`<ul>`: Denotes an unordered list. Ordered lists are bulleted by the renderer.
+	#.	:html:`<ul>`: Denotes an unordered list. Unordered lists are bulleted by the renderer.
 
-	#.	:html:`<li>`: Denotes an list item in a parent :html:`<ol>` or :html:`<ul>`.
+	#.	:html:`<li>`: Denotes a list item in a parent :html:`<ol>` or :html:`<ul>`.
 
 	#.	:html:`<table>`: Denotes a tabular section, for example when displaying tabular data, or reports or charts where a tabular appearance is desired.
 
