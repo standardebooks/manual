@@ -95,7 +95,7 @@ Italics
 Italicizing individual letters
 ==============================
 
-#.	 Individual letters that used in context as a `grapheme <https://www.merriam-webster.com/dictionary/grapheme>`__ are italicized with an :html:`<i epub:type="z3998:grapheme">` element. They are typically lowercased and not followed by periods.
+#.	Individual letters that used in context as a `grapheme <https://www.merriam-webster.com/dictionary/grapheme>`__ are italicized with an :html:`<i epub:type="z3998:grapheme">` element. They are typically lowercased and not followed by periods.
 
 	.. code:: html
 
@@ -954,7 +954,7 @@ Money
 
 			<p>The exchange rate was £2 for $1.</p>
 
-#.	Currency symbols are not abbrevations.
+#.	Currency symbols are not abbreviations.
 
 £sd shorthand
 -------------
