@@ -1251,8 +1251,6 @@ Examples
 					<li id="note-1" epub:type="endnote">
 						<p>For more detailed observations on these points refer to <abbr class="name">G.</abbr> Volkens, “Uber die Karolinen Insel Yap.” <cite>—<abbr class="name eoc">W. T. G.</abbr></cite> <a href="chapter-2.xhtml#noteref-1" epub:type="backlink">↩</a></p>
 					</li>
-				</ol>
-				<ol>
 					<li id="note-2" epub:type="endnote">
 						<blockquote epub:type="z3998:verse">
 							<p>
