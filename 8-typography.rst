@@ -385,11 +385,11 @@ Punctuation and spacing
 
 			<p>Bosinney ventured: “It’s the first spring day.”</p>
 
-#.	Ampersands in names of things, like firms, are surrounded by no-break spaces (U+00A0).
+#.	Ampersands are preceded by a no-break space (U+00A0).
 
 	.. code:: html
 
-		<p>The firm of Hawkins:ws:`nbsp`&amp;:ws:`nbsp`Harker.</p>
+		<p>The firm of Hawkins:ws:`nbsp`&amp; Harker.</p>
 
 #.	Some older works include spaces in common contractions; these spaces are removed.
 
