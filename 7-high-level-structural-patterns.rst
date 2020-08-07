@@ -1010,6 +1010,8 @@ Images
 
 				<img alt="An apple and a pear inside a bowl, resting on a table." src="..." />
 
+		#.	The :html:`alt` attribute does not contain no-break spaces or word joiners.
+
 	#.	The :html:`alt` attribute is one or more complete sentences ended with periods or other appropriate punctuation. It is not composed of sentence fragments or complete sentences without ending punctuation.
 
 	#.	The :html:`alt` attribute is not necessarily the same as text in the image’s sibling :html:`<figcaption>` element, if one is present.
