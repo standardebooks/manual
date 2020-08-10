@@ -301,6 +301,13 @@ Capitalization
 
 		<p>I carried the bodies into the sea, O walker in the sea!</p>
 
+#.	Names followed by a generational suffix, like :string:`Junior` or :string:`Senior`, have the suffix uppercased in all cases.
+
+	.. code:: html
+
+		<p>He talked to Bob Smith Junior.</p>
+		<p>He talked to John Doe <abbr class="eoc">Jr.</abbr></p>
+
 Indentation
 ***********
 
