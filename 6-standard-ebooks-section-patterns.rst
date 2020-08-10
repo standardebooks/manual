@@ -149,6 +149,8 @@ The :html:`<nav>` element’s top-level :html:`<ol>` element contains a list of 
 :html:`<a>` descendents
 -----------------------
 
+#.	The :value:`title`, :value:`subtitle`, :title:`ordinal`, and any `related title epub semantics <https://idpf.github.io/epub-vocabs/structure/#titles>`__ are not included in ToC entries. Their usage context is only within actual heading content.
+
 #.	Chapters without titles are represented by their Roman ordinal, without the word :string:`Chapter`.
 
 	.. code:: html
