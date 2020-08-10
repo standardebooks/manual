@@ -153,7 +153,7 @@ The :html:`<nav>` element’s top-level :html:`<ol>` element contains a list of 
 
 	.. code:: html
 
-		<a epub:type="title z3998:roman">XI</a>
+		<a href="text/chapter-11.xhtml" epub:type="z3998:roman">XI</a>
 
 #.	Chapters with titles are represented by their Roman ordinal, followed by a colon and a space, followed by the chapter title.
 
