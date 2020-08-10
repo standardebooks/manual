@@ -626,6 +626,14 @@ Fractions
 
 			<p>Roughly ⁶⁄₁₀ of a mile.</p>
 
+#.	There is no space between a whole number and its fraction.
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<p>There are 365¼ days in a year.</p>
+
 Measurements
 ============
 
