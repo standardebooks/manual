@@ -301,12 +301,15 @@ Capitalization
 
 		<p>I carried the bodies into the sea, O walker in the sea!</p>
 
-#.	Names followed by a generational suffix, like :string:`Junior` or :string:`Senior`, have the suffix uppercased in all cases.
+#.	Names followed by a generational suffix, like :string:`Junior` or :string:`Senior`, have the suffix uppercased if the suffix is part of the person's name.
+
+	Occasionally, :string:`junior` or :string:`senior` may be used to refer to a younger or elder person having the same last name, but not necessarily the same first name. In these cases, the suffix is lowercased as it is not part of their name, but rather describing their generational relation.
 
 	.. code:: html
 
 		<p>He talked to Bob Smith Junior.</p>
 		<p>He talked to John Doe <abbr class="eoc">Jr.</abbr></p>
+		<p>Madame Bovary junior was afraid of accidents for her husband.</p>
 
 Indentation
 ***********
@@ -580,6 +583,27 @@ Numbers, measurements, and math
 		.. code:: html
 
 			<p>The 1st, 2nd, 3rd, 4th.</p>
+
+#.	Numbers in a non-mathematical context are spelled out if they are less than or equal to 100. Numbers over 100 are set with digits.
+
+	.. code:: html
+
+		<p>“They had a gun on the West Front⁠—a seventy-five,” said O’Keefe.</p>
+		<p>Allowing her 12,000 miles of straight-line travel through Uranus’ frigid soupy atmosphere.</p>
+
+	#.	If a series of numbers is close together in a sentence, and one would be spelled out but another wouldn’t, spell out all numbers within that context to maintain visual consistency.
+
+		.. class:: wrong
+
+			.. code:: html
+
+				<p>There the Gulf Stream is 75 miles wide and two hundred ten meters deep.</p>
+
+		.. class:: corrected
+
+			.. code:: html
+
+				<p>There the Gulf Stream is seventy-five miles wide and two hundred ten meters deep.</p>
 
 Roman numerals
 ==============
