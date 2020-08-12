@@ -320,8 +320,32 @@ Indentation
 
 	For example: in a block quotation, there is a margin before the quotation and after the quotation. Thus, the first line of the quotation is not indented, and the first line of body text after the block quotation is also not indented.
 
+Headers
+*******
+
+#.	Titles or subtitles that are *entirely* non-English-language are not italicized. However, they do have an :html:`xml:lang` attribute to assist screen readers in pronunciation. Titles or subtitles that are in English but contain non-English *components* have those components italicized according to the general rules for italics.
+
+	.. code:: html
+
+		<h2 epub:type="title" xml:lang="la">Ex Oblivione</h2>
+
+		<h3 epub:type="title">
+			<span epub:type="z3998:roman">XI</span>
+			<span epub:type="subtitle">The <i epub:type="se:name.vessel.ship">Nautilus</i></span>
+		</h3>
+
+		<h2 epub:type="title">
+			<span epub:type="z3998:roman">XXXV</span>
+			<span epub:type="subtitle">Miss Thorne’s <i xml:lang="fr">Fête Champêtre</i></span>
+		</h2>
+
+		<h4 epub:type="title">
+			<span epub:type="z3998:roman">XI</span>
+			<span epub:type="subtitle" xml:lang="la">Christus Nos Liberavit</span>
+		</h4>
+
 Chapter headers
-***************
+===============
 
 #.	Epigraphs in chapters have the quote source set in small caps, without a leading em-dash and without a trailing period.
 
