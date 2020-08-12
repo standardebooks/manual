@@ -1179,6 +1179,17 @@ Exceptions that are not abbreviations
 		<p>She was learning her A.B.C.s</p>
 		<p>He stopped by the <abbr class="initialism">A.B.C.</abbr> shop.</p>
 
+Other exceptions
+================
+
+#.	The abbreviations :string:`1D`, :string:`2D`, :string:`3D`, and :string:`4D`, meaning first, second, third, and fourth dimensions, are abbreviations but do not have a trailing period.
+
+#.	The words :string:`recto` and :string:`verso` are sometimes abbreviated with an initial and a superscript :string:`o`. They are regular abbreviations, set without periods, and the :string:`o` is superscripted with :html:`<sup>`.
+
+	.. code:: html
+
+		<p><abbr>Ch.</abbr> 1, <abbr>fol.</abbr> 2 <abbr>r<sup>o</sup></abbr>.</p>
+
 Times
 *****
 
