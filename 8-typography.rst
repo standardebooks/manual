@@ -1174,6 +1174,8 @@ Exceptions that are not abbreviations
 
 	-	:string:`TV`, i.e. :string:`television`.
 
+	-	:string:`AC` and :string:`DC`, when referring to electrical current.
+
 	-	:string:`G`, when used in the sense of :string:`G-force`. Also see `8.8.5.4.2 <#8.8.5.4.2>`__.
 
 	-	Stock ticker symbols.
