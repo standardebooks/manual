@@ -38,7 +38,7 @@ Epigraph
 
 A quotation or poem at the start of a book which may set the mood or inspire thoughts about the work to come.
 
-If the epigraph is a poem or quotation from poetry, it must follow the standards for verse described in `High-Level Structural Patterns </manual/VERSION/6-high-level-structural-patterns>`__.
+If the epigraph is a poem or quotation from poetry, it must follow the standards for verse described in `High-Level Structural Patterns </manual/VERSION/7-high-level-structural-patterns>`__.
 
 Acknowledgements
 ================
