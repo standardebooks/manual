@@ -1318,10 +1318,10 @@ Glossary entries
 
 	.. code:: html
 
-		<dt>
+		<dt epub:type="glossterm">
 			<dfn>Coccus</dfn>
 		</dt>
-		<dd>
+		<dd epub:type="glossdef">
 			<p>The genus of Insects including the Cochineal. In these the male is a minute, winged fly, and the female generally a motionless, berrylike mass.</p>
 		</dd>
 
@@ -1329,13 +1329,13 @@ Glossary entries
 
 	.. code:: html
 
-		<dt>
+		<dt epub:type="glossterm">
 			<dfn>Compositae</dfn>
 		</dt>
-		<dt>
+		<dt epub:type="glossterm">
 			<dfn>Compositous Plants</dfn>
 		</dt>
-		<dd>
+		<dd epub:type="glossdef">
 			<p>Plants in which the inflorescence consists of numerous small flowers (florets) brought together into a dense head, the base of which is enclosed by a common envelope. (Examples, the Daisy, Dandelion, <abbr class="eoc">etc.</abbr>)</p>
 		</dd>
 
