@@ -1314,6 +1314,8 @@ Glossary entries
 
 #.	The :html:`<dt>` element contains a single :html:`<dfn>` element, which in turn contains the term to be defined.
 
+#.	The :html:`<dd>` element has :html:`epub:type="glossdef"`.
+
 #.	A :html:`<dd>` element appears after one or more :html:`<dt>` elements, and contains the definition for the preceding :html:`<dt>` element(s). It must contain at least one block-level child, usually :html:`<p>`.
 
 	.. code:: html
@@ -1338,6 +1340,3 @@ Glossary entries
 		<dd epub:type="glossdef">
 			<p>Plants in which the inflorescence consists of numerous small flowers (florets) brought together into a dense head, the base of which is enclosed by a common envelope. (Examples, the Daisy, Dandelion, <abbr class="eoc">etc.</abbr>)</p>
 		</dd>
-
-#.	The :html:`<dd>` element has :html:`epub:type="glossdef"`.
-
