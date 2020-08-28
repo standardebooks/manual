@@ -967,7 +967,7 @@ Examples
 		<footer>
 			<p epub:type="z3998:valediction">Your loving niece,</p>
 			<p class="signature" epub:type="z3998:sender">Mabel</p>
-			<p epub:type="z3998:postscript"><abbr>P.S.</abbr>:ws:`wj`—Lots, please, because some of us are very hungry.</p>
+			<p epub:type="z3998:postscript"><abbr class="initialism">P.S.</abbr>:ws:`wj`—Lots, please, because some of us are very hungry.</p>
 		</footer>
 	</blockquote>
 
