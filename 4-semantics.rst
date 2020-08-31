@@ -63,7 +63,7 @@ Block-level elements are by default rendered with :css:`{ display: block; }`. Se
 
 	#.	:html:`<blockquote>`: A quotation displayed on the block level. This may include non-speech “quotations” like business cards, headstones, telegrams, letters, and so on.
 
-	#.	:html:`<figure>`: Encloses a photograph, chart, or illustration, represented with an `<img>` element. Optionally includes a :html:`<figcaption>` element for a context-appropriate caption.
+	#.	:html:`<figure>`: Encloses a photograph, chart, or illustration, represented with an :html:`<img>` element. Optionally includes a :html:`<figcaption>` element for a context-appropriate caption.
 
 	#.	:html:`<figcaption>`: Only appears as a child of :html:`<figure>`. Represents a context-appropriate caption for the sibling :html:`<img>`. A caption *is not the same* as an :html:`<img>` element’s :html:`alt` text. :html:`alt` text is strictly a textual description of the image used for screen readers, whereas :html:`<figcaption>` has more freedom in its contents, depending on its context.
 
