@@ -648,10 +648,6 @@ Plays and drama
 			width: 20%;
 		}
 
-		[epub|type~="z3998:drama"] td p{
-			text-indent: 0;
-		}
-
 		table[epub|type~="z3998:drama"],
 		[epub|type~="z3998:drama"] table{
 			margin: 1em auto;
@@ -692,6 +688,23 @@ Dialog rows
 			<td epub:type="z3998:persona">Lane</td>
 			<td>I didn’t think it polite to listen, sir.</td>
 		</tr>
+
+	#.	Dialog rows that have dialog broken over several lines, i.e. in dialog in verse form, have `semantics, structure, and CSS for verse. </manual/VERSION/7-high-level-structural-patterns#7.5>`__ The :html:`<td>` element has the :value:`z3998:verse` semantic.
+
+		.. code:: html
+
+			<tr>
+				<td epub:type="z3998:persona">Queen Isabel</td>
+				<td epub:type="z3998:verse">
+					<p>
+						<span>Our gracious brother, I will go with them.</span>
+						<br/>
+						<span>Haply a woman’s voice may do some good,</span>
+						<br/>
+						<span>When articles too nicely urg’d be stood on.</span>
+					</p>
+				</td>
+			</tr>
 
 #.	When several personas speak at once, or a group of personas (“The Actors”) speaks at once, the containing :html:`<tr>` element has the :value:`together` class, and the first :html:`<td>` child has a :html:`rowspan` attribute corresponding to the number of lines spoken together.
 
