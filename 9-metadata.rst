@@ -300,7 +300,7 @@ Additional book metadata
 
 	#.	The :html:`id` attribute is :value:`collection-N` where :value:`N` is a positive integer starting at :value:`1`.
 
-	#.	The element is further refined a :html:`<meta property="collection-type" refines="#collection-N">` element with the value of :html:`set` or :html:`series`. `See the EPUB spec for more details <https://www.w3.org/publishing/epub32/epub-packages.html#sec-collection-type>`__.
+	#.	The element is further refined by a :html:`<meta property="collection-type" refines="#collection-N">` element with the value of :html:`set` or :html:`series`. `See the EPUB spec for more details <https://www.w3.org/publishing/epub32/epub-packages.html#sec-collection-type>`__.
 
 Book production notes
 =====================
@@ -434,7 +434,7 @@ Producer metadata
 
 These elements describe the SE producer who produced the ebook for the Standard Ebooks project.
 
-#.	If there is more than one producer, the first producer is :value:`producer-1`, the second :value:`producere-2`, and so on.
+#.	If there is more than one producer, the first producer is :value:`producer-1`, the second :value:`producer-2`, and so on.
 
 #.	The producer metadata block is identical to the author metadata block, but with :html:`<dc:contributor id="producer-1">` instead of :html:`<dc:creator id="author">`.
 
