@@ -164,7 +164,7 @@ Within section titles, we distinguish between labels, ordinals, titles, and subt
 
 		<h2><span epub:type="label">Canto</span> <span epub:type="ordinal z3998:roman">III</span></h2>
 
-#.	Ordinals are the number specifying the section’s numeric order in a sequence. They are usually wrapped in :html:`<span epub:type="ordinal">` or :html:`<span epub:type="label z3998:roman">`, if the ordinal is a Roman numeral.
+#.	Ordinals are the number specifying the section’s numeric order in a sequence. They are usually wrapped in :html:`<span epub:type="ordinal">` or :html:`<span epub:type="ordinal z3998:roman">`, if the ordinal is a Roman numeral.
 
 	.. code:: html
 
