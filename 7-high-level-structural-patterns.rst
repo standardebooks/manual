@@ -993,24 +993,24 @@ Letter footers
 
 #.	The valediction (for example, “Yours Truly” or “With best regards”) has the semantic inflection of :value:`z3998:valediction`.
 
-#.	The sender’s name has semantic inflection of :value:`z3998:sender`. If the name appears to be a signature to the letter, it has the :value:`signature` class and the corresponding :css:`.signature` CSS.
+#.	The sender’s name has semantic inflection of :value:`z3998:sender`. If the name appears to be a signature to the letter, it has the :value:`z3998:signature` semantic inflection and corresponding CSS.
 
 	.. code:: css
 
-		.signature{
+		[epub|type~="z3998:signature"]{
 			font-variant: small-caps;
 		}
 
 	.. code:: html
 
 		<footer>
-			<p epub:type="z3998:sender" class="signature"><abbr class="name">R. A.</abbr> Johnson</p>
+			<p epub:type="z3998:sender z3998:signature"><abbr class="name">R. A.</abbr> Johnson</p>
 		</footer>
 
 	.. code:: html
 
 		<footer>
-			<p epub:type="z3998:sender"><span class="signature">John Doe</span>, President</p>
+			<p epub:type="z3998:sender"><span epub:type="z3998:signature">John Doe</span>, President</p>
 		</footer>
 
 #.	Postscripts have the semantic inflection of :value:`z3998:postscript` and the following CSS:
@@ -1055,7 +1055,7 @@ Examples
 		text-align: left;
 	}
 
-	.signature{
+	[epub|type~="z3998:signature"]{
 		font-variant: small-caps;
 	}
 
@@ -1066,7 +1066,7 @@ Examples
 		<p>Please may we have some things for a picnic? Gerald will bring them. I would come myself, but I am a little tired. I think I have been growing rather fast.</p>
 		<footer>
 			<p epub:type="z3998:valediction">Your loving niece,</p>
-			<p class="signature" epub:type="z3998:sender">Mabel</p>
+			<p epub:type="z3998:sender z3998:signature">Mabel</p>
 			<p epub:type="z3998:postscript"><abbr class="initialism">P.S.</abbr>:ws:`wj`—Lots, please, because some of us are very hungry.</p>
 		</footer>
 	</blockquote>
@@ -1081,7 +1081,7 @@ Examples
 		<p>I shall write again as soon as anything more is determined on.</p>
 		<footer>
 			<p epub:type="z3998:valediction">Yours, etc.</p>
-			<p class="signature" epub:type="z3998:sender">Edward Gardner</p>
+			<p epub:type="z3998:sender z3998:signature">Edward Gardner</p>
 		</footer>
 	</blockquote>
 
