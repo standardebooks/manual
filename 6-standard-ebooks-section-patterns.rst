@@ -157,11 +157,11 @@ The :html:`<nav>` element’s top-level :html:`<ol>` element contains a list of 
 
 	2.	If there is an :html:`<hgroup>` element:
 
-		1.	If the :html:`<hgroup>`’s closest parent :html:`<section>` or :html:`<article>` has an :html:`epub:type` value of :val:`part`, :val:`division`, or :val:`volume`, then keep all :html:`<hgroup>` children.
+		1.	If the :html:`<hgroup>`’s closest parent :html:`<section>` or :html:`<article>` has an :html:`epub:type` value of :value:`part`, :value:`division`, or :value:`volume`, then keep all :html:`<hgroup>` children.
 
-		2.	Otherwise, if the :html:`<hgroup>`’s closest parent :html:`<section>` or :html:`<article>` has an :html:`epub:type` value of :val:`halftitlepage`, or if the first child of the :html:`<hgroup>` has the :val:`title` semantic, then discard any children with the :val:`subtitle` semantic.
+		2.	Otherwise, if the :html:`<hgroup>`’s closest parent :html:`<section>` or :html:`<article>` has an :html:`epub:type` value of :value:`halftitlepage`, or if the first child of the :html:`<hgroup>` has the :value:`title` semantic, then discard any children with the :value:`subtitle` semantic.
 
-		3.	Then, the text becomes the inner XHTML of the first :html:`<hgroup>` child. If there is a second child, append :string:`: ` to the text, then the inner XHTML of the second child. The above semantics are then removed.
+		3.	Then, the text becomes the inner XHTML of the first :html:`<hgroup>` child. If there is a second child, append a colon and space to the text, then the inner XHTML of the second child. The above semantics are then removed.
 
 Examples
 ~~~~~~~~
@@ -345,6 +345,10 @@ The half title page
 
 #.	The half title page contains one :html:`<section id="halftitlepage" epub:type="halftitlepage">` element, which in turn contains one :html:`<h1 epub:type="fulltitle">` element containing the full title of the ebook, including subtitles. The half title page is the only place where an :html:`<h1>` element may appear in a Standard Ebook.
 
+#.	If the ebook has a subtitle, it is included in the half title page.
+
+#.	The :value:`fulltitle` semantic is applied to the top-level heading element in the half title page. This is usually either :html:`<hgroup>` in works with subtitles or :html:`<h1>` in works without.
+
 #.	Formatting for the :html:`<h1>` element follows patterns in `7.2.6.7 </manual/VERSION/7-high-level-structural-patterns#7.2.6.7>`__ and `7.2.6.8 </manual/VERSION/7-high-level-structural-patterns#7.2.6.8>`__.
 
 #.	A complete half title page looks like the following template:
@@ -360,10 +364,10 @@ The half title page
 			</head>
 			<body epub:type="frontmatter">
 				<section id="halftitlepage" epub:type="halftitlepage">
-					<h1 epub:type="fulltitle">
-						<span epub:type="title">His Last Bow</span>
-						<span epub:type="subtitle">Some Reminiscences of Sherlock Holmes</span>
-					</h1>
+					<hgroup epub:type="fulltitle">
+						<h1 epub:type="title">His Last Bow</h1>
+						<h2 epub:type="subtitle">Some Reminiscences of Sherlock Holmes</h2>
+					</hgroup>
 				</section>
 			</body>
 		</html>
