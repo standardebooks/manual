@@ -20,7 +20,7 @@ Sectioning
 				break-after: page;
 			}
 
-#.	In :html:`<section>` or :html:`<articles>` elements that have titles, the first child element is an :html:`<h1>`–:html:`<h6>` element, or a :html:`<header>` element containing the section’s title.
+#.	In :html:`<section>` or :html:`<articles>` elements that have titles, the first child element is an :html:`<h1>`–:html:`<h6>` element, an :html:`<hgroup>` element for grouping ordinals, titles, and subtitles, or a :html:`<header>` element containing the section’s title.
 
 Recomposability
 ===============
@@ -43,7 +43,7 @@ Book 1 (:path:`book-1.xhtml`):
 .. code:: html
 
 	<section id="book-1" epub:type="division">
-		<h2 epub:type="title">Book <span epub:type="z3998:roman">I</span></h2>
+		<h2><span epub:type="label">Book</span> <span epub:type="ordinal z3998:roman">I</span></h2>
 	</section>
 
 Book 1, Part 2 (:path:`part-1-2.xhtml`):
@@ -52,7 +52,7 @@ Book 1, Part 2 (:path:`part-1-2.xhtml`):
 
 	<section id="book-1" epub:type="division">
 		<section id="part-1-2" epub:type="part">
-			<h2 epub:type="title">Part <span epub:type="z3998:roman">II</span></h2>
+			<h2><span epub:type="label">Part</span> <span epub:type="ordinal z3998:roman">II</span></h2>
 		</section>
 	</section>
 
@@ -63,7 +63,7 @@ Book 1, Part 2, Chapter 3 (:path:`chapter-1-2-3.xhtml`):
 	<section id="book-1" epub:type="division">
 		<section id="part-1-2" epub:type="part">
 			<section id="chapter-3" epub:type="chapter">
-				<h2 epub:type="title">Chapter <span epub:type="z3998:roman">III</span></h2>
+				<h2><span epub:type="label">Chapter</span> <span epub:type="ordinal z3998:roman">III</span></h2>
 				<p>...</p>
 				<p>...</p>
 			</section>
@@ -73,7 +73,7 @@ Book 1, Part 2, Chapter 3 (:path:`chapter-1-2-3.xhtml`):
 Headers
 *******
 
-#.	:html:`<h1>`–:html:`<h6>` elements are used for headers of sections that are structural divisions of a document, i.e., divisions that appear in the table of contents. :html:`<h1>`–:html:`<h6>` elements *are not* used for headers of components that are not in the table of contents. For example, they are not used to mark up the title of a short poem in a chapter, where the poem itself is not a structural component of the larger ebook.
+#.	:html:`<h1>`–:html:`<h6>` elements are used for headers of sections that are structural divisions of a document, i.e., divisions that appear in the table of contents. :html:`<h1>`–:html:`<h6>` elements *are not* used for headers of components that are not in the table of contents. For example, they are *not* used to mark up the title of a short poem in a chapter, where the poem itself is not a structural component of the larger ebook.
 
 #.	A section containing an :html:`<h1>`–:html:`<h6>` appears in the table of contents.
 
@@ -84,7 +84,7 @@ Headers
 	.. code:: html
 
 		<section id="part-2" epub:type="part">
-			<h2 epub:type="title">Part <span epub:type="z3998:roman">II</span></h2>
+			<h2><span epub:type="label">Part</span> <span epub:type="ordinal z3998:roman">II</span></h2>
 		</section>
 
 	Consider this example for the file :path:`chapter-2-3.xhtml`:
@@ -95,7 +95,7 @@ Headers
 
 			<section id="part-2" epub:type="part">
 				<section id="chapter-2-3" epub:type="chapter">
-					<h2 epub:type="title z3998:roman">III</h2>
+					<h2 epub:type="ordinal z3998:roman">III</h2>
 					...
 				</section>
 			</section>
@@ -106,12 +106,99 @@ Headers
 
 			<section id="part-2" epub:type="part">
 				<section id="chapter-2-3" epub:type="chapter">
-					<h3 epub:type="title z3998:roman">III</h3>
+					<h3 epub:type="ordinal z3998:roman">III</h3>
 					...
 				</section>
 			</section>
 
-#.	Each :html:`<h1>`–:html:`<h6>` element has a direct parent :html:`<section>` or :html:`<article>` element.
+#.	Each :html:`<h1>`–:html:`<h6>` element has a direct parent :html:`<section>`, :html:`<article>`, :html:`<header>`, or :html:`<hgroup>` element.
+
+#.	:html:`<hgroup>` elements are used to group :html:`<h1>`–:html:`<h6>` elements together when a section’s title has multiple components, for example a header that contains an ordinal and a title, or a header that includes a title and a subtitle.
+
+	#.	:html:`<hgroup>` elements only have :html:`<h1>`–:html:`<h6>` children.
+
+	#.	:html:`<hgroup>` elements are only present if *more than one* :html:`<h1>`–:html:`<h6>` element must be grouped together.
+
+	#.	The first :html:`<h1>`–:html:`<h6>` child of an :html:`<hgroup>` element is the header level for the entire :html:`<hgroup>`. For example, the following :html:`<hgroup>` is at the :html:`<h3>` header level, even though it contains an :html:`<h4>`:
+
+		.. code:: html
+
+			<hgroup>
+				<h3 epub:type="ordinal z3998:roman">III</h3>
+				<h4 epub:type="title">At the Villa Geneviève</h4>
+			</hgroup>
+
+	#.	:html:`<hgroup>` elements in which :html:`<h6>` is the first child have all subsequent children as :html:`<h6>` as well.
+
+#.	Headers follow regular rules for italics, with the exception that headers that are entirely non-English-language are not italicized. Even though they are not italicized, they retain :html:`xml:lang` semantics on the parent element.
+
+	.. code:: html
+
+		<hgroup>
+			<h3 epub:type="ordinal z3998:roman">XI</h3>
+			<h4 epub:type="title">The <i epub:type="se:name.vessel.ship">Nautilus</i></h4>
+		</hgroup>
+
+	.. code:: html
+
+		<hgroup>
+			<h3 epub:type="ordinal z3998:roman">XI</h3>
+			<h4 epub:type="title" xml:lang="la">Christus Nos Liberavit</h4>
+		</hgroup>
+
+	.. code:: html
+
+		<hgroup>
+			<h3 epub:type="ordinal z3998:roman">XI</h3>
+			<h4 epub:type="title">Miss Thorne’s <i xml:lang="fr">Fête Champêtre</i></h4>
+		</hgroup>
+
+Parts of a section title
+========================
+
+Within section titles, we distinguish between labels, ordinals, titles, and subtitles.
+
+#.	Labels are the part of a title that precedes the ordinal. Because they only appear next to ordinals, they are usually wrapped in :html:`<span epub:type="label">` within their parent :html:`<h1>`–:html:`<h6>` element.
+
+	.. code:: html
+
+		<h2><span epub:type="label">Canto</span> <span epub:type="ordinal z3998:roman">III</span></h2>
+
+#.	Ordinals are the number specifying the section’s numeric order in a sequence. They are usually wrapped in :html:`<span epub:type="ordinal">` or :html:`<span epub:type="label z3998:roman">`, if the ordinal is a Roman numeral.
+
+	.. code:: html
+
+		<h2><span epub:type="label">Chapter</span> <span epub:type="ordinal z3998:roman">IV</span></h2>
+
+	Ordinals may also appear without a label:
+
+	.. code:: html
+
+		<h2 epub:type="ordinal z3998:roman">IV</h2>
+
+#.	Labels and ordinals are wrapped in an :html:`<h1>`–:html:`<h6>` element, but that wrapper element is not a semantic title.
+
+#.	Titles are the main title of the section. Often sections may have labels and ordinals, but not titles; or sections may have a title, but no label or ordinal.
+
+	.. code:: html
+
+		<h2 epub:type="title">The New Villa</h2>
+
+	.. code:: html
+
+		<hgroup>
+			<h2 epub:type="ordinal z3998:roman">IV</h2>
+			<h3 epub:type="title">The Letter Signed “Bella”</h3>
+		</hgroup>
+
+#.	Subtitles are supplementary titles in addition to the main title.
+
+	.. code:: html
+
+		<hgroup>
+			<h2 epub:type="title">Between the Scenes</h2>
+			<h3 epub:type="subtitle">Progress of the Story Through the Post</h3>
+		</hgroup>
 
 Header patterns
 ===============
@@ -120,7 +207,7 @@ Header patterns
 
 	.. code:: html
 
-		<h2 epub:type="title z3998:roman">XI</h2>
+		<h2 epub:type="ordinal z3998:roman">XI</h2>
 
 #.	Sections with titles but no ordinal (i.e. chapter) numbers:
 
@@ -130,51 +217,51 @@ Header patterns
 
 #.	Sections with titles and ordinal (i.e. chapter) numbers:
 
-	.. code:: css
-
-		span[epub|type~="subtitle"]{
-			display: block;
-			font-weight: normal;
-		}
-
 	.. code:: html
 
-		<h2 epub:type="title">
-			<span epub:type="z3998:roman">XI</span>
-			<span epub:type="subtitle">Who Stole the Tarts?</span>
-		</h2>
+		<hgroup>
+			<h2 epub:type="ordinal z3998:roman">XI</h2>
+			<h3 epub:type="title">Who Stole the Tarts?</h3>
+		</hgroup>
 
 #.	Sections titles and subtitles but no ordinal (i.e. chapter) numbers:
 
-	.. code:: css
+	.. code:: html
 
-		span[epub|type~="subtitle"]{
-			display: block;
-			font-weight: normal;
-		}
+		<hgroup>
+			<h2 epub:type="title">An Adventure</h2>
+			<h3 epub:type="subtitle">(A Driver’s Story)</h3>
+		</hgroup>
+
+#.	Sections with labels and ordinals:
 
 	.. code:: html
 
-		<h2 epub:type="title">
-			<span>An Adventure</span>
-			<span epub:type="subtitle">(A Driver’s Story)</span>
+		<h2>
+			<span epub:type="label">Book</span>
+			<span epub:type="ordinal z3998:roman">II</span>
 		</h2>
+
+#.	Sections with labels, ordinals, and titles:
+
+	.. code:: html
+
+		<hgroup>
+			<h2>
+				<span epub:type="label">Book</span>
+				<span epub:type="ordinal z3998:roman">II</span>
+			</h2>
+			<h3 epub:type="title">The Man in the Street</h3>
+		</hgroup>
 
 #.	Sections that have a non-unique title, but that are required to be identifed in the ToC with a unique title (e.g., multiple poems identified as “Sonnet” in the body matter, which require their ToC entry to contain the poem’s first line to differentiate them):
 
-	.. code:: css
-
-		span[epub|type~="subtitle"]{
-			display: block;
-			font-weight: normal;
-		}
-
 	.. code:: html
 
-		<h2 epub:type="title">
-			<span>Sonnet</span>
-			<span hidden="hidden" epub:type="subtitle">Happy Is England!</span>
-		</h2>
+		<hgroup>
+			<h2 epub:type="title">Sonnet</h2>
+			<h3 hidden="hidden" epub:type="subtitle">Happy Is England!</h3>
+		</hgroup>
 
 #.	Sections that require titles, but that are not in the table of contents:
 
@@ -211,10 +298,10 @@ Header patterns
 
 	.. code:: html
 
-		<h1 epub:type="fulltitle">
-			<span epub:type="title">His Last Bow</span>
-			<span epub:type="subtitle">Some Reminiscences of Sherlock Holmes</span>
-		</h1>
+		<hgroup epub:type="fulltitle">
+			<h1 epub:type="title">His Last Bow</h1>
+			<h2 epub:type="subtitle">Some Reminiscences of Sherlock Holmes</h2>
+		</hgroup>
 
 Bridgeheads
 ===========
@@ -242,14 +329,14 @@ Bridgeheads are sections in a chapter header that give an abstract or summary of
 	.. code:: html
 
 		<header>
-			<h2 epub:type="title z3998:roman">I</h2>
+			<h2 epub:type="ordinal z3998:roman">I</h2>
 			<p epub:type="bridgehead">Which treats of the character and pursuits of the famous gentleman Don Quixote of La Mancha.</p>
 		</header>
 
 	.. code:: html
 
 		<header>
-			<h2 epub:type="title z3998:roman">X</h2>
+			<h2 epub:type="ordinal z3998:roman">X</h2>
 			<p epub:type="bridgehead">Our first night⁠:ws:`wj`—Under canvas⁠:ws:`wj`—An appeal for help⁠:ws:`wj`—Contrariness of teakettles, how to overcome⁠:ws:`wj`—Supper⁠:ws:`wj`—How to feel virtuous⁠:ws:`wj`—Wanted! a comfortably-appointed, well-drained desert island, neighbourhood of South Pacific Ocean preferred⁠:ws:`wj`—Funny thing that happened to George’s father⁠:ws:`wj`—A restless night.</p>
 		</header>
 
@@ -329,7 +416,7 @@ Epigraphs in section headers
 		.. code:: html
 
 			<header>
-				<h2 epub:type="title z3998:roman">II</h2>
+				<h2 epub:type="ordinal z3998:roman">II</h2>
 				<blockquote epub:type="epigraph">
 					<p>“Desire no more than to thy lot may fall. …”</p>
 					<cite>—Chaucer.</cite>
@@ -347,7 +434,7 @@ Epigraphs in section headers
 		.. code:: html
 
 			<header>
-				<h2 epub:type="title z3998:roman">II</h2>
+				<h2 epub:type="ordinal z3998:roman">II</h2>
 				<blockquote epub:type="epigraph">
 					<p>“Desire no more than to thy lot may fall. …”</p>
 					<cite>Chaucer</cite>
@@ -813,7 +900,7 @@ Works that are complete plays
 
 		<body epub:type="bodymatter z3998:fiction z3998:drama">
 			<section id="act-1" epub:type="chapter z3998:scene">
-				<h2 epub:type="title">Act <span epub:type="z3998:roman">I</span></h2>
+				<h2><span epub:type="label">Act</span> <span epub:type="ordinal z3998:roman">I</span></h2>
 				<p>Scene: Morning-room in Algernon’s flat in Half-Moon Street. The room is luxuriously and artistically furnished. The sound of a piano is heard in the adjoining room.</p>
 				<table>
 					...

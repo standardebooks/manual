@@ -151,66 +151,65 @@ The :html:`<nav>` element’s top-level :html:`<ol>` element contains a list of 
 
 #.	The :value:`title`, :value:`subtitle`, :title:`ordinal`, and any `related title epub semantics <https://idpf.github.io/epub-vocabs/structure/#titles>`__ are not included in ToC entries. Their usage context is only within actual heading content.
 
-#.	Chapters without titles are represented by their Roman ordinal, without the word :string:`Chapter`.
+#.	The text of the :html:`<a>` element is decided as follows:
 
-	.. code:: html
+	1.	If there is no :html:`<hgroup>` in the section, the text becomes the inner XHTML of the top :html:`<h1>`–:html:`<h6>` element with any of the above semantics removed.
 
-		<a href="text/chapter-11.xhtml" epub:type="z3998:roman">XI</a>
+	2.	If there is an :html:`<hgroup>` element:
 
-#.	Chapters with titles are represented by their Roman ordinal, followed by a colon and a space, followed by the chapter title.
+		1.	If the :html:`<hgroup>`’s closest parent :html:`<section>` or :html:`<article>` has an :html:`epub:type` value of :val:`part`, :val:`division`, or :val:`volume`, then keep all :html:`<hgroup>` children.
 
-	.. code:: html
+		2.	Otherwise, if the :html:`<hgroup>`’s closest parent :html:`<section>` or :html:`<article>` has an :html:`epub:type` value of :val:`halftitlepage`, or if the first child of the :html:`<hgroup>` has the :val:`title` semantic, then discard any children with the :val:`subtitle` semantic.
 
-		<a href="text/chapter-3.xhtml"><span epub:type="z3998:roman">III</span>: The Moon Rock</a>
+		3.	Then, the text becomes the inner XHTML of the first :html:`<hgroup>` child. If there is a second child, append :string:`: ` to the text, then the inner XHTML of the second child. The above semantics are then removed.
 
-#.	Chapters with unique identifiers (i.e. not :string:`Chapter`, but something unique to the style of the book, like :string:`Book` or :string:`Stave`), include that unique identifier in the :html:`<a>` element.
+Examples
+~~~~~~~~
 
-	.. code:: html
+.. code:: html
 
-		<a href="text/chapter-1.xhtml">Stave <span epub:type="z3998:roman">I</span>: Marley’s Ghost</a>
+	<article id="a-daughter-of-albion" epub:type="se:short-story">
+		<h2 epub:type="title">A Daughter of Albion</h2>
+		<p>...</p>
+	</article>
 
-#.	High-level sections (like parts or divisions) without titles are represented by their identifier (like :string:`Book` or :string:`Part`), followed by their Roman ordinal.
+Result: :html:`A Daughter of Albion`
 
-	.. code:: html
+.. code:: html
 
-		<a href="text/book-1.xhtml">Book <span epub:type="z3998:roman">I</span></a>
+	<section id="book-1" epub:type="part">
+		<hgroup>
+			<h2><span epub:type="label">Book <span epub:type="ordinal z3998:roman">I</span></h2>
+			<h3 epub:type="title">The Coming of the Martians</h3>
+		</hgroup>
+		<p>...</p>
+	</section>
 
-#.	High-level sections (like parts or divisions) with titles include the title.
+Result: :html:`Book <span epub:type="z3998:roman">I</span>: The Coming of the Martians`
 
-	.. code:: html
+.. code:: html
 
-		<a href="text/book-10.xhtml">Book <span epub:type="z3998:roman">X</span>: The Boys</a>
+	<section id="chapter-1" epub:type="chapter">
+		<hgroup>
+			<h2 epub:type="ordinal z3998:roman">I</h2>
+			<h3 epub:type="title">A Fellow Traveller</h3>
+		</hgroup>
+		<p>...</p>
+	</section>
 
-#.	Sections that are not chapters do not include their subtitles in the ToC.
+Result: :html:`<span epub:type="z3998:roman">I</span>: A Fellow Traveller`
 
-	.. class:: wrong
+.. code:: html
 
-		.. code:: html
+	<section id="epilogue" epub:type="epilogue">
+		<hgroup>
+			<h3 epub:type="title">Epilogue</h3>
+			<h4 epub:type="subtitle">A Morning Call</h4>
+		</hgroup>
+		<p>...</p>
+	</section>
 
-			<a href="text/epilogue.xhtml">Epilogue: A Morning Call</a>
-
-	.. class:: corrected
-
-		.. code:: html
-
-			<a href="text/epilogue.xhtml">Epilogue</a>
-
-#.	High-level sections (like parts or divisions) with titles include the title.
-
-	.. code:: html
-
-		<a href="text/book-10.xhtml">Book <span epub:type="z3998:roman">X</span>: The Boys</a>
-
-#.	Entries for half title pages do not include the subtitle.
-
-	.. code:: html
-
-		<li>
-			<a href="text/halftitle.xhtml">His Last Bow</a>
-			<ol>
-				...
-			</ol>
-		</li>
+Result: :html:`Epilogue`
 
 The landmarks :html:`<nav>` element
 ===================================

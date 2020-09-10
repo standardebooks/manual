@@ -191,61 +191,7 @@ The :html:`<title>` element
 
 #.	The :html:`<title>` element contains an appropriate description of the local file only. It does not contain the book title.
 
-Titles of files that are an individual chapter or part division
-===============================================================
-
-#.	Convert chapter or part numbers that are in Roman numerals to decimal numbers. Do not convert other Roman numerals that may be in the chapter title.
-
-	.. class:: corrected
-
-		.. code:: html
-
-			<title>Chapter 10</title>
-
-#.	If a chapter or part is only an ordinal and has no title or subtitle, the :html:`<title>` element is :string:`Chapter` followed by the chapter number.
-
-	.. class:: corrected
-
-		.. code:: html
-
-			<title>Chapter 4</title>
-			...
-			<h2 epub:type="title z3998:roman">IV</h2>
-			...
-			<p>The chapter body...</p>
-
-#.	If a chapter or part has a title or subtitle, the :html:`<title>` element is :string:`Chapter`, followed by the chapter number in decimal, followed by a colon and a single space, followed by the title or subtitle.
-
-	.. class:: corrected
-
-		.. code:: html
-
-			<title>Chapter 6: The Reign of Louis XVI</title>
-			...
-			<h2 epub:type="title">
-				<span epub:type="z3998:roman">VI</span>
-				<span epub:type="subtitle">The Reign of Louis <span epub:type="z3998:roman">XVI</span></h2>
-			...
-			<p>The chapter body...</p>
-
-Titles of files that are not chapter or part divisions
-======================================================
-
-#.	Files that are not a chapter or a part division, like a preface, introduction, or epigraph, have a :html:`<title>` element that contains the complete title of the section.
-
-	.. class:: corrected
-
-		.. code:: html
-
-			<title>Preface</title>
-
-#.	If a file contains a section with a title or subtitle, the :html:`<title>` element contains the title, followed by a colon and a single space, followed by the title or subtitle.
-
-	.. class:: corrected
-
-		.. code:: html
-
-			<title>Quevedo and His Works: With an Essay on the Picaresque Novel</title>
+#.	The value of the title element is determined by the algorithm used to determine the file's ToC entry, except that no XHTML tags are allowed in the :html:`<title>` element.
 
 Headers
 *******
