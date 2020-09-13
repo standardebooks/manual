@@ -181,9 +181,9 @@ Italicizing non-English words and phrases
 
 #.	Words that are in a non-English “alien” language (i.e. one that is made up, like in a science fiction or fantasy work) are italicized and given an IETF languate tag in a custom namespace. Custom namespaces begin consist of :value:`x-TAG`, where :value:`TAG` is a custom descriptor of 8 characters or less.
 
-.. code:: html
+	.. code:: html
 
-	<p>“<i xml:lang="x-arcturan">Dolm</i>,” said Haunte.</p>
+		<p>“<i xml:lang="x-arcturan">Dolm</i>,” said Haunte.</p>
 
 Italicizing or quoting newly-used English words
 ===============================================
