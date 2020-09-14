@@ -62,7 +62,7 @@ Book 1, Part 2, Chapter 3 (:path:`chapter-1-2-3.xhtml`):
 
 	<section id="book-1" epub:type="division">
 		<section id="part-1-2" epub:type="part">
-			<section id="chapter-3" epub:type="chapter">
+			<section id="chapter-1-2-3" epub:type="chapter">
 				<h4><span epub:type="label">Chapter</span> <span epub:type="ordinal z3998:roman">III</span></h4>
 				<p>...</p>
 				<p>...</p>
