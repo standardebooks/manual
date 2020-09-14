@@ -52,7 +52,7 @@ Book 1, Part 2 (:path:`part-1-2.xhtml`):
 
 	<section id="book-1" epub:type="division">
 		<section id="part-1-2" epub:type="part">
-			<h2><span epub:type="label">Part</span> <span epub:type="ordinal z3998:roman">II</span></h2>
+			<h3><span epub:type="label">Part</span> <span epub:type="ordinal z3998:roman">II</span></h3>
 		</section>
 	</section>
 
@@ -63,7 +63,7 @@ Book 1, Part 2, Chapter 3 (:path:`chapter-1-2-3.xhtml`):
 	<section id="book-1" epub:type="division">
 		<section id="part-1-2" epub:type="part">
 			<section id="chapter-3" epub:type="chapter">
-				<h2><span epub:type="label">Chapter</span> <span epub:type="ordinal z3998:roman">III</span></h2>
+				<h4><span epub:type="label">Chapter</span> <span epub:type="ordinal z3998:roman">III</span></h4>
 				<p>...</p>
 				<p>...</p>
 			</section>
