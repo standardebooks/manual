@@ -758,6 +758,11 @@ Plays and drama
 			font-variant: all-small-caps;
 		}
 
+		section[epub|type~="z3998:scene"] > p{
+			margin: 1em auto;
+			width: 75%;
+		}
+
 Dialog rows
 ===========
 
