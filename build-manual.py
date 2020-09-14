@@ -245,9 +245,9 @@ def main() -> int:
 			# Replace <pre> with <figure>.
 			# Do this last, because editing with BS4 and pretty printing can muck up
 			# spacing in <pre> elements if the elements are removed early
-			html = regex.sub(r"<pre data-language=\"([^\"]+?)\">", r"""<figure><code class="\1 full">""", html)
-			html = regex.sub(r"<pre class=\"([^\"]+?)\" data-language=\"([^\"]+?)\">", r"""<figure class="\1"><code class="\2 full">""", html)
-			html = regex.sub(r"<pre data-language=\"([^\"]+?)\" class=\"([^\"]+?)\">", r"""<figure class="\2"><code class="\1 full">""", html)
+			html = regex.sub(r"<pre data-language=\"([^\"]+?)\">", r"""<figure class="\1 full"><code class="\1 full">""", html)
+			html = regex.sub(r"<pre class=\"([^\"]+?)\" data-language=\"([^\"]+?)\">", r"""<figure class="\1 \2 full"><code class="\2 full">""", html)
+			html = regex.sub(r"<pre data-language=\"([^\"]+?)\" class=\"([^\"]+?)\">", r"""<figure class="\1 \2 full"><code class="\1 full">""", html)
 			html = regex.sub(r"</pre>", r"</code></figure>", html)
 
 			# Fill in <title> elements
