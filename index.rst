@@ -21,9 +21,9 @@ The manual follows a kind of `semantic versioning <https://semver.org>`__. The l
 
 Typo fixes and minor corrections that do not make material changes to the manual do not increment a version number.
 
-An update that contains more than just corrections, but does not change existing section numbers (but may add new section numbers), increments the patch number.
+An update that contains more than just corrections, but does not change the numbering of existing sections (but may add new sections in a non-breaking manner), increments the patch number.
 
-An update that changes existing section numbers increments the minor number.
+An update that changes the numbering of existing sections increments the minor number.
 
 An update that changes top-level sections increments the major number.
 
