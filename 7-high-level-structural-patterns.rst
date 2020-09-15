@@ -1288,9 +1288,9 @@ Endnotes
 
 #.	Ebooks do not have footnotes, only endnotes. Footnotes are instead converted to endnotes.
 
-#.	“Ibid.” is a Latinism commonly used in endnotes to indicate that the source for a quotation or reference is the same as the last-mentioned source.
+#.	:string:`Ibid.` is a Latinism commonly used in endnotes to indicate that the source for a quotation or reference is the same as the last-mentioned source.
 
-	When the last-mentioned source is in the previous endnote, Ibid. is replaced by the full reference; otherwise Ibid. is left as-is. Since ebooks use popup endnotes, “Ibid.” becomes meaningless without context.
+	When the last-mentioned source is in the previous endnote, :string:`Ibid.` is replaced by the full reference; otherwise :string:`Ibid.` is left as-is. Since ebooks use popup endnotes, :string:`Ibid.` becomes meaningless without context.
 
 Noterefs
 ========
