@@ -794,6 +794,10 @@ Dialog rows
 
 	.. code:: css
 
+		tr.together{
+			break-inside: avoid;
+		}
+
 		tr.together td{
 			padding: 0 .5em 0 0;
 			vertical-align: middle;
