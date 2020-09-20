@@ -316,9 +316,28 @@ Indentation
 
 #.	Paragraphs that directly follow another paragraph are indented by 1em.
 
-#.	The first line of body text in a section, or any text following a visible break in text flow (like a header, a scene break, a figure, a block quotation, etc.), is not indented.
+#.	The first line of body text in a section, or any text following a visible break in text flow (like a header, a scene break, a figurem etc.), is not indented, with the exception of block quotations.
 
-	For example: in a block quotation, there is a margin before the quotation and after the quotation. Thus, the first line of the quotation is not indented, and the first line of body text after the block quotation is also not indented.
+	#.	Body text following a block quotation is indented only if the text begins a new semantic paragraph. Otherwise, if the body text following a block quotation is semantically part of the paragraph preceding the block quotation, it is not indented. Such non-indented paragraphs have :html:`class="continued"`, which removes the default indentation.
+
+		.. code:: html
+
+			<p>He sat down before a writing-table and, taking pen and ink, wrote on a slip of paper as follows:⁠—</p>
+			<blockquote epub:type="z3998:letter">
+				<p>The Bishop of Barchester is dead.</p>
+			</blockquote>
+			<p>“There,” said he. “Just take that to the telegraph office at the railway station and give it in as it is.”</p>
+
+		.. code:: html
+
+			<p>He opened the cover in which the message was enclosed and, having read it, he took his pen and wrote on the back of it⁠—</p>
+			<blockquote epub:type="z3998:letter">
+				<p epub:type="z3998:salutation">For the Earl of ⸻,</p>
+				<footer>
+					<p epub:type="z3998:valediction">With the Earl of ⸻’s compliments</p>
+				</footer>
+			</blockquote>
+			<p class="continued">and sent it off again on its journey.</p>
 
 Headers
 *******

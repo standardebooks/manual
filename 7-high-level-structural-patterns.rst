@@ -544,10 +544,6 @@ Unfortunately there’s no great way to semantically format poetry in HTML. As s
 			margin-top: 1em;
 		}
 
-		[epub|type~="z3998:poem"] + p{
-			text-indent: 0;
-		}
-
 #.	Each stanza contains :html:`<span>` elements, each one representing a line in the stanza, styled with this CSS:
 
 	.. code:: css
@@ -652,10 +648,6 @@ Note that below we include CSS for the :css:`.i2` class, even though it’s not 
 
 	[epub|type~="z3998:poem"] p + p{
 		margin-top: 1em;
-	}
-
-	[epub|type~="z3998:poem"] + p{
-		text-indent: 0;
 	}
 
 	p span.i1{
@@ -1274,7 +1266,9 @@ Examples
 					<h2 epub:type="title">List of Illustrations</h2>
 					<ol>
 						<li>
-							<a href="../text/preface.xhtml#the-edge-of-the-world">The Edge of the World</a>
+							<p>
+								<a href="../text/preface.xhtml#the-edge-of-the-world">The Edge of the World</a>
+							</p>
 						</li>
 						...
 					</ol>
