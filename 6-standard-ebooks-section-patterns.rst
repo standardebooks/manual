@@ -262,7 +262,7 @@ The titlepage
 
 #.	The titlepage contains one :html:`<section id="titlepage" epub:type="titlepage">` element which in turn contains one :html:`<img src="../images/titlepage.svg">` element.
 
-#.	The :html:`<img>` element has its :html:`alt` attribute set to :string:`The titlepage for the Standard Ebooks edition of TITLE_STRING`, where :string:`TITLE_STRING` is the `Standard Ebooks title string </manual/VERSION/6-standard-ebooks-sectoin-patterns#6.1>`__ for the ebook.
+#.	The :html:`<img>` element has its :html:`alt` attribute set to :string:`The titlepage for the Standard Ebooks edition of TITLE_STRING`, where :string:`TITLE_STRING` is the `Standard Ebooks title string </manual/VERSION/6-standard-ebooks-section-patterns#6.1>`__ for the ebook.
 
 #.	A complete titlepage looks like the following template:
 
