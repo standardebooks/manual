@@ -74,7 +74,7 @@ Books without subtitles
 .. code:: html
 
 	<dc:title id="title">Short Fiction</dc:title>
-	<meta property="file-as" refines="#title">Short Fiction</meta>`
+	<meta property="file-as" refines="#title">Short Fiction</meta>
 
 Books with subtitles
 ====================
