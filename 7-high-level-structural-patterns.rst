@@ -697,6 +697,7 @@ Plays and drama
 		[epub|type~="z3998:drama"],
 		[epub|type~="z3998:drama"] table{
 			border-collapse: collapse;
+			margin: 1em auto;
 		}
 
 		[epub|type~="z3998:drama"] tr:first-child td{
@@ -725,11 +726,6 @@ Plays and drama
 			-epub-hyphens: none;
 			text-align: right;
 			width: 20%;
-		}
-
-		table[epub|type~="z3998:drama"],
-		[epub|type~="z3998:drama"] table{
-			margin: 1em auto;
 		}
 
 		[epub|type~="z3998:stage-direction"]{
