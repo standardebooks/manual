@@ -50,6 +50,48 @@ This section covers general patterns used when producing XHTML that are not spec
 			<p id="p-4">...</p>
 			<p>...</p>
 
+#.	:html:`id` attributes on non-sectioning elements are unique across the entire ebook.
+
+	#.	If an element requires an :html:`id` attribute that would conflict with one in a different file, the :html:`id` attribute an of the closest parent sectioning element, followed by :string:`-`, is prepended to each :html:`id` attribute to differentiate them.
+
+		.. class:: wrong
+
+			.. code:: html
+
+				<!-- chapter-1.xhtml -->
+				<section id="book-1" epub:type="division">
+					<section id="chapter-1" epub:type="chapter">
+						<p id="p-1">...</p>
+					</section>
+				</section>
+
+
+				<!-- chapter-2.xhtml -->
+				<section id="book-1" epub:type="division">
+					<section id="chapter-2" epub:type="chapter">
+						<p id="p-1">...</p>
+					</section>
+				</section>
+
+		.. class:: corrected
+
+			.. code:: html
+
+				<!-- chapter-1.xhtml -->
+				<section id="book-1" epub:type="division">
+					<section id="chapter-1" epub:type="chapter">
+						<p id="chapter-1-p-1">...</p>
+					</section>
+				</section>
+
+
+				<!-- chapter-2.xhtml -->
+				<section id="book-1" epub:type="division">
+					<section id="chapter-2" epub:type="chapter">
+						<p id="chapter-2-p-1">...</p>
+					</section>
+				</section>
+
 :html:`class` attributes
 ************************
 
