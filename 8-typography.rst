@@ -583,6 +583,16 @@ Partially-obscured words
 
 		<p>It was the year 192-	in the town of Metropolis.</p>
 
+#.	A non-breaking hyphen (:utf:`‑` or U+2011) is used when a single letter is obscured in a word.
+
+	.. code:: html
+
+		<p>He performed Mozart’s famous canon, “Leck mich im A‑sche.”</p>
+
+	.. warning::
+
+		When adding non-breaking hyphens for obscured letters, beware that :bash:`se typogrify` will incorrectly convert them to regular hyphens!
+
 #.	A two-em-dash (:utf:`⸺` or U+2E3A) preceded by a word joiner glyph (U+2060) is used in *partially* obscured word.
 
 	.. code:: html
