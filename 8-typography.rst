@@ -101,7 +101,7 @@ Italicizing individual letters
 
 		<p>He often rolled his <i epub:type="z3998:grapheme">r</i>’s.</p>
 
-#.	Individual letters that are *not* graphemes (for example letters that might be referring to names, the shapes of the letters themselves, or concepts) are *not* italicized.
+#.	Individual letters that are *not* graphemes (for example letters that might be referring to names, the shapes of the letters themselves, musical notes or keys, or concepts) are *not* italicized.
 
 	.. code:: html
 
@@ -114,6 +114,10 @@ Italicizing individual letters
 	.. code:: html
 
 		<p>His trident had the shape of an E.</p>
+
+	.. code:: html
+
+		<p>The piece was in the key of C major.</p>
 
 #.	The ordinal :string:`nth` is set with an italicized :string:`n`, without a hyphen.
 
