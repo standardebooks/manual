@@ -754,7 +754,7 @@ Measurements
 
 			<p>He was 6′:ws:`nbsp`1″ in height.</p>
 
-#.	When forming a compound of a number and unit of measurement in which the measurement is abbreviated, the number and unit of measurement are separated with a no-break space (U+00A0), *not* a dash. For exceptions in money, see `8.8.7.3.1 <#8.8.7.3.1>`__.
+#.	When forming a compound of a number and unit of measurement in which the measurement is abbreviated, the number and unit of measurement are separated with a no-break space (U+00A0), *not* a dash. For exceptions in money, see `8.8.8 <#8.8.8>`__.
 
 	.. class:: wrong
 
