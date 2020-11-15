@@ -1034,7 +1034,8 @@ Examples
 
 	[epub|type~="z3998:sender"],
 	[epub|type~="z3998:recipient"],
-	[epub|type~="z3998:salutation"]{
+	[epub|type~="z3998:salutation"],
+	[epub|type~="z3998:signature"]{
 		font-variant: small-caps;
 	}
 
@@ -1042,10 +1043,6 @@ Examples
 		margin-top: 1em;
 		text-indent: 0;
 		text-align: left;
-	}
-
-	[epub|type~="z3998:signature"]{
-		font-variant: small-caps;
 	}
 
 .. code:: html
