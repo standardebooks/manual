@@ -92,6 +92,12 @@ Italics
 
 		<p>He could hear the dog barking: <i>Ruff, ruff, ruff!</i></p>
 
+#.	A personn's internal thoughts are italicized with unsemanticated :html:`<i>`.
+
+	.. code:: html
+
+		<p>The thought flashed to me: <i>it’s a city you’re firing at, not a plane</i>, and I flinched.</p>
+
 Italicizing individual letters
 ==============================
 
