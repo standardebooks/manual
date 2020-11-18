@@ -92,7 +92,7 @@ Italics
 
 		<p>He could hear the dog barking: <i>Ruff, ruff, ruff!</i></p>
 
-#.	A personn's internal thoughts are italicized with unsemanticated :html:`<i>`.
+#.	A person's internal thoughts are italicized with unsemanticated :html:`<i>`.
 
 	.. code:: html
 
