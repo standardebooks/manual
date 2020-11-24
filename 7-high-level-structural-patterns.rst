@@ -7,6 +7,8 @@ Section should contain high-level structural patterns for common formatting situ
 Sectioning
 **********
 
+#.	The :html:`<body>` element may only have direct children that are :html:`<section>`, :html:`<article>`, or :html:`<nav>`.
+
 #.	Major structural divisions of a larger work, like parts, volumes, books, chapters, or subchapters, are contained in a :html:`<section>` element.
 
 #.	Individual items in a larger collection (like a poem in a poetry collection) are contained in a :html:`<article>` element.
