@@ -282,7 +282,7 @@ def main() -> int:
 				html = html.replace("VERSION", version)
 
 				if filename != "index.php":
-					html = regex.sub(r"<main(.+?)>", fr"<main\1>{toc_html}", html)
+					html = regex.sub(r"<article(.+?)>", fr"\n{toc_html}\n<article\1>", html)
 
 			# Check if pygments generated any errors (for example, missing quotes in an HTML attribute)
 			if "class=\"err\"" in html:
