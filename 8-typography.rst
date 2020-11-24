@@ -7,25 +7,11 @@ Section titles and ordinals
 
 #.	Section ordinals in the body text are set in Roman numerals.
 
-#.	Section ordinals in a file’s :html:`<title>` element are set in Arabic numerals.
-
-	.. class:: wrong
-
-		.. code:: html
-
-			<title>Chapter VII</title>
-
-	.. class:: corrected
-
-		.. code:: html
-
-			<title>Chapter 7</title>
-
 #.	Section titles are titlecased according to the output of :bash:`se titlecase`. Section titles are *not* all-caps or small-caps.
 
 #.	Section titles do not have trailing periods.
 
-#.	Chapter titles omit the word :string:`Chapter`, unless the word used is a stylistic choice for prose style purposes. Chapters with unique identifiers (i.e. not :string:`Chapter`, but something unique to the style of the book, like :string:`Book` or :string:`Stave`) *do* include that unique identifier in the title.
+#.	Chapter titles omit the word :string:`Chapter`, unless the word used is a stylistic choice for prose style purposes. Chapters with unique identifiers (i.e. not :string:`Chapter`, but something unique to the style of the book, like :string:`Book` or :string:`Stave`) *do* include that unique identifier in the title, wrapped in :html:`<span epub:type="label">`.
 
 	.. class:: wrong
 
@@ -41,9 +27,12 @@ Section titles and ordinals
 
 		.. code:: html
 
-			<h2 epub:type="title">Stave <span epub:type="z3998:roman">III</span></h2>
+			<h2 epub:type="title">
+				<span epub:type="label">Stave</span>
+				<span epub:type="z3998:roman">III</span>
+			</h2>
 
-	In special cases it may be desirable to retain :string:`Chapter` for clarity. For example, :italics:`Frankenstein </ebooks/mary-shelley/frankenstein/>` has “Chapter” in titles to differentiate between the “Letter” sections.
+	In special cases it may be desirable to retain :string:`Chapter` for clarity. For example, :italics:`Frankenstein </ebooks/mary-shelley/frankenstein/>` has “Chapter” in titles to differentiate them from the “Letter” sections.
 
 Italics
 *******
