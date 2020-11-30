@@ -12,6 +12,10 @@ Good: `“OK” is set without periods or spaces.`
 
 Bad: `Don’t put periods or spaces in “OK”` or `“OK” shouldn’t be set with periods or spaces.`
 
+# Submitting changes
+
+The `master` branch is reserved for typo fixes, clarifications, and version releases. Anything else should be committed to the `next` branch, which is periodically merged into `master` as a version release.
+
 # Building
 
 The following `pip` packages are required:
