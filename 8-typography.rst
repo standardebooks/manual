@@ -17,19 +17,19 @@ Section titles and ordinals
 
 		.. code:: html
 
-			<h2 epub:type="title">Chapter <span epub:type="z3998:roman">II</span></h2>
+			<h2>Chapter <span epub:type="ordinal z3998:roman">II</span></h2>
 
 	.. class:: corrected
 
 		.. code:: html
 
-			<h2 epub:type="title z3998:roman">II</h2>
+			<h2 epub:type="ordinal z3998:roman">II</h2>
 
 		.. code:: html
 
-			<h2 epub:type="title">
+			<h2>
 				<span epub:type="label">Stave</span>
-				<span epub:type="z3998:roman">III</span>
+				<span epub:type="ordinal z3998:roman">III</span>
 			</h2>
 
 	In special cases it may be desirable to retain :string:`Chapter` for clarity. For example, :italics:`Frankenstein </ebooks/mary-shelley/frankenstein/>` has “Chapter” in titles to differentiate them from the “Letter” sections.
