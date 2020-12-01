@@ -32,7 +32,7 @@ Section titles and ordinals
 				<span epub:type="ordinal z3998:roman">III</span>
 			</h2>
 
-	In special cases it may be desirable to retain :string:`Chapter` for clarity. For example, :italics:`Frankenstein </ebooks/mary-shelley/frankenstein/>` has “Chapter” in titles to differentiate them from the “Letter” sections.
+	In special cases it may be desirable to retain :string:`Chapter` for clarity. For example, :italics:`Frankenstein </ebooks/mary-shelley/frankenstein>` has “Chapter” in titles to differentiate them from the “Letter” sections.
 
 Italics
 *******
