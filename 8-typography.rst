@@ -671,6 +671,24 @@ Numbers, measurements, and math
 
 				<p>There the Gulf Stream is seventy-five miles wide and two hundred ten meters deep.</p>
 
+	#.	The *plural* form of spelled-out numbers is formed without an apostrophe. However the *possessive* or *contracted* form does include an apostrophe.
+
+		.. class:: wrong
+
+			.. code:: html
+
+				<p>There were, the other answered, half a dozen two four two’s.</p>
+
+		.. class:: corrected
+
+			.. code:: html
+
+				<p>There were, the other answered, half a dozen two four twos.</p>
+
+				<p>Twice two’s four, and a stone’s a stone.</p>
+
+				<p>He was allowed a day or two’s shooting in September.</p>
+
 Roman numerals
 ==============
 
