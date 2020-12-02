@@ -96,6 +96,20 @@ Italicizing individual letters
 
 		<p>He often rolled his <i epub:type="z3998:grapheme">r</i>’s.</p>
 
+	#.	Plural graphemes are formed with :string:`’s`, to aid in clarity.
+
+		.. class:: wrong
+
+			.. code:: html
+
+				<p>Her <i epub:type="z3998:grapheme">a</i>s were nasally.</p>
+
+		.. class:: corrected
+
+			.. code:: html
+
+				<p>Her <i epub:type="z3998:grapheme">a</i>’s were nasally.</p>
+
 #.	Individual letters that are *not* graphemes (for example letters that might be referring to names, the shapes of the letters themselves, musical notes or keys, or concepts) are *not* italicized.
 
 	.. code:: html
