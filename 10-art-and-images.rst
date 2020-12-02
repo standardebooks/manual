@@ -76,6 +76,8 @@ Cover image layout
 
 #.	Both the title and author are in League Spartan font with 5px letter spacing in ALL CAPS.
 
+	#. If the author is :string:`Anonymous`, then the author is omitted from the cover image.
+
 #.	The left and right sides of the black title box have at least 40px padding. More padding is preferrable over cramming the title in.
 
 #.	Translators, illustrators, and other contributors besides the author do not appear on the cover.
@@ -253,6 +255,8 @@ Titlepage image layout
 ======================
 
 #.	The title, author, other contributors are in League Spartan font with 5px letter spacing in ALL CAPS.
+
+	#. If the author or a contributor is :string:`Anonymous`, then they are omitted from the titlepage image.
 
 #.	The titlepage does not include subtitles.
 
