@@ -1478,6 +1478,6 @@ Greek
 Chinese
 =======
 
-#.	Wade-Giles is the preferred method of transliterating Chinese script.
+#.	Wade-Giles is the preferred method of transliterating Chinese script. (`See here for discussion. <https://github.com/standardebooks/laozi_tao-te-ching_james-legge/issues/2>`__) Transliteration to Wade-Giles from Legge is permitted, but not required.
 
 #.	In Wade-Giles transliteration, rough breathing marks are set using :utf:`ʽ` (U+02BD).
