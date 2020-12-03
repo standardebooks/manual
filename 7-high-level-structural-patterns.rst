@@ -344,6 +344,10 @@ Dedications
 	.. code:: css
 
 		/* All dedications */
+		section[epub|type~="dedication"]{
+			text-align: center;
+		}
+
 		section[epub|type~="dedication"] > *{
 			display: inline-block;
 			margin: auto;
