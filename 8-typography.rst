@@ -489,15 +489,15 @@ Ellipses
 
 	Ellipses used to indicate missing words in a quotation require keeping surrounding punctuation, including commas, as that punctuation is in the original quotation.
 
-#.	A hair space (:utf:` ` or U+200A) glyph is located *before* all ellipses that are not directly preceded by punctuation, or that are directly preceded by an em-dash or a two-	or three-em-dash.
+#.	A word joiner (U+2060), followed by a hair space (:utf:` ` or U+200A) glyph, followed by another word joiner (U+2060), are located *before* all ellipses that do not begin a paragraph, and that are not directly preceded by :utf:`“`.
 
-#.	A regular space is located *after* all ellipses that are not followed by punctuation.
+#.	A regular space is located *after* all ellipses do not end a paragraph and that are not followed by punctuation.
 
 #.	A hair space (:utf:` ` or U+200A) glyph is located between an ellipses and any punctuation that follows directly after the ellipses, *unless* that punctuation is a quotation mark, in which case there is no space at all between the ellipses and the quotation mark.
 
 	.. code:: html
 
-		<p>“I’m so hungry:ws:`hairsp`… What were you saying about eating:ws:`hairsp`…?”
+		<p>“I’m so hungry:ws:`wj`:ws:`hairsp`:ws:`wj`…:ws:`hairsp`! What were you saying about eating:ws:`wj`:ws:`hairsp`:ws:`wj`…?”
 
 Dashes
 ======
