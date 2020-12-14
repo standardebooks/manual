@@ -215,7 +215,7 @@ Classes denote a group of elements sharing a similar style.
 		.. code:: html
 
 			<blockquote>
-				<p><i xml:lang="es">“Como estas?” el preguntó.</i></p>
+				<p><i xml:lang="es">“¿Cómo estás?”, él preguntó.</i></p>
 				<p><i xml:lang="es">“Bien, gracias,” dijo ella.</i></p>
 			</blockquote>
 
@@ -224,7 +224,7 @@ Classes denote a group of elements sharing a similar style.
 		.. code:: html
 
 			<blockquote xml:lang="es">
-				<p>“Como estas?” el preguntó.</p>
+				<p>“¿Cómo estás?”, él preguntó.</p>
 				<p>“Bien, gracias,” dijo ella.</p>
 			</blockquote>
 
