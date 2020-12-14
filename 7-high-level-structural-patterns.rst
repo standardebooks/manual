@@ -922,6 +922,10 @@ Works that are complete plays
 			text-align: center;
 		}
 
+		[epub|type~="z3998:dramatis-personae"] p{
+			text-indent: 0;
+		}
+
 		[epub|type~="z3998:dramatis-personae"] ul{
 			list-style: none;
 			margin: 0;
