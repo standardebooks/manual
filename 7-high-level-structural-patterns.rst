@@ -1148,6 +1148,10 @@ Images
 				margin: 1em;
 			}
 
+			figcaption p + p{
+				text-indent: 0;
+			}
+
 	#.	:html:`<figure>` elements that are meant to be displayed as full-page images have the :value:`full-page` class and this additional CSS:
 
 		.. code:: css
