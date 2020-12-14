@@ -155,6 +155,8 @@ Headers
 			<h4 epub:type="title">Miss Thorne’s <i xml:lang="fr">Fête Champêtre</i></h4>
 		</hgroup>
 
+#.	If a section does not have any header content, including epigraphs or other non-prose material, then it has :css:`margin-top: 8em;`.
+
 Parts of a section title
 ========================
 
