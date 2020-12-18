@@ -170,6 +170,8 @@ Resources for locating high resolution scans
 
 -	`WikiArt <https://www.wikiart.org>`__
 
+-	`Artvee <https://artvee.com/>`__
+
 Resources for locating print reproductions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
