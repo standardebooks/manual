@@ -121,12 +121,12 @@ US-PD clearance
 
 The paintings we use are all in the U.S. public domain (US-PD). Your task is to locate a painting suitable for the kind of book you’re producing, and then demonstrate that the painting is indeed in the U.S. public domain.
 
-U.S. copyright law is complicated. Because of this, **we require that you provide a link to a page scan of a 1924-or-older book that reproduces the painting you selected.** *This is a hard requirement* to demonstrate that the painting you selected is in fact in the U.S. public domain. Just because a painting is very old, or Wikipedia says it’s PD, or it’s PD in a country besides the U.S., doesn’t necessarily mean it actually *is* PD in the U.S.
+U.S. copyright law is complicated. Because of this, **we require that you provide a link to a page scan of a PD_YEAR-or-older book that reproduces the painting you selected.** *This is a hard requirement* to demonstrate that the painting you selected is in fact in the U.S. public domain. Just because a painting is very old, or Wikipedia says it’s PD, or it’s PD in a country besides the U.S., doesn’t necessarily mean it actually *is* PD in the U.S.
 
 Clearance procedure
 ~~~~~~~~~~~~~~~~~~~
 
-To actually demonstrate that a painting is PD, you must locate a reproduction of that painting in a 1924-or-older book.
+To actually demonstrate that a painting is PD, you must locate a reproduction of that painting in a PD_YEAR-or-older book.
 
 This can be quite difficult. Many people find this to be the most time-consuming part of the ebook production process.
 
@@ -157,7 +157,7 @@ Gotchas
 
 	Before completing PD clearance, carefully compare the reproduction in the page scan with the high-resolution scan to ensure they are the same painting. Small details like the position of trees, clouds, reflections, or water are good ways to check if the painting is identical, or if you’re looking at a different version.
 
--	Sometimes the catalog record for a book has an incorrect publication year. Please verify the page scan of the copyright page to ensure the book is 1924 or older.
+-	Sometimes the catalog record for a book has an incorrect publication year. Please verify the page scan of the copyright page to ensure the book is PD_YEAR or older.
 
 Resources for locating high resolution scans
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -173,17 +173,17 @@ Resources for locating print reproductions
 
 -	`Google Books <https://books.google.com>`__
 
-	`Use this shortcut <https://www.google.com/webhp?tbs=cdr:1,cd_min:,cd_max:1924&amp;tbm=bks>`__ to search for books that were published in 1924 or earlier.
+	`Use this shortcut <https://www.google.com/webhp?tbs=cdr:1,cd_min:,cd_max:PD_YEAR&amp;tbm=bks>`__ to search for books that were published in PD_YEAR or earlier.
 
 	Google Books is a convenient first stop because its thumbnail view is very fast, and it does a better job of highlighting search results than HathiTrust or Internet Archive.
 
 -	`HathiTrust <https://www.hathitrust.org>`__
 
-	`Use this shortcut <https://babel.hathitrust.org/cgi/ls?a=srchls&amp;anyall1=all&amp;q1=&amp;field1=ocr&amp;op3=AND&amp;yop=before&amp;pdate_end=1924>`__ to search for books that were published in 1924 or earlier.
+	`Use this shortcut <https://babel.hathitrust.org/cgi/ls?a=srchls&amp;anyall1=all&amp;q1=&amp;field1=ocr&amp;op3=AND&amp;yop=before&amp;pdate_end=PD_YEAR>`__ to search for books that were published in PD_YEAR or earlier.
 
 -	`Internet Archive <https://archive.org>`__
 
-	`Use this shortcut <https://archive.org/search.php?query=+date%3A%5B1850-01-01+TO+1924-12-31%5D&amp;sin=TXT&amp;sort=-date>`__ to search for books that were published in 1924 or earlier.
+	`Use this shortcut <https://archive.org/search.php?query=+date%3A%5B1850-01-01+TO+PD_YEAR-12-31%5D&amp;sin=TXT&amp;sort=-date>`__ to search for books that were published in PD_YEAR or earlier.
 
 -	Our own `list of uncategorized art books </contribute/uncategorized-art-resources>`__ may be helpful to browse through for inspiration and easy US-PD clearance.
 
@@ -221,23 +221,23 @@ Clearance FAQ
 
 -	**I found a great painting, and Wikipedia says it’s public domain, but I can’t find a reproduction in a book. Can I use it?**
 
-	No. You must find a reproduction of your selected painting in a book published in 1924 or earlier.
+	No. You must find a reproduction of your selected painting in a book published in PD_YEAR or earlier.
 
 -	**I found a great painting, and it’s really old, and the author died a long time ago, but I can’t find a reproduction in a book. Can I use it?**
 
-	No. You must find a reproduction of your selected painting in a book published in 1924 or earlier.
+	No. You must find a reproduction of your selected painting in a book published in PD_YEAR or earlier.
 
--	**I’ve found a reproduction in a book, but the book is from 1925. Is that OK?**
+-	**I’ve found a reproduction in a book, but the book was published after PD_YEAR. Is that OK?**
 
-	No. You must find a reproduction of your selected painting in a book published in 1924 or earlier.
+	No. You must find a reproduction of your selected painting in a book published in PD_YEAR or earlier.
 
--	**I’ve found scan on a random museum site. Is that OK?**
+-	**I’ve found scan on a museum site. Is that OK?**
 
-	No. You must find a reproduction of your selected painting in a book published in 1924 or earlier.
+	No. You must find a reproduction of your selected painting in a book published in PD_YEAR or earlier.
 
 -	**But...**
 
-	No. You must find a reproduction of your selected painting in a book published in 1924 or earlier.
+	No. You must find a reproduction of your selected painting in a book published in PD_YEAR or earlier.
 
 
 The titlepage image

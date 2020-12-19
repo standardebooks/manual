@@ -96,6 +96,8 @@ You may also create a tip or warning block:
 	Here’s a warning!
 ```
 
+Finally, the string `PD_YEAR` will be replaced with `<?= PD_YEAR ?>`, which will print the current public domain year when served from the SE website.
+
 ## Headings
 
 ```rst
