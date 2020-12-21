@@ -17,7 +17,7 @@ To contribute to this manual, including reporting issues or suggestions, please 
 Versioning
 **********
 
-The manual follows a kind of `semantic versioning <https://semver.org>`__. The latest version of the manual can always be accessed at `https://standardebooks.org/manual/latest <https://standardebooks.org/manual/latest>`__.
+The manual follows a variant of `semantic versioning <https://semver.org>`__. The latest version of the manual can always be accessed at `https://standardebooks.org/manual/latest <https://standardebooks.org/manual/latest>`__.
 
 Typo fixes and minor corrections that do not make material changes to the manual do not increment a version number.
 
@@ -26,6 +26,11 @@ An update that contains more than just corrections, but does not change the numb
 An update that changes the numbering of existing sections increments the minor number.
 
 An update that changes top-level sections increments the major number.
+
+License
+*******
+
+The authors and contributors to this manual release it to the worldwide public domain via the `CC0 1.0 Universal Public Domain Dedication <https://creativecommons.org/publicdomain/zero/1.0/>`__.
 
 Contributors
 ************
