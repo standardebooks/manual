@@ -349,7 +349,7 @@ The half title page
 
 #.	The :value:`fulltitle` semantic is applied to the top-level heading element in the half title page. This is usually either :html:`<hgroup>` in works with subtitles or :html:`<h1>` in works without.
 
-#.	Formatting for the :html:`<h1>` element follows patterns in `7.2.6.7 </manual/VERSION/7-high-level-structural-patterns#7.2.6.7>`__ and `7.2.6.8 </manual/VERSION/7-high-level-structural-patterns#7.2.6.8>`__.
+#.	Formatting for the :html:`<h1>` element follows patterns in `7.2.9 </manual/VERSION/7-high-level-structural-patterns#7.2.9>`__.
 
 #.	A complete half title page looks like the following template:
 
