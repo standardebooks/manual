@@ -328,6 +328,8 @@ Tables
 				</tbody>
 			</table>
 
+#.	:html:`<table>` elements that are not used to format plays/dramas, and that do not otherwise inherit a visible margin (for example, they are not children of :html:`<blockquote>`), have :css:`{ margin: 1em; }` or :css:`{ margin: 1em auto 1em auto; }`.
+
 Blockquotes
 ***********
 
