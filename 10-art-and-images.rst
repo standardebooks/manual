@@ -220,6 +220,8 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`National Museum in Krakow <https://zbiory.mnk.pl/>`__ (CC0 items say CC0 - Public Domain under the Copyright section.)
 
+-	`National Gallery of Denmark <https://collection.smk.dk/#/en/>`__ (CC0 items have a Public Domain logo under the pictures, which leads to a CC0 license.)
+
 Clearance FAQ
 ~~~~~~~~~~~~~
 
