@@ -450,7 +450,7 @@ Epigraphs in section headers
 			display: inline-block;
 			margin: auto;
 			max-width: 80%;
-			text-align: left;
+			text-align: initial;
 		}
 
 		section > header [epub|type~="epigraph"] + *{
@@ -485,7 +485,7 @@ Full-page epigraphs
 			margin: auto;
 			margin-top: 3em;
 			max-width: 80%;
-			text-align: left;
+			text-align: initial;
 		}
 
 		@supports(display: flex){
@@ -536,7 +536,7 @@ Unfortunately there’s no great way to semantically format poetry in HTML. As s
 	.. code:: css
 
 		[epub|type~="z3998:poem"] p{
-			text-align: left;
+			text-align: initial;
 			text-indent: 0;
 		}
 
@@ -642,7 +642,7 @@ Note that below we include CSS for the :css:`.i2` class, even though it’s not 
 .. code:: css
 
 	[epub|type~="z3998:poem"] p{
-		text-align: left;
+		text-align: initial;
 		text-indent: 0;
 	}
 
@@ -1030,7 +1030,7 @@ Letter footers
 
 		[epub|type~="z3998:postscript"]{
 			margin-top: 1em;
-			text-align: left;
+			text-align: initial;
 		}
 
 .. class:: no-numbering
@@ -1064,7 +1064,7 @@ Examples
 	[epub|type~="z3998:postscript"]{
 		margin-top: 1em;
 		text-indent: 0;
-		text-align: left;
+		text-align: initial;
 	}
 
 .. code:: html
