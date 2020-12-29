@@ -50,7 +50,7 @@ This section covers general patterns used when producing XHTML  and CSS that are
 			<p id="p-4">...</p>
 			<p>...</p>
 
-#.	:html:`id` attributes on non-sectioning elements are unique across the entire ebook.
+#.	:html:`id` attributes on elements that do not have an :html:`epub:type` of :value:`division`, :value:`volume`, or :value:`part` are unique across the entire ebook.
 
 	#.	If an element requires an :html:`id` attribute that would conflict with one in a different file, the :html:`id` attribute an of the closest parent sectioning element, followed by :string:`-`, is prepended to each :html:`id` attribute to differentiate them.
 
@@ -91,6 +91,8 @@ This section covers general patterns used when producing XHTML  and CSS that are
 						<p id="chapter-2-p-1">...</p>
 					</section>
 				</section>
+
+	#.	Elements that have an :html:`epub:type` of :value:`division`, :value:`volume`, or :value:`part` may share :html:`id` attributes across the ebook, and if they do, they are assumed to be the same element when an ebook is recomposed.
 
 :html:`class` attributes
 ************************
