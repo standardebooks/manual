@@ -1,8 +1,8 @@
-######################
-General XHTML Patterns
-######################
+##############################
+General XHTML and CSS Patterns
+##############################
 
-This section covers general patterns used when producing XHTML that are not specific to ebooks.
+This section covers general patterns used when producing XHTML  and CSS that are not specific to ebooks.
 
 :html:`id` attributes
 *********************
@@ -354,3 +354,8 @@ Definition lists, i.e. combinations of the :html:`<dl>`, :html:`<dt>`, and :html
 `See here for glossaries </manual/VERSION/7-high-level-structural-patterns#7.11>`__.
 
 #.	:html:`<dd>` elements have at least one direct child block-level element. This is usually a :html:`<p>` element, but not necessarily.
+
+CSS rules
+*********
+
+- :css:`text-align: initial;` is used instead of :css:`text-align: left;` whenever it's necessary to explicitly set left-aligned text. This allows the reading system to opt to use :css:`text-align: justify;` if the user prefers.
