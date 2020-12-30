@@ -50,7 +50,7 @@ Table of Contents
 
 #.	`Semantics </manual/VERSION/4-semantics>`__
 
-#.	`General XHTML Patterns </manual/VERSION/5-general-xhtml-patterns>`__
+#.	`General XHTML and CSS Patterns </manual/VERSION/5-general-xhtml-and-css-patterns>`__
 
 #.	`Standard Ebooks Section Patterns </manual/VERSION/6-standard-ebooks-section-patterns>`__
 
