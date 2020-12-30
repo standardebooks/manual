@@ -1031,7 +1031,10 @@ Letter footers
 		[epub|type~="z3998:postscript"]{
 			margin-top: 1em;
 			text-align: initial;
+			text-indent: 0;
 		}
+
+	#.	Postscripts that contain multiple paragraphs are grouped by having their contents wrapped in :html:`<div epub:type="z3998:postscript">`.
 
 .. class:: no-numbering
 
@@ -1063,8 +1066,8 @@ Examples
 
 	[epub|type~="z3998:postscript"]{
 		margin-top: 1em;
-		text-indent: 0;
 		text-align: initial;
+		text-indent: 0;
 	}
 
 .. code:: html
