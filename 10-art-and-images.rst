@@ -216,7 +216,7 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`The Smithsonian <https://www.si.edu/search/collection-images?edan_q=landscape&edan_fq[0]=object_type%3A"Paintings">`__ (CC0 items say CC0 under the Usage header in the item details.)
 
--	`Birmingham Museums <http://dams.birminghammuseums.org.uk/asset-bank/action/viewDefaultHome>`__ (CC0 items say CC0 under the Usage Rights section in the item details.)
+-	`Birmingham Museums <https://dams.birminghammuseums.org.uk/asset-bank/action/viewDefaultHome>`__ (CC0 items say CC0 under the Usage Rights section in the item details.)
 
 -	`National Museum in Krakow <https://zbiory.mnk.pl/>`__ (CC0 items say CC0 - Public Domain under the Copyright section.)
 
