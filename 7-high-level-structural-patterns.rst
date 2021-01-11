@@ -336,6 +336,8 @@ Bridgeheads are sections in a chapter header that give an abstract or summary of
 			<p epub:type="bridgehead">Our first night⁠:ws:`wj`—Under canvas⁠:ws:`wj`—An appeal for help⁠:ws:`wj`—Contrariness of teakettles, how to overcome⁠:ws:`wj`—Supper⁠:ws:`wj`—How to feel virtuous⁠:ws:`wj`—Wanted! a comfortably-appointed, well-drained desert island, neighbourhood of South Pacific Ocean preferred⁠:ws:`wj`—Funny thing that happened to George’s father⁠:ws:`wj`—A restless night.</p>
 		</header>
 
+#.	Bridgeheads are typically set in italics. `Exceptions are allowed according to rules for italics </manual/VERSION/8-typography#8.2.13>`__.
+
 Dedications
 ***********
 
@@ -405,6 +407,8 @@ Epigraphs
 			font-style: italic;
 		}
 		/* End all epigraphs */
+
+#.	Epigraphs are typically set in italics. `Exceptions are allowed according to rules for italics </manual/VERSION/8-typography#8.2.13>`__.
 
 Epigraphs in section headers
 ============================

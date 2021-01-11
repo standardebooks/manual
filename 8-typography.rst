@@ -279,6 +279,75 @@ Taxonomy
 
 #.	The second part of the binomial name follows the capitalization style of the source text. Modern usage requires lowercase, but older texts may set it in uppercase.
 
+Exceptions
+==========
+
+#.	Epigraphs, bridgeheads, and some other types of heading matter are set in italics by default. Text that in a Roman-set context would be italicized (like non-English words or phrases, or titles of books) are thus set in Roman in that heading matter, to contrast against the default italics. However, if due to this rule the *entire header* would be set in Roman instead of italics, thus lending the header an unexpected appearance, then the contrasting Roman is discarded and the default italics are preserved.
+
+	.. tip::
+
+		This can usually be achieved by removing :html:`<i>` elements (which have no semantic meaning and merely indicate the desire for italics) and moving their :html:`epub:type` or :html:`xml:lang` attributes to their parent element.
+
+	.. class:: wrong
+
+		.. code:: css
+
+			[epub|type~="epigraph"]{
+				font-style: italic;
+				...
+			}
+
+			[epub|type~="epigraph"] i{
+				font-style: normal;
+			}
+
+			[epub|type~="epigraph"] cite{
+				margin-top: 1em;
+				font-style: normal;
+				font-variant: small-caps;
+			}
+
+			[epub|type~="epigraph"] cite i{
+				font-style: italic;
+			}
+
+		.. code:: html
+
+			<blockquote epub:type="epigraph">
+				<p>“<i xml:lang="fr">En administration, toutes les sottises sont mères.</i>”</p>
+				<cite><i epub:type="se:name.publication.book">Maximes</i>, <i xml:lang="la">fr</i> <abbr class="name">M. G.</abbr> De Levis.</cite>
+			</blockquote>
+
+	.. class:: corrected
+
+		.. code:: css
+
+			[epub|type~="epigraph"]{
+				font-style: italic;
+				...
+			}
+
+			[epub|type~="epigraph"] i{
+				font-style: normal;
+			}
+
+			[epub|type~="epigraph"] cite{
+				margin-top: 1em;
+				font-style: normal;
+				font-variant: small-caps;
+			}
+
+			[epub|type~="epigraph"] cite i{
+				font-style: italic;
+			}
+
+		.. code:: html
+
+			<blockquote epub:type="epigraph">
+				<p xml:lang="fr">“En administration, toutes les sottises sont mères.”</p>
+				<cite><i epub:type="se:name.publication.book">Maximes</i>, <i xml:lang="la">fr</i> <abbr class="name">M. G.</abbr> De Levis.</cite>
+			</blockquote>
+
 Capitalization
 **************
 
