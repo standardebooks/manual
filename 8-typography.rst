@@ -629,6 +629,16 @@ There are many kinds of dashes, and the run-of-the-mill hyphen is often not the 
 
 		<p>I saw the torpedo-boat in the Ems⁠–⁠Jade Canal.</p>
 
+#.	Non-break hyphens (:utf:`‑` or U+2011) are used when a single word is stretched out by a speaker for prosaic effect.
+
+	.. code:: html
+
+		<p>When you wa‑ake, you shall ha‑ave, all the pretty little hawsiz—</p>
+
+	.. warning::
+
+		When adding non-breaking hyphens for obscured letters, beware that :bash:`se typogrify` will incorrectly convert them to regular hyphens!
+
 Em-dashes
 ---------
 
