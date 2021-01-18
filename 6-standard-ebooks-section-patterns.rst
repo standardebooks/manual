@@ -339,7 +339,7 @@ The half title page
 
 #.	A half title page is included when there is front matter of any type in an ebook besides the titlepage and imprint.
 
-#.	The half title page located after the last item of front matter, before the body matter.
+#.	The half title page is located after the last item of front matter, before the body matter.
 
 #.	The half title page contains one :html:`<section id="halftitlepage" epub:type="halftitlepage">` element, which in turn contains one :html:`<h1 epub:type="fulltitle">` element containing the full title of the ebook, including subtitles. The half title page is the only place where an :html:`<h1>` element may appear in a Standard Ebook.
 
