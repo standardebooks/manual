@@ -71,7 +71,7 @@ Block-level elements are by default rendered with :css:`{ display: block; }`. Se
 
 	#.	:html:`<footer>`: Denotes a footer section applying to its direct parent. Typically used to denote signatures in sections like prefaces, forewords, letters, telegrams, and so on.
 
-	#.	:html:`<hr>`: Denotes a thematic break. :html:`<hr>` *is not used* any place a black border is desired; it *strictly denotes* a thematic break.
+	#.	:html:`<hr/>`: Denotes a thematic break. :html:`<hr/>` *is not used* any place a black border is desired; it *strictly denotes* a thematic break.
 
 	#.	:html:`<ol>`: Denotes an ordered list. Ordered lists are automatically numbered by the renderer.
 
