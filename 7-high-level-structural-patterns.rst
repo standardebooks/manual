@@ -1151,10 +1151,6 @@ Images
 				max-width: 100%;
 			}
 
-			figure + p{
-				text-indent: 0;
-			}
-
 			figcaption{
 				font-size: .75em;
 				font-style: italic;
@@ -1215,10 +1211,6 @@ Examples
 		display: block;
 		margin: auto;
 		max-width: 100%;
-	}
-
-	figure + p{
-		text-indent: 0;
 	}
 
 	figcaption{
