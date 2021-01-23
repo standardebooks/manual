@@ -294,7 +294,7 @@ Exceptions
 
 			[epub|type~="epigraph"]{
 				font-style: italic;
-				...
+				/* ... */
 			}
 
 			[epub|type~="epigraph"] i{
@@ -324,7 +324,7 @@ Exceptions
 
 			[epub|type~="epigraph"]{
 				font-style: italic;
-				...
+				/* ... */
 			}
 
 			[epub|type~="epigraph"] i{
