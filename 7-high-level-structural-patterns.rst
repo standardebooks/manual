@@ -709,7 +709,7 @@ Plays and drama
 	.. code:: css
 
 		[epub|type~="z3998:drama"] table,
-		table[epub|type~="z3998:drama"] {
+		table[epub|type~="z3998:drama"]{
 			border-collapse: collapse;
 			margin: 1em auto;
 			width: 100%;
