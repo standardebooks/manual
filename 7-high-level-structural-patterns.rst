@@ -944,6 +944,10 @@ Works that are complete plays
 			font-style: italic;
 		}
 
+		[epub|type~="z3998:dramatis-personae"] ul + p{
+			margin-top: 2em;
+		}
+
 	.. code:: html
 
 		<section id="dramatis-personae" epub:type="z3998:dramatis-personae">
