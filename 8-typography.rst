@@ -1542,6 +1542,69 @@ Citations
 				<cite>—<i epub:type="se:name.publication.book">The Rubaiyat of Omar Khayyam</i></cite>
 			</blockquote>
 
+Verses and Chapters of the Bible
+================================
+
+#.	Citations of passages from the Bible include the name of the book, followed by the chapter number and the verse number. The chapter and the verse numbers are separated by a colon.
+
+	#.	All chapter and verse numbers are written in Arabic numerals. Similarly, if a book being cited is a “numbered” book, the number is also written in Arabic numerals.
+
+	.. class:: wrong
+
+		.. code:: html
+
+			<blockquote>
+				<p>“Though I speak with the tongues of men and of angels, and have not charity, I am become as sounding brass, or a tinkling cymbal.”</p>
+				<cite>—<span epub:type="z3998:roman">I</span> Corinthians <span epub:type="z3998:roman">XIII</span> 1</cite>
+			</blockquote>
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<blockquote>
+				<p>“Though I speak with the tongues of men and of angels, and have not charity, I am become as sounding brass, or a tinkling cymbal.”</p>
+				<cite>—1 Corinthians 13:1</cite>
+			</blockquote>
+
+#.	If an entire chapter, instead of a particular verse, is being cited, then the citation includes the name of the book followed by the chapter number.
+
+	.. class:: wrong
+
+		.. code:: html
+
+			<p>“In the beginning God created the heaven and the earth” is the first verse of Genesis <span epub:type="z3998:roman">I</span>.</p>
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<p>“In the beginning God created the heaven and the earth” is the first verse of Genesis 1.</p>
+
+#.	If a continuous range of verses is being cited, an en-dash (:utf:`–` or U+2013) is placed between the verse numbers indicating the beginning and the end of the range.
+
+	.. code:: html
+
+		<p>Matthew 5:3–11.</p>
+
+	Ranges may also span multiple chapters within the same book:
+
+	.. code:: html
+
+		<p>Matthew 5:1–7:29.</p>
+
+#.	If a discontinuous group of verses in the same chapter is being cited, each distinct verse number is separated by a comma followed by a space.
+
+	.. code:: html
+
+		<p>Matthew 6:2, 16.</p>
+
+#.	If there are multiple citations of the same book, each citation is separated by a semicolon followed by a space, and the name of the book is omitted after the first citation.
+
+	.. code:: html
+
+		<p>Matthew 5:3–11; 5:1–7:29; 6:2, 16</p>
+
 Non-Latin Scripts and Transliterations
 **************************************
 
