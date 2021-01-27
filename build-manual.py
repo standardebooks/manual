@@ -80,8 +80,9 @@ def make_one_page(dest_directory):
 	# Get all php files in destination directory.
 	php_files = list(filter(lambda x: x.endswith("php"), os.listdir(dest_directory)))
 	index = php_files.pop(php_files.index("index.php"))
+	dest_directory = Path(dest_directory)
 
-	with open(dest_directory + "/" + index, "r", encoding="utf-8") as f:
+	with open(dest_directory / index, "r", encoding="utf-8") as f:
 		index_soup = BeautifulSoup(f, features="html.parser")
 		php_tags = regex.findall(r"<\?.+?\?>", index_soup.prettify(formatter=None), regex.S)
 
@@ -92,7 +93,7 @@ def make_one_page(dest_directory):
 	frontmatter.find_all("section")[-1].decompose()
 
 	# Get ToC
-	with open(dest_directory + "/" + php_files[0], "r", encoding="utf-8") as f:
+	with open(dest_directory / php_files[0], "r", encoding="utf-8") as f:
 		toc = str(BeautifulSoup(f, features="html.parser").find("nav"))
 
 	# Format hrefs in ToC for onepager
@@ -105,14 +106,13 @@ def make_one_page(dest_directory):
 	php_files = list(filter(lambda x: regex.match(r"^\d.+", x), php_files))
 
 	for file in php_files:
-		with open(dest_directory + "/" + file, "r", encoding="utf-8") as f:
+		with open(dest_directory / file, "r", encoding="utf-8") as f:
 			soup = BeautifulSoup(f, features="html.parser")
 
 		bodymatter.append(soup.find_all("section")[0])
 
 	# Writing the one page manual php file (overwrites if exist)
-	onepage = dest_directory + "/single-page.php"
-	with open(onepage, "w+", encoding="utf-8") as f:
+	with open(dest_directory / "single-page.php", "w+", encoding="utf-8") as f:
 		# Rewind file to erase old file if exist
 		f.seek(0)
 
