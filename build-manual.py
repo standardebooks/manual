@@ -79,12 +79,11 @@ def make_one_page(dest_directory):
 	"""
 	# Get all php files in destination directory.
 	php_files = list(filter(lambda x: x.endswith("php"), os.listdir(dest_directory)))
-	php_re = regex.compile(r"<\?.+?\?>", regex.S)
 	index = php_files.pop(php_files.index("index.php"))
 
 	with open(dest_directory + "/" + index, "r", encoding="utf-8") as f:
 		index_soup = BeautifulSoup(f, features="html.parser")
-		php_tags = php_re.findall(index_soup.prettify(formatter=None))
+		php_tags = regex.findall(r"<\?.+?\?>", index_soup.prettify(formatter=None), regex.S)
 
 	# The frontmatter contains all needed tags and texts at the beginning of the one-page manual
 	index_soup.find("section")["id"] = "0"
@@ -97,17 +96,13 @@ def make_one_page(dest_directory):
 		toc = str(BeautifulSoup(f, features="html.parser").find("nav"))
 
 	# Format hrefs in ToC for onepager
-	toc_re = regex.compile(r"(?<=href\=\")([/a-z0-9\.-]+?)(?=#)")
-	toc = toc_re.sub("", toc)
-	toc_re2 = regex.compile(r"(?<=href\=\")(?P<href>[/0-9a-z-\.]+(?<=/)(?P<chapter>\d+)(?=-)[/0-9a-z-\.]+(?=\"))")
-	toc = toc_re2.sub(r"#\g<chapter>", toc)
-	toc_re3 = regex.compile(r"(?<=href=\")(/manual.+?\d)(?=\")")
-	toc = toc_re3.sub(r"#0", toc)
+	toc = regex.sub(r"(?<=href\=\")([/a-z0-9\.-]+?)(?=#)", "", toc)
+	toc = regex.sub(r"(?<=href\=\")(?P<href>[/0-9a-z-\.]+(?<=/)(?P<chapter>\d+)(?=-)[/0-9a-z-\.]+(?=\"))", r"#\g<chapter>", toc)
+	toc = regex.sub(r"(?<=href=\")(/manual.+?\d)(?=\")", r"#0", toc)
 
 	# Get chapter tags/text without toc
 	bodymatter = []
-	chapter_re = regex.compile(r"^\d.+")
-	php_files = list(filter(lambda x: chapter_re.match(x), php_files))
+	php_files = list(filter(lambda x: regex.match(r"^\d.+", x), php_files))
 
 	for file in php_files:
 		with open(dest_directory + "/" + file, "r", encoding="utf-8") as f:
