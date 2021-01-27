@@ -116,7 +116,7 @@ def make_one_page(dest_directory):
 		bodymatter.append(soup.find_all("section")[0])
 
 	# Writing the one page manual php file (overwrites if exist)
-	onepage = dest_directory + "/manual-onepage.php"
+	onepage = dest_directory + "/single-page.php"
 	with open(onepage, "w+", encoding="utf-8") as f:
 		# Rewind file to erase old file if exist
 		f.seek(0)
