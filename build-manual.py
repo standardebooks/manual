@@ -73,7 +73,7 @@ class TocItem:
 		self.filename = filename
 		self.items = []
 
-def make_one_page(dest_directory):
+def make_one_page(dest_directory, header_html: str, footer_html: str):
 	"""
 	Generate one-page php file of the manual.
 	"""
@@ -84,7 +84,6 @@ def make_one_page(dest_directory):
 
 	with open(dest_directory / index, "r", encoding="utf-8") as file:
 		index_soup = BeautifulSoup(file, features="html.parser")
-		php_tags = regex.findall(r"<\?.+?\?>", index_soup.prettify(formatter=None), regex.DOTALL)
 
 	# The frontmatter contains all needed tags and texts at the beginning of the one-page manual
 	index_soup.find("section")["id"] = "0"
@@ -103,7 +102,7 @@ def make_one_page(dest_directory):
 
 	# Get chapter tags/text without toc
 	bodymatter = []
-	php_files = list(filter(lambda x: regex.match(r"^\d.+", x), php_files))
+	php_files = natsorted(list(filter(lambda x: regex.match(r"^\d.+", x), php_files)))
 
 	for file in php_files:
 		with open(dest_directory / file, "r", encoding="utf-8") as file:
@@ -116,12 +115,11 @@ def make_one_page(dest_directory):
 		# Rewind file to erase old file if exist
 		file.seek(0)
 
-		# Write php tags and ToC
-		file.write(php_tags[0] + php_tags[1] + "\n")
-		file.write('\t<main class="manual">\n')
-		file.write("\t\t" + php_tags[2] + "\n")
-		file.write("\t\t\n")
-		file.write(toc + "\n")
+		# Write ToC
+		header_html = regex.sub(r"<main(.+?)>", fr"<main\1>{toc}", header_html)
+		header_html = regex.sub(r"MANUAL_TITLE", "The Standard Ebooks Manual of Style", header_html)
+		header_html = regex.sub(r"<article>", "", header_html)
+		file.write(header_html)
 
 		# Write frontmatter
 		file.write("<article>\n")
@@ -135,10 +133,9 @@ def make_one_page(dest_directory):
 			file.write("</article>\n")
 
 		# Close with tags and final php tag
-		file.write("</main>\n")
-		file.write(php_tags[3])
+		footer_html = regex.sub(r"</article>", "", footer_html)
+		file.write(footer_html)
 		file.truncate()
-
 
 def main() -> int:
 	"""
@@ -320,10 +317,10 @@ def main() -> int:
 			# Fill in <title> elements
 			if filename == "index.rst":
 				version = regex.findall(r"\.\. version: (.+)", rst)[0]
-				html = regex.sub(r"MANUAL_TITLE", "The Standard Ebooks Manual", html)
+				html = regex.sub(r"MANUAL_TITLE", "The Standard Ebooks Manual of Style", html)
 				html = regex.sub(r"<section id=\".+?\"", r"<section", html)
 			else:
-				html = regex.sub(r"MANUAL_TITLE", f"{root_number}. {title} - The Standard Ebooks Manual", html)
+				html = regex.sub(r"MANUAL_TITLE", f"{root_number}. {title} - The Standard Ebooks Manual of Style", html)
 
 			# Replace instances of PD_YEAR with PHP echo code
 			html = regex.sub(r"PD_YEAR", "<?= PD_YEAR ?>", html)
@@ -362,7 +359,7 @@ def main() -> int:
 				file.write(html)
 				file.truncate()
 
-	make_one_page(args.dest_directory)
+	make_one_page(args.dest_directory, header_html, footer_html)
 
 	return return_code
 

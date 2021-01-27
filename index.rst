@@ -39,8 +39,11 @@ Editor-in-chief: Alex Cabal
 
 Contributors (in alpha order): David Grigg, B. Timothy Keith, Vince Rice, Emma Sweeney, Robin Whittleton.
 
+
 Table of Contents
 *****************
+
+`Read the Standard Ebooks Manual of Style on one page </manual/VERSION/single-page>`__.
 
 #.	`XHTML, CSS, and SVG Code Style </manual/VERSION/1-code-style>`__
 
@@ -61,3 +64,4 @@ Table of Contents
 #.	`Metadata </manual/VERSION/9-metadata>`__
 
 #.	`Art and Images </manual/VERSION/10-art-and-images>`__
+
