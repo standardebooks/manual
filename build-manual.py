@@ -102,7 +102,7 @@ def make_one_page(dest_directory):
 	toc = toc_re2.sub(r"#\g<chapter>", toc)
 	toc_re3 = regex.compile(r"(?<=href=\")(/manual.+?\d)(?=\")")
 	toc = toc_re3.sub(r"#", toc)
-	
+
 	# Get chapter tags/text without toc
 	bodymatter = []
 
@@ -115,13 +115,31 @@ def make_one_page(dest_directory):
 	# Writing the one page manual php file (overwrites if exist)
 	onepage = dest_directory + "manual-onepage.php"
 	with open(onepage, "w+", encoding="utf-8") as f:
+		# Rewind file to erase old file if exist
 		f.seek(0)
+
+		# Write php tags and ToC
 		f.write(php_tags[0] + php_tags[1] + "\n")
 		f.write('\t<main class="manual">\n')
 		f.write("\t\t" + php_tags[2] + "\n")
 		f.write("\t\t\n")
+		f.write(toc + "\n")
 
-		f.write("\t\t<article>\n")
+		# Write frontmatter
+		f.write("<article>\n")
+		f.write(str(frontmatter) + "\n")
+		f.write("</article>\n")
+
+		# Write bodymatter
+		for chapter in bodymatter:
+			f.write("<article>\n")
+			f.write(str(chapter) + "\n")
+			f.write("</article>\n")
+
+		# Close with tags and final php tag
+		f.write("</main>\n")
+		f.write(php_tags[3])
+		f.truncate()
 
 
 def main() -> int:
