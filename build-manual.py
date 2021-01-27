@@ -78,12 +78,12 @@ def make_one_page(dest_directory):
 	Generate one-page php file of the manual.
 	"""
 	# Get all php files in destination directory.
-	php_files = list(filter(lambda x: x.endswith("php"), os.listdir()))
+	php_files = list(filter(lambda x: x.endswith("php"), os.listdir(dest_directory)))
 	php_re = regex.compile(r"<\?.+?\?>", regex.S)
 	index = php_files.pop(php_files.index("index.php"))
 
-	with open(dest_directory + index, "r", encoding="utf-8") as f:
-		index_soup = BeautifulSoup(f)
+	with open(dest_directory + "/" + index, "r", encoding="utf-8") as f:
+		index_soup = BeautifulSoup(f, features="html.parser")
 		php_tags = php_re.findall(index_soup.prettify(formatter=None))
 
 	# The frontmatter contains all needed tags and texts at the beginning of the one-page manual
@@ -93,8 +93,8 @@ def make_one_page(dest_directory):
 	frontmatter.find_all("section")[-1].decompose()
 
 	# Get ToC
-	with open(dest_directory + php_files[0], "r", encoding="utf-8") as f:
-		toc = str(BeautifulSoup(f).find("nav"))
+	with open(dest_directory + "/" + php_files[0], "r", encoding="utf-8") as f:
+		toc = str(BeautifulSoup(f, features="html.parser").find("nav"))
 
 	# Format hrefs in ToC for onepager
 	toc_re = regex.compile(r"(?<=href\=\")([/a-z0-9\.-]+?)(?=#)")
@@ -110,13 +110,13 @@ def make_one_page(dest_directory):
 	php_files = list(filter(lambda x: chapter_re.match(x), php_files))
 
 	for file in php_files:
-		with open(dest_directory + file, "r", encoding="utf-8") as f:
-			soup = BeautifulSoup(f)
+		with open(dest_directory + "/" + file, "r", encoding="utf-8") as f:
+			soup = BeautifulSoup(f, features="html.parser")
 
 		bodymatter.append(soup.find_all("section")[0])
 
 	# Writing the one page manual php file (overwrites if exist)
-	onepage = dest_directory + "manual-onepage.php"
+	onepage = dest_directory + "/manual-onepage.php"
 	with open(onepage, "w+", encoding="utf-8") as f:
 		# Rewind file to erase old file if exist
 		f.seek(0)
