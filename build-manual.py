@@ -81,6 +81,21 @@ def make_one_page(dest_directory):
 	php_files = list(filter(lambda x: x.endswith("php"), os.list_dir()))
 	index = php_files.pop(php_files.index("index.php"))
 
+	with open(dest_directory + index, "rb") as f:
+		index_soup = BeautifulSoup(f)
+
+	# The frontmatter contains all needed tags and texts at the beginning of the one-page manual
+	frontmatter = index_soup.find_all("section")[0]
+
+	# Get chapter tags/text without toc
+	bodymatter = []
+
+	for file in php_files:
+		with open(dest_directory + file, "rb") as f:
+			soup = BeautifulSoup(f)
+
+		bodymatter.append(soup.find_all("section")[0])
+
 
 def main() -> int:
 	"""
