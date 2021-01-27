@@ -73,6 +73,15 @@ class TocItem:
 		self.filename = filename
 		self.items = []
 
+def make_one_page(dest_directory):
+	"""
+	Generate one-page php file of the manual.
+	"""
+	# Get all php files in destination directory.
+	php_files = list(filter(lambda x: x.endswith("php"), os.list_dir()))
+	index = php_files.pop(php_files.index("index.php"))
+
+
 def main() -> int:
 	"""
 	Entry point for the executable.
