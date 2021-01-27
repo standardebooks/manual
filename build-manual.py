@@ -78,17 +78,17 @@ def make_one_page(dest_directory):
 	Generate one-page php file of the manual.
 	"""
 	# Get all php files in destination directory.
-	php_files = list(filter(lambda x: x.endswith("php"), os.list_dir()))
-	php_re = regex.compile(r"<?.+?\?>")
+	php_files = list(filter(lambda x: x.endswith("php"), os.listdir()))
+	php_re = regex.compile(r"<\?.+?\?>", regex.S)
 	index = php_files.pop(php_files.index("index.php"))
 
 	with open(dest_directory + index, "r", encoding="utf-8") as f:
 		index_soup = BeautifulSoup(f)
-		php_tags = php_re.findall(f.read().decode())
+		php_tags = php_re.findall(str(index_soup))
 
 	# The frontmatter contains all needed tags and texts at the beginning of the one-page manual
 	frontmatter = index_soup.find_all("section")[0]
-	# Remove short from ToC
+	# Remove short form ToC
 	frontmatter.find_all("section")[-1].decompose()
 
 	# Get ToC
