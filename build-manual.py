@@ -84,7 +84,7 @@ def make_one_page(dest_directory):
 
 	with open(dest_directory / index, "r", encoding="utf-8") as file:
 		index_soup = BeautifulSoup(file, features="html.parser")
-		php_tags = regex.findall(r"<\?.+?\?>", index_soup.prettify(formatter=None), regex.S)
+		php_tags = regex.findall(r"<\?.+?\?>", index_soup.prettify(formatter=None), regex.DOTALL)
 
 	# The frontmatter contains all needed tags and texts at the beginning of the one-page manual
 	index_soup.find("section")["id"] = "0"
