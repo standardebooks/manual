@@ -84,10 +84,11 @@ def make_one_page(dest_directory):
 
 	with open(dest_directory + index, "r", encoding="utf-8") as f:
 		index_soup = BeautifulSoup(f)
-		php_tags = php_re.findall(str(index_soup))
+		php_tags = php_re.findall(index_soup.prettify(formatter=None))
 
 	# The frontmatter contains all needed tags and texts at the beginning of the one-page manual
-	frontmatter = index_soup.find_all("section")[0]
+	index_soup.find("section")["id"] = "0"
+	frontmatter = index_soup.find("section")
 	# Remove short form ToC
 	frontmatter.find_all("section")[-1].decompose()
 
@@ -101,10 +102,12 @@ def make_one_page(dest_directory):
 	toc_re2 = regex.compile(r"(?<=href\=\")(?P<href>[/0-9a-z-\.]+(?<=/)(?P<chapter>\d+)(?=-)[/0-9a-z-\.]+(?=\"))")
 	toc = toc_re2.sub(r"#\g<chapter>", toc)
 	toc_re3 = regex.compile(r"(?<=href=\")(/manual.+?\d)(?=\")")
-	toc = toc_re3.sub(r"#", toc)
+	toc = toc_re3.sub(r"#0", toc)
 
 	# Get chapter tags/text without toc
 	bodymatter = []
+	chapter_re = regex.compile(r"^\d.+")
+	php_files = list(filter(lambda x: chapter_re.match(x), php_files))
 
 	for file in php_files:
 		with open(dest_directory + file, "r", encoding="utf-8") as f:
@@ -363,6 +366,8 @@ def main() -> int:
 			with open(Path(args.dest_directory) / filename, "w", encoding="utf-8") as file:
 				file.write(html)
 				file.truncate()
+
+	make_one_page(args.dest_directory)
 
 	return return_code
 
