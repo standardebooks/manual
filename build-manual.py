@@ -82,8 +82,8 @@ def make_one_page(dest_directory):
 	index = php_files.pop(php_files.index("index.php"))
 	dest_directory = Path(dest_directory)
 
-	with open(dest_directory / index, "r", encoding="utf-8") as f:
-		index_soup = BeautifulSoup(f, features="html.parser")
+	with open(dest_directory / index, "r", encoding="utf-8") as file:
+		index_soup = BeautifulSoup(file, features="html.parser")
 		php_tags = regex.findall(r"<\?.+?\?>", index_soup.prettify(formatter=None), regex.S)
 
 	# The frontmatter contains all needed tags and texts at the beginning of the one-page manual
@@ -93,8 +93,8 @@ def make_one_page(dest_directory):
 	frontmatter.find_all("section")[-1].decompose()
 
 	# Get ToC
-	with open(dest_directory / php_files[0], "r", encoding="utf-8") as f:
-		toc = str(BeautifulSoup(f, features="html.parser").find("nav"))
+	with open(dest_directory / php_files[0], "r", encoding="utf-8") as file:
+		toc = str(BeautifulSoup(file, features="html.parser").find("nav"))
 
 	# Format hrefs in ToC for onepager
 	toc = regex.sub(r"(?<=href\=\")([/a-z0-9\.-]+?)(?=#)", "", toc)
@@ -106,38 +106,38 @@ def make_one_page(dest_directory):
 	php_files = list(filter(lambda x: regex.match(r"^\d.+", x), php_files))
 
 	for file in php_files:
-		with open(dest_directory / file, "r", encoding="utf-8") as f:
-			soup = BeautifulSoup(f, features="html.parser")
+		with open(dest_directory / file, "r", encoding="utf-8") as file:
+			soup = BeautifulSoup(file, features="html.parser")
 
 		bodymatter.append(soup.find_all("section")[0])
 
 	# Writing the one page manual php file (overwrites if exist)
-	with open(dest_directory / "single-page.php", "w+", encoding="utf-8") as f:
+	with open(dest_directory / "single-page.php", "w+", encoding="utf-8") as file:
 		# Rewind file to erase old file if exist
-		f.seek(0)
+		file.seek(0)
 
 		# Write php tags and ToC
-		f.write(php_tags[0] + php_tags[1] + "\n")
-		f.write('\t<main class="manual">\n')
-		f.write("\t\t" + php_tags[2] + "\n")
-		f.write("\t\t\n")
-		f.write(toc + "\n")
+		file.write(php_tags[0] + php_tags[1] + "\n")
+		file.write('\t<main class="manual">\n')
+		file.write("\t\t" + php_tags[2] + "\n")
+		file.write("\t\t\n")
+		file.write(toc + "\n")
 
 		# Write frontmatter
-		f.write("<article>\n")
-		f.write(str(frontmatter) + "\n")
-		f.write("</article>\n")
+		file.write("<article>\n")
+		file.write(str(frontmatter) + "\n")
+		file.write("</article>\n")
 
 		# Write bodymatter
 		for chapter in bodymatter:
-			f.write("<article>\n")
-			f.write(str(chapter) + "\n")
-			f.write("</article>\n")
+			file.write("<article>\n")
+			file.write(str(chapter) + "\n")
+			file.write("</article>\n")
 
 		# Close with tags and final php tag
-		f.write("</main>\n")
-		f.write(php_tags[3])
-		f.truncate()
+		file.write("</main>\n")
+		file.write(php_tags[3])
+		file.truncate()
 
 
 def main() -> int:
