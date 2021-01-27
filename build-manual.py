@@ -88,7 +88,21 @@ def make_one_page(dest_directory):
 
 	# The frontmatter contains all needed tags and texts at the beginning of the one-page manual
 	frontmatter = index_soup.find_all("section")[0]
+	# Remove short from ToC
+	frontmatter.find_all("section")[-1].decompose()
 
+	# Get ToC
+	with open(dest_directory + php_files[0], "r", encoding="utf-8") as f:
+		toc = str(BeautifulSoup(f).find("nav"))
+
+	# Format hrefs in ToC for onepager
+	toc_re = regex.compile(r"(?<=href\=\")([/a-z0-9\.-]+?)(?=#)")
+	toc = toc_re.sub("", toc)
+	toc_re2 = regex.compile(r"(?<=href\=\")(?P<href>[/0-9a-z-\.]+(?<=/)(?P<chapter>\d+)(?=-)[/0-9a-z-\.]+(?=\"))")
+	toc = toc_re2.sub(r"#\g<chapter>", toc)
+	toc_re3 = regex.compile(r"(?<=href=\")(/manual.+?\d)(?=\")")
+	toc = toc_re3.sub(r"#", toc)
+	
 	# Get chapter tags/text without toc
 	bodymatter = []
 
@@ -100,9 +114,14 @@ def make_one_page(dest_directory):
 
 	# Writing the one page manual php file (overwrites if exist)
 	onepage = dest_directory + "manual-onepage.php"
-	with open(onepage, "r+", encoding="utf-8") as f:
+	with open(onepage, "w+", encoding="utf-8") as f:
 		f.seek(0)
+		f.write(php_tags[0] + php_tags[1] + "\n")
+		f.write('\t<main class="manual">\n')
+		f.write("\t\t" + php_tags[2] + "\n")
+		f.write("\t\t\n")
 
+		f.write("\t\t<article>\n")
 
 
 def main() -> int:
