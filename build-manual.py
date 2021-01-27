@@ -79,10 +79,12 @@ def make_one_page(dest_directory):
 	"""
 	# Get all php files in destination directory.
 	php_files = list(filter(lambda x: x.endswith("php"), os.list_dir()))
+	php_re = regex.compile(r"<?.+?\?>")
 	index = php_files.pop(php_files.index("index.php"))
 
-	with open(dest_directory + index, "rb") as f:
+	with open(dest_directory + index, "r", encoding="utf-8") as f:
 		index_soup = BeautifulSoup(f)
+		php_tags = php_re.findall(f.read().decode())
 
 	# The frontmatter contains all needed tags and texts at the beginning of the one-page manual
 	frontmatter = index_soup.find_all("section")[0]
@@ -91,10 +93,16 @@ def make_one_page(dest_directory):
 	bodymatter = []
 
 	for file in php_files:
-		with open(dest_directory + file, "rb") as f:
+		with open(dest_directory + file, "r", encoding="utf-8") as f:
 			soup = BeautifulSoup(f)
 
 		bodymatter.append(soup.find_all("section")[0])
+
+	# Writing the one page manual php file (overwrites if exist)
+	onepage = dest_directory + "manual-onepage.php"
+	with open(onepage, "r+", encoding="utf-8") as f:
+		f.seek(0)
+
 
 
 def main() -> int:
