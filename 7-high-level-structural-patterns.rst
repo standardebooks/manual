@@ -747,6 +747,11 @@ Plays and drama
 			font-style: italic;
 		}
 
+		em [epub|type~="z3998:persona"],
+		i [epub|type~="z3998:persona"]{
+			font-style: normal;
+		}
+
 		[epub|type~="z3998:stage-direction"]::before{
 			content: "(";
 			font-style: normal;
