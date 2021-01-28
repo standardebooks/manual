@@ -876,6 +876,12 @@ Stage direction rows
 
 #.	Personas mentioned in stage direction are wrapped in a :html:`<b epub:type="z3998:persona">` element.
 
+	#.	Possessive :string:`’s` or :string:`’` are included within the associated :html:`<b>` element.
+
+		.. code:: html
+
+			<i epub:type="z3998:stage-direction">Lowering his voice for <b epub:type="z3998:persona">Maury’s</b> ear alone.</i>
+
 #.	Stage direction in shorthand (for example, :string:`Large French window, R. 3 E.`) is wrapped in an :html:`<abbr epub:type="z3998:stage-direction">` element, with this additional CSS:
 
 	.. code:: css
