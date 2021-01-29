@@ -563,6 +563,18 @@ Quotation marks
 
 		<p>He had pork ’n’ beans for dinner</p>
 
+	#.	Elision is not to be confused with a glottal stop, which may sometimes occur in non-English languages like Hawaiian. Glottal stops that are not elided letters are represented with a turned comma (:utf:`ʻ` or U+02BB), *not* the similar-looking left single quotation mark (:utf:`‘` or U+2018).
+
+		.. code:: html
+
+			<p><i xml:lang="haw">ʻŌlelo Hawaiʻi</i></p>
+
+	#.	Some last names in English were once contractions, and now are no longer contractions but actual last names in their own right. In these cases a left single quotation mark (:utf:`‘` or U+2018) is used to clarify pronunciation, but to make clear that the word is not a contraction.
+
+		.. code:: html
+
+			<p>His friends were James M‘Donald and Sam M‘Daniel.</p>
+
 Ellipses
 ========
 
