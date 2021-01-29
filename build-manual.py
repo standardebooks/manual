@@ -106,9 +106,14 @@ def make_one_page(dest_directory, header_html: str, footer_html: str):
 
 	for file in php_files:
 		with open(dest_directory / file, "r", encoding="utf-8") as file:
-			soup = BeautifulSoup(file, features="html.parser")
+			section_text = file.read()
 
-		bodymatter.append(soup.find_all("section")[0])
+			# Remove everything before and after top level section
+			section_text = section_text[section_text.find("<section"):]
+			section_text = section_text[:section_text.rfind("</section>")]
+			section_text += "</section>"
+
+			bodymatter.append(section_text)
 
 	# Writing the one page manual php file (overwrites if exist)
 	with open(dest_directory / "single-page.php", "w+", encoding="utf-8") as file:
