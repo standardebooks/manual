@@ -322,6 +322,13 @@ Bridgeheads are sections in a chapter header that give an abstract or summary of
 			font-style: normal;
 		}
 
+		[epub|type~="z3998:poem"] [epub|type~="bridgehead"],
+		[epub|type~="z3998:verse"] [epub|type~="bridgehead"],
+		[epub|type~="z3998:song"] [epub|type~="bridgehead"],
+		[epub|type~="z3998:hymn"] [epub|type~="bridgehead"]{
+			text-align: justify;
+		}
+
 	.. code:: html
 
 		<header>
