@@ -860,12 +860,8 @@ Dialog rows
 			<td>Mantles as well?</td>
 		</tr>
 
-Stage direction rows
-====================
-
-#.	The first child of a row of stage direction is an empty :html:`<td>` element.
-
-#.	The second child of a row of dialog is a :html:`<td>` element containing the stage direction.
+Stage direction
+===============
 
 #.	Stage direction is wrapped in an :html:`<i epub:type="z3998:stage-direction">` element.
 
@@ -902,11 +898,17 @@ Stage direction rows
 		abbr[epub|type~="z3998:stage-direction"]::after{
 			content: '';
 		}
+Stage direction rows
+--------------------
+
+#.	The first child of a row containing only stage direction is an empty :html:`<td>` element.
+
+#.	The second child of a row containing only stage direction is a :html:`<td>` element containing the stage direction.
 
 .. class:: no-numbering
 
 Examples
---------
+~~~~~~~~
 
 .. code:: html
 
@@ -915,6 +917,25 @@ Examples
 		<td>
 			<i epub:type="z3998:stage-direction">Large French window, <abbr epub:type="z3998:stage-direction" class="eoc">R. 3 E.</abbr> <b epub:type="z3998:persona">Lane</b> is arranging afternoon tea on the table, and after the music has ceased, <b epub:type="z3998:persona">Algernon</b> enters.</i>
 		</td>
+	</tr>
+
+Inline stage direction
+----------------------
+
+#.	Inline stage direction that is not an interjection within a containing clause begins with a capital letter and ends in punctuation, usually a period.
+
+#.	Inline stage direction that *is* an interjection within a containing clause does not begin with a capital letter, and ending punctuation is optional and usually omitted.
+
+.. class:: no-numbering
+
+Examples
+~~~~~~~~
+
+.. code:: html
+
+	<tr>
+		<td epub:type="z3998:persona">Jackson</td>
+		<td>I see you don’t know much! A costume <i epub:type="z3998:stage-direction">putting his finger on his forehead</i> is a thing which calls for deep thought. Have you seen my Sun here? <i epub:type="z3998:stage-direction">Strikes his posterior.</i> I looked for it two years.</td>
 	</tr>
 
 Works that are complete plays
