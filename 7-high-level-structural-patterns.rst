@@ -207,19 +207,19 @@ Within section titles, we distinguish between labels, ordinals, titles, and subt
 Header patterns
 ===============
 
-#.	Sections without titles:
+#.	Sections with ordinals but without titles:
 
 	.. code:: html
 
 		<h2 epub:type="ordinal z3998:roman">XI</h2>
 
-#.	Sections with titles but no ordinal (i.e. chapter) numbers:
+#.	Sections with titles but without ordinals:
 
 	.. code:: html
 
 		<h2 epub:type="title">A Daughter of Albion</h2>
 
-#.	Sections with titles and ordinal (i.e. chapter) numbers:
+#.	Sections with titles and ordinals:
 
 	.. code:: html
 
@@ -228,7 +228,7 @@ Header patterns
 			<h3 epub:type="title">Who Stole the Tarts?</h3>
 		</hgroup>
 
-#.	Sections titles and subtitles but no ordinal (i.e. chapter) numbers:
+#.	Sections titles and subtitles but no ordinals:
 
 	.. code:: html
 
@@ -282,6 +282,21 @@ Header patterns
 		<header>
 			<p>The Title of a Short Poem</p>
 		</header>
+
+#.	Sections without any titles at all have :css:`margin-top: 20vh` applied to their sectioning container.
+
+	.. code:: css
+
+		section[epub|type~="preface"]{
+			margin-top: 20vh;
+		}
+
+	.. code:: html
+
+		<section epub:type="preface">
+			<p>Being observations or memorials of the most remarkable occurrences...</p>
+			<p>...</p>
+		</section>
 
 #.	Half title pages without subtitles:
 
