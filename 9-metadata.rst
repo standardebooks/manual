@@ -434,11 +434,11 @@ Producer metadata
 
 These elements describe the SE producer who produced the ebook for the Standard Ebooks project.
 
+#.	Producer names must sound like complete real names. Anonymous producers are allowed, and if the producer is anonymous then the value for the producer’s :html:`<dc:contributor>` element is :string:`Anonymous`
+
 #.	If there is more than one producer, the first producer is :value:`producer-1`, the second :value:`producer-2`, and so on.
 
 #.	The producer metadata block is identical to the author metadata block, but with :html:`<dc:contributor id="producer-1">` instead of :html:`<dc:creator id="author">`.
-
-#.	If a producer is anonymous, the value for the producer’s :html:`<dc:contributor>` element is :string:`Anonymous`.
 
 #.	If the producer’s personal homepage is known, the element :html:`<meta property="se:url.homepage" refines="#producer-1">` is included, whose value is the URL of the transcriber’s homepage. The URL must link to a personal homepage only; no products, services, or other endorsements, commercial or otherwise.
 
