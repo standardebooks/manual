@@ -913,6 +913,7 @@ Stage direction
 		abbr[epub|type~="z3998:stage-direction"]::after{
 			content: '';
 		}
+
 Stage direction rows
 --------------------
 

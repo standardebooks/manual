@@ -282,7 +282,7 @@ Taxonomy
 Exceptions
 ==========
 
-#.	Epigraphs, bridgeheads, and some other types of heading matter are set in italics by default. Text that in a Roman-set context would be italicized (like non-English words or phrases, or titles of books) are thus set in Roman in that heading matter, to contrast against the default italics. However, if due to this rule the *entire header* would be set in Roman instead of italics, thus lending the header an unexpected appearance, then the contrasting Roman is discarded and the default italics are preserved.
+#.	Epigraphs, bridgeheads, and some other types of heading matter are set in italics by default. Text that in a Roman-set context would be italicized (like non-English words or phrases, or titles of books) are thus set in Roman in that heading matter, to contrast against the default italics. However, if due to this rule the *entire block* would be set in Roman instead of italics, thus lending the block an unexpected appearance, then the contrasting Roman is discarded and the default italics are preserved.
 
 	.. tip::
 

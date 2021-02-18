@@ -1,4 +1,4 @@
-.. version: 1.3.1
+.. version: 1.4.0
 
 ###################################
 The Standard Ebooks Manual of Style
@@ -38,7 +38,6 @@ Contributors
 Editor-in-chief: Alex Cabal
 
 Contributors (in alpha order): David Grigg, B. Timothy Keith, Vince Rice, Emma Sweeney, Robin Whittleton.
-
 
 Table of Contents
 *****************
