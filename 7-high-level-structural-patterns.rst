@@ -478,6 +478,7 @@ Epigraphs in section headers
 	.. code:: css
 
 		/* Epigraphs in section headers */
+		article > header [epub|type~="epigraph"],
 		section > header [epub|type~="epigraph"]{
 			display: inline-block;
 			margin: auto;
@@ -485,11 +486,13 @@ Epigraphs in section headers
 			text-align: initial;
 		}
 
+		article > header [epub|type~="epigraph"] + *,
 		section > header [epub|type~="epigraph"] + *{
 			margin-top: 3em;
 		}
 
 		@supports(display: table){
+			article > header [epub|type~="epigraph"],
 			section > header [epub|type~="epigraph"]{
 				display: table;
 			}
