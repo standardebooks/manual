@@ -649,7 +649,7 @@ There are many kinds of dashes, and the run-of-the-mill hyphen is often not the 
 
 	.. warning::
 
-		When adding non-breaking hyphens for obscured letters, beware that :bash:`se typogrify` will incorrectly convert them to regular hyphens!
+		When adding non-breaking hyphens to stretch out words, beware that :bash:`se typogrify` will incorrectly convert them to regular hyphens!
 
 Em-dashes
 ---------
