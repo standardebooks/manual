@@ -576,8 +576,8 @@ Unfortunately there’s no great way to semantically format poetry in HTML. As s
 
 		[epub|type~="z3998:poem"] p > span{
 			display: block;
-			text-indent: -1em;
 			padding-left: 1em;
+			text-indent: -1em;
 		}
 
 #.	Each :html:`<span>` line is followed by a :html:`<br/>` element, except for the last line in a stanza, styled with this CSS:
@@ -593,13 +593,13 @@ Unfortunately there’s no great way to semantically format poetry in HTML. As s
 	.. code:: css
 
 		p span.i1{
-			text-indent: -1em;
 			padding-left: 2em;
+			text-indent: -1em;
 		}
 
 		p span.i2{
-			text-indent: -1em;
 			padding-left: 3em;
+			text-indent: -1em;
 		}
 
 #.	Poems, songs, and verse that are shorter part of a longer work, like a novel, are wrapped in a :html:`<blockquote>` element.
@@ -674,8 +674,8 @@ Note that below we include CSS for the :css:`.i2` class, even though it’s not 
 
 	[epub|type~="z3998:poem"] p > span{
 		display: block;
-		text-indent: -1em;
 		padding-left: 1em;
+		text-indent: -1em;
 	}
 
 	[epub|type~="z3998:poem"] p > span + br{
@@ -687,13 +687,13 @@ Note that below we include CSS for the :css:`.i2` class, even though it’s not 
 	}
 
 	p span.i1{
-		text-indent: -1em;
 		padding-left: 2em;
+		text-indent: -1em;
 	}
 
 	p span.i2{
-		text-indent: -1em;
 		padding-left: 3em;
+		text-indent: -1em;
 	}
 
 .. code:: html
