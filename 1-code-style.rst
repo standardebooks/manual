@@ -126,7 +126,7 @@ Attributes
 
 #.	Attributes are in alphabetical order.
 
-#.	Attributes, their namespaces, and their values are lowercase, except for values which are IETF language tags. In IETF language tags, the language subtag is capitalized.
+#.	Attributes, their namespaces, and their values are lowercase, except for values which are IETF language tags. In IETF language tags, the country subtag is capitalized.
 
 	.. class:: wrong
 
