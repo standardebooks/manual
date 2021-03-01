@@ -2,7 +2,7 @@
 Standard Ebooks Section Patterns
 ################################
 
-All Standard Ebooks set of sections that are included in each ebook, and which are usually generated from template files. These sections include sections like the titlepage, imprint, and Uncopyright.
+All Standard Ebooks contain a standardized set of sections that are included in each ebook, and which are usually generated from template files. These sections include sections like the titlepage, imprint, and Uncopyright.
 
 The title string
 ****************
