@@ -627,19 +627,19 @@ There are many kinds of dashes, and the run-of-the-mill hyphen is often not the 
 
 		<p>5 − 2 = 3</p>
 
-#.	En-dashes (:utf:`–` or U+2013) are used to indicate a numerical or date range; to indicate a relationships where two concepts are connected by the word “to,” for example a distance between locations or a range between numbers; or to indicate a connection in location between two places.
+#.	En-dashes (:utf:`–` or U+2013) are used to indicate a numeric or date range; to indicate a relationships where two concepts are connected by the word “to,” for example a distance between locations or a range between numbers; or to indicate a connection in location between two places. En-dashes are preceded and followed by the invisible word joiner glyph (U+2060).
 
 	.. code:: html
 
-		<p>We talked 2–3 days ago.</p>
+		<p>We talked 2:ws:`wj`–:ws:`wj`3 days ago.</p>
 
 	.. code:: html
 
-		<p>We took the Berlin–Munich train yesterday.</p>
+		<p>We took the Berlin:ws:`wj`–:ws:`wj`Munich train yesterday.</p>
 
 	.. code:: html
 
-		<p>I saw the torpedo-boat in the Ems⁠–⁠Jade Canal.</p>
+		<p>I saw the torpedo-boat in the Ems⁠:ws:`wj`–:ws:`wj`⁠Jade Canal.</p>
 
 #.	Non-break hyphens (:utf:`‑` or U+2011) are used when a single word is stretched out by a speaker for prosaic effect.
 
