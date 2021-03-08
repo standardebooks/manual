@@ -272,7 +272,7 @@ def main() -> int:
 					li_item.insert(0, new_tag)
 
 			# Now that we've got our structure done, insert <aside>s that have the section numbers in them.
-			for elem in soup.find_all("", attrs={"id": regex.compile(r"^[0-9\.]+$")}):
+			for elem in soup.find_all(attrs={"id": regex.compile(r"^[0-9\.]+$")}):
 				aside = soup.new_tag("aside")
 				aside["class"] = "number"
 
