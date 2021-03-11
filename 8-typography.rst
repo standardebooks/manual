@@ -586,7 +586,7 @@ Ellipses
 
 #.	A word joiner (U+2060), followed by a hair space (:utf:` ` or U+200A) glyph, followed by another word joiner (U+2060), are located *before* all ellipses that do not begin a paragraph, and that are not directly preceded by :utf:`“`.
 
-#.	A regular space is located *after* all ellipses do not end a paragraph and that are not followed by punctuation.
+#.	A regular space is located *after* all ellipses that do not end a paragraph and that are not followed by punctuation.
 
 #.	A hair space (:utf:` ` or U+200A) glyph is located between an ellipses and any punctuation that follows directly after the ellipses, *unless* that punctuation is a quotation mark, in which case there is no space at all between the ellipses and the quotation mark.
 
