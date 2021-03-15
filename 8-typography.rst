@@ -1136,7 +1136,7 @@ Math
 					</m:math>
 				</p>
 
-	#.	If a MathML variable includes an overline, it is set by combining the variable’s normal Unicode glyph and the Unicode overline glyph (:utf:`‾` or U+203E) in a :html:`<m:mover>` element. However in the :html:`alttext` attribute, the Unicode overline combining mark (U+0305) is used to represent the overline in Unicode.
+	#.	If a MathML variable includes an overline, it is set by combining the variable’s normal Unicode glyph and the Unicode overline glyph, :utf:`‾` (U+203E), in a :html:`<m:mover>` element. However in the :html:`alttext` attribute, the Unicode combining overline, :utf:`◌̅` (U+0305), is used to represent the overline in Unicode.
 
 		.. class:: corrected
 
@@ -1462,11 +1462,17 @@ Scansion
 
 Scansion is the representation of the metrical stresses in lines of verse.
 
-#.	:utf:`×` (U+00d7) indicates an unstressed sylllable and :utf:`/` (U+002f) indicates a stressed syllable. They are separated from each other with no-break spaces (U+00A0).
+#.	When scansion marks are next to, instead of above, letters, :utf:`×` (U+00d7) indicates an unstressed sylllable and :utf:`/` (U+002f) indicates a stressed syllable. They are separated from each other with no-break spaces (U+00A0).
 
 	.. code:: html
 
 		<p>Several of his types, however, constantly occur; <abbr>e.g.</abbr> A and a variant (/ × | / ×) (/ × × | / ×); B and a variant (× / | × /) (× × / | × /); a variant of D (/ × | / × ×); E (/ × × | /). </p>
+
+#.	When scansion marks are above letters, a combining breve, :utf:`◌̆` (U+0306), is used to indicate an unstressed syllable and a combining vertical line above, :utf:`◌̍` (U+030D), is used to indicate a stressed syllable. Vertical lines are always above letters, not next to them. Indicating unstressed symbols is optional.
+
+	.. code:: html
+
+		<p>I̍f wĕ sha̍dŏws ha̍ve ŏffe̍ndĕd, / Thi̍nk bŭt thi̍s ănd a̍ll ĭs me̍ndĕd.</p>
 
 #.	Lines of poetry listed on a single line (like in a quotation) are separated by a space, then a forward slash, then a space. Capitalization is preserved for each line.
 
