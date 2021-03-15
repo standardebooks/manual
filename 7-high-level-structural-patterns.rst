@@ -1314,7 +1314,7 @@ If an ebook has any illustrations that are *major structural components* of the 
 
 	#.	An illustration is *not* a major structural components if, for example: it is a drawing used to represent a person’s signature, like an X mark; it is an inline drawing representing text in alien languages; it is a drawing used as a layout element to illustrate forms, tables, or diagrams.
 
-#.	The LoI file contains a single :html:`<section id="loi" epub:type="loi">` element, which in turn contains an :html:`<h2 epub:type="title">List of Illustrations</h2>` element, followed by a :html:`<nav epub:type="loi">` element containing an :html:`<ol>` element, which in turn contains list items representing the images.
+#.	The LoI file contains a single :html:`<section id="loi" epub:type="loi">` element, which in turn contains a :html:`<nav epub:type="loi">` element, which in turn contains an :html:`<h2 epub:type="title">List of Illustrations</h2>` element, followed by an :html:`<ol>` element, which in turn contains list items representing the images.
 
 #.	If an image listed in the LoI has a :html:`<figcaption>` element, then that caption is used in the anchor text for that LoI entry. If not, the image’s :html:`alt` attribute is used. If the :html:`<figcaption>` element is too long for a concise LoI entry, the :html:`alt` attribute is used instead.
 
