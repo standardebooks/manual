@@ -569,7 +569,7 @@ Quotation marks
 
 			<p><i xml:lang="haw">ʻŌlelo Hawaiʻi</i></p>
 
-	#.	Some last names in English were once contractions, and now are no longer contractions but actual last names in their own right. In these cases a left single quotation mark (:utf:`‘` or U+2018) is used to clarify pronunciation, but to make clear that the word is not a contraction.
+	#.	Some *very rare* last names in English were once contractions, and now are no longer contractions but actual last names in their own right. In these cases a left single quotation mark (:utf:`‘` or U+2018) is used to clarify pronunciation, but to make clear that the word is not a contraction. Whether or not to apply this *very rarely applied rule* depends on how the name would appear in print in older sources like newspapers or books.
 
 		.. code:: html
 
