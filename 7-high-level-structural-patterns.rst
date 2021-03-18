@@ -1235,15 +1235,27 @@ Images
 		.. code:: css
 
 			figure.full-page{
+				break-after: page;
+				break-before: page;
+				break-inside: avoid;
 				margin: 0;
 				max-height: 100%;
-				break-before: page;
-				break-after: page;
-				break-inside: avoid;
 				text-align: center;
 			}
 
-	#.	:html:`<figure>` elements that are meant to be aligned block-level with the text have this additional CSS:
+			@supports(display: flex) and (max-height: 100vh){
+				figure.full-page{
+					display: flex;
+					flex-direction: column;
+					max-height: 100vh;
+				}
+
+				figure.full-page img{
+					height: 100%;
+				}
+			}
+
+	#.	:html:`<figure>` elements that meant to be aligned block-level with the text have this additional CSS:
 
 		.. code:: css
 
