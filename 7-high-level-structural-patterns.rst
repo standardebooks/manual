@@ -1328,7 +1328,7 @@ Examples
 .. code:: html
 
 	<?xml version="1.0" encoding="utf-8"?>
-	<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" epub:prefix="z3998: http://www.daisy.org/z3998/2012/vocab/structure/, se: http://standardebooks.org/vocab/1.0" xml:lang="en-GB">
+	<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" epub:prefix="z3998: http://www.daisy.org/z3998/2012/vocab/structure/, se: https://standardebooks.org/vocab/1.0" xml:lang="en-GB">
 		<head>
 			<title>List of Illustrations</title>
 			<link href="../css/core.css" rel="stylesheet" type="text/css"/>
@@ -1413,7 +1413,7 @@ Examples
 .. code:: html
 
 	<?xml version="1.0" encoding="utf-8"?>
-	<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" epub:prefix="z3998: http://www.daisy.org/z3998/2012/vocab/structure/, se: http://standardebooks.org/vocab/1.0" xml:lang="en-GB">
+	<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" epub:prefix="z3998: http://www.daisy.org/z3998/2012/vocab/structure/, se: https://standardebooks.org/vocab/1.0" xml:lang="en-GB">
 		<head>
 			<title>Endnotes</title>
 			<link href="../css/core.css" rel="stylesheet" type="text/css"/>
