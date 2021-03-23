@@ -52,7 +52,7 @@ This section covers general patterns used when producing XHTML  and CSS that are
 
 #.	:html:`id` attributes on elements that do not have an :html:`epub:type` of :value:`division`, :value:`volume`, or :value:`part` are unique across the entire ebook.
 
-	#.	If an element requires an :html:`id` attribute that would conflict with one in a different file, the :html:`id` attribute an of the closest parent sectioning element, followed by :string:`-`, is prepended to each :html:`id` attribute to differentiate them.
+	#.	If an element requires an :html:`id` attribute that would conflict with one in a different file, the :html:`id` attribute of the closest parent sectioning element, followed by :string:`-`, is prepended to each :html:`id` attribute to differentiate them.
 
 		.. class:: wrong
 
