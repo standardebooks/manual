@@ -179,7 +179,10 @@ Result: :html:`A Daughter of Albion`
 
 	<section id="book-1" epub:type="part">
 		<hgroup>
-			<h2><span epub:type="label">Book <span epub:type="ordinal z3998:roman">I</span></h2>
+			<h2>
+				<span epub:type="label">Book</span>
+				<span epub:type="ordinal z3998:roman">I</span>
+			</h2>
 			<h3 epub:type="title">The Coming of the Martians</h3>
 		</hgroup>
 		<p>...</p>
