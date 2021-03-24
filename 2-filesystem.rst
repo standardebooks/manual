@@ -132,6 +132,8 @@ XHTML file naming conventions
 		The work’s second preface, titled “Preface to the Charles Dickens Edition”      :path:`preface-2.xhtml`
 		=============================================================================== =============================
 
+#. If a work contains images other than the cover art, the filename of each image should be :value:`illustration-` followed by :path:`-N`, where :path:`N` is a number representing the image’s order of appearance in the work, starting at :path:`1`.
+
 The :path:`se-lint-ignore.xml` file
 ***********************************
 
