@@ -735,6 +735,8 @@ Plays and drama
 
 #.	Each :html:`<tr>` is either a block of dialog or a standalone stage direction.
 
+#.	Personas are typically characters that have speaking roles. They are set in small caps and never in italics, even if the surrounding text is in italics.
+
 #.	Works that are plays or that contain sections of dramatic dialog have this core CSS:
 
 	.. code:: css
@@ -778,6 +780,7 @@ Plays and drama
 			font-style: italic;
 		}
 
+		[epub|type~="z3998:stage-direction"] [epub|type~="z3998:persona"],
 		em [epub|type~="z3998:persona"],
 		i [epub|type~="z3998:persona"]{
 			font-style: normal;
