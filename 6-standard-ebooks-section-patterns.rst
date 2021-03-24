@@ -81,7 +81,7 @@ The :html:`<nav>` element’s top-level :html:`<ol>` element contains a list of 
 	.. code:: html
 
 		<li>
-			<a href="text/halftitle.xhtml">The Moon Pool</a>
+			<a href="text/halftitlepage.xhtml">The Moon Pool</a>
 			<ol>
 				<li>
 					<a href="text/chapter-1.xhtml"><span epub:type="z3998:roman">I</span>: The Thing on the Moon Path</a>
@@ -100,7 +100,7 @@ The :html:`<nav>` element’s top-level :html:`<ol>` element contains a list of 
 	.. code:: html
 
 		<li>
-			<a href="text/halftitle.xhtml">Sybil</a>
+			<a href="text/halftitlepage.xhtml">Sybil</a>
 			<ol>
 				<li>
 					<a href="text/book-1.xhtml">Book <span epub:type="z3998:roman">I</span></a>
