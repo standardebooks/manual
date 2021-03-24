@@ -429,6 +429,17 @@ Transcriber metadata
 
 #.	If the transcriber’s personal homepage is known, the element :html:`<meta property="se:url.homepage" refines="#transcriber-1">` is included, whose value is the URL of the transcriber’s homepage. The URL must link to a personal homepage only; no products, services, or other endorsements, commercial or otherwise.
 
+Sponsor metadata
+*****************
+
+#.	If an ebook has a financial sponsor, then the sponsor block follows the transcriber block.
+
+#.	The :html:`<meta property="file-as" refines="#sponsor">` element contains an alpha-sorted representation of the sponsor’s name.
+
+#.	The `MARC relator tag <http://www.loc.gov/marc/relators/relacode.html>`__ is :string:`spn`: :html:`<meta property="role" refines="#sponsor" scheme="marc:relators">spn</meta>`.
+
+#.	If the sponsor’s personal homepage is known, the element :html:`<meta property="se:url.homepage" refines="#sponsor">` is included, whose value is the URL of the sponsor’s homepage. Since sponsors may be corporations, linking to a corporate homepage is permitted; however linking to specific product or service is disallowed.
+
 Producer metadata
 *****************
 
