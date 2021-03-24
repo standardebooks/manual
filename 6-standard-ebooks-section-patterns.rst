@@ -407,6 +407,26 @@ Names
 
 #.	Any anonymous contributor is listed as :string:`An Anonymous Volunteer`.
 
+Sponsors
+========
+
+#.	An ebook may have a financial sponsor. If so, the following block:
+
+		.. code:: html
+
+			<p>This ebook was produced for the<br/>
+			<a href="https://standardebooks.org">Standard Ebooks project</a><br/>
+			by<br/>
+
+	is replaced with:
+
+		.. code:: html
+
+			<p><a href="SPONSOR_HOMEPAGE_URL">SPONSOR_NAME</a><br/>
+			sponsored the production of this ebook for the<br/>
+			<a href="https://standardebooks.org">Standard Ebooks project</a>.<br/>
+			It was produced by<br/>
+
 Subsections
 ===========
 
