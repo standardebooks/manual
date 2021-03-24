@@ -327,9 +327,23 @@ The following apply to all contributors, including the author(s), translator(s),
 
 #.	If there is more than one contributor in a set (for example, multiple authors, or translators) then the :html:`<meta property="display-seq">` element is specified for each contributor, with a value equal to their position in the SE identifier.
 
-#. The epub standard specifies that in a set of contributors, if at least one has the :value:`display-seq` property, then other contributors in the set without the :value:`display-seq` value are ignored. For SE purposes, this also means they will be excluded from the SE identifier.
+#.	The epub standard specifies that in a set of contributors, if at least one has the :value:`display-seq` property, then other contributors in the set without the :value:`display-seq` value are ignored. For SE purposes, this also means they will be excluded from the SE identifier.
 
-#. By SE convention, contributors with :html:`<meta property="display-seq">0</meta>` are excluded from the SE identifier.
+#.	By SE convention, contributors with :html:`<meta property="display-seq">0</meta>` are excluded from the SE identifier.
+
+#.	The epub spec allows for up to one (but not more than one) role to be specified for a contributor using the :html:`<meta property="role" refines="..." scheme="marc:relators">`. element. However, it is not uncommon for one contributor to have multiple roles; for example, an author (:value:`aut`) who also illustrated (:value:`ill`) the book. In these cases, the primary role is assigned using the :value:`role` property, and additional roles are assigned using the :value:`se:role` property.
+
+Example
+~~~~~~~~
+
+.. code:: html
+
+	<dc:creator id="author">Jonathan Swift</dc:creator>
+	...
+	<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+	<meta property="se:role" refines="#author" scheme="marc:relators">ill</meta>
+	<meta property="se:role" refines="#author" scheme="marc:relators">win</meta>
+	<meta property="se:role" refines="#author" scheme="marc:relators">wpr</meta>
 
 The author metadata block
 *************************
@@ -356,8 +370,6 @@ The author metadata block
 
 #.	:html:`<meta property="role" refines="#author" scheme="marc:relators">` contains the `MARC relator tag <http://www.loc.gov/marc/relators/relacode.html>`__ for the roles the author played in creating this book.
 
-	There is always one element with the value of :string:`aut`. There may be additional elements for additional values, if applicable. For example, if the author also illustrated the book, there would be an additional :html:`<meta property="role" refines="#author" scheme="marc:relators">ill</meta>` element.
-
 This example shows a complete author metadata block for :italics:`Short Fiction </ebooks/anton-chekhov/short-fiction/constance-garnett>`, by Anton Chekhov:
 
 .. code:: html
@@ -381,7 +393,7 @@ The translator metadata block
 
 #.	The `MARC relator tag <http://www.loc.gov/marc/relators/relacode.html>`__ is :string:`trl`: :html:`<meta property="role" refines="#translator" scheme="marc:relators">trl</meta>`.
 
-#.	Translators often annotate the work; if this is the case, the additional `MARC relator tag <http://www.loc.gov/marc/relators/relacode.html>`__ :string:`ann` is included in a separate :html:`<meta property="role" refines="#translator" scheme="marc:relators">` element.
+#.	Translators often annotate the work; if this is the case, the additional `MARC relator tag <http://www.loc.gov/marc/relators/relacode.html>`__ :string:`ann` is included in a separate :html:`<meta property="se:role" refines="#translator" scheme="marc:relators">` element.
 
 The illustrator metadata block
 ******************************
@@ -455,17 +467,17 @@ These elements describe the SE producer who produced the ebook for the Standard 
 
 #.	The `MARC relator tags <http://www.loc.gov/marc/relators/relacode.html>`__ for the SE producer usually include all of the following:
 
-	-	:string:`bkp`: The producer produced the ebook.
+	-	:string:`bkp`: The producer produced the ebook as :value:`role`.
 
-	-	:string:`blw`: The producer wrote the blurb (the long description).
+	-	:string:`blw`: The producer wrote the blurb (the long description) as :value:`se:role`.
 
-	-	:string:`cov`: The producer selected the cover art.
+	-	:string:`cov`: The producer selected the cover art as :value:`se:role`.
 
-	-	:string:`mrk`: The producer wrote the HTML markup for the ebook.
+	-	:string:`mrk`: The producer wrote the HTML markup for the ebook as :value:`se:role`.
 
-	-	:string:`pfr`: The producer proofread the ebook.
+	-	:string:`pfr`: The producer proofread the ebook as :value:`se:role`.
 
-	-	:string:`tyg`: The producer reviewed the typography of the ebook.
+	-	:string:`tyg`: The producer reviewed the typography of the ebook as :value:`se:role`.
 
 The ebook manifest
 ******************
