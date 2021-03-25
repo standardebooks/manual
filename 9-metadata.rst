@@ -333,8 +333,10 @@ The following apply to all contributors, including the author(s), translator(s),
 
 #.	The epub spec allows for up to one (but not more than one) role to be specified for a contributor using the :html:`<meta property="role" refines="..." scheme="marc:relators">`. element. However, it is not uncommon for one contributor to have multiple roles; for example, an author (:value:`aut`) who also illustrated (:value:`ill`) the book. In these cases, the primary role is assigned using the :value:`role` property, and additional roles are assigned using the :value:`se:role` property.
 
+.. class:: no-numbering
+
 Example
-~~~~~~~~
+=======
 
 .. code:: html
 
