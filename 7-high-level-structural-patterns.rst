@@ -438,6 +438,14 @@ Epigraphs
 
 #.	Epigraphs are typically set in italics. `Exceptions are allowed according to rules for italics </manual/VERSION/8-typography#8.2.13>`__.
 
+#.	Epigraphs may sometimes contain quotes from plays and drama. Such quotations use the `standard play formatting  </manual/VERSION/7-high-level-structural-patterns#7.6>`__ and this additional CSS to remove italics from personas:
+
+	.. code:: css
+
+		[epub|type~="epigraph"] [epub|type~="z3998:persona"]{
+			font-style: normal;
+		}
+
 Epigraphs in section headers
 ============================
 
