@@ -364,7 +364,7 @@ The author metadata block
 
 #.	:html:`<meta property="se:url.encyclopedia.wikipedia" refines="#author">` contains the URL of the author’s Wikipedia page. This element is not included if there is no Wikipedia page.
 
-#.	:html:`<meta property="se:url.authority.nacoaf" refines="#author">` contains the URL of the author’s `Library of Congress Names Database <http://id.loc.gov/authorities/names.html>`__ page. It does not include the :path:`.html` file extension. This element is not included if there is no LoC Names database entry.
+#.	:html:`<meta property="se:url.authority.nacoaf" refines="#author">` contains the URI of the author’s `Library of Congress Names Database <http://id.loc.gov/authorities/names.html>`__ page. It uses a plain :html:`http:` prefix, and does not include the :path:`.html` file extension. This element is not included if there is no LoC Names database entry.
 
 	.. tip::
 
