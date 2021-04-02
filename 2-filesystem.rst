@@ -12,9 +12,11 @@ File locations
 
 #.	XHTML files containing the actual text of the ebook are located in :path:`./src/epub/text/`. All files in this directory end in :path:`.xhtml`.
 
-#.	CSS files used in the ebook are located in :path:`./src/epub/css/`. All files in this directory end in :path:`.css`. This directory contains only two CSS files:
+#.	CSS files used in the ebook are located in :path:`./src/epub/css/`. All files in this directory end in :path:`.css`. This directory contains only three CSS files:
 
 	#.	:path:`./src/epub/css/core.css` is distributed with all ebooks and is not edited.
+
+	#.	:path:`./src/epub/css/se.css` is also distributed with all ebooks and is not edited.
 
 	#.	:path:`./src/epub/css/local.css` is used for custom CSS local to the particular ebook.
 
