@@ -222,6 +222,8 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`National Gallery of Denmark <https://collection.smk.dk/#/en/>`__ (CC0 items have a Public Domain logo under the pictures, which leads to a CC0 license.)
 
+-	`Finnish National Gallery <https://www.kansallisgalleria.fi>`__ (CC0 items say “CC Copyright Free,” and the general rights statement in the original Finnish indicates that such images are CC0 licensed.)
+
 Clearance FAQ
 ~~~~~~~~~~~~~
 
