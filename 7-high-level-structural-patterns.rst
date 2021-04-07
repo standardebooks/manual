@@ -22,14 +22,14 @@ Sectioning
 				break-after: page;
 			}
 
-#.	In :html:`<section>` or :html:`<articles>` elements that have titles, the first child element is an :html:`<h1>`–:html:`<h6>` element, an :html:`<hgroup>` element for grouping ordinals, titles, and subtitles, or a :html:`<header>` element containing the section’s title.
+#.	In :html:`<section>` or :html:`<article>` elements that have titles, the first child element is an :html:`<h1>`–:html:`<h6>` element, an :html:`<hgroup>` element for grouping ordinals, titles, and subtitles, or a :html:`<header>` element containing the section’s title.
 
 Recomposability
 ===============
 
 “Recomposability” is the concept of generating a single structurally-correct HTML5 file out of an epub file. All Standard Ebooks are recomposable.
 
-#.	XHTML files that contain :html:`<section>` or :html:`<articles>` elements that are semantic children of  :html:`<section>` or :html:`<articles>` elements in other files, are wrapped in stubs of all parent :html:`<section>` or :html:`<articles>` elements, up to the root.
+#.	XHTML files that contain :html:`<section>` or :html:`<article>` elements that are semantic children of  :html:`<section>` or :html:`<article>` elements in other files, are wrapped in stubs of all parent :html:`<section>` or :html:`<article>` elements, up to the root.
 
 #.	Each such included parent element has the identical :html:`id` and :html:`epub:type` attributes of its real counterpart.
 
