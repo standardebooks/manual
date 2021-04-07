@@ -1007,8 +1007,8 @@ Works that are complete plays
 		}
 
 		[epub|type~="z3998:dramatis-personae"] ul li{
-			margin: 1em;
 			font-style: italic;
+			margin: 1em;
 		}
 
 		[epub|type~="z3998:dramatis-personae"] ul + p{
