@@ -1437,7 +1437,7 @@ Temperatures
 Abbreviated units of temperature
 ================================
 
-#.	Units of temperature measurement, like Farenheit or Celcius, may be abbreviated to :string:`F` or :string:`C`.
+#.	Units of temperature measurement, like Farenheit or Celsius, may be abbreviated to :string:`F` or :string:`C`.
 
 #.	Units of temperature measurement do not have trailing periods.
 
