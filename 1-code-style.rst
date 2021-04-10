@@ -190,7 +190,7 @@ Selectors
 
 		.. code:: css
 
-			abbr.era, [epub|type~="z3998:signature"]{
+			abbr.era, abbr.temperature{
 				font-variant: all-small-caps;
 			}
 
@@ -200,7 +200,7 @@ Selectors
 		.. code:: css
 
 			abbr.era,
-			[epub|type~="z3998:signature"]{
+			abbr.temperature{
 				font-variant: all-small-caps;
 			}
 
