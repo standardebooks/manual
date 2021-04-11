@@ -1232,6 +1232,10 @@ Images
 
 		.. code:: css
 
+			figure{
+				break-inside: avoid;
+			}
+
 			figure img{
 				display: block;
 				margin: auto;
@@ -1318,6 +1322,10 @@ Examples
 	}
 
 	/* In all cases, also include the below styles */
+	figure{
+		break-inside: avoid;
+	}
+
 	figure img{
 		display: block;
 		margin: auto;
