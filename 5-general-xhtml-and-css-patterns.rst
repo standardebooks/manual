@@ -361,3 +361,26 @@ CSS rules
 *********
 
 - :css:`text-align: initial;` is used instead of :css:`text-align: left;` whenever it's necessary to explicitly set left-aligned text. This allows the reading system to opt to use :css:`text-align: justify;` if the user prefers.
+
+- The :css:`vh` unit is used instead of percent units when specifying :css:`height`, :css:`max-height`, :css:`top`, or :css:`bottom`.
+
+	.. class:: wrong
+
+		.. code:: css
+
+			figure{
+				height: 100%;
+				position: absolute;
+				top: 5%;
+			}
+
+	.. class:: corrected
+
+		.. code: css
+
+			figure{
+				height: 100vh;
+				position: absolute;
+				top: 5vh;
+			}
+
