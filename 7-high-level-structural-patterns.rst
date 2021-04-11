@@ -1257,19 +1257,18 @@ Images
 				break-before: page;
 				break-inside: avoid;
 				margin: 0;
-				max-height: 100%;
+				max-height: 100vh;
 				text-align: center;
 			}
 
-			@supports(display: flex) and (max-height: 100vh){
+			@supports(display: flex){
 				figure.full-page{
 					display: flex;
 					flex-direction: column;
-					max-height: 100vh;
 				}
 
 				figure.full-page img{
-					height: 100%;
+					height: 100vh;
 				}
 			}
 
@@ -1278,6 +1277,7 @@ Images
 		.. code:: css
 
 			figure{
+				break-inside: avoid;
 				margin: 1em auto;
 				text-align: center;
 			}
@@ -1291,16 +1291,28 @@ Examples
 
 	/* If the image is meant to be on its own page, use this selector... */
 	figure.full-page{
-		margin: 0;
-		max-height: 100%;
-		break-before: page;
 		break-after: page;
+		break-before: page;
 		break-inside: avoid;
+		margin: 0;
+		max-height: 100vh;
 		text-align: center;
 	}
 
-	/* If the image is meant to be inline with the text, use this selector... */
+	@supports(display: flex){
+		figure.full-page{
+			display: flex;
+			flex-direction: column;
+		}
+
+		figure.full-page img{
+			height: 100vh;
+		}
+	}
+
+	/* If the image is meant to be aligned block-level with the text, use this selector... */
 	figure{
+		break-inside: avoid;
 		margin: 1em auto;
 		text-align: center;
 	}
@@ -1316,6 +1328,10 @@ Examples
 		font-size: .75em;
 		font-style: italic;
 		margin: 1em;
+	}
+
+	figcaption p + p{
+		text-indent: 0;
 	}
 
 .. code:: html
