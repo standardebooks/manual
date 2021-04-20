@@ -575,6 +575,23 @@ Quotation marks
 
 			<p>His friends were James M‘Donald and Sam M‘Daniel.</p>
 
+#.	Ditto marks are set with the ditto mark glyph (:utf:`〃` or U+3003), not quotation marks.
+
+		.. code:: html
+
+			<table>
+				<tbody>
+					<tr>
+						<td>3</td>
+						<td>lbs.</td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>〃</td>
+					</tr>
+				</tbody>
+			</table>
+
 Ellipses
 ========
 
