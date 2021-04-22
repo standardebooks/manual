@@ -300,7 +300,7 @@ Tables
 
 	#.	:html:`<th>` elements only appear in :html:`<thead>` elements, unless they contain the :html:`scope` attribute set to either :value:`row` or :value:`rowspan`. The :html:`scope` attribute set to those values may be used to semantically identify a table header which applies to a horizontal row instead of a vertical column.
 
-#.	:html:`<table>` elements that are used to display tabular numerical data, for example columns of sums, have CSS styling for tabular numbers: :css:`{ font-variant-numeric: tabular-nums; }`.
+#.	:html:`<table>` elements that are used to display tabular numerical data, for example columns of sums, have CSS styling for tabular numbers: :css:`font-variant-numeric: tabular-nums;`.
 
 	.. class:: corrected
 
@@ -330,7 +330,7 @@ Tables
 				</tbody>
 			</table>
 
-#.	:html:`<table>` elements that are not used to format plays/dramas, and that do not otherwise inherit a visible margin (for example, they are not children of :html:`<blockquote>`), have :css:`{ margin: 1em; }` or :css:`{ margin: 1em auto 1em auto; }`.
+#.	:html:`<table>` elements that are not used to format plays/dramas, and that do not otherwise inherit a visible margin (for example, they are not children of :html:`<blockquote>`), have :css:`margin: 1em;` or :css:`margin: 1em auto 1em auto;`.
 
 Blockquotes
 ***********

@@ -47,7 +47,7 @@ Below is an incomplete list of HTML5 elements and their semantic meanings. These
 Block-level elements
 ====================
 
-Block-level elements are by default rendered with :css:`{ display: block; }`. See the `complete list of block-level elements <https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements>`__.
+Block-level elements are by default rendered with :css:`display: block;`. See the `complete list of block-level elements <https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements>`__.
 
 #.	Sectioning block-level elements denote major structural divisions in a work.
 
@@ -86,7 +86,7 @@ Block-level elements are by default rendered with :css:`{ display: block; }`. Se
 Inline elements
 ===============
 
-Inline elements are by default rendered with :css:`{ display: inline; }`. See the `complete list of inline elements <https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements>`__.
+Inline elements are by default rendered with :css:`display: inline;`. See the `complete list of inline elements <https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements>`__.
 
 #.	:html:`<em>`: Text rendered in italics, with the semantic meaning of emphasized speech, or speech spoken in a different tone of voice; for example, a person shouting, or putting stress on a particular word.
 
