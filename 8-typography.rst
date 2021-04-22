@@ -1658,3 +1658,39 @@ Chinese
 #.	Wade-Giles is the preferred method of transliterating Chinese script. (`See here for discussion. <https://github.com/standardebooks/laozi_tao-te-ching_james-legge/issues/2>`__) Transliteration to Wade-Giles from Legge is permitted, but not required.
 
 #.	In Wade-Giles transliteration, rough breathing marks are set using :utf:`ʽ` (U+02BD).
+
+
+Tables
+******
+
+For ditto marks, see `8.7.5.4 <#8.7.5.4>`__.
+
+#.	:html:`<table>` elements that are used to display tabular numerical data, for example columns of sums, have CSS styling for tabular numbers: :css:`font-variant-numeric: tabular-nums;`.
+
+	.. class:: corrected
+
+		.. code:: css
+
+			table td:last-child{
+				text-align: right;
+				font-variant-numeric: tabular-nums;
+			}
+
+		.. code:: html
+
+			<table>
+				<tbody>
+					<tr>
+						<td>Amount 1</td>
+						<td>100</td>
+					</tr>
+					<tr>
+						<td>Amount 2</td>
+						<td>300</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>400</td>
+					</tr>
+				</tbody>
+			</table>

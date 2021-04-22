@@ -300,35 +300,7 @@ Tables
 
 	#.	:html:`<th>` elements only appear in :html:`<thead>` elements, unless they contain the :html:`scope` attribute set to either :value:`row` or :value:`rowspan`. The :html:`scope` attribute set to those values may be used to semantically identify a table header which applies to a horizontal row instead of a vertical column.
 
-#.	:html:`<table>` elements that are used to display tabular numerical data, for example columns of sums, have CSS styling for tabular numbers: :css:`font-variant-numeric: tabular-nums;`.
-
-	.. class:: corrected
-
-		.. code:: css
-
-			table td:last-child{
-				text-align: right;
-				font-variant-numeric: tabular-nums;
-			}
-
-		.. code:: html
-
-			<table>
-				<tbody>
-					<tr>
-						<td>Amount 1</td>
-						<td>100</td>
-					</tr>
-					<tr>
-						<td>Amount 2</td>
-						<td>300</td>
-					</tr>
-					<tr>
-						<td>Total</td>
-						<td>400</td>
-					</tr>
-				</tbody>
-			</table>
+#.	:html:`<table>` elements that display a total or summary row at the bottom have that row contained in a :html:`<tfoot>` element.
 
 #.	:html:`<table>` elements that are not used to format plays/dramas, and that do not otherwise inherit a visible margin (for example, they are not children of :html:`<blockquote>`), have :css:`margin: 1em;` or :css:`margin: 1em auto 1em auto;`.
 
