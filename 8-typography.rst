@@ -1206,7 +1206,7 @@ Money
 
 			<p>£14 8<abbr>s.</abbr> 2<abbr>d.</abbr> is known as a “tuppence.”</p>
 
-#.	Letters used in £sd shorthand are wrapped in :html:`<abbr>` elements.
+#.	Abbreviated currencies used in £sd shorthand are wrapped in :html:`<abbr>` elements.
 
 	.. class:: wrong
 
@@ -1219,6 +1219,8 @@ Money
 		.. code:: html
 
 			<p>£14 8<abbr>s.</abbr> 2<abbr>d.</abbr> is known as a “tuppence.”</p>
+
+#.	Abbreviated currencies used in £sd shorthand are followed by periods.
 
 Latinisms
 *********
