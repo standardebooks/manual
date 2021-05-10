@@ -252,6 +252,8 @@ The :html:`<dc:description>` element contains a short, single-sentence summary o
 
 #.	The description is a single complete sentence ending in a period, not a sentence fragment or restatement of the title.
 
+#.	For collections, compilations, and omnibuses, a sentence fragment is acceptable as a description.
+
 #.	The description is typogrified, i.e. it contains Unicode curly quotes, em-dashes, and the like.
 
 The long description
