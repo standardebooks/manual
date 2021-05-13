@@ -196,7 +196,7 @@ Museums with CC0 collections
 
 Images that are explicitly marked as CC0 from these museums can be used without further research. Not all of their images are CC0; you must confirm the presence of a CC0 license on the specific image you want to use.
 
--	`Rijksmuseum <https://www.rijksmuseum.nl/en/search?q=&f=1&p=1&ps=12&type=painting&imgonly=True&st=Objects>`__ (Open the “Object Data” section and check they “Copyright” entry under the “Acquisition and right” section to confirm CC0)
+-	`Rijksmuseum <https://www.rijksmuseum.nl/en/search?q=&f=1&p=1&ps=12&type=painting&imgonly=True&st=Objects>`__ (Open the “Object Data” section and check the “Copyright” entry under the “Acquisition and right” section to confirm CC0)
 
 -	`Finnish National Gallery via Europeana <https://www.europeana.eu/portal/en/collections/art?f%5BDATA_PROVIDER%5D%5B%5D=Finnish+National+Gallery&f%5BREUSABILITY%5D%5B%5D=open&f%5BRIGHTS%5D%5B%5D=http%2A%3A%2F%2Fcreativecommons.org%2F%2Apublicdomain%2Fzero%2A&per_page=96&view=grid>`__ (Use the “View at” link under the “Find out more” header to confirm CC0 license at the museum’s site)
 
