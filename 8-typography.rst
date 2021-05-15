@@ -1168,6 +1168,12 @@ Math
 					</m:math>
 				</p>
 
+#.	Ratios are expressed with the Unicode ratio character (:utf:`∶` or U+2236) surrounded by spaces, not a colon. The ratio character is also used for logical comparisons in non-mathematical contexts, like analogies in running prose.
+
+	.. code:: html
+
+		<p>And so we get four names⁠—two for intellect, and two for opinion⁠—reason or mind, understanding, faith, perception of shadows⁠—which make a proportion⁠—being ∶ becoming ∶∶ intellect ∶ opinion⁠— and science ∶ belief ∶∶ understanding ∶ perception of shadows.
+
 Money
 =====
 
