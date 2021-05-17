@@ -68,7 +68,7 @@ The :html:`<nav>` element’s top-level :html:`<ol>` element contains a list of 
 			<a href="text/colophon.xhtml">Colophon</a>
 		</li>
 
-#.	The second-to-last child is a link to the Uncopyright.
+#.	The last child is a link to the Uncopyright.
 
 	.. code:: html
 
