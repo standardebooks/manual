@@ -1272,7 +1272,7 @@ Images
 				}
 			}
 
-	#.	:html:`<figure>` elements that meant to be aligned block-level with the text have this additional CSS:
+	#.	:html:`<figure>` elements that are meant to be aligned block-level with the text have this additional CSS:
 
 		.. code:: css
 
