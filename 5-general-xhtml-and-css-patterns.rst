@@ -38,7 +38,7 @@ This section covers general patterns used when producing XHTML  and CSS that are
 
 #.	:html:`id` attributes are not used as hooks for CSS styling.
 
-#.	If an element that is not a :html:`<section>` or :html:`<article>` requires an :html:`id` attribute, the attribute’s value is the name of the element followed by :value:`-N`, where :value:`N` is the sequence number of the element start at :value:`1`.
+#.	If an element that is not a :html:`<section>` or :html:`<article>` requires an :html:`id` attribute, the attribute’s value is the name of the element followed by :value:`-N`, where :value:`N` is the sequence number of the element starting at :value:`1`.
 
 	.. class:: corrected
 
