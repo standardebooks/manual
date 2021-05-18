@@ -268,6 +268,8 @@ Ordered/numbered and unordered lists
 Tables
 ******
 
+Tables can often be difficult to represent semantically. For understanding the high-level concepts of tables and the semantic meaning of the various table-related elements, refer to the `HTML Living Standard secton on tables <https://html.spec.whatwg.org/multipage/tables.html>`__. For detailed examples on how to represent complex tables in a semantic and accessible way, refer to the `Web Accessibility Initiative guide on creating accessible tables <https://www.w3.org/WAI/tutorials/tables/>`__.
+
 #.	:html:`<table>` elements have a direct child :html:`<tbody>` element.
 
 	.. class:: wrong
@@ -294,11 +296,54 @@ Tables
 				</tbody>
 			</table>
 
+	#.	More than one :html:`<tbody>` element may be included if a table has additional headers in the middle of the table body.
+
+		.. code:: html
+
+			<table>
+				<tbody>
+					<tr>
+						<th colspan="2" scope="rowgroup">Breakfast:</th>
+					</tr>
+					<tr>
+						<td>1 <abbr>pt.</abbr> milk</td>
+						<td>.05</td>
+					</tr>
+					<tr>
+						<td>Cereal</td>
+						<td>.01</td>
+					</tr>
+					<tr>
+						<td>Fruit</td>
+						<td>.02</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<th colspan="2" scope="rowgroup">Late Supper:</th>
+					</tr>
+					<tr>
+						<td>Soup (potato, pea, bean)</td>
+						<td>.02</td>
+					</tr>
+					<tr>
+						<td>Rolls</td>
+						<td>.02</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th scope="row">Total:</th>
+						<td>.12</td>
+					</tr>
+				</tfoot>
+			</table>
+
 #.	:html:`<table>` elements may have an optional direct child :html:`<thead>` element, if a table heading is desired.
 
 	#.	:html:`<th>` elements are used in :html:`<thead>` elements, instead of :html:`<td>`.
 
-	#.	:html:`<th>` elements only appear in :html:`<thead>` elements, unless they contain the :html:`scope` attribute set to either :value:`row` or :value:`rowspan`. The :html:`scope` attribute set to those values may be used to semantically identify a table header which applies to a horizontal row instead of a vertical column.
+	#.	:html:`<th>` elements only appear in :html:`<thead>` elements, unless they contain the :html:`scope` attribute. The :html:`scope` attribute may be used to semantically identify a table header which applies to a horizontal row instead of a vertical column, or to a row group in a table with multiple :html:`<tbody>` elements.
 
 #.	:html:`<table>` elements that display a total or summary row at the bottom have that row contained in a :html:`<tfoot>` element.
 
