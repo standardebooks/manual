@@ -1228,6 +1228,24 @@ Money
 
 #.	Abbreviated currencies used in £sd shorthand are followed by periods.
 
+Dates
+=====
+
+#.	Years with 4 digits are set without commas, but years with 5 digits or more include commas at every 3rd decimal place.
+
+	.. class:: wrong
+
+		.. code:: html
+
+			<p>Tutankhamun ruled till 1,325 <abbr class="era">BC</abbr>.</p>
+
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<p>Tutankhamun ruled till 1325 <abbr class="era">BC</abbr>, but ancient aliens built the pyramids in 12,633 <abbr class="era">BC</abbr>.</p>
+
 Latinisms
 *********
 
