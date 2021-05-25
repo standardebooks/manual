@@ -109,9 +109,7 @@ Books with a more popular alternate title
 
 Some books are commonly referred to by a shorter name than their actual title. For example, :italics:`The Adventures of Huckleberry Finn </ebooks/mark-twain/the-adventures-of-huckleberry-finn>` is often simply known as :italics:`Huck Finn`.
 
-#.	The :html:`<dc:title id="title-short">` element contains the common title. It is refined with :html:`<meta property="title-type" refines="#title-short">short</meta>`.
-
-#.	The common title does not have a corresponding :html:`<meta property="file-as">` element.
+#.	The :html:`<dc:title id="title-short">` element contains the common title. It is refined with :html:`<meta property="title-type" refines="#title-short">short</meta>` and :html:`<meta property="file-as">`.
 
 Books with numbers or abbreviations in the title
 ================================================
