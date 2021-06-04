@@ -414,8 +414,8 @@ Sponsors
 
 		.. code:: html
 
-			<p>This ebook was produced for the<br/>
-			<a href="https://standardebooks.org">Standard Ebooks project</a><br/>
+			<p>This ebook was produced for<br/>
+			<a href="https://standardebooks.org">Standard Ebooks</a><br/>
 			by<br/>
 
 	is replaced with:
@@ -423,8 +423,8 @@ Sponsors
 		.. code:: html
 
 			<p><a href="SPONSOR_HOMEPAGE_URL">SPONSOR_NAME</a><br/>
-			sponsored the production of this ebook for the<br/>
-			<a href="https://standardebooks.org">Standard Ebooks project</a>.<br/>
+			sponsored the production of this ebook for<br/>
+			<a href="https://standardebooks.org">Standard Ebooks</a>.<br/>
 			It was produced by<br/>
 
 Subsections
@@ -462,8 +462,8 @@ Subsections
 
 		.. code:: html
 
-			<p>This ebook was produced for the<br/>
-			<a href="https://standardebooks.org">Standard Ebooks project</a><br/>
+			<p>This ebook was produced for<br/>
+			<a href="https://standardebooks.org">Standard Ebooks</a><br/>
 			by<br/>
 			<a href="https://www.robinwhittleton.com/">Robin Whittleton</a>,<br/>
 			and is based on a transcription produced in 1997 by<br/>
@@ -472,6 +472,8 @@ Subsections
 			<a href="https://www.gutenberg.org/ebooks/965">Project Gutenberg</a><br/>
 			and on digital scans available at the<br/>
 			<a href="https://archive.org/details/worksofdumas24dumaiala">Internet Archive</a>.</p>
+
+		#.	If the Standard ebooks producer also transcribed the book *in its entirety*, then the first line becomes: :html:`<p>This ebook was transcribed and produced for<br/>`.
 
 	#.	The third :html:`<p>` block names the cover art, cover artist, and the typefaces used on the cover and title pages.
 
@@ -526,8 +528,8 @@ An example of a complete colophon
 				<a href="https://en.wikipedia.org/wiki/Alexandre_Dumas">Alexandre Dumas</a>.<br/>
 				It was translated from French in 1902 by<br/>
 				<a href="https://en.wikipedia.org/wiki/Peter_F._Collier"><abbr class="name">P. F.</abbr> Collier and Son</a>.</p>
-				<p>This ebook was produced for the<br/>
-				<a href="https://standardebooks.org">Standard Ebooks project</a><br/>
+				<p>This ebook was produced for<br/>
+				<a href="https://standardebooks.org">Standard Ebooks</a><br/>
 				by<br/>
 				<a href="https://www.robinwhittleton.com/">Robin Whittleton</a>,<br/>
 				and is based on a transcription produced in 1997 by<br/>
