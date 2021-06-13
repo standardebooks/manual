@@ -134,6 +134,8 @@ Italicizing individual letters
 
 		<p>The <i>n</i>th degree.</p>
 
+#.	Phonemes, or individual speech sounds that may be spelled with more than one letter, are italicized with an :html:`<i epub:type="z3998:phoneme">` element.
+
 Italicizing non-English words and phrases
 =========================================
 
