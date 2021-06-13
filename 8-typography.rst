@@ -317,7 +317,7 @@ Exceptions
 
 			<blockquote epub:type="epigraph">
 				<p>“<i xml:lang="fr">En administration, toutes les sottises sont mères.</i>”</p>
-				<cite><i epub:type="se:name.publication.book">Maximes</i>, <i xml:lang="la">fr</i> <abbr class="name">M. G.</abbr> De Levis.</cite>
+				<cite><i epub:type="se:name.publication.book">Maximes</i>, <i xml:lang="la">fr</i> <abbr  epub:type="z3998:given-name">M. G.</abbr> De Levis.</cite>
 			</blockquote>
 
 	.. class:: corrected
@@ -347,7 +347,7 @@ Exceptions
 
 			<blockquote epub:type="epigraph">
 				<p xml:lang="fr">“En administration, toutes les sottises sont mères.”</p>
-				<cite><i epub:type="se:name.publication.book">Maximes</i>, <i xml:lang="la">fr</i> <abbr class="name">M. G.</abbr> De Levis.</cite>
+				<cite><i epub:type="se:name.publication.book">Maximes</i>, <i xml:lang="la">fr</i> <abbr  epub:type="z3998:given-name">M. G.</abbr> De Levis.</cite>
 			</blockquote>
 
 Capitalization
@@ -737,14 +737,14 @@ Numbers, measurements, and math
 
 		.. code:: html
 
-			<p><abbr>Lat.</abbr> 27° 0' <abbr class="compass">N.</abbr>, <abbr>long.</abbr> 20° 1' <abbr class="compass eoc">W.</abbr></p>
-			<p><abbr>Lat.</abbr> 27° 0’ <abbr class="compass">N.</abbr>, <abbr>long.</abbr> 20° 1’ <abbr class="compass eoc">W.</abbr></p>
+			<p><abbr>Lat.</abbr> 27° 0' <abbr epub:type="se:compass">N.</abbr>, <abbr>long.</abbr> 20° 1' <abbr class="eoc" epub:type="se:compass">W.</abbr></p>
+			<p><abbr>Lat.</abbr> 27° 0’ <abbr epub:type="se:compass">N.</abbr>, <abbr>long.</abbr> 20° 1’ <abbr class="eoc" epub:type="se:compass">W.</abbr></p>
 
 	.. class:: corrected
 
 		.. code:: html
 
-			<p><abbr>Lat.</abbr> 27° 0′ <abbr class="compass">N.</abbr>, <abbr>long.</abbr> 20° 1′ <abbr class="compass eoc">W.</abbr></p>
+			<p><abbr>Lat.</abbr> 27° 0′ <abbr epub:type="se:compass">N.</abbr>, <abbr>long.</abbr> 20° 1′ <abbr class="eoc" epub:type="se:compass">W.</abbr></p>
 
 #.	Ordinals for Arabic numbers are as follows: :string:`st`, :string:`nd`, :string:`rd`, :string:`th`.
 
@@ -926,7 +926,7 @@ Punctuation in abbreviated measurements
 
 	.. code:: html
 
-		<p>There’s a force of over a hundred thousand <abbr class="initialism">G</abbr>’s.</p>
+		<p>There’s a force of over a hundred thousand <abbr epub:type="z3998:initialism">G</abbr>’s.</p>
 
 #.	Abbreviated English, Imperial, or US customary units that are more than one word (like :string:`hp` for :string:`horse power` or :string:`mph` for :string:`miles per hour`) are set in lowercase without periods. They are not initialisms.
 
@@ -1239,14 +1239,14 @@ Dates
 
 		.. code:: html
 
-			<p>Tutankhamun ruled till 1,325 <abbr class="era">BC</abbr>.</p>
+			<p>Tutankhamun ruled till 1,325 <abbr epub:type="se:era">BC</abbr>.</p>
 
 
 	.. class:: corrected
 
 		.. code:: html
 
-			<p>Tutankhamun ruled till 1325 <abbr class="era">BC</abbr>, but ancient aliens built the pyramids in 12,633 <abbr class="era">BC</abbr>.</p>
+			<p>Tutankhamun ruled till 1325 <abbr epub:type="se:era">BC</abbr>, but ancient aliens built the pyramids in 12,633 <abbr epub:type="se:era">BC</abbr>.</p>
 
 Latinisms
 *********
@@ -1261,7 +1261,7 @@ Latinisms
 
 #.	For :string:`Ibid.`, `see Endnotes </manual/VERSION/7-high-level-structural-patterns#7.9>`__.
 
-#.	Latinisms that are abbreviations are set in lowercase with periods between words and no spaces between them, except :string:`BC`, :string:`AD`, :string:`BCE`, and :string:`CE`, which are set without periods, in small caps, and wrapped with :html:`<abbr class="era">`:
+#.	Latinisms that are abbreviations are set in lowercase with periods between words and no spaces between them, except :string:`BC`, :string:`AD`, :string:`BCE`, and :string:`CE`, which are set without periods, in small caps, and wrapped with :html:`<abbr epub:type="se:era">`:
 
 	.. code:: css
 
@@ -1271,7 +1271,7 @@ Latinisms
 
 	.. code:: html
 
-		<p>Julius Caesar was born around 100 <abbr class="era">BC</abbr>.</p>
+		<p>Julius Caesar was born around 100 <abbr epub:type="se:era">BC</abbr>.</p>
 
 Initials and abbreviations
 **************************
@@ -1284,23 +1284,23 @@ Initials and abbreviations
 
 -	`See here for measurements </manual/VERSION/8-typography#8.8>`__.
 
-#.	Acronyms (terms made up of initials and pronounced as one word, like :string:`NASA`, :string:`SCUBA`, or :string:`NATO`) are set in small caps, without periods, and are wrapped in an :html:`<abbr class="acronym">` element with corresponding CSS.
+#.	Acronyms (terms made up of initials and pronounced as one word, like :string:`NASA`, :string:`SCUBA`, or :string:`NATO`) are set in small caps, without periods, and are wrapped in an :html:`<abbr epub:type="z3998:acronym">` element with corresponding CSS.
 
 	.. code:: css
 
-		abbr.acronym{
+		[epub|type~="z3998:acronym"]{
 			font-variant: all-small-caps;
 		}
 
 	.. code:: html
 
-		<p>He was hired by <abbr class="acronym">NASA</abbr> last week.</p>
+		<p>He was hired by <abbr epub:type="z3998:acronym">NASA</abbr> last week.</p>
 
-#.	Initialisms (terms made up of initials in which each initial is pronounced separately, like :string:`M.P.`, :string:`P.S.`, or :string:`U.S.S.R.`) are set with periods and without spaces (with some exceptions that follow) and are wrapped in an :html:`<abbr class="initialism">` element.
+#.	Initialisms (terms made up of initials in which each initial is pronounced separately, like :string:`M.P.`, :string:`P.S.`, or :string:`U.S.S.R.`) are set with periods and without spaces (with some exceptions that follow) and are wrapped in an :html:`<abbr epub:type="z3998:initialism">` element.
 
 	.. code:: html
 
-		<p>He was hired by the <abbr class="initialism">U.S.</abbr> <abbr class="initialism">F.B.I.</abbr> last week.</p>
+		<p>He was hired by the <abbr epub:type="z3998:initialism">U.S.</abbr> <abbr epub:type="z3998:initialism">F.B.I.</abbr> last week.</p>
 
 #.	When an abbreviation that is not an acronym contains a terminal period, its :html:`<abbr>` element has the additional :value:`eoc` class (End of Clause) if the terminal period is also the last period in clause. Such sentences do not have two consecutive periods.
 
@@ -1310,34 +1310,39 @@ Initials and abbreviations
 
 	.. code:: html
 
-		<p>He lists his name alphabetically as Johnson, <abbr class="name eoc">R. A.</abbr></p>
+		<p>He lists his name alphabetically as Johnson, <abbr class="eoc" epub:type="z3998:given-name">R. A.</abbr></p>
 
 	.. code:: html
 
-		<p>His favorite hobby was <abbr class="acronym">SCUBA</abbr>.</p>
+		<p>His favorite hobby was <abbr epub:type="z3998:acronym">SCUBA</abbr>.</p>
 
-#.	Initials of people’s names are each separated by periods and spaces. The group of initials is wrapped in an :html:`<abbr class="name">` element.
-
-	.. code:: html
-
-		<p><abbr class="name">H. P.</abbr> Lovecraft described himself as an aged antiquarian.</p>
-
-#.	Academic degrees are wrapped in an :html:`<abbr class="degree">` element. Degrees that consist of initials are set with a period between each initial. Degrees that consist of initials followed by abbreviated words are set with a hair space before the word.
+#.	Initials of people’s names are each separated by periods and spaces. The group of initials is wrapped in an :html:`<abbr epub:type="z3998:*-name">` element. The correct semantic is selected from :value:`z3998:personal-name` (a complete personal name including last name), :value:`z3998:given-name` (a person's given, or first, name(s)), or :value:`z3998:surname` (a person's last name).
 
 	.. code:: html
 
-		<p>Judith Douglas, <abbr class="degree eoc">D.D.S</abbr></p>
-		<p>Abraham Van Helsing, <abbr class="degree">M.D.</abbr>, <abbr class="degree">D.:ws:`hairsp`Ph.</abbr>, <abbr class="degree">D.:ws:`hairsp`Lit.</abbr>, <abbr>etc.</abbr>, <abbr class="eoc">etc.</abbr></p>
+		<p><abbr epub:type="z3998:given-name">H. P.</abbr> Lovecraft described himself as an aged antiquarian.</p>
+
+		<footer>
+			<p epub:type="z3998:signature"><abbr epub:type="z3998:personal-name">A. A. C.</abbr></p>
+			<p>Dec 12, 1933</p>
+		</footer>
+
+#.	Academic degrees are wrapped in an :html:`<abbr epub:type="z3998:name-title">` element. Degrees that consist of initials are set with a period between each initial. Degrees that consist of initials followed by abbreviated words are set with a hair space before the word.
+
+	.. code:: html
+
+		<p>Judith Douglas, <abbr class="eoc" epub:type="z3998:name-title">D.D.S</abbr></p>
+		<p>Abraham Van Helsing, <abbr epub:type="z3998:name-title">M.D.</abbr>, <abbr epub:type="z3998:name-title">D.:ws:`hairsp`Ph.</abbr>, <abbr epub:type="z3998:name-title">D.:ws:`hairsp`Lit.</abbr>, <abbr>etc.</abbr>, <abbr class="eoc">etc.</abbr></p>
 
 	#.	Some degrees are exceptions:
 
 		- :string:`LL.D.` does not have a period in :string:`LL`, because it indicates the plural :string:`Legum`.
 
-#.	Postal codes and abbreviated US states are set in all caps, without periods or spaces, and are wrapped in an :html:`<abbr class="postal">` element.
+#.	Postal codes and abbreviated US states are set in all caps, without periods or spaces, and are wrapped in an :html:`<abbr class="z3998:place">` element.
 
 	.. code:: html
 
-		<p>Washington <abbr class="postal">DC</abbr>.</p>
+		<p>Washington <abbr epub:type="z3998:place">DC</abbr>.</p>
 
 #.	Abbreviations that are abbreviations of a single word, and that are not acronyms or initialisms (like :string:`Mr.`, :string:`Mrs.`, or :string:`lbs.`) are set with :html:`<abbr>`.
 
@@ -1351,11 +1356,11 @@ Initials and abbreviations
 
 			<p>He called on <abbr>Mrs.</abbr>:ws:`nbsp`Jones yesterday.</p>
 
-#.	Compass points are separated by periods and spaces. The group of points are wrapped in an :html:`<abbr class="compass">` element.
+#.	Compass points are separated by periods and spaces. The group of points are wrapped in an :html:`<abbr epub:type="se:compass">` element.
 
 	.. code:: html
 
-		<p>He traveled <abbr class="compass">S.</abbr>, <abbr class="compass">N. W.</abbr>, then <abbr class="compass eoc">E. S. E.</abbr></p>
+		<p>He traveled <abbr epub:type="se:compass">S.</abbr>, <abbr epub:type="se:compass">N. W.</abbr>, then <abbr class="eoc" epub:type="se:compass">E. S. E.</abbr></p>
 
 Exceptions that are not abbreviations
 =====================================
@@ -1378,7 +1383,7 @@ Exceptions that are not abbreviations
 
 		.. code:: html
 
-			<p>She bought 125 shares of <abbr class="initialism">XYZ</abbr> corporation.</p>
+			<p>She bought 125 shares of <abbr epub:type="z3998:initialism">XYZ</abbr> corporation.</p>
 
 #.	The following are abbreviations, but are not initialisms. Unlike almost all other abbreviations, they are in all caps and only have a period at the end.
 
@@ -1399,7 +1404,7 @@ Exceptions that are not abbreviations
 	.. code:: html
 
 		<p>She was learning her A.B.C.s</p>
-		<p>He stopped by the <abbr class="initialism">A.B.C.</abbr> shop.</p>
+		<p>He stopped by the <abbr epub:type="z3998:initialism">A.B.C.</abbr> shop.</p>
 
 Other exceptions
 ================
@@ -1417,7 +1422,7 @@ Times
 
 #.	Times in a.m. and p.m. format are set in lowercase, with periods, and without spaces.
 
-#.	:string:`a.m.` and :string:`p.m.` are wrapped in an :html:`<abbr class="time">` element.
+#.	:string:`a.m.` and :string:`p.m.` are wrapped in an :html:`<abbr>` element.
 
 Times as digits
 ===============
@@ -1428,7 +1433,7 @@ Times as digits
 
 	.. code:: html
 
-		<p>He called at 6:40:ws:`nbsp`<abbr class="time eoc">a.m.</abbr></p>
+		<p>He called at 6:40:ws:`nbsp`<abbr class="eoc">a.m.</abbr></p>
 
 Times as words
 ==============
@@ -1447,7 +1452,7 @@ Times as words
 
 	.. code:: html
 
-		<p>She wasn’t up till seven <abbr class="time eoc">a.m.</abbr></p>
+		<p>She wasn’t up till seven <abbr class="eoc">a.m.</abbr></p>
 
 #.	Military times that are spelled out (for example, in dialog) are set with dashes. Leading zeros are spelled out as :string:`oh`.
 
@@ -1458,11 +1463,11 @@ Times as words
 Chemicals and compounds
 ***********************
 
-#.	Molecular compounds are set in Roman, without spaces, and wrapped in an :html:`<abbr class="compound">` element.
+#.	Molecular compounds are set in Roman, without spaces, and wrapped in an :html:`<abbr epub:type="se:compound">` element.
 
 	.. code:: html
 
-		<p>He put extra <abbr class="compound">NaCl</abbr> on his dinner.</p>
+		<p>He put extra <abbr epub:type="se:compound">NaCl</abbr> on his dinner.</p>
 
 #.	Elements in a molecular compound are capitalized according to their listing in the periodic table.
 
@@ -1470,7 +1475,7 @@ Chemicals and compounds
 
 	.. code:: html
 
-		<p>She drank eight glasses of <abbr class="compound">H<sub>2</sub>O</abbr> a day.</p>
+		<p>She drank eight glasses of <abbr epub:type="se:compound">H<sub>2</sub>O</abbr> a day.</p>
 
 Temperatures
 ************
@@ -1490,17 +1495,17 @@ Abbreviated units of temperature
 
 #.	Abbreviated units of measurement are set in small caps.
 
-#.	Abbreviated units of measurement are wrapped in an :html:`<abbr class="temperature">` element.
+#.	Abbreviated units of measurement are wrapped in an :html:`<abbr epub:type="se:temperature">` element.
 
 	.. code:: css
 
-		abbr.temperature{
+		[epub|type~="se:temperature"]{
 			font-variant: all-small-caps;
 		}
 
 	.. code:: html
 
-		<p>It was −23.33° Celsius (or −10°:ws:`hairsp`<abbr class="temperature">F</abbr>) last night.</p>
+		<p>It was −23.33° Celsius (or −10°:ws:`hairsp`<abbr epub:type="se:temperature">F</abbr>) last night.</p>
 
 Scansion
 ********

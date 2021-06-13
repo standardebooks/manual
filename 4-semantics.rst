@@ -96,7 +96,7 @@ Inline elements are by default rendered with :css:`display: inline;`. See the `c
 
 		.. code:: html
 
-			<p>The <abbr class="initialism">H.M.S.</abbr> <i epub:type="se:name.vessel.ship">Bounty</i>.</p>
+			<p>The <abbr epub:type="z3998:initialism">H.M.S.</abbr> <i epub:type="se:name.vessel.ship">Bounty</i>.</p>
 
 #.	:html:`<b>`: Text rendered in small caps, without any explicit semantic meaning. Because :html:`<b>` lacks semantic meaning, the :html:`epub:type` attribute can be added with appropriate semantic inflection to describe the contents of the element; however, unlike :html:`<i>`, it’s rare for :html:`<b>` to require semantic meaning, as it is generally used only for visual styling.
 
@@ -131,7 +131,7 @@ For example, an ebook producer may want to convey that the contents of a certain
 
 	.. code:: html
 
-		The <abbr class="initialism">H.M.S.</abbr> <i epub:type="se:name.vessel.ship">Bounty</i>.
+		The <abbr epub:type="z3998:initialism">H.M.S.</abbr> <i epub:type="se:name.vessel.ship">Bounty</i>.
 
 #.	The :html:`epub:type` attribute can have multiple keywords separated by spaces, even if the vocabularies are different.
 

@@ -389,7 +389,7 @@ Names
 
 #.	Within :html:`<p>` elements, proper names except for the book title and cover art title are wrapped in an :html:`<a>` element pointing to the name’s Wikipedia page, or to a link representing the name, like a personal homepage.
 
-#.	If a name does not have a Wikipedia entry, the name is wrapped in :html:`<b class="name">`.
+#.	If a name does not have a Wikipedia entry, the name is wrapped in :html:`<b epub:type="z3998:personal-name">`.
 
 #.	Two names are separated by :string:`and`. Three or more names are separated by commas, with the final name separated by :string:`, and`. (I.e., with an Oxford comma.)
 
@@ -397,13 +397,13 @@ Names
 
 		.. code:: html
 
-			<b class="name">Fritz Ohrenschall</b>, <b class="name">Sania Ali Mirza</b> and <a href="https://www.pgdp.net">The Online Distributed Proofreading Team</a>
+			<b epub:type="z3998:personal-name">Fritz Ohrenschall</b>, <b epub:type="z3998:personal-name">Sania Ali Mirza</b> and <a href="https://www.pgdp.net">The Online Distributed Proofreading Team</a>
 
 	.. class:: corrected
 
 		.. code:: html
 
-			<b class="name">Fritz Ohrenschall</b>, <b class="name">Sania Ali Mirza</b>, and <a href="https://www.pgdp.net">The Online Distributed Proofreading Team</a>
+			<b epub:type="z3998:personal-name">Fritz Ohrenschall</b>, <b epub:type="z3998:personal-name">Sania Ali Mirza</b>, and <a href="https://www.pgdp.net">The Online Distributed Proofreading Team</a>
 
 #.	Any anonymous contributor is listed as :string:`An Anonymous Volunteer`.
 
@@ -456,7 +456,7 @@ Subsections
 				was published in 1837 by<br/>
 				<a href="https://en.wikipedia.org/wiki/Alexander_Pushkin">Alexander Pushkin</a>.<br/>
 				It was translated from Russian in 1881 by<br/>
-				<b class="name">Henry Spalding</b>.</p>
+				<b epub:type="z3998:personal-name">Henry Spalding</b>.</p>
 
 	#.	The second :html:`<p>` block names the Standard Ebooks producer, the original transcribers, and the page scan sources.
 
@@ -467,7 +467,7 @@ Subsections
 			by<br/>
 			<a href="https://www.robinwhittleton.com/">Robin Whittleton</a>,<br/>
 			and is based on a transcription produced in 1997 by<br/>
-			<b class="name">An Anonymous Volunteer</b> and <b class="name">David Widger</b><br/>
+			<b epub:type="z3998:personal-name">An Anonymous Volunteer</b> and <b epub:type="z3998:personal-name">David Widger</b><br/>
 			for<br/>
 			<a href="https://www.gutenberg.org/ebooks/965">Project Gutenberg</a><br/>
 			and on digital scans available at the<br/>
@@ -493,7 +493,7 @@ Subsections
 		.. code:: html
 
 			<p>The first edition of this ebook was released on<br/>
-			<b>May 11, 2018, 2:13 <abbr class="time eoc">a.m.</abbr></b><br/>
+			<b>May 11, 2018, 2:13 <abbr class="eoc">a.m.</abbr></b><br/>
 			You can check for updates to this ebook, view its revision history, or download it for different ereading systems at<br/>
 			<a href="https://standardebooks.org/ebooks/alexandre-dumas/the-black-tulip/p-f-collier-and-son">standardebooks.org/ebooks/alexandre-dumas/the-black-tulip/p-f-collier-and-son</a>.</p>
 
@@ -527,13 +527,13 @@ An example of a complete colophon
 				was published in 1850 by<br/>
 				<a href="https://en.wikipedia.org/wiki/Alexandre_Dumas">Alexandre Dumas</a>.<br/>
 				It was translated from French in 1902 by<br/>
-				<a href="https://en.wikipedia.org/wiki/Peter_F._Collier"><abbr class="name">P. F.</abbr> Collier and Son</a>.</p>
+				<a href="https://en.wikipedia.org/wiki/Peter_F._Collier"><abbr epub:type="z3998:given-name">P. F.</abbr> Collier and Son</a>.</p>
 				<p>This ebook was produced for<br/>
 				<a href="https://standardebooks.org">Standard Ebooks</a><br/>
 				by<br/>
 				<a href="https://www.robinwhittleton.com/">Robin Whittleton</a>,<br/>
 				and is based on a transcription produced in 1997 by<br/>
-				<b class="name">An Anonymous Volunteer</b> and <b class="name">David Widger</b><br/>
+				<b epub:type="z3998:personal-name">An Anonymous Volunteer</b> and <b epub:type="z3998:personal-name">David Widger</b><br/>
 				for<br/>
 				<a href="https://www.gutenberg.org/ebooks/965">Project Gutenberg</a><br/>
 				and on digital scans available at the<br/>
@@ -547,7 +547,7 @@ An example of a complete colophon
 				typefaces created in 2014 and 2009 by<br/>
 				<a href="https://www.theleagueofmoveabletype.com">The League of Moveable Type</a>.</p>
 				<p>The first edition of this ebook was released on<br/>
-				<b>May 11, 2018, 2:13 <abbr class="time eoc">a.m.</abbr></b><br/>
+				<b>May 11, 2018, 2:13 <abbr class="eoc">a.m.</abbr></b><br/>
 				You can check for updates to this ebook, view its revision history, or download it for different ereading systems at<br/>
 				<a href="https://standardebooks.org/ebooks/alexandre-dumas/the-black-tulip/p-f-collier-and-son">standardebooks.org/ebooks/alexandre-dumas/the-black-tulip/p-f-collier-and-son</a>.</p>
 				<p>The volunteer-driven Standard Ebooks project relies on readers like you to submit typos, corrections, and other improvements. Anyone can contribute at <a href="https://standardebooks.org">standardebooks.org</a>.</p>

@@ -1099,7 +1099,7 @@ Letter footers
 	.. code:: html
 
 		<footer>
-			<p epub:type="z3998:sender z3998:signature"><abbr class="name">R. A.</abbr> Johnson</p>
+			<p epub:type="z3998:sender z3998:signature"><abbr  epub:type="z3998:given-name">R. A.</abbr> Johnson</p>
 		</footer>
 
 	.. code:: html
@@ -1162,7 +1162,7 @@ Examples
 		<footer>
 			<p epub:type="z3998:valediction">Your loving niece,</p>
 			<p epub:type="z3998:sender z3998:signature">Mabel</p>
-			<p epub:type="z3998:postscript"><abbr class="initialism">P.S.</abbr>:ws:`wj`—Lots, please, because some of us are very hungry.</p>
+			<p epub:type="z3998:postscript"><abbr epub:type="z3998:initialism">P.S.</abbr>:ws:`wj`—Lots, please, because some of us are very hungry.</p>
 		</footer>
 	</blockquote>
 
@@ -1495,7 +1495,7 @@ Examples
 				<h2 epub:type="title">Endnotes</h2>
 				<ol>
 					<li id="note-1" epub:type="endnote">
-						<p>For more detailed observations on these points refer to <abbr class="name">G.</abbr> Volkens, “Uber die Karolinen Insel Yap.” <cite>—<abbr class="name eoc">W. T. G.</abbr></cite> <a href="chapter-2.xhtml#noteref-1" epub:type="backlink">↩</a></p>
+						<p>For more detailed observations on these points refer to <abbr  epub:type="z3998:given-name">G.</abbr> Volkens, “Uber die Karolinen Insel Yap.” <cite>—<abbr  epub:type="z3998:personal-name" class="eoc">W. T. G.</abbr></cite> <a href="chapter-2.xhtml#noteref-1" epub:type="backlink">↩</a></p>
 					</li>
 					<li id="note-2" epub:type="endnote">
 						<blockquote epub:type="z3998:verse">
