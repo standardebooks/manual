@@ -81,11 +81,17 @@ Italics
 
 		<p>He could hear the dog barking: <i>Ruff, ruff, ruff!</i></p>
 
-#.	A person's internal thoughts are italicized with unsemanticated :html:`<i>`.
+#.	A person's internal thoughts are italicized with :html:`<q>` styled with italics.
+
+	.. code:: css
+
+		q{
+			font-style: italic;
+		}
 
 	.. code:: html
 
-		<p>The thought flashed to me: <i>it’s a city you’re firing at, not a plane</i>, and I flinched.</p>
+		<p>The thought flashed to me: <q>it’s a city you’re firing at, not a plane</q>, and I flinched.</p>
 
 Italicizing individual letters
 ==============================
