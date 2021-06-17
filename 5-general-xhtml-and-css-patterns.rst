@@ -210,7 +210,7 @@ Classes denote a group of elements sharing a similar style.
 
 			She opened the book titled <i epub:type="se:name.publication.book" xml:lang="la">Mortis Imago</i>.
 
-	#.	The :html:`xml:lang` attribute is applied to the highest-level element possible. If italics are required and moving the :html:`xml:lang` attribute would also remove an :html:`<i>` element, the parent element can be styled with :css:`body [xml|lang]{ font-style: italic; }`.
+	#.	The :html:`xml:lang` attribute is applied to the highest-level element possible. If italics are required and moving the :html:`xml:lang` attribute would also remove an :html:`<i>` element, the parent element can be styled with :css:`body [xml|lang]{ font-style: italic; }`. This style also requires a namespace declaration at the top of the file: :css:`@namespace xml "http://www.w3.org/XML/1998/namespace";`.
 
 	.. class:: wrong
 
