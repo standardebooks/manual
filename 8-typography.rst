@@ -1273,7 +1273,39 @@ Latinisms
 
 -	`See here for times </manual/VERSION/8-typography#8.11>`__.
 
-#.	Latinisms (except :string:`sic`) that can be found in a modern dictionary are not italicized. Examples include :string:`e.g.`, :string:`i.e.`, :string:`ad hoc`, :string:`viz.`, :string:`ibid.`, :string:`etc.`. The exception is :string:`sic`, which is always italicized.
+#.	Latinisms (except :string:`sic`) that can be found in a modern dictionary are not italicized, with some exceptions below. Examples include :string:`e.g.`, :string:`i.e.`, :string:`ad hoc`, :string:`viz.`, :string:`ibid.`, :string:`etc.`.
+
+	#.	The following less-common Latinisms are always italicized to prevent confusing the intial word with a different English word:
+
+		- :string:`sic`
+
+		- :string:`a posteriori`
+
+		- :string:`a priori`
+
+		- :string:`a fortiori`
+
+		- :string:`ad absurdum`
+
+		- :string:`ad hominem`
+
+		- :string:`ad infinitum`
+
+		- :string:`ad interim`
+
+		- :string:`ad nauseam`
+
+		- :string:`in absentia`
+
+		- :string:`in camera`
+
+		- :string:`in loco parentis`
+
+		- :string:`in situ`
+
+		- :string:`in toto`
+
+		- :string:`in vitro`
 
 #.	Whole passages of Latin language and Latinisms that aren’t found in a modern dictionary are italicized.
 
