@@ -450,7 +450,7 @@ Headers
 Chapter headers
 ===============
 
-#.	Epigraphs in chapters have the quote source set in small caps, without a leading em-dash and without a trailing period.
+#.	Epigraphs in chapters have the quote source set in small caps, without a leading em dash and without a trailing period.
 
 	.. class:: wrong
 
@@ -646,7 +646,7 @@ There are many kinds of dashes, and the run-of-the-mill hyphen is often not the 
 
 		<p>5 − 2 = 3</p>
 
-#.	En-dashes (:utf:`–` or U+2013) are used to indicate a numeric or date range; to indicate a relationships where two concepts are connected by the word “to,” for example a distance between locations or a range between numbers; or to indicate a connection in location between two places. En-dashes are preceded and followed by the invisible word joiner glyph (U+2060).
+#.	En dashes (:utf:`–` or U+2013) are used to indicate a numeric or date range; to indicate a relationships where two concepts are connected by the word “to,” for example a distance between locations or a range between numbers; or to indicate a connection in location between two places. En dashes are preceded and followed by the invisible word joiner glyph (U+2060).
 
 	.. code:: html
 
@@ -670,14 +670,14 @@ There are many kinds of dashes, and the run-of-the-mill hyphen is often not the 
 
 		When adding non-breaking hyphens to stretch out words, beware that :bash:`se typogrify` will incorrectly convert them to regular hyphens!
 
-Em-dashes
+Em dashes
 ---------
 
-Em-dashes (:utf:`—` or U+2014) are typically used to offset parenthetical phrases.
+Em dashes (:utf:`—` or U+2014) are typically used to offset parenthetical phrases.
 
-#.	Em-dashes are preceded by the invisible word joiner glyph (U+2060).
+#.	Em dashes are preceded by the invisible word joiner glyph (U+2060).
 
-#.	Interruption in dialog is set by a single em-dash, not two em-dashes or a two-em-dash.
+#.	Interruption in dialog is set by a single em dash, not two em dashes or a two-em dash.
 
 	.. class:: wrong
 
@@ -694,7 +694,7 @@ Em-dashes (:utf:`—` or U+2014) are typically used to offset parenthetical phra
 Partially-obscured words
 ------------------------
 
-#.	Em-dashes are used for partially-obscured years.
+#.	Em dashes are used for partially-obscured years.
 
 	.. code:: html
 
@@ -716,13 +716,13 @@ Partially-obscured words
 
 		When adding non-breaking hyphens for obscured letters, beware that :bash:`se typogrify` will incorrectly convert them to regular hyphens!
 
-#.	A two-em-dash (:utf:`⸺` or U+2E3A) preceded by a word joiner glyph (U+2060) is used in *partially* obscured word.
+#.	A two-em dash (:utf:`⸺` or U+2E3A) preceded by a word joiner glyph (U+2060) is used in *partially* obscured word.
 
 	.. code:: html
 
 		<p>Sally J:ws:`wj`⸺ walked through town.</p>
 
-#.	A three-em-dash (:utf:`⸻` or U+2E3B) is used for *completely* obscured words.
+#.	A three-em dash (:utf:`⸻` or U+2E3B) is used for *completely* obscured words.
 
 	.. code:: html
 
@@ -1649,7 +1649,7 @@ Verses and Chapters of the Bible
 
 			<p>“In the beginning God created the heaven and the earth” is the first verse of Genesis 1.</p>
 
-#.	If a continuous range of verses is being cited, an en-dash (:utf:`–` or U+2013) is placed between the verse numbers indicating the beginning and the end of the range.
+#.	If a continuous range of verses is being cited, an en dash (:utf:`–` or U+2013) is placed between the verse numbers indicating the beginning and the end of the range.
 
 	.. code:: html
 
