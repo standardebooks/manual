@@ -1338,7 +1338,7 @@ Initials and abbreviations
 
 		- :string:`LL.D.` does not have a period in :string:`LL`, because it indicates the plural :string:`Legum`.
 
-#.	Postal codes and abbreviated US states are set in all caps, without periods or spaces, and are wrapped in an :html:`<abbr class="z3998:place">` element.
+#.	Postal codes and abbreviated US states are set in all caps, without periods or spaces, and are wrapped in an :html:`<abbr epub:type="z3998:place">` element.
 
 	.. code:: html
 
