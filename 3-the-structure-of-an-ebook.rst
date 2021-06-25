@@ -111,7 +111,7 @@ Also known as the “LoI,” the list of illustrations is an index to the illust
 Endnotes
 ========
 
-A list of notes to the text. Each item is given a unique sequential number and linked to the point in the text to which the note refers. If the text originally has footnotes, they are converted to endntoes.
+A list of notes to the text. Each item is given a unique sequential number and linked to the point in the text to which the note refers. If the text originally has footnotes, they are converted to endnotes.
 
 Colophon
 ========
