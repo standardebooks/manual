@@ -1368,7 +1368,7 @@ Initials and abbreviations
 
 		<p>His favorite hobby was <abbr epub:type="z3998:acronym">SCUBA</abbr>.</p>
 
-#.	Initials of people’s names are each separated by periods and spaces. The group of initials is wrapped in an :html:`<abbr epub:type="z3998:*-name">` element. The correct semantic is selected from :value:`z3998:personal-name` (a complete personal name including last name), :value:`z3998:given-name` (a person's given, or first, name(s), and/or middle name), or :value:`z3998:surname` (a person's last name).
+#.	Initials of people’s names are each separated by periods and spaces. The group of initials is wrapped in an :html:`<abbr epub:type="z3998:*-name">` element. The correct semantic is selected from :value:`z3998:personal-name` (a complete personal name including last name), :value:`z3998:given-name` (a person's given, or first, name(s), and/or middle name), or :value:`z3998:surname` (a person's last name). If it’s unclear whether a name is a first or last name, :value:`z3998:personal-name` is used as a catchall.
 
 	.. code:: html
 
