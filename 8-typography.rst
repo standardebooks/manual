@@ -1317,7 +1317,7 @@ Latinisms
 
 	.. code:: css
 
-		abbr.era{
+		abbr[epub|type~="se:era"]{
 			font-variant: all-small-caps;
 		}
 
