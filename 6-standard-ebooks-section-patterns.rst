@@ -405,7 +405,7 @@ Names
 
 			<b epub:type="z3998:personal-name">Fritz Ohrenschall</b>, <b epub:type="z3998:personal-name">Sania Ali Mirza</b>, and <a href="https://www.pgdp.net">The Online Distributed Proofreading Team</a>
 
-#.	Any anonymous contributor is listed as :string:`An Anonymous Volunteer`.
+#.	Any anonymous or unknown contributor is listed as :string:`An Anonymous Volunteer`. Note that :string:`An Anonymous Volunteer` is not a name, therefore its parent :html:`<b>` element does not have name semantics.
 
 Sponsors
 ========
