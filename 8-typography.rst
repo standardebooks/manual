@@ -1416,8 +1416,8 @@ Initials and abbreviations
 
 		<p>He traveled <abbr epub:type="se:compass">S.</abbr>, <abbr epub:type="se:compass">N. W.</abbr>, then <abbr class="eoc" epub:type="se:compass">E. S. E.</abbr></p>
 
-Exceptions that are not abbreviations
-=====================================
+Exceptions
+==========
 
 #.	The following are not abbreviations, and are set without periods or spaces.
 
