@@ -456,7 +456,7 @@ Subsections
 				was published in 1837 by<br/>
 				<a href="https://en.wikipedia.org/wiki/Alexander_Pushkin">Alexander Pushkin</a>.<br/>
 				It was translated from Russian in 1881 by<br/>
-				<b epub:type="z3998:personal-name">Henry Spalding</b>.</p>
+				<a href="https://en.wikipedia.org/wiki/Henry_S._Spalding">Henry Spalding</a>.</p>
 
 	#.	The second :html:`<p>` block names the Standard Ebooks producer, the original transcribers, and the page scan sources.
 
