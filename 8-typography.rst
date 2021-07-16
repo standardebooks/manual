@@ -799,6 +799,20 @@ Numbers, measurements, and math
 
 				<p>He was allowed a day or two’s shooting in September.</p>
 
+#.	Numbers of four or more digits should include commas at every 3rd decimal place.
+
+		.. class:: wrong
+
+			.. code:: html
+
+				<p>“You will agree to do me service for the sum of 4000 guilders?”</p>
+
+		.. class:: corrected
+
+			.. code:: html
+
+				<p>“You will agree to do me service for the sum of 4,000 guilders?”</p>
+
 Roman numerals
 ==============
 
