@@ -1281,6 +1281,7 @@ Images
 
 				figure.full-page img{
 					height: 100vh;
+					object-fit: contain;
 				}
 			}
 
@@ -1319,6 +1320,7 @@ Examples
 
 		figure.full-page img{
 			height: 100vh;
+			object-fit: contain;
 		}
 	}
 
