@@ -728,11 +728,11 @@ Partially-obscured words
 
 		<p>Sally J:ws:`wj`⸺ walked through town.</p>
 
-#.	If both the start and end of the obscured word are visible, a word joiner is required on either side of the dash.
+	#.	If both the start and end of a partially-obscured word are visible, a word joiner is placed on both sides of the two-em-dash.
 
-	.. code:: html
+		.. code:: html
 
-		<p>A bl:ws:`wj`⸺:ws:`wj`y murder!</p>
+			<p>A bl:ws:`wj`⸺:ws:`wj`y murder!</p>
 
 #.	A three-em dash (:utf:`⸻` or U+2E3B) is used for *completely* obscured words.
 
