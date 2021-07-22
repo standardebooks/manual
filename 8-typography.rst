@@ -116,6 +116,12 @@ Italicizing individual letters
 
 				<p>Her <i epub:type="z3998:grapheme">a</i>’s were nasally.</p>
 
+	#.	When a word is being spelled out, the individual letters of the word count as graphemes.
+
+		.. code:: html
+
+			<p>I rattled off, “<i epub:type="z3998:grapheme">t</i>-<i epub:type="z3998:grapheme">h</i>-<i epub:type="z3998:grapheme">i</i>-<i epub:type="z3998:grapheme">r</i>-<i epub:type="z3998:grapheme">d</i>, third.”</p>
+
 #.	Individual letters that are *not* graphemes (for example letters that might be referring to names, the shapes of the letters themselves, musical notes or keys, or concepts) are *not* italicized.
 
 	.. code:: html
