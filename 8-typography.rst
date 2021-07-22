@@ -116,7 +116,7 @@ Italicizing individual letters
 
 				<p>Her <i epub:type="z3998:grapheme">a</i>’s were nasally.</p>
 
-	#.	When a word is being spelled out, the individual letters of the word count as graphemes.
+	#.	When a word is being spelled out, the individual letters of the word are set as graphemes.
 
 		.. code:: html
 
