@@ -1436,6 +1436,8 @@ Exceptions
 	-	:string:`OK`
 
 	-	:string:`SOS`
+	
+	-	:string:`BB`, when referring to a BB gun or its projectiles.
 
 #.	The following are initialisms, but are set without periods or spaces:
 
