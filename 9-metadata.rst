@@ -490,7 +490,7 @@ The :html:`<manifest>` element is a required part of the epub spec that defines 
 
 .. tip::
 
-	The :bash:`se build-manifest -s .` command generates a complete manifest that can be copied-and-pasted into the ebook’s metadata file.
+	The :bash:`se build-manifest .` command generates a complete manifest and write it directly to the ebook’s metadata file.
 
 #.	The manifest is in alphabetical order.
 
@@ -509,4 +509,4 @@ The :html:`<spine>` element is a required part of the epub spec that defines the
 
 .. tip::
 
-	The :bash:`se build-spine -s .` command generates a draft of the spine by making some educated guesses as to the reading order. The tool’s output is never 100% correct; manual review of the output is required, and adjustments may be necessary to correct the reading order.
+	The :bash:`se build-spine .` command generates the spine and write it to the ebook’s metadata file. It does so by making some educated guesses as to the reading order. The tool’s output is never 100% correct; manual review of the output is required, and adjustments may be necessary to correct the reading order.
