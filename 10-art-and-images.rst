@@ -224,6 +224,8 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Finnish National Gallery <https://www.kansallisgalleria.fi>`__ (CC0 items say “CC Copyright Free,” and the general rights statement in the original Finnish indicates that such images are CC0 licensed.)
 
+-	`National Gallery of Art <https://www.nga.gov>`__ (CC0 items have a “0 Public Domain” icon under the picture, which leads to an Open Access policy mentioning a CC0 license.)
+
 Clearance FAQ
 ~~~~~~~~~~~~~
 
