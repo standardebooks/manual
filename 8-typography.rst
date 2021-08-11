@@ -609,7 +609,7 @@ Quotation marks
 Ellipses
 ========
 
-#.	The ellipses glyph (:utf:`…` or U+2026) is used for ellipses, instead of consecutive or spaced periods.
+#.	The ellipsis glyph (:utf:`…` or U+2026) is used for ellipses, instead of consecutive or spaced periods.
 
 #.	When ellipses are used as suspension points (for example, to indicate dialog that pauses or trails off), the ellipses are not preceded by a comma.
 
@@ -619,7 +619,7 @@ Ellipses
 
 #.	A regular space is located *after* all ellipses that do not end a paragraph and that are not followed by punctuation.
 
-#.	A hair space (:utf:` ` or U+200A) glyph is located between an ellipses and any punctuation that follows directly after the ellipses, *unless* that punctuation is a quotation mark, in which case there is no space at all between the ellipses and the quotation mark.
+#.	A hair space (:utf:` ` or U+200A) glyph is located between an ellipsis and any punctuation that follows directly after the ellipsis, *unless* that punctuation is a quotation mark, in which case there is no space at all between the ellipsis and the quotation mark.
 
 	.. code:: html
 
