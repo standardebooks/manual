@@ -643,7 +643,7 @@ Unfortunately there’s no great way to semantically format poetry in HTML. As s
 
 		#.	:value:`z3998:hymn` is used when the song lyrics are for a hymn, either well known (e.g. “Amazing Grace”) or specifically labeled as such in the source text. When in doubt, use :value:`z3998:song`.
 
-#.	If a poem is quoted and has one or more lines removed, the removed lines are represented with a vertical ellipses (:utf:`⋮` or U+22EE) in a :html:`<span class="elision">` element styled with this CSS:
+#.	If a poem is quoted and has one or more lines removed, the removed lines are represented with a vertical ellipsis (:utf:`⋮` or U+22EE) in a :html:`<span class="elision">` element styled with this CSS:
 
 	.. code:: css
 
