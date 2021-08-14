@@ -237,7 +237,7 @@ Italics in names and titles
 
 	-	Short musical compositions or audio, like pop songs, arias, or an episode in a radio series.
 
-	-	Short prose like novellas, shot stories, or short (i.e. not epic) poems.
+	-	Short prose like novellas, short stories, or short (i.e. not epic) poems.
 
 	-	Chapter titles in a prose work.
 
