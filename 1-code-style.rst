@@ -190,7 +190,7 @@ Selectors
 
 		.. code:: css
 
-			abbr.era, abbr.temperature{
+			abbr[epub|type~="se:era"], abbr[epub|type~="se:temperature"]{
 				font-variant: all-small-caps;
 			}
 
@@ -199,8 +199,8 @@ Selectors
 
 		.. code:: css
 
-			abbr.era,
-			abbr.temperature{
+			abbr[epub|type~="se:era"],
+			abbr[epub|type~="se:temperature"]{
 				font-variant: all-small-caps;
 			}
 
@@ -210,7 +210,7 @@ Selectors
 
 		.. code:: css
 
-			abbr.era{
+			abbr[epub|type~="se:era"]{
 				font-variant: all-small-caps;
 			}
 
@@ -224,7 +224,7 @@ Selectors
 
 		.. code:: css
 
-			abbr.era{
+			abbr[epub|type~="se:era"]{
 				font-variant: all-small-caps;
 			}
 
@@ -244,13 +244,13 @@ Properties
 
 		.. code:: css
 
-			abbr.era{ font-variant: all-small-caps; }
+			abbr[epub|type~="se:era"]{ font-variant: all-small-caps; }
 
 	.. class:: corrected
 
 		.. code:: css
 
-			abbr.era{
+			abbr[epub|type~="se:era"]{
 				font-variant: all-small-caps;
 			}
 
@@ -286,7 +286,7 @@ Properties
 
 		.. code:: css
 
-			abbr.era{
+			abbr[epub|type~="se:era"]{
 				font-variant: all-small-caps
 			}
 
@@ -294,7 +294,7 @@ Properties
 
 		.. code:: css
 
-			abbr.era{
+			abbr[epub|type~="se:era"]{
 				font-variant: all-small-caps;
 			}
 
