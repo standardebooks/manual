@@ -951,7 +951,7 @@ Examples
 	<tr>
 		<td/>
 		<td>
-			<i epub:type="z3998:stage-direction">Large French window, <abbr epub:type="z3998:stage-direction" class="eoc">R. 3 E.</abbr> <b epub:type="z3998:persona">Lane</b> is arranging afternoon tea on the table, and after the music has ceased, <b epub:type="z3998:persona">Algernon</b> enters.</i>
+			<i epub:type="z3998:stage-direction">Large French window, <abbr class="eoc" epub:type="z3998:stage-direction">R. 3 E.</abbr> <b epub:type="z3998:persona">Lane</b> is arranging afternoon tea on the table, and after the music has ceased, <b epub:type="z3998:persona">Algernon</b> enters.</i>
 		</td>
 	</tr>
 
@@ -1497,7 +1497,7 @@ Examples
 				<h2 epub:type="title">Endnotes</h2>
 				<ol>
 					<li id="note-1" epub:type="endnote">
-						<p>For more detailed observations on these points refer to <abbr epub:type="z3998:given-name">G.</abbr> Volkens, “Uber die Karolinen Insel Yap.” <cite>—<abbr epub:type="z3998:personal-name" class="eoc">W. T. G.</abbr></cite> <a href="chapter-2.xhtml#noteref-1" epub:type="backlink">↩</a></p>
+						<p>For more detailed observations on these points refer to <abbr epub:type="z3998:given-name">G.</abbr> Volkens, “Uber die Karolinen Insel Yap.” <cite>—<abbr class="eoc" epub:type="z3998:personal-name">W. T. G.</abbr></cite> <a href="chapter-2.xhtml#noteref-1" epub:type="backlink">↩</a></p>
 					</li>
 					<li id="note-2" epub:type="endnote">
 						<blockquote epub:type="z3998:verse">
