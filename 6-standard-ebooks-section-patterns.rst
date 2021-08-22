@@ -109,7 +109,7 @@ The :html:`<nav>` element’s top-level :html:`<ol>` element contains a list of 
 							<a href="text/chapter-1-1.xhtml" epub:type="z3998:roman">I</a>
 						</li>
 
-#.	Roman numerals in the ToC have the semantic inflection of :value:`z3998:roman`. A :html:`<span>` element is included if the entire contents of the :html:`<a>` element are not a Roman numeral.
+#.	Roman numerals in the ToC have a :html:`<span>` element if the entire contents of the :html:`<a>` element are not a Roman numeral.
 
 	.. class:: wrong
 
