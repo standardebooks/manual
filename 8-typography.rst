@@ -834,9 +834,11 @@ Numbers, measurements, and math
 Roman numerals
 ==============
 
-#.	Roman numerals are not followed by trailing periods, except for grammatical reasons.
-
 #.	Roman numerals are set using uppercase ASCII, not the Unicode Roman numeral glyphs.
+
+#.	Roman numerals have the semantic inflection of :value:`z3998:roman`.
+
+#.	Roman numerals are not followed by trailing periods, except for grammatical reasons.
 
 #.	Roman numerals are not followed by ordinal indicators.
 
