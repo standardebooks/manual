@@ -1470,7 +1470,7 @@ Individual endnotes
 
 	#.	In endnotes where the last block-level element is verse, quotation, or otherwise not plain prose text, the backlink goes in its own :html:`<p>` element following the last block-level element in the endnote.
 
-#.	Endnotes with ending citations have those citations are wrapped in a :html:`<cite>` element, including any em dashes. A space follows the :html:`<cite>` element, before the backlink.
+#.	Endnotes with ending citations have those citations wrapped in a :html:`<cite>` element, including any em dashes. A space follows the :html:`<cite>` element, before the backlink.
 
 .. class:: no-numbering
 
