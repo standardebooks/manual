@@ -1317,9 +1317,13 @@ Latinisms
 
 		- :string:`in situ`
 
+		- :string:`in statu quo`
+
 		- :string:`in toto`
 
 		- :string:`in vitro`
+
+		- :string:`more suo`
 
 #.	Whole passages of Latin language and Latinisms that aren’t found in a modern dictionary are italicized.
 
