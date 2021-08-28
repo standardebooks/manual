@@ -206,7 +206,7 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Minneapolis Institute of Art <https://collections.artsmia.org/>`__ (Public domain items are listed as such under “Rights”)
 
--	`The Walters Art Museum <https://art.thewalters.org/>`__  (Public domain items are listed as "CC Creative Commons License" which links to a CC0 rights page)
+-	`The Walters Art Museum <https://art.thewalters.org/>`__ (Public domain items are listed as "CC Creative Commons License" which links to a CC0 rights page)
 
 -	`Art Institute of Chicago <https://www.artic.edu/collection?q=test&is_public_domain=1&department_ids=European+Painting+and+Sculpture>`__ (CC0 items say CC0 in the lower left of the painting in the art detail page)
 

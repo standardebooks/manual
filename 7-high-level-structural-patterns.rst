@@ -29,7 +29,7 @@ Recomposability
 
 “Recomposability” is the concept of generating a single structurally-correct HTML5 file out of an epub file. All Standard Ebooks are recomposable.
 
-#.	XHTML files that contain :html:`<section>` or :html:`<article>` elements that are semantic children of  :html:`<section>` or :html:`<article>` elements in other files, are wrapped in stubs of all parent :html:`<section>` or :html:`<article>` elements, up to the root.
+#.	XHTML files that contain :html:`<section>` or :html:`<article>` elements that are semantic children of :html:`<section>` or :html:`<article>` elements in other files, are wrapped in stubs of all parent :html:`<section>` or :html:`<article>` elements, up to the root.
 
 #.	Each such included parent element has the identical :html:`id` and :html:`epub:type` attributes of its real counterpart.
 
@@ -438,7 +438,7 @@ Epigraphs
 
 #.	Epigraphs are typically set in italics. `Exceptions are allowed according to rules for italics </manual/VERSION/8-typography#8.2.13>`__.
 
-#.	Epigraphs may sometimes contain quotes from plays and drama. Such quotations use the `standard play formatting  </manual/VERSION/7-high-level-structural-patterns#7.6>`__ and this additional CSS to remove italics from personas:
+#.	Epigraphs may sometimes contain quotes from plays and drama. Such quotations use the `standard play formatting </manual/VERSION/7-high-level-structural-patterns#7.6>`__ and this additional CSS to remove italics from personas:
 
 	.. code:: css
 
@@ -1099,7 +1099,7 @@ Letter footers
 	.. code:: html
 
 		<footer>
-			<p epub:type="z3998:sender z3998:signature"><abbr  epub:type="z3998:given-name">R. A.</abbr> Johnson</p>
+			<p epub:type="z3998:sender z3998:signature"><abbr epub:type="z3998:given-name">R. A.</abbr> Johnson</p>
 		</footer>
 
 	.. code:: html
@@ -1128,7 +1128,7 @@ Examples
 .. code:: css
 
 	[epub|type~="z3998:letter"] header{
-  		text-align: right;
+ 		text-align: right;
 	}
 
 	footer{
@@ -1234,7 +1234,7 @@ Images
 
 #.	:html:`<img>` elements that are meant to be aligned on the block level or displayed as full-page images are contained in a parent :html:`<figure>` element, with an optional :html:`<figcaption>` sibling.
 
-	#.	An optional :html:`<figcaption>` element containing  a concise context-dependent caption may follow the :html:`<img>` element within a :html:`<figure>` element. This caption depends on the surrounding context, and is not necessarily (or even ideally) identical to the :html:`<img>` element’s :html:`alt` attribute.
+	#.	An optional :html:`<figcaption>` element containing a concise context-dependent caption may follow the :html:`<img>` element within a :html:`<figure>` element. This caption depends on the surrounding context, and is not necessarily (or even ideally) identical to the :html:`<img>` element’s :html:`alt` attribute.
 
 	#.	All figure elements, regardless of positioning, have this CSS:
 
@@ -1495,7 +1495,7 @@ Examples
 				<h2 epub:type="title">Endnotes</h2>
 				<ol>
 					<li id="note-1" epub:type="endnote">
-						<p>For more detailed observations on these points refer to <abbr  epub:type="z3998:given-name">G.</abbr> Volkens, “Uber die Karolinen Insel Yap.” <cite>—<abbr  epub:type="z3998:personal-name" class="eoc">W. T. G.</abbr></cite> <a href="chapter-2.xhtml#noteref-1" epub:type="backlink">↩</a></p>
+						<p>For more detailed observations on these points refer to <abbr epub:type="z3998:given-name">G.</abbr> Volkens, “Uber die Karolinen Insel Yap.” <cite>—<abbr epub:type="z3998:personal-name" class="eoc">W. T. G.</abbr></cite> <a href="chapter-2.xhtml#noteref-1" epub:type="backlink">↩</a></p>
 					</li>
 					<li id="note-2" epub:type="endnote">
 						<blockquote epub:type="z3998:verse">
