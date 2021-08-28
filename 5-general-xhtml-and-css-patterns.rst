@@ -2,7 +2,7 @@
 General XHTML and CSS Patterns
 ##############################
 
-This section covers general patterns used when producing XHTML  and CSS that are not specific to ebooks.
+This section covers general patterns used when producing XHTML and CSS that are not specific to ebooks.
 
 :html:`id` attributes
 *********************
