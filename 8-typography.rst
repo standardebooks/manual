@@ -1445,6 +1445,8 @@ Exceptions
 
 	-	:string:`BB`, when referring to a BB gun or its projectiles.
 
+	-	:string:`SS`, when referring to `collars of SS <https://www.merriam-webster.com/dictionary/collar%20of%20SS>`__.
+
 #.	The following are initialisms, but are set without periods or spaces:
 
 	-	:string:`TV`, i.e. :string:`television`.
