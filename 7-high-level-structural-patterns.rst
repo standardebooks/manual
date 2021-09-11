@@ -1267,7 +1267,6 @@ Images
 			figure.full-page{
 				break-after: page;
 				break-before: page;
-				break-inside: avoid;
 				margin: 0;
 				max-height: 100vh;
 				text-align: center;
@@ -1290,7 +1289,6 @@ Images
 		.. code:: css
 
 			figure{
-				break-inside: avoid;
 				margin: 1em auto;
 				text-align: center;
 			}
