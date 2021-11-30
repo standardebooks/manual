@@ -81,7 +81,7 @@ Italics
 
 		<p>He could hear the dog barking: <i>Ruff, ruff, ruff!</i></p>
 
-#.	A person's internal thoughts are italicized with :html:`<q>` styled with italics.
+#.	A person's internal thoughts, if they are italicized in the source, are formatted with :html:`<q>`, styled with italics. If the thoughts are quoted, they are left as quoted.
 
 	.. code:: css
 
@@ -1442,7 +1442,7 @@ Exceptions
 	-	:string:`OK`
 
 	-	:string:`SOS`
-	
+
 	-	:string:`BB`, when referring to a BB gun or its projectiles.
 
 #.	The following are initialisms, but are set without periods or spaces:
