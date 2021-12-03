@@ -1482,8 +1482,12 @@ Exceptions
 		<p>She was learning her A.B.C.s</p>
 		<p>He stopped by the <abbr epub:type="z3998:initialism">A.B.C.</abbr> shop.</p>
 
-Other exceptions
-================
+#.	Company names and brand marks which may be abbreviations, but are stylized without periods by the brand, are kept in the style preferred by the brand.
+
+	.. code:: html
+
+		<p>He read an <abbr epub:type="z3998:initialism">AP</abbr> news wire story.</p>
+		<p>She called her colleague at <abbr epub:type="z3998:initialism">IBM</abbr>.</p>
 
 #.	The abbreviations :string:`1D`, :string:`2D`, :string:`3D`, and :string:`4D`, meaning first, second, third, and fourth dimensions, are abbreviations but do not have a trailing period.
 
