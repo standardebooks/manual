@@ -175,6 +175,10 @@ Italicizing non-English words and phrases
 
 #.	Words and phrases that are originally non-English in origin, but that can now be found in `Merriam-Webster <https://www.merriam-webster.com>`__, are not italicized.
 
+    Note that the standard Merriam-Webster web site will sometimes return a definition for a word that is found only in the Unabridged dictionary, e.g. :string:`douar`. When it does, there is a colored text box below the definition that begins with "Love words?", with the following text indicating the word was found only in the Unabridged version of the dictionary. These words do not count as being "found in Merriam-Webster," and so would be italicized if they are foreign.
+
+    It will also, after a word has been entered into the search field, indicate in a dropdown that the word is found in the Legal Dictionary, e.g. :string:`commodatum`. These also do not count as "found in Merriam-Webster".
+
 	.. code:: html
 
 		<p>Sir Percy’s bon mot had gone the round of the brilliant reception-rooms.</p>
