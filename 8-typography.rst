@@ -173,7 +173,7 @@ Italicizing non-English words and phrases
 
 #.	If certain non-English words are used so frequently in the text that italicizing them at each instance would be distracting to the reader, then only the first instance is italicized. Subsequent instances are wrapped in a :html:`<span xml:lang="LANGUAGE">` element.
 
-#.	Words and phrases that are originally non-English in origin, but that can now be found in `Merriam-Webster <https://www.merriam-webster.com>`__, are not italicized.
+#.	Words and phrases that are originally non-English in origin, but that can now be found in `Merriam-Webster’s <https://www.merriam-webster.com>`__ basic online search results, are not italicized. "Basic online search results" means that results from other dictionaries that may appear alongside basic search resutls, including results from the unabridged or legal dictionaries, do not fall under this rule and may still be obscure enough to be italicized.
 
 	.. code:: html
 
