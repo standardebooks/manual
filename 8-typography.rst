@@ -444,20 +444,20 @@ Headers
 
 		<h2 epub:type="title" xml:lang="la">Ex Oblivione</h2>
 
-		<h3 epub:type="title">
-			<span epub:type="z3998:roman">XI</span>
-			<span epub:type="subtitle">The <i epub:type="se:name.vessel.ship">Nautilus</i></span>
-		</h3>
+		<hgroup>
+			<h2 epub:type="ordinal z3998:roman">XI</h2>
+			<h3 epub:type="title">The <i epub:type="se:name.vessel.ship">Nautilus</i></h3>
+		</hgroup>
 
-		<h2 epub:type="title">
-			<span epub:type="z3998:roman">XXXV</span>
-			<span epub:type="subtitle">Miss Thorne’s <i xml:lang="fr">Fête Champêtre</i></span>
-		</h2>
+		<hgroup>
+			<h2 epub:type="ordinal z3998:roman">XXXV</h2>
+			<h3 epub:type="title">Miss Thorne’s <i xml:lang="fr">Fête Champêtre</i></h3>
+		</hgroup>
 
-		<h4 epub:type="title">
-			<span epub:type="z3998:roman">XI</span>
-			<span epub:type="subtitle" xml:lang="la">Christus Nos Liberavit</span>
-		</h4>
+		<hgroup>
+			<h2 epub:type="ordinal z3998:roman">XI</h2>
+			<h3 epub:type="title" xml:lang="la">Christus Nos Liberavit</h3>
+		</hgroup>
 
 Chapter headers
 ===============
