@@ -28,7 +28,7 @@ The table of contents
 
 The table of contents (the ToC) is not viewable as a page in the ebook’s reading order. Instead, the reader’s ereading system displays the ToC as part of its reading interface.
 
-These rules outline how to structure the ToC. Typically, the :bash:`se print-toc` tool constructs the ToC according to these rules, without further changes being necessary.
+These rules outline how to structure the ToC. Typically, the :bash:`se build-toc` tool constructs the ToC according to these rules, without further changes being necessary.
 
 The :html:`<nav>` element
 =============================
