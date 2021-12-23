@@ -325,8 +325,6 @@ Bridgeheads
 
 Bridgeheads are sections in a chapter header that give an abstract or summary of the following chapter. They may be in prose or in a short list with clauses separated by em dashes.
 
-#.	The last clause in a bridgehead ends in appropriate punctuation, like a period.
-
 #.	Bridgeheads have the following CSS and HTML structure:
 
 	.. code:: css
@@ -365,6 +363,17 @@ Bridgeheads are sections in a chapter header that give an abstract or summary of
 		</header>
 
 #.	Bridgeheads are typically set in italics. `Exceptions are allowed according to rules for italics </manual/VERSION/8-typography#8.2.13>`__.
+
+#.	The last clause in a bridgehead ends in appropriate punctuation, like a period.
+
+#.	Bridgeheads consisting of a series of clauses that summarize the following chapter have each clause separated by an em dash. Each clause is sentence-cased.
+
+	.. code:: html
+
+		<header>
+			<h2 epub:type="ordinal z3998:roman">XI</h2>
+			<p epub:type="bridgehead">How George, once upon a time, got up early in the morning⁠:ws:`wj`—George, Harris, and Montmorency do not like the look of the cold water⁠:ws:`wj`—Heroism and determination on the part of <abbr epub:type="z3998:given-name">J.</abbr>⁠:ws:`wj`—George and his shirt: story with a moral⁠:ws:`wj`—Harris as cook⁠:ws:`wj`—Historical retrospect, specially inserted for the use of schools.</p>
+		</header>
 
 Dedications
 ***********
