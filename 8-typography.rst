@@ -706,6 +706,8 @@ Em dashes (:utf:`—` or U+2014) are typically used to offset parenthetical phra
 Partially-obscured words
 ------------------------
 
+A partially-obscured word is a word that the author chooses to not divulge by consistently obscuring some or all of it. This is not the same as an interruption in dialog, which may interrupt a word, but not obscure it in the same stylistic sense.
+
 #.	Em dashes are used for partially-obscured years.
 
 	.. code:: html
