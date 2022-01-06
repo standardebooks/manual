@@ -226,6 +226,8 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`National Gallery of Art <https://www.nga.gov>`__ (CC0 items have a “0 Public Domain” icon under the picture, which leads to an Open Access policy mentioning a CC0 license.)
 
+-	`Nivaagaards Malerisamling <https://www.nivaagaard.dk/en/samling/>`__ (CC0 items say “Public Domain” by the picture, which leads to a license details page, which links to a CC0 license.)
+
 Clearance FAQ
 ~~~~~~~~~~~~~
 
