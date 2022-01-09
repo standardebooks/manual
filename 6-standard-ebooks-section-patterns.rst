@@ -340,7 +340,7 @@ The imprint
 The half title page
 *******************
 
-#.	A half title page is included when there is front matter of any type in an ebook besides the titlepage and imprint.
+#.	A half title page is included when there is front matter of any type in an ebook besides the titlepage.
 
 #.	The half title page is located after the last item of front matter, before the body matter.
 

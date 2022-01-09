@@ -65,9 +65,9 @@ Half title
 
 In books which include front matter, the half title page marks the start of the body matter.
 
-#. The half title lists the title of the book, but not the author.
+#. The half title lists the title of the book, and the subtitle if there is one, but not the author.
 
-#. A half title is required if there is any front matter in the book.
+#. A half title is required if there is any front matter in the book, including an imprint.
 
 Table of Contents
 =================
