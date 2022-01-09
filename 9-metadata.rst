@@ -329,11 +329,11 @@ The following apply to all contributors, including the author(s), translator(s),
 
 #.	If there is more than one contributor in a set (for example, multiple authors, or translators) then the :html:`<meta property="display-seq">` element is specified for each contributor, with a value equal to their position in the SE identifier.
 
-#.	The epub standard specifies that in a set of contributors, if at least one has the :value:`display-seq` property, then other contributors in the set without the :value:`display-seq` value are ignored. For SE purposes, this also means they will be excluded from the SE identifier.
+#.	The EPUB spec specifies that in a set of contributors, if at least one has the :value:`display-seq` property, then other contributors in the set without the :value:`display-seq` value are ignored. For SE purposes, this also means they will be excluded from the SE identifier.
 
 #.	By SE convention, contributors with :html:`<meta property="display-seq">0</meta>` are excluded from the SE identifier.
 
-#.	The epub spec allows for up to one (but not more than one) role to be specified for a contributor using the :html:`<meta property="role" refines="..." scheme="marc:relators">`. element. However, it is not uncommon for one contributor to have multiple roles; for example, an author (:value:`aut`) who also illustrated (:value:`ill`) the book. In these cases, the primary role is assigned using the :value:`role` property, and additional roles are assigned using the :value:`se:role` property.
+#.	The EPUB spec allows for up to one (but not more than one) role to be specified for a contributor using the :html:`<meta property="role" refines="..." scheme="marc:relators">`. element. However, it is not uncommon for one contributor to have multiple roles; for example, an author (:value:`aut`) who also illustrated (:value:`ill`) the book. In these cases, the primary role is assigned using the :value:`role` property, and additional roles are assigned using the :value:`se:role` property.
 
 .. class:: no-numbering
 
@@ -486,7 +486,7 @@ These elements describe the SE producer who produced the ebook for the Standard 
 The ebook manifest
 ******************
 
-The :html:`<manifest>` element is a required part of the epub spec that defines a list of files within the ebook.
+The :html:`<manifest>` element is a required part of the EPUB spec that defines a list of files within the ebook.
 
 .. tip::
 
@@ -505,8 +505,42 @@ The :html:`<manifest>` element is a required part of the epub spec that defines 
 The ebook spine
 ***************
 
-The :html:`<spine>` element is a required part of the epub spec that defines the reading order of the files in the ebook.
+The :html:`<spine>` element is a required part of the EPUB spec that defines the reading order of the files in the ebook.
 
 .. tip::
 
 	The :bash:`se build-spine .` command generates the spine and writes it to the ebook’s metadata file. It does so by making some educated guesses as to the reading order. The tool’s output is never 100% correct; manual review of the output is required, and adjustments may be necessary to correct the reading order.
+
+Accessibility metadata
+**********************
+
+Accessibility metadata is added to bring the final ebook into conformance with the `EPUB Accessibility spec <http://www.idpf.org/epub/latest/accessibility>`__, with the following considerations.
+
+#.	Accessibility metadata is arranged in the metadata file in groups by property, with items in each group ordered by their text values. The groups appear in this order:
+
+	1.	:value:`a11y:certifiedBy`
+
+	2.	:value:`schema:accessMode`
+
+	3.	:value:`schema:accessModeSufficient`
+
+	3.	:value:`schema:accessibilityFeature`
+
+	4.	:value:`schema:accessibilityHazard`
+
+	5.	:value:`schema:accessibilitySummary`
+
+#.	If the ebook has images *not including* the cover, titlepage, and publisher logo, then the following metadata is included in addition to any boilerplate accessibility metadata:
+
+	.. html::
+
+		<meta property="schema:accessMode">visual</meta>
+		<meta property="schema:accessibilityFeature">alternativeText</meta>
+
+	The cover, titlepage, and publisher logo are ignored because they are present in most ebooks; if they were to be counted in accessibilty metadata, that metadata would appear in most ebooks, making it meaningless.
+
+	.. tip::
+
+		Remember that accessibility metadata is grouped by property, and ordered alphabetically by value within those groups!
+
+
