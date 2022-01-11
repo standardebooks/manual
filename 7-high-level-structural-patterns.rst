@@ -29,9 +29,7 @@ Recomposability
 
 “Recomposability” is the concept of generating a single structurally-correct HTML5 file out of an epub file. All Standard Ebooks are recomposable.
 
-#.	XHTML files that contain :html:`<section>` or :html:`<article>` elements that are semantic children of :html:`<section>` or :html:`<article>` elements in other files, are wrapped in stubs of all parent :html:`<section>` or :html:`<article>` elements, up to the root.
-
-#.	Each such included parent element has the identical :html:`id` and :html:`epub:type` attributes of its real counterpart.
+#.	XHTML files that contain :html:`<section>` or :html:`<article>` elements that are semantic children of :html:`<section>` or :html:`<article>` elements in other files, have a :html:`data-parent` attribute that contains the :html:`id` of the parent sectioning element.
 
 .. class:: no-numbering
 
@@ -45,37 +43,34 @@ Book 1 (:path:`book-1.xhtml`):
 .. code:: html
 
 	<section id="book-1" epub:type="division">
-		<h2><span epub:type="label">Book</span> <span epub:type="ordinal z3998:roman">I</span></h2>
+		<h2>
+			<span epub:type="label">Book</span>
+			<span epub:type="ordinal z3998:roman">I</span>
+		</h2>
 	</section>
 
 Book 1, Part 2 (:path:`part-1-2.xhtml`):
 
 .. code:: html
 
-	<section id="book-1" epub:type="division">
-		<section id="part-1-2" epub:type="part">
-			<h3>
-				<span epub:type="label">Part</span>
-				<span epub:type="ordinal z3998:roman">II</span>
-			</h3>
-		</section>
+	<section id="part-1-2" epub:type="part" data-parent="book-1">
+		<h3>
+			<span epub:type="label">Part</span>
+			<span epub:type="ordinal z3998:roman">II</span>
+		</h3>
 	</section>
 
 Book 1, Part 2, Chapter 3 (:path:`chapter-1-2-3.xhtml`):
 
 .. code:: html
 
-	<section id="book-1" epub:type="division">
-		<section id="part-1-2" epub:type="part">
-			<section id="chapter-1-2-3" epub:type="chapter">
-				<h4>
-					<span epub:type="label">Chapter</span>
-					<span epub:type="ordinal z3998:roman">III</span>
-				</h4>
-				<p>...</p>
-				<p>...</p>
-			</section>
-		</section>
+	<section id="chapter-1-2-3" epub:type="chapter" data-parent="part-1-2">
+		<h4>
+			<span epub:type="label">Chapter</span>
+			<span epub:type="ordinal z3998:roman">III</span>
+		</h4>
+		<p>...</p>
+		<p>...</p>
 	</section>
 
 Headers
