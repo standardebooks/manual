@@ -589,7 +589,7 @@ Quotation marks
 
 			<p>His friends were James M‘Donald and Sam M‘Daniel.</p>
 
-#.	Ditto marks are set with the ditto mark glyph (:utf:`〃` or U+3003), not quotation marks.
+#.	Ditto marks are set with the right double quotation mark glyph (:utf:`”` or U+201D), This is not to be confused with the ditto mark glyph (:utf:`〃` or U+3003), which is for non-Latin scripts only, or the quotation mark glyph (:utf:`"` or U+0022).
 
 		.. code:: html
 
@@ -601,7 +601,7 @@ Quotation marks
 					</tr>
 					<tr>
 						<td>12</td>
-						<td>〃</td>
+						<td>”</td>
 					</tr>
 				</tbody>
 			</table>
