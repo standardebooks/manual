@@ -92,8 +92,6 @@ This section covers general patterns used when producing XHTML and CSS that are 
 					</section>
 				</section>
 
-	#.	Elements that have an :html:`epub:type` of :value:`division`, :value:`volume`, or :value:`part` may share :html:`id` attributes across the ebook, and if they do, they are assumed to be the same element when an ebook is recomposed.
-
 :html:`class` attributes
 ************************
 

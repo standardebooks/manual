@@ -532,7 +532,7 @@ Accessibility metadata is added to bring the final ebook into conformance with t
 
 #.	If the ebook has images *not including* the cover, titlepage, and publisher logo, then the following metadata is included in addition to any boilerplate accessibility metadata:
 
-	.. html::
+	.. code:: html
 
 		<meta property="schema:accessMode">visual</meta>
 		<meta property="schema:accessibilityFeature">alternativeText</meta>
