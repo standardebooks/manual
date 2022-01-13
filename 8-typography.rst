@@ -212,6 +212,8 @@ Italicizing non-English words and phrases
 
 		<p>“<i xml:lang="x-arcturan">Dolm</i>,” said Haunte.</p>
 
+#.	Words that are in an unknown language have their :html:`xml:lang` attribute set to :value:`unk`.
+
 Italicizing or quoting newly-used English words
 ===============================================
 
