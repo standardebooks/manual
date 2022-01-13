@@ -118,6 +118,8 @@ Cover art
 
 #.	:path:`./images/cover.source.svg` is the unmodified source image used to create :path:`./images/cover.jpg`. This image is kept in case changes to the source images are to be made in the future.
 
+#.	The cropped :path:`./images/cover.jpg` is not larger than 1.5 MB.
+
 US-PD clearance
 ---------------
 
