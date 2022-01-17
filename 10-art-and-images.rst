@@ -198,19 +198,19 @@ Museums with CC0 collections
 
 Images that are explicitly marked as CC0 from these museums can be used without further research. Not all of their images are CC0; you must confirm the presence of a CC0 license on the specific image you want to use.
 
--	`Rijksmuseum <https://www.rijksmuseum.nl/en/search?q=&f=1&p=1&ps=12&type=painting&imgonly=True&st=Objects>`__ (Open the “Object Data” section and check the “Copyright” entry under the “Acquisition and right” section to confirm CC0)
+-	`Rijksmuseum <https://www.rijksmuseum.nl/en/search?q=&f=1&p=1&ps=12&type=painting&imgonly=True&st=Objects>`__ (Open the “Object Data” section and check the “Copyright” entry under the “Acquisition and right” section to confirm CC0.)
 
--	`Finnish National Gallery via Europeana <https://www.europeana.eu/portal/en/collections/art?f%5BDATA_PROVIDER%5D%5B%5D=Finnish+National+Gallery&f%5BREUSABILITY%5D%5B%5D=open&f%5BRIGHTS%5D%5B%5D=http%2A%3A%2F%2Fcreativecommons.org%2F%2Apublicdomain%2Fzero%2A&per_page=96&view=grid>`__ (Use the “View at” link under the “Find out more” header to confirm CC0 license at the museum’s site)
+-	`Finnish National Gallery via Europeana <https://www.europeana.eu/portal/en/collections/art?f%5BDATA_PROVIDER%5D%5B%5D=Finnish+National+Gallery&f%5BREUSABILITY%5D%5B%5D=open&f%5BRIGHTS%5D%5B%5D=http%2A%3A%2F%2Fcreativecommons.org%2F%2Apublicdomain%2Fzero%2A&per_page=96&view=grid>`__ (Use the “View at” link under the “Find out more” header to confirm CC0 license at the museum’s site.)
 
--	`Met Museum <https://www.metmuseum.org/art/collection/search#!/search?material=Paintings&showOnly=withImage%7Copenaccess&sortBy=Relevance&sortOrder=asc&perPage=20&offset=0&pageSize=0>`__ (CC0 items have the CC0 logo under the image)
+-	`Met Museum <https://www.metmuseum.org/art/collection/search#!/search?material=Paintings&showOnly=withImage%7Copenaccess&sortBy=Relevance&sortOrder=asc&perPage=20&offset=0&pageSize=0>`__ (CC0 items have the CC0 logo under the image.)
 
--	`National Museum Sweden <https://www.nationalmuseum.se/en/samlingarna/fria-bilder>`__ (CC-PD items have the CC-PD mark in the lower left of the item’s detail view)
+-	`National Museum Sweden <https://www.nationalmuseum.se/en/samlingarna/fria-bilder>`__ (CC-PD items have the CC-PD mark in the lower left of the item’s detail view.)
 
--	`Minneapolis Institute of Art <https://collections.artsmia.org/>`__ (Public domain items are listed as such under “Rights”)
+-	`Minneapolis Institute of Art <https://collections.artsmia.org/>`__ (Public domain items are listed as such under “Rights.”)
 
--	`The Walters Art Museum <https://art.thewalters.org/>`__ (Public domain items are listed as "CC Creative Commons License" which links to a CC0 rights page)
+-	`The Walters Art Museum <https://art.thewalters.org/>`__ (Public domain items are listed as "CC Creative Commons License" which links to a CC0 rights page.)
 
--	`Art Institute of Chicago <https://www.artic.edu/collection?q=test&is_public_domain=1&department_ids=European+Painting+and+Sculpture>`__ (CC0 items say CC0 in the lower left of the painting in the art detail page)
+-	`Art Institute of Chicago <https://www.artic.edu/collection?q=test&is_public_domain=1&department_ids=European+Painting+and+Sculpture>`__ (CC0 items say CC0 in the lower left of the painting in the art detail page.)
 
 -	`Cleveland Museum of Art <http://www.clevelandart.org/art/collection/search?only-open-access=1&filter-type=Painting>`__ (CC0 items have the CC0 logo near the download button.)
 
