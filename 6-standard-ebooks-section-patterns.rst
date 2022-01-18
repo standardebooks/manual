@@ -263,9 +263,11 @@ The titlepage
 
 #.	The title page has a :html:`<title>` element with the value :string:`Titlepage`.
 
-#.	The titlepage contains one :html:`<section id="titlepage" epub:type="titlepage">` element which in turn contains one :html:`<img src="../images/titlepage.svg">` element.
+#.	The titlepage contains one :html:`<section id="titlepage" epub:type="titlepage">` element which in turn contains one :html:`<h1 epub:type="title">` element,  author information, as well as one :html:`<img src="../images/titlepage.svg">` element.
 
-#.	The :html:`<img>` element has its :html:`alt` attribute set to :string:`The titlepage for the Standard Ebooks edition of TITLE_STRING`, where :string:`TITLE_STRING` is the `Standard Ebooks title string </manual/VERSION/6-standard-ebooks-section-patterns#6.1>`__ for the ebook.
+#.	The titlepage does not contain the subtitle, if there is one.
+
+#.	The :html:`<img>` element has an empty :html:`alt` attribute.
 
 #.	A complete titlepage looks like the following template:
 
@@ -280,7 +282,14 @@ The titlepage
 			</head>
 			<body epub:type="frontmatter">
 				<section id="titlepage" epub:type="titlepage">
-					<img alt="The titlepage for the Standard Ebooks edition of TITLE_STRING" src="../images/titlepage.svg" epub:type="se:color-depth.black-on-transparent"/>
+					<h1 epub:type="title">TITLE</h1>
+					<p>By<br/>
+					<b epub:type="z3998:author">AUTHOR</b></p>
+					<p>Translated by<br/>
+					<b epub:type="z3998:translator">TRANSLATOR</b></p>
+					<p>Illustrated by<br/>
+					<b>ILLUSTRATOR</b></p>
+					<img alt="" src="../images/titlepage.svg" epub:type="se:color-depth.black-on-transparent"/>
 				</section>
 			</body>
 		</html>
@@ -346,13 +355,13 @@ The half title page
 
 #.	The half title page has a :html:`<title>` element containing the full title of the ebook.
 
-#.	The half title page contains one :html:`<section id="halftitlepage" epub:type="halftitlepage">` element, which in turn contains either one :html:`<h1 epub:type="fulltitle">` element containing the full title of the ebook, or one :html:`<hgroup epub:type="fulltitle">` element containing one :html:`<h1 epub:type="title">` element and one :html:`<h2 epub:type="subtitle">` element. The half title page is the only place where an :html:`<h1>` element appears.
+#.	The half title page contains one :html:`<section id="halftitlepage" epub:type="halftitlepage">` element, which in turn contains either one :html:`<h2 epub:type="fulltitle">` element containing the full title of the ebook, or one :html:`<hgroup epub:type="fulltitle">` element containing one :html:`<h2 epub:type="title">` element and one :html:`<h3 epub:type="subtitle">` element.
 
 #.	If the ebook has a subtitle, it is included in the half title page.
 
-#.	The :value:`fulltitle` semantic is applied to the top-level heading element in the half title page. This is usually either :html:`<hgroup>` in works with subtitles or :html:`<h1>` in works without.
+#.	The :value:`fulltitle` semantic is applied to the top-level heading element in the half title page. This is usually either :html:`<hgroup>` in works with subtitles or :html:`<h2>` in works without.
 
-#.	Formatting for the :html:`<h1>` element follows patterns in `7.2.9 </manual/VERSION/7-high-level-structural-patterns#7.2.9>`__.
+#.	Formatting for the :html:`<h2>` element follows patterns in `7.2.9 </manual/VERSION/7-high-level-structural-patterns#7.2.9>`__.
 
 #.	A complete half title page looks like the following template:
 
@@ -368,8 +377,8 @@ The half title page
 			<body epub:type="frontmatter">
 				<section id="halftitlepage" epub:type="halftitlepage">
 					<hgroup epub:type="fulltitle">
-						<h1 epub:type="title">His Last Bow</h1>
-						<h2 epub:type="subtitle">Some Reminiscences of Sherlock Holmes</h2>
+						<h2 epub:type="title">His Last Bow</h2>
+						<h3 epub:type="subtitle">Some Reminiscences of Sherlock Holmes</h3>
 					</hgroup>
 				</section>
 			</body>

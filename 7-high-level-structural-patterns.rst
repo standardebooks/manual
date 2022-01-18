@@ -303,7 +303,7 @@ Header patterns
 
 	.. code:: html
 
-		<h1 epub:type="fulltitle">Eugene Onegin</h1>
+		<h2 epub:type="fulltitle">Eugene Onegin</h2>
 
 
 #.	Half title pages with subtitles:
@@ -311,8 +311,8 @@ Header patterns
 	.. code:: html
 
 		<hgroup epub:type="fulltitle">
-			<h1 epub:type="title">His Last Bow</h1>
-			<h2 epub:type="subtitle">Some Reminiscences of Sherlock Holmes</h2>
+			<h2 epub:type="title">His Last Bow</h2>
+			<h3 epub:type="subtitle">Some Reminiscences of Sherlock Holmes</h3>
 		</hgroup>
 
 Bridgeheads
