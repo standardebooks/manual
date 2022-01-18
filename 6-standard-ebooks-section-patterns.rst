@@ -283,12 +283,9 @@ The titlepage
 			<body epub:type="frontmatter">
 				<section id="titlepage" epub:type="titlepage">
 					<h1 epub:type="title">TITLE</h1>
-					<p>By<br/>
-					<b epub:type="z3998:author">AUTHOR</b></p>
-					<p>Translated by<br/>
-					<b epub:type="z3998:translator">TRANSLATOR</b></p>
-					<p>Illustrated by<br/>
-					<b>ILLUSTRATOR</b></p>
+					<p>By <b epub:type="z3998:author">AUTHOR</b>.</p>
+					<p>Translated by <b epub:type="z3998:translator">TRANSLATOR</b>.</p>
+					<p>Illustrated by <b>ILLUSTRATOR</b>.</p>
 					<img alt="" src="../images/titlepage.svg" epub:type="se:color-depth.black-on-transparent"/>
 				</section>
 			</body>
