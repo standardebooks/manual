@@ -226,14 +226,14 @@ After the first :html:`<nav>` element, there is a second :html:`<nav>` element w
 :html:`<li>` descendents
 ------------------------
 
-Each :html:`<li>` element contains a link to one of the major structural divisions of the book. In general, a structural division is any section of the book that is not part of the body text, plus one element representing the beginning of the body text.
+Each :html:`<li>` element contains a link to either the start of the main text (i.e. the start of the bodymatter, excluding a half titlepage), or to a major reference section (i.e. backmatter including endnotes, bibliography, glossary, index, LoI, etc.). `See the IDPF a11y best practices document <http://idpf.org/epub/a11y/techniques/#sem-003>`__ for more information.
 
 #.	Each :html:`<li>` element has the computed semantic inflection of top-level :html:`<section>` element in the file. The computed semantic inflection includes inherited semantic inflection from the :html:`<body>` element.
 
 	.. code:: html
 
 		<li>
-			<a href="text/preface.xhtml" epub:type="frontmatter preface">Preface</a>
+			<a href="text/endnotes.xhtml" epub:type="backmatter endnotes">Endnotes</a>
 		</li>
 
 #.	The body text, as a single unit regardless of internal divisions, is represented by a link to the first file of the body text. In a prose novel, this is usually Chapter 1 or Part 1. In a collection this is usually the first item, like the first short story in a short story collection. The text is the title of the work as represented in the metadata :html:`<dc:title>` element.
