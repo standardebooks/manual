@@ -228,6 +228,8 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Nivaagaards Malerisamling <https://www.nivaagaard.dk/en/samling/>`__ (CC0 items say “Public Domain” by the picture, which leads to a license details page, which links to a CC0 license.)
 
+-	`RISD Museum <https://risdmuseum.org/art-design/collection>`__ (CC0 items have a link to the CC0 license in the “Use” section.)
+
 Clearance FAQ
 ~~~~~~~~~~~~~
 
