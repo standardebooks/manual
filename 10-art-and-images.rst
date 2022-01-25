@@ -230,6 +230,8 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`RISD Museum <https://risdmuseum.org/art-design/collection>`__ (CC0 items have a link to the CC0 license in the “Use” section.)
 
+-	`Aberdeen Archives, Gallery & Museums <https://emuseum.aberdeencity.gov.uk/collections/102307/open-access-images--fine-art>`__ (CC0 items say “Out of copyright - CC0” on the copyright line.)
+
 Clearance FAQ
 ~~~~~~~~~~~~~
 
