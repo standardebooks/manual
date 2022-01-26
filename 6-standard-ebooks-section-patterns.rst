@@ -473,7 +473,7 @@ Subsections
 			by<br/>
 			<a href="https://www.robinwhittleton.com/">Robin Whittleton</a>,<br/>
 			and is based on a transcription produced in 1997 by<br/>
-			<b epub:type="z3998:personal-name">An Anonymous Volunteer</b> and <b epub:type="z3998:personal-name">David Widger</b><br/>
+			<b>An Anonymous Volunteer</b> and <b epub:type="z3998:personal-name">David Widger</b><br/>
 			for<br/>
 			<a href="https://www.gutenberg.org/ebooks/965">Project Gutenberg</a><br/>
 			and on digital scans available at the<br/>
@@ -539,7 +539,7 @@ An example of a complete colophon
 				by<br/>
 				<a href="https://www.robinwhittleton.com/">Robin Whittleton</a>,<br/>
 				and is based on a transcription produced in 1997 by<br/>
-				<b epub:type="z3998:personal-name">An Anonymous Volunteer</b> and <b epub:type="z3998:personal-name">David Widger</b><br/>
+				<b>An Anonymous Volunteer</b> and <b epub:type="z3998:personal-name">David Widger</b><br/>
 				for<br/>
 				<a href="https://www.gutenberg.org/ebooks/965">Project Gutenberg</a><br/>
 				and on digital scans available at the<br/>
