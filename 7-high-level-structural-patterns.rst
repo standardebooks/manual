@@ -430,9 +430,9 @@ Epigraphs
 		}
 
 		[epub|type~="epigraph"] cite{
-			margin-top: 1em;
 			font-style: normal;
 			font-variant: small-caps;
+			margin-top: 1em;
 		}
 
 		[epub|type~="epigraph"] cite i{
@@ -769,8 +769,8 @@ Plays and drama
 		}
 
 		[epub|type~="z3998:drama"] td{
-			vertical-align: top;
 			padding: .5em;
+			vertical-align: top;
 		}
 
 		[epub|type~="z3998:drama"] td:last-child{
