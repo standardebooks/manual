@@ -247,7 +247,11 @@ Clearance FAQ
 
 	No. You must find a reproduction of your selected painting in a book published in PD_YEAR or earlier.
 
--	**I’ve found scan on a museum site and it says they think it’s in the public domain, but there’s no CC0 license. Is that OK?**
+-	**I’ve found painting on a museum site and it says they think it’s in the public domain, but there’s no other license information. Is that OK?**
+
+	No. You must find a reproduction of your selected painting in a book published in PD_YEAR or earlier.
+
+-	**I’ve found painting on a museum site, and it has a CC license other than CC0. Is that OK?**
 
 	No. You must find a reproduction of your selected painting in a book published in PD_YEAR or earlier.
 
