@@ -1293,7 +1293,7 @@ Latinisms
 
 #.	Latinisms (except :string:`sic`) that can be found in a modern dictionary are not italicized, with some exceptions below. Examples include :string:`e.g.`, :string:`i.e.`, :string:`ad hoc`, :string:`viz.`, :string:`ibid.`, :string:`etc.`.
 
-	#.	The following less-common Latinisms are always italicized to prevent confusing the intial word with a different English word:
+	#.	The following less-common Latinisms are always italicized to prevent confusing the initial word with a different English word:
 
 		- :string:`sic`
 
