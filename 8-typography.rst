@@ -499,9 +499,11 @@ Chapter headers
 Ligatures
 *********
 
-Ligatures are two or more letters that are combined into a single letter, usually for stylistic purposes. In general they are not used in modern English spelling, and are replaced with their expanded characters.
+#.	Ligatures are two or more letters that are combined into a single letter, usually for stylistic purposes. In general they are not used in modern English spelling, and are replaced with their expanded characters.
 
-Words in non-English languages like French may use ligatures to differentiate words or pronunciations. In these cases, ligatures are retained.
+#.	Words in non-English languages like French may use ligatures to differentiate words or pronunciations. In these cases, ligatures are retained.
+
+	#.	Ligatures are expanded for words and names in a Latin-language context.
 
 .. class:: wrong
 
@@ -509,6 +511,7 @@ Words in non-English languages like French may use ligatures to differentiate wo
 
 		<p>Œdipus Rex</p>
 		<p>Archæology</p>
+		<p><i xml:lang="la">Cujus est solum, ejus est usque ad cælum.</i></p>
 
 .. class:: corrected
 
@@ -516,6 +519,7 @@ Words in non-English languages like French may use ligatures to differentiate wo
 
 		<p>Oedipus Rex</p>
 		<p>Archaeology</p>
+		<p><i xml:lang="la">Cujus est solum, ejus est usque ad caelum.</i></p>
 
 Punctuation and spacing
 ***********************
