@@ -292,7 +292,7 @@ Book transcription and page scan sources
 Additional book metadata
 ************************
 
-#.	:html:`<meta property="se:url.encyclopedia.wikipedia">` contains the Wikipedia URL for the book. This element is not present if there is no Wikipedia entry for the book.
+#.	:html:`<meta property="se:url.encyclopedia.wikipedia">` contains the English Wikipedia URL for the book. This element is not present if there is no English Wikipedia entry for the book.
 
 #.	:html:`<meta property="se:url.vcs.github">` contains the SE GitHub URL for this ebook. This is calculated by taking the string :html:`https://github.com/standardebooks/` and appending the `SE identifier </manual/VERSION/9-metadata#9.2>`__, without :html:`https://standardebooks.org/ebooks/`, and with forward slashes replaced by underscores.
 
@@ -362,7 +362,7 @@ The author metadata block
 
 #.	:html:`<meta property="alternate-script" refines="#author">` contains the author’s name as it appears on the cover, but transliterated into their native alphabet if applicable. For example, Anton Chekhov’s name would be contained here in the Cyrillic alphabet. This element is not included if not applicable.
 
-#.	:html:`<meta property="se:url.encyclopedia.wikipedia" refines="#author">` contains the URL of the author’s Wikipedia page. This element is not included if there is no Wikipedia page.
+#.	:html:`<meta property="se:url.encyclopedia.wikipedia" refines="#author">` contains the URL of the author’s English Wikipedia page. This element is not included if there is no English Wikipedia page.
 
 #.	:html:`<meta property="se:url.authority.nacoaf" refines="#author">` contains the URI of the author’s `Library of Congress Names Database <http://id.loc.gov/authorities/names.html>`__ page. It uses a plain :html:`http:` prefix, and does not include the :path:`.html` file extension. This element is not included if there is no LoC Names database entry.
 
