@@ -1,4 +1,4 @@
-.. version: 1.6.3
+.. version: 1.6.4
 
 ###################################
 The Standard Ebooks Manual of Style
