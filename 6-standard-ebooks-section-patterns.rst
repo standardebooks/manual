@@ -90,6 +90,17 @@ The :html:`<nav>` element’s top-level :html:`<ol>` element contains a list of 
 					<a href="text/chapter-2.xhtml"><span epub:type="z3998:roman">II</span>: “Dead! All Dead!”</a>
 				</li>
 
+	#.	In books that have a half title page, and whose body text is a single file without heading content (for example, `Father Goriot <https://standardebooks.org/ebooks/honore-de-balzac/father-goriot/ellen-marriage>`__ or `The Path to Rome <https://standardebooks.org/ebooks/hilaire-belloc/the-path-to-rome>`__), the half title page ToC entry text is set to :html:`Half-Titlepage`.
+
+	.. code:: html
+
+		<li>
+			<a href="text/halftitlepage.xhtml">Half-Titlepage</a>
+			<ol>
+				<li>
+					<a href="text/father-goriot.xhtml">Father Goriot</a>
+				</li>
+
 :html:`<li>` descendents
 ------------------------
 
