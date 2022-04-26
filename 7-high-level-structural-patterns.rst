@@ -450,6 +450,14 @@ Epigraphs
 			font-style: normal;
 		}
 
+#.	Epigraphs may sometimes contain headings. Headings have italics removed with the following CSS:
+
+	.. code:: css
+
+		[epub|type~="epigraph"] h2{
+			font-style: normal;
+		}
+
 Epigraphs in section headers
 ============================
 
