@@ -327,3 +327,32 @@ Contributor lines dimensions
 #.	If there is more than one contributor of the same type (like multiple translators), they are listed on one line. If there are two, separate them with :string:`AND`. If there are more than two, separate them with commas, and :string:`AND` after the final comma. Example: :italics:`Siddhartha </ebooks/hermann-hesse/siddhartha/gunther-olesch_anke-dreher_amy-coulter_stefan-langer_semyon-chaichenets>`, by Hermann Hesse.
 
 #.	If there is more than one contributor type (like both a translator and an illustrator), the next contributor descriptor begins 80px after the last contributor name.
+
+Other images
+************
+
+Ebooks often have illustrations outside of the cover and titlepage images. Standard Ebooks ebook repositories distinguish between the source image copy, which is a high-resolution image saved in the repository for future needs, and the distributable image copy, which uses the source image copy as a base but is typically scaled down or otherwise processed, and which is the copy of the image that is distributed with the final ebook.
+
+#.	JPEG and TIFF image filenames end in :path:`.jpg` and :path:`.tif`, respectively, *not* :path:`.jpeg` or :path:`.tiff`.
+
+Source images
+=============
+
+The source image is an unedited, raw copy of the image that is in the highest-resolution possible.
+
+#.	Source images are located in :path:`./images/`.
+
+#.	There is always a source image for each corresponding distributable image, even if they are identical.
+
+Distributable images
+====================
+
+Distributable images are source images that have been processed for distribution, for example by scaling them down, removing frames, or converting them to SVG.
+
+#.	Distributable images are located in :path:`./src/epub/images/`.
+
+#.	The maximum dimensions for distributable images is 2,000 × 2,000 pixels.
+
+#.	Images that consist of plain black line drawings are converted to SVG for distribution.
+
+#.	Distributable images are not larger than 1.5MB in file size, with the exception of the cover image SVG.
