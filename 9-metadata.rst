@@ -435,7 +435,7 @@ Transcriber metadata
 
 #.	If the ebook is based on a transcription by someone else, like Project Gutenberg, then transcriber blocks follow the general contributor metadata blocks.
 
-#.	If the transcriber is anonymous, the value for the producer’s :html:`<dc:contributor>` element is :string:`An Anonymous Volunteer`.
+#.	If the transcriber is anonymous, the value for the producer’s :html:`<dc:contributor>` element is :string:`Anonymous`.
 
 #.	If there is more than one transcriber, the first transcriber is :value:`transcriber-1`, the second :value:`transcriber-2`, and so on.
 

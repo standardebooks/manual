@@ -422,7 +422,14 @@ Names
 
 			<b epub:type="z3998:personal-name">Fritz Ohrenschall</b>, <b epub:type="z3998:personal-name">Sania Ali Mirza</b>, and <a href="https://www.pgdp.net">The Online Distributed Proofreading Team</a>
 
-#.	Any anonymous or unknown contributor is listed as :string:`An Anonymous Volunteer`. Note that :string:`An Anonymous Volunteer` is not a name, therefore its parent :html:`<b>` element does not have name semantics.
+Anonymous contributors
+----------------------
+
+#.	Anonymous or unknown primary contributors (like the author or cover artist) are listed as :html:`<b>Anonymous</b>`.
+
+#.	Anonymous volunteers working on digitization or the actual ebook production are listed as :html:`<b>An Anonymous Volunteer</b>`. Note that their *metadata entries* are still listed as :string:`Anonymous`, even though their *colophon entries* differ.
+
+#.	Both types of volunteer string are not names, therefore their parent :html:`<b>` elements do not have name semantics.
 
 Sponsors
 ========
