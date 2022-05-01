@@ -261,6 +261,21 @@ The :html:`<meta property="se:long-description">` element contains a much longer
 
 #.	The long description is a non-biased, encyclopedia-like description of the book, including any relevant publication history, backstory, or historical notes. It is as detailed as possible without giving away plot spoilers. It does not impart the producer’s opinions of the book, or include content warnings. Think along the lines of a Wikipedia-like summary of the book and its history, *but under no circumstances can a producer copy and paste from Wikipedia!* (Wikipedia licenses articles under a CC license which is incompatible with Standard Ebooks’ CC0 public domain dedication.)
 
+	.. tip::
+
+		-	Describe the premise, not the plot. The first part of the description should describe things as they stand within the first chapter or two of the book and prompt interest in a potential reader. It should explain what within the book makes it worth reading, so consider the following questions:
+			-	Where are main characters at the start, and what is the world those characters inhabit?
+			-	What interesting thing happens that kicks off the plot?
+			What unanswered questions within the book would make a reader want to continue past the first chapter?
+			-	What are the thematic questions being addressed by this book?
+		-	Explain why you've produced this book. With all of the books to choose from, what was it about this book that made you want to choose it? The second part of the description should explain what makes this book notable and worth reading for its context, so consider the following questions:
+			-	Where does this book sit in the author's canon?
+			Has this book been adapted or inspired other works?
+			-	What cultural impact has this or other works by the author had?
+			-	What was happening in the world that informs the context of this book? -	What inspired its writing?
+		-	For collected works, do the above in abbreviated form. Consider a handful of short sentence-long premises of some of the most interesting stories or essays. Discuss how the stories were published (in different volumes or magazines?). Discuss how the collection of works relates to the totality of the author's works.
+		-	For nonfiction, much of the above applies. A memoir or travelogue still has enough narrative events that you can give a premise. A collection of essays has plenty of themes to discuss. Collections of mythology can talk about why the author collected those stories. Scientific books (e.g. Darwin) can distill the ideas first introduced in those books.
+
 #.	The long description is typogrified, i.e. it contains Unicode curly quotes, em dashes, and the like.
 
 #.	The long description is in *escaped* HTML, with the HTML beginning on its own line after the :html:`<meta property="se:long-description">` element.
@@ -542,5 +557,3 @@ Accessibility metadata is added to bring the final ebook into conformance with t
 	.. tip::
 
 		Remember that accessibility metadata is grouped by property, and ordered alphabetically by value within those groups!
-
-
