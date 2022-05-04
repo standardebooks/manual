@@ -710,17 +710,21 @@ Partially-obscured words
 
 A partially-obscured word is a word that the author chooses to not divulge by consistently obscuring some or all of it. This is not the same as an interruption in dialog, which may interrupt a word, but not obscure it in the same stylistic sense.
 
-#.	Em dashes are used for partially-obscured years.
+#.	Em dashes are used for *partially-obscured* years and *totally-obscured* days of the month.
 
 	.. code:: html
 
 		<p>It was the year 19:ws:`wj`— in the town of Metropolis.</p>
 
-#.	A regular hyphen is used in partially obscured years where only the last number is obscured.
+		<p>She arrived on May —, 1922.</p>
+
+#.	A regular hyphen is used in *partially-obscured* years where only the last number is obscured, and in *partially-obscured* days of the month.
 
 	.. code:: html
 
 		<p>It was the year 192-	in the town of Metropolis.</p>
+
+		<p>His birthday was August 1-, 1911.</p>
 
 #.	A non-breaking hyphen (:utf:`‑` or U+2011) is used when a single letter is obscured in a word.
 
