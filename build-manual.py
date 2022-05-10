@@ -327,8 +327,9 @@ def main() -> int:
 			else:
 				html = regex.sub(r"MANUAL_TITLE", f"{root_number}. {title} - The Standard Ebooks Manual of Style", html)
 
-			# Replace instances of PD_YEAR with PHP echo code
+			# Replace instances of PD_YEAR and PD_STRING with PHP echo code
 			html = regex.sub(r"PD_YEAR", "<?= PD_YEAR ?>", html)
+			html = regex.sub(r"PD_STRING", "<?= PD_STRING ?>", html)
 
 			with open(Path(work_directory) / filename.replace(".rst", ".php"), "w", encoding="utf-8") as file:
 				file.write(html)

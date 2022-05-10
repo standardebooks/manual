@@ -96,7 +96,9 @@ You may also create a tip or warning block:
 	Here’s a warning!
 ```
 
-Finally, the string `PD_YEAR` will be replaced with `<?= PD_YEAR ?>`, which will print the current public domain year when served from the SE website.
+The string `PD_YEAR` will be replaced with `<?= PD_YEAR ?>`, which will print the current public domain year when served from the SE website. For example, it will print `1926` if the current public domain includes works published up to and including 1926.
+
+The string `PD_STRING` will be replaced with `<?= PD_STRING ?>`, which will print the first day the public domain ends when served from the SE website. For example, it will print `January 1, 1927` if the current public domain includes works published up to and including 1926.
 
 ## Headings
 
