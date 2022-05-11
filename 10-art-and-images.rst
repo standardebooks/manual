@@ -114,7 +114,7 @@ Cover art
 
 #.	Because :path:`./images/cover.jpg` is an image with large dimensions, it must be sourced from a high-resolution scan. It may not always be possible to locate a high-resolution scan, so a smaller source image may be upscaled *a small amount* to meet the target dimensions.
 
-#.	Cover art is in the “fine art oil painting” style, and in full color. Art not in this style, like modern CG art or black-and-white scans, is not acceptable.
+#.	Cover art is in the “fine art oil painting” style, and in full color. Art not in this style, like ink drawings, woodcuts, medieval-style “flat” paintings, pencil sketches, modern CG art, or black-and-white scans, is not acceptable. Generally watercolor is not acceptable, though some watercolor *may* be acceptable if its appearance is oil-paining-like.
 
 #.	:path:`./images/cover.source.svg` is the unmodified source image used to create :path:`./images/cover.jpg`. This image is kept in case changes to the source images are to be made in the future.
 
