@@ -358,7 +358,7 @@ The author metadata block
 
 #.	:html:`<meta property="file-as" refines="#author">` contains the author’s name as filed alphabetically. This element is included even if it’s identical to :html:`<dc:creator>`.
 
-#.	:html:`<meta property="se:name.person.full-name" refines="#author">` contains the author’s full name, with any initials or middle names expanded, and including any titles. This element is not included if the value is identical to :html:`<dc:creator>`.
+#.	:html:`<meta property="se:name.person.full-name" refines="#author">` contains the author’s full name, with any initials or middle names expanded, and including any titles. If the author uses a pseudonym, then this should be the full pseudonym, not the author’s real name. This element is not included if the value is identical to :html:`<dc:creator>`.
 
 #.	:html:`<meta property="alternate-script" refines="#author">` contains the author’s name as it appears on the cover, but transliterated into their native alphabet if applicable. For example, Anton Chekhov’s name would be contained here in the Cyrillic alphabet. This element is not included if not applicable.
 
