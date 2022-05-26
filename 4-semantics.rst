@@ -147,11 +147,11 @@ For example, an ebook producer may want to convey that the contents of a certain
 
 		<body epub:type="z3998:non-fiction">
 			<section id="chapter-1" epub:type="chapter">
-				<h2 epub:type="title z3998:roman">I</h2>
+				<h2 epub:type="ordinal z3998:roman">I</h2>
 				...
 			</section>
 			<section id="chapter-2" epub:type="chapter">
-				<h2 epub:type="title z3998:roman">II</h2>
+				<h2 epub:type="ordinal z3998:roman">II</h2>
 				...
 			</section>
 		</body>

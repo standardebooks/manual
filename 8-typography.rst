@@ -471,7 +471,7 @@ Chapter headers
 		.. code:: html
 
 			<header>
-				<h2 epub:type="title z3998:roman">II</h2>
+				<h2 epub:type="ordinal z3998:roman">II</h2>
 				<blockquote epub:type="epigraph">
 					<p>“Desire no more than to thy lot may fall. …”</p>
 					<cite>—Chaucer.</cite>
@@ -489,7 +489,7 @@ Chapter headers
 		.. code:: html
 
 			<header>
-				<h2 epub:type="title z3998:roman">II</h2>
+				<h2 epub:type="ordinal z3998:roman">II</h2>
 				<blockquote epub:type="epigraph">
 					<p>“Desire no more than to thy lot may fall. …”</p>
 					<cite>Chaucer</cite>
