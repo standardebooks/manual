@@ -111,6 +111,19 @@ Some books are commonly referred to by a shorter name than their actual title. F
 
 #.	The :html:`<dc:title id="title-short">` element contains the common title. It is refined with :html:`<meta property="title-type" refines="#title-short">short</meta>` and :html:`<meta property="file-as">`.
 
+Books published with multiple titles
+====================================
+
+Some books may have been published under more than one official title. This is not the same as a book being more commonly known by a popular title. For example, :italics:`The Mark of Zorro </ebooks/johnston-mcculley/the-mark-of-zorro>` was originally serialized as :italics:`The Curse of Capistrano`.
+
+#.	The :html:`<meta property="dcterms:alternative" refines="#title">` element contains the alternate title. It is not refined with :html:`<meta property="file-as">`.
+
+	.. code:: html
+
+		<dc:title id="title">The Mark of Zorro</dc:title>
+		<meta property="file-as" refines="#title">Mark of Zorro, The</meta>
+		<meta property="dcterms:alternative" refines="#title">The Curse of Capistrano</meta>
+
 Books with numbers or abbreviations in the title
 ================================================
 
