@@ -329,6 +329,36 @@ The imprint
 
 				<p>This particular ebook is based on digital scans available at the <a href="IA_URL">Internet Archive</a>.</p>
 
+	#.	If an ebook is based on multiple sources or transcriptions (for example, a short story collection of a voluminous author), then the source sentence is altered to reflect that either the transcriptions, the page scans, or both, came from various sources.
+
+		#. If transcriptions or page scans come from the same domain (like only the Internet Archive or HathiTrust):
+
+			.. code:: html
+
+				<p>This particular ebook is based on transcriptions produced for <a href="EBOOK_URL#transcriptions">Project Gutenberg</a> and on digital scans available at the <a href="IA_URL">Internet Archive</a>.</p>
+
+			.. code:: html
+
+				<p>This particular ebook is based on a transcription produced for <a href="PG_URL">Project Gutenberg</a> and on digital scans available at the <a href="EBOOK_URL#page-scans">Internet Archive</a>.</p>
+
+			.. code:: html
+
+				<p>This particular ebook is based on transcriptions produced for <a href="EBOOK_URL#transcriptions">Project Gutenberg</a> and on digital scans available at the <a href="EBOOK_URL#page-scans">Internet Archive</a>.</p>
+
+		#. If transcriptions or page scans come from more than one domain (like both the Internet Archive and HathiTrust):
+
+			.. code:: html
+
+				<p>This particular ebook is based on transcriptions from <a href="EBOOK_URL#transcriptions">various sources</a> and on digital scans available at the <a href="IA_URL">Internet Archive</a>.</p>
+
+			.. code:: html
+
+				<p>This particular ebook is based on a transcription produced for <a href="PG_URL">Project Gutenberg</a> and on digital scans from <a href="EBOOK_URL#page-scans">various sources</a>.</p>
+
+			.. code:: html
+
+				<p>This particular ebook is based on transcriptions from <a href="EBOOK_URL#transcriptions">various sources</a> and on digital scans from <a href="EBOOK_URL#page-scans">various sources</a>.</p>
+
 #.	A complete imprint looks like the following template:
 
 	.. code:: html
@@ -498,6 +528,83 @@ Subsections
 			<a href="https://archive.org/details/worksofdumas24dumaiala">Internet Archive</a>.</p>
 
 		#.	If the Standard ebooks producer also transcribed the book *in its entirety*, then the first line becomes: :html:`<p>This ebook was transcribed and produced for<br/>`.
+
+		#.	If an ebook is based on multiple sources or transcriptions (for example, a short story collection of a voluminous author), then the source sentence is altered to reflect that either the transcriptions, the page scans, or both, came from various sources. Individual transcriber names are ommitted.
+
+			#.	If the transcriptions or page scans all came from the same source (i.e., all of the transcriptions came from Project Gutenberg):
+
+				.. code:: html
+
+					<p>This ebook was produced for<br/>
+					<a href="https://standardebooks.org">Standard Ebooks</a><br/>
+					by<br/>
+					<a href="https://www.robinwhittleton.com/">Robin Whittleton</a>,<br/>
+					and is based on transcriptions produced for<br/>
+					<a href="EBOOK_URL#transcriptions">Project Gutenberg</a><br/>
+					and on digital scans available at the<br/>
+					<a href="https://archive.org/details/worksofdumas24dumaiala">Internet Archive</a>.</p>
+
+				.. code:: html
+
+					<p>This ebook was produced for<br/>
+					<a href="https://standardebooks.org">Standard Ebooks</a><br/>
+					by<br/>
+					<a href="https://www.robinwhittleton.com/">Robin Whittleton</a>,<br/>
+					and is based on a transcription produced in 1997 by<br/>
+					<b>An Anonymous Volunteer</b> and <b epub:type="z3998:personal-name">David Widger</b><br/>
+					for<br/>
+					<a href="https://www.gutenberg.org/ebooks/965">Project Gutenberg</a><br/>
+					and on digital scans available at the<br/>
+					<a href="EBOOK_URL#page-scans">Internet Archive</a>.</p>
+
+
+				.. code:: html
+
+					<p>This ebook was produced for<br/>
+					<a href="https://standardebooks.org">Standard Ebooks</a><br/>
+					by<br/>
+					<a href="https://www.robinwhittleton.com/">Robin Whittleton</a>,<br/>
+					and is based on transcriptions produced for<br/>
+					<a href="EBOOK_URL#transcriptions">Project Gutenberg</a><br/>
+					and on page scans available at the<br/>
+					<a href="EBOOK_URL#page-scans">Internet Archive</a>.</p>
+
+			#.	If the transcriptions or page scans came from different sources:
+
+				.. code:: html
+
+					<p>This ebook was produced for<br/>
+					<a href="https://standardebooks.org">Standard Ebooks</a><br/>
+					by<br/>
+					<a href="https://www.robinwhittleton.com/">Robin Whittleton</a>,<br/>
+					and is based on transcriptions from <br/>
+					<a href="EBOOK_URL#transcriptions">various sources</a><br/>
+					and on digital scans available at the<br/>
+					<a href="https://archive.org/details/worksofdumas24dumaiala">Internet Archive</a>.</p>
+
+				.. code:: html
+
+					<p>This ebook was produced for<br/>
+					<a href="https://standardebooks.org">Standard Ebooks</a><br/>
+					by<br/>
+					<a href="https://www.robinwhittleton.com/">Robin Whittleton</a>,<br/>
+					and is based on a transcription produced in 1997 by<br/>
+					<b>An Anonymous Volunteer</b> and <b epub:type="z3998:personal-name">David Widger</b><br/>
+					for<br/>
+					<a href="https://www.gutenberg.org/ebooks/965">Project Gutenberg</a><br/>
+					and on digital scans from<br/>
+					<a href="EBOOK_URL#page-scans">various sources</a>.</p>
+
+				.. code:: html
+
+					<p>This ebook was produced for<br/>
+					<a href="https://standardebooks.org">Standard Ebooks</a><br/>
+					by<br/>
+					<a href="https://www.robinwhittleton.com/">Robin Whittleton</a>,<br/>
+					and is based on transcriptions from<br/>
+					<a href="EBOOK_URL#transcriptions">various sources</a><br/>
+					and on digital scans from<br/>
+					<a href="EBOOK_URL#page-scans">various sources</a>.</p>
 
 	#.	The third :html:`<p>` block names the cover art, cover artist, and the typefaces used on the cover and title pages.
 
