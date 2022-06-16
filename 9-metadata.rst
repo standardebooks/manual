@@ -129,19 +129,19 @@ Books with numbers or abbreviations in the title
 
 Books that contain numbers or abbreviations in their title may be difficult to find with a search query, because there can be different ways to search for numbers or abbreviations. For example, a reader may search for :italics:`Around the World in Eighty Days </ebooks/jules-verne/around-the-world-in-eighty-days/george-makepeace-towle>` by searching for “80” instead of “eighty”.
 
-#.	If a book title contains numbers or abbreviations, a :html:`<meta property="se:alternate-title" refines="#title">` element is placed after the main title block, containing the title with expanded or alternate spelling to facilitate possible search queries.
+#.	If a book title contains numbers or abbreviations, a :html:`<meta property="dcterms:alternate" refines="#title">` element is placed after the main title block, containing the title with expanded or alternate spelling to facilitate possible search queries.
 
 	.. code:: html
 
 		<dc:title id="title">Around the World in Eighty Days</dc:title>
 		<meta property="file-as" refines="#title">Around the World in Eighty Days</meta>
-		<meta property="se:alternate-title" refines="#title">Around the World in 80 Days</meta>
+		<meta property="dcterms:alternate" refines="#title">Around the World in 80 Days</meta>
 
 	.. code:: html
 
 		<dc:title id="title">File No. 113</dc:title>
 		<meta property="file-as" refines="#title">File No. 113</meta>
-		<meta property="se:alternate-title" refines="#title">File Number One Hundred and Thirteen</meta>
+		<meta property="dcterms:alternate" refines="#title">File Number One Hundred and Thirteen</meta>
 
 Book subjects
 *************
