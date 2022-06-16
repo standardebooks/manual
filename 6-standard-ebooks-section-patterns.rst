@@ -321,13 +321,13 @@ The imprint
 
 			.. code:: html
 
-				<p>This particular ebook is based on digital scans available at <a href="IA_URL">the Internet Archive</a>.</p>
+				<p>This particular ebook is based on digital scans from <a href="IA_URL">the Internet Archive</a>.</p>
 
 		.. class:: corrected
 
 			.. code:: html
 
-				<p>This particular ebook is based on digital scans available at the <a href="IA_URL">Internet Archive</a>.</p>
+				<p>This particular ebook is based on digital scans from the <a href="IA_URL">Internet Archive</a>.</p>
 
 	#.	If an ebook is based on multiple sources or transcriptions (for example, a short story collection of a voluminous author), then the source sentence is altered to reflect that either the transcriptions, the page scans, or both, came from various sources.
 
@@ -335,25 +335,25 @@ The imprint
 
 			.. code:: html
 
-				<p>This particular ebook is based on transcriptions produced for <a href="EBOOK_URL#transcriptions">Project Gutenberg</a> and on digital scans available at the <a href="IA_URL">Internet Archive</a>.</p>
+				<p>This particular ebook is based on transcriptions from <a href="EBOOK_URL#transcriptions">Project Gutenberg</a> and on digital scans from the <a href="IA_URL">Internet Archive</a>.</p>
 
 			.. code:: html
 
-				<p>This particular ebook is based on a transcription produced for <a href="PG_URL">Project Gutenberg</a> and on digital scans available at the <a href="EBOOK_URL#page-scans">Internet Archive</a>.</p>
+				<p>This particular ebook is based on a transcription from <a href="PG_URL">Project Gutenberg</a> and on digital scans from the <a href="EBOOK_URL#page-scans">Internet Archive</a>.</p>
 
 			.. code:: html
 
-				<p>This particular ebook is based on transcriptions produced for <a href="EBOOK_URL#transcriptions">Project Gutenberg</a> and on digital scans available at the <a href="EBOOK_URL#page-scans">Internet Archive</a>.</p>
+				<p>This particular ebook is based on transcriptions from <a href="EBOOK_URL#transcriptions">Project Gutenberg</a> and on digital scans from the <a href="EBOOK_URL#page-scans">Internet Archive</a>.</p>
 
 		#. If transcriptions or page scans come from more than one domain (like both the Internet Archive and HathiTrust):
 
 			.. code:: html
 
-				<p>This particular ebook is based on transcriptions from <a href="EBOOK_URL#transcriptions">various sources</a> and on digital scans available at the <a href="IA_URL">Internet Archive</a>.</p>
+				<p>This particular ebook is based on transcriptions from <a href="EBOOK_URL#transcriptions">various sources</a> and on digital scans from the <a href="IA_URL">Internet Archive</a>.</p>
 
 			.. code:: html
 
-				<p>This particular ebook is based on a transcription produced for <a href="PG_URL">Project Gutenberg</a> and on digital scans from <a href="EBOOK_URL#page-scans">various sources</a>.</p>
+				<p>This particular ebook is based on a transcription from <a href="PG_URL">Project Gutenberg</a> and on digital scans from <a href="EBOOK_URL#page-scans">various sources</a>.</p>
 
 			.. code:: html
 
@@ -377,7 +377,7 @@ The imprint
 						<img alt="The Standard Ebooks logo" src="../images/logo.svg" epub:type="z3998:publisher-logo se:color-depth.black-on-transparent"/>
 					</header>
 					<p>This ebook is the product of many hours of hard work by volunteers for <a href="https://standardebooks.org">Standard Ebooks</a>, and builds on the hard work of other literature lovers made possible by the public domain.</p>
-					<p>This particular ebook is based on a transcription produced for <a href="PG_URL">Project Gutenberg</a> and on digital scans available at the <a href="IA_URL">Internet Archive</a>.</p>
+					<p>This particular ebook is based on a transcription from <a href="PG_URL">Project Gutenberg</a> and on digital scans from the <a href="IA_URL">Internet Archive</a>.</p>
 					<p>The writing and artwork within are believed to be in the <abbr>U.S.</abbr> public domain, and Standard Ebooks releases this ebook edition under the terms in the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal Public Domain Dedication</a>. For full license information, see the <a href="uncopyright.xhtml">Uncopyright</a> at the end of this ebook.</p>
 					<p>Standard Ebooks is a volunteer-driven project that produces ebook editions of public domain literature using modern typography, technology, and editorial standards, and distributes them free of cost. You can download this and other ebooks carefully produced for true book lovers at <a href="https://standardebooks.org">standardebooks.org</a>.</p>
 				</section>
@@ -524,7 +524,7 @@ Subsections
 			<b>An Anonymous Volunteer</b> and <b epub:type="z3998:personal-name">David Widger</b><br/>
 			for<br/>
 			<a href="https://www.gutenberg.org/ebooks/965">Project Gutenberg</a><br/>
-			and on digital scans available at the<br/>
+			and on digital scans from the<br/>
 			<a href="https://archive.org/details/worksofdumas24dumaiala">Internet Archive</a>.</p>
 
 		#.	If the Standard ebooks producer also transcribed the book *in its entirety*, then the first line becomes: :html:`<p>This ebook was transcribed and produced for<br/>`.
@@ -539,9 +539,9 @@ Subsections
 					<a href="https://standardebooks.org">Standard Ebooks</a><br/>
 					by<br/>
 					<a href="https://www.robinwhittleton.com/">Robin Whittleton</a>,<br/>
-					and is based on transcriptions produced for<br/>
+					and is based on transcriptions from<br/>
 					<a href="EBOOK_URL#transcriptions">Project Gutenberg</a><br/>
-					and on digital scans available at the<br/>
+					and on digital scans from the<br/>
 					<a href="https://archive.org/details/worksofdumas24dumaiala">Internet Archive</a>.</p>
 
 				.. code:: html
@@ -554,7 +554,7 @@ Subsections
 					<b>An Anonymous Volunteer</b> and <b epub:type="z3998:personal-name">David Widger</b><br/>
 					for<br/>
 					<a href="https://www.gutenberg.org/ebooks/965">Project Gutenberg</a><br/>
-					and on digital scans available at the<br/>
+					and on digital scans from the<br/>
 					<a href="EBOOK_URL#page-scans">Internet Archive</a>.</p>
 
 
@@ -564,9 +564,9 @@ Subsections
 					<a href="https://standardebooks.org">Standard Ebooks</a><br/>
 					by<br/>
 					<a href="https://www.robinwhittleton.com/">Robin Whittleton</a>,<br/>
-					and is based on transcriptions produced for<br/>
+					and is based on transcriptions from<br/>
 					<a href="EBOOK_URL#transcriptions">Project Gutenberg</a><br/>
-					and on page scans available at the<br/>
+					and on page scans from the<br/>
 					<a href="EBOOK_URL#page-scans">Internet Archive</a>.</p>
 
 			#.	If the transcriptions or page scans came from different sources:
@@ -579,7 +579,7 @@ Subsections
 					<a href="https://www.robinwhittleton.com/">Robin Whittleton</a>,<br/>
 					and is based on transcriptions from <br/>
 					<a href="EBOOK_URL#transcriptions">various sources</a><br/>
-					and on digital scans available at the<br/>
+					and on digital scans from the<br/>
 					<a href="https://archive.org/details/worksofdumas24dumaiala">Internet Archive</a>.</p>
 
 				.. code:: html
@@ -667,7 +667,7 @@ An example of a complete colophon
 				<b>An Anonymous Volunteer</b> and <b epub:type="z3998:personal-name">David Widger</b><br/>
 				for<br/>
 				<a href="https://www.gutenberg.org/ebooks/965">Project Gutenberg</a><br/>
-				and on digital scans available at the<br/>
+				and on digital scans from the<br/>
 				<a href="https://archive.org/details/worksofdumas24dumaiala">Internet Archive</a>.</p>
 				<p>The cover page is adapted from<br/>
 				<i epub:type="se:name.visual-art.painting">Floral Still Life</i>,<br/>
