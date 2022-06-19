@@ -317,6 +317,15 @@ Book transcription and page scan sources
 
 #.	A book can contain more than one such element if multiple sources for page scans were used.
 
+	#.	If the ebook is a collection in which different parts appear across different page scan sources (like a short story or poetry collection), an XML comment is included above each :html:`<dc:source>` element specifying which part of the ebook is included in the following source URL.
+
+		.. code:: html
+
+			<!--The Man of the Crowd, Eleanora, The Oval Portrait-->
+			<dc:source>https://archive.org/details/worksofedgaralla01poeeuoft</dc:source>
+			<!--The Gold-Bug, A Tale of the Rugged Mountains, Mesmeric Revelation-->
+			<dc:source>https://archive.org/details/worksofedgaralla02poeeuoft</dc:source>
+
 Additional book metadata
 ************************
 
