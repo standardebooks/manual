@@ -212,7 +212,7 @@ All SE subjects
 
 -	Biography
 
--	Childrens
+-	Children’s
 
 -	Comedy
 
@@ -249,7 +249,7 @@ Required SE subjects for specific types of books
 
 #.	Ebooks that are collections of short stories have the SE subject :string:`Shorts` as one of the SE subjects.
 
-#.	Ebooks that are young adult or children’s books have the SE subject :string:`Childrens` as one of the SE subjects.
+#.	Ebooks that are young adult or children’s books have the SE subject :string:`Children’s` as one of the SE subjects.
 
 Book descriptions
 *****************
