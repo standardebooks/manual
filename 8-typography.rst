@@ -674,7 +674,7 @@ There are many kinds of dashes, and the run-of-the-mill hyphen is often not the 
 
 		<p>I saw the torpedo-boat in the Ems⁠:ws:`wj`–:ws:`wj`⁠Jade Canal.</p>
 
-#.	Non-break hyphens (:utf:`‑` or U+2011) are used when a single word is stretched out by a speaker for prosaic effect.
+#.	Non-break hyphens (:utf:`‑` or U+2011) are used when a single word is stretched out by a speaker for prosodic effect.
 
 	.. code:: html
 
