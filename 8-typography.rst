@@ -183,13 +183,13 @@ Italicizing non-English words and phrases
 
 #.	Block-level italics are set using an :html:`xml:lang` attribute on the closest encompassing block element, with the style of :css:`font-style: italic`.
 
-	In this example, note the additional namespace declaration, and that we target *descendants* of the :html:`<body>` element; otherwise, the entire :html:`<body>` element would receive italics!
+	In this example, note the additional namespace declaration, and that we target only :html:`<blockquote>` elements that have the language tag. This is because there can be other elements, e.g. :html:`<span>`, that have a language tag but should not be italicized.
 
 	.. code:: css
 
 		@namespace xml "http://www.w3.org/XML/1998/namespace";
 
-		body [xml|lang]{
+		blockquote[xml|lang]{
 			font-style: italic;
 		}
 
