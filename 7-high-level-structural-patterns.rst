@@ -373,13 +373,15 @@ Bridgeheads are sections in a chapter header that give an abstract or summary of
 Dedications
 ***********
 
-#.	Dedications are typically full-page, centered on the page for ereaders that support advanced CSS. For all other ereaders, the dedication is horizontally centered with a small margin above it.
+Dedications are typically either a short phrase centered on the page, or a longer prose-form dedication similar in appearance and typestting to regular prose.
 
-#.	All dedications include this base CSS:
+Dedications are frequently styled uniquely by authors. Therefore there is freedom to style dedications to match the author’s unique style choices, for example by including small caps, different font sizes, alignments, etc.
+
+#.	Short-type dedications are centered on the page for ereaders that support advanced CSS. For all other ereaders, such dedications are horizontally centered with a small top margin. The following CSS is used for such dedications:
 
 	.. code:: css
 
-		/* All dedications */
+		/* Centered dedications */
 		section[epub|type~="dedication"]{
 			text-align: center;
 		}
@@ -406,9 +408,9 @@ Dedications
 				margin: 0;
 			}
 		}
-		/* End all dedications */
+		/* End centered dedications */
 
-#.	Dedications are frequently styled uniquely by the authors. Therefore Standard Ebooks producers have freedom to style dedications to match page scans, for example by including small caps, different font sizes, alignments, etc.
+#.	Prose-type dedications are styled like regular chapters, including a top margin if there is no heading material.
 
 Epigraphs
 *********
