@@ -38,17 +38,101 @@ This section covers general patterns used when producing XHTML and CSS that are 
 
 #.	:html:`id` attributes are not used as hooks for CSS styling.
 
-#.	If an element that is not a :html:`<section>` or :html:`<article>` requires an :html:`id` attribute, the attribute’s value is the name of the element followed by :value:`-N`, where :value:`N` is the sequence number of the element starting at :value:`1`.
+#.	:html:`<figure>` elements have an :html:`id` attribute set to :value:`figure-N`, where :value:`N` is the sequence number of the figure *across the entire ebook*, starting at :value:`1`.
+
+	.. code:: html
+
+		<!-- chapter-1.xhtml -->
+		<section id="chapter-1" epub:type="chapter">
+			<p>...</p>
+			<figure id="figure-1">...</figure>
+			<p>...</p>
+		</section>
+
+		<!-- chapter-2.xhtml -->
+		<section id="chapter-2" epub:type="chapter">
+			<p>...</p>
+			<p>...</p>
+			<figure id="figure-2">...</figure>
+		</section>
+
+#.	Noteref elements have their :html:`id` attributes set to :value:`notref-N`, where :value:`N` is the sequence number of the noteref *across the entire ebook*, starting at :value:`1`.
+
+	.. code:: html
+
+		<p>We threw an empty oil can down and it echoed for a terribly long time.<a href="endnotes.xhtml#note-228" id="noteref-228" epub:type="noteref">228</a></p>
+
+#.	Endnote elements have their :html:`id` attributes set to :value:`note-N`, where :value:`N` is the sequence number of the endnote, starting at :value:`1`.
+
+	.. code:: html
+
+		<li id="note-1" epub:type="endnote">
+			<p>Cook, <i epub:type="se:name.publication.book">A Voyage Towards the South Pole</i>, Introduction. <a href="introduction.xhtml#noteref-1" epub:type="backlink">↩</a></p>
+		</li>
+
+#.	:html:`<dt>` elements have their :html:`id` attribute set to the URL-safe version of the text contents of their child :`<dfn>` element.
+
+	.. code:: html
+
+		<section id="glossary" epub:type="glossary">
+			<dl>
+				<dt id="blizzard" epub:type="glossterm">
+					<dfn>Blizzard</dfn>
+				</dt>
+			</dl>
+		</section>
+
+#	Other non :html:`<dt>` children of semantic :value:`glossary` elements do not have standardized :html:`id` attributes, but rather should be set descriptively based on context.
+
+#.	If an element whose :html:`id` attribute is not otherwise standardized requires an :html:`id` attribute, then the attribute’s value is formed by taking the :html:`id` attribute of the closest parent :html:`<section>`, :html:`<article>`, or :val:`endnote`, appending :value:`-`, then the name of the element, then :value:`-N`, where :value:`N` is the sequence number of the element starting at :value:`1` in the *flattened document tree order* of its closest parent sectioning element.
 
 	.. class:: corrected
 
 		.. code:: html
 
-			<p>See <a href="#p-4">this paragraph</a> for more details.</p>
-			<p>...</p>
-			<p>...</p>
-			<p id="p-4">...</p>
-			<p>...</p>
+			<section id="chapter-1" epub:type="chapter">
+				<header>
+					<h2 epub:type="title">...</h2>
+					<p epub:type="bridgehead">...</p>
+				</header>
+				<p id="chapter-1-p-2">...</p>
+				<section id="chapter-1-1" epub:type="z3998:subchapter">
+					<p>See <a href="#chapter-1-1-p-4">this paragraph</a> for more details.</p>
+					<p>...</p>
+					<p>See <a href="#chapter-1-p-2">this paragraph</a>.</p>
+					<blockquote>
+						<p id="chapter-1-1-p-4">...</p>
+					</blockquote>
+					<p>...</p>
+				</section>
+			</section>
+
+#.	For poems  with the :value:`z3998:poem` semantic in which a child has an :html:`id` attribute referring to a specific line number, the :html:`id` attribute’s value is formed by taking the :html:`id` attribute of the closest parent :html:`<section>` or :html:`<article>` that contains the :value:`z3998:poem` semantic, appending :value:`-line`, then :value:`-N`, where :value:`N` is the sequence number of the line starting at :value:`1` in the *flattened document tree order* of the selected sectioning element, *excluding :html:`<header>` elements*.
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<article id="the-waste-land" epub:type="z3998:poem">
+				<section id="the-waste-land-1" epub:type="z3998:subchapter">
+					<p>
+						<span>April is the cruellest month, breeding</span>
+						<br/>
+						<span id="the-waste-land-line-2">Lilacs out of the dead land, mixing</span>
+						<br/>
+						<span>Memory and desire, stirring</span>
+					</p>
+				</section>
+				<section id="the-waste-land-2" epub:type="z3998:subchapter">
+					<p>
+						<span>The Chair she sat in, like a burnished throne,</span>
+						<br/>
+						<span>Glowed on the marble, where the glass</span>
+						<br/>
+						<span id="the-waste-land-line-6">Held up by standards wrought with fruited vines</span>
+					</p>
+				</section>
+			</article>
 
 #.	Individual :html:`id` attributes are unique across the entire ebook.
 
