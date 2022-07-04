@@ -105,7 +105,7 @@ Inline elements are by default rendered with :css:`display: inline;`. See the `c
 Semantic Inflection
 *******************
 
-The epub spec allows for `semantic inflection <https://idpf.github.io/epub-vocabs/structure/>`__, which is a way of adding semantic metadata to elements in the ebook document.
+The epub spec allows for `semantic inflection <https://www.w3.org/TR/epub-ssv-11/>`__, which is a way of adding semantic metadata to elements in the ebook document.
 
 For example, an ebook producer may want to convey that the contents of a certain :html:`<section>` are part of a chapter. They would do that by using the :html:`epub:type` attribute:
 
@@ -113,7 +113,7 @@ For example, an ebook producer may want to convey that the contents of a certain
 
 	<section epub:type="chapter">...</section>
 
-#.	The epub spec includes a `vocabulary <https://idpf.github.io/epub-vocabs/structure/>`__ that can be used in the :html:`epub:type` attribute. This vocabulary has priority when selecting a semantic keyword, even if other vocabularies contain the same one.
+#.	The epub spec includes a `vocabulary <https://www.w3.org/TR/epub-ssv-11/>`__ that can be used in the :html:`epub:type` attribute. This vocabulary has priority when selecting a semantic keyword, even if other vocabularies contain the same one.
 
 #.	The epub spec might not contain a keyword necessary to describe the semantics of a particular element. In that case, the `z3998 vocabulary <http://www.daisy.org/z3998/2012/vocab/structure/>`__ is consulted next.
 

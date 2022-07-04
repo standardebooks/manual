@@ -160,7 +160,7 @@ The :html:`<nav>` element’s top-level :html:`<ol>` element contains a list of 
 :html:`<a>` descendents
 -----------------------
 
-#.	The :value:`title`, :value:`subtitle`, :value:`ordinal`, and any `related title epub semantics <https://idpf.github.io/epub-vocabs/structure/#titles>`__ are not included in ToC entries. Their usage context is only within actual heading content.
+#.	The :value:`title`, :value:`subtitle`, :value:`ordinal`, and any `related title epub semantics <https://www.w3.org/TR/epub-ssv-11/#sec-titles>`__ are not included in ToC entries. Their usage context is only within actual heading content.
 
 #.	The text of the :html:`<a>` element is decided as follows:
 
