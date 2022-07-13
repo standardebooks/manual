@@ -373,7 +373,7 @@ Bridgeheads are sections in a chapter header that give an abstract or summary of
 Dedications
 ***********
 
-Dedications are typically either a short phrase centered on the page, or a longer prose-form dedication similar in appearance and typestting to regular prose.
+Dedications are typically either a short phrase centered on the page, or a longer prose-form dedication similar in appearance and typesetting to regular prose.
 
 Dedications are frequently styled uniquely by authors. Therefore there is freedom to style dedications to match the author’s unique style choices, for example by including small caps, different font sizes, alignments, etc.
 
