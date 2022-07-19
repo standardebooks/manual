@@ -130,7 +130,7 @@ Italicizing individual letters
 
 	.. code:: html
 
-		<p>She was learning her A.B.C.s.</p>
+		<p>She was learning her ABCs.</p>
 
 	.. code:: html
 
@@ -1488,7 +1488,7 @@ Exceptions
 
 	.. code:: html
 
-		<p>She was learning her A.B.C.s</p>
+		<p>She was learning her ABCs.</p>
 		<p>He stopped by the <abbr epub:type="z3998:initialism">A.B.C.</abbr> shop.</p>
 
 #.	Company names and brand marks which may be abbreviations, but are stylized without periods by the brand, are kept in the style preferred by the brand.
