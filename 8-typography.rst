@@ -1484,7 +1484,7 @@ Exceptions
 
 		<p><abbr>MM.</abbr>:ws:`nbsp`Guy and Luc were putting the finishing touches on the <abbr>MS.</abbr> of their new novel.</p>
 
-#.	:string:`A.B.C.`, when used in the sense of the alphabet, is not an abbreviation, and is set without periods between the letters. But other uses, like :string:`A.B.C. shops`, *are* abbreviations. (The abbreviation in :string:`A.B.C. shop` stands for “`Australian Broadcasting Corporation <https://en.wikipedia.org/wiki/ABC_Commercial>`__.”)
+#.	:string:`A.B.C.`, when used in the sense of the alphabet, is not an abbreviation, and is set with periods between the letters. But other uses, like :string:`A.B.C. shops`, *are* abbreviations. (The abbreviation in :string:`A.B.C. shop` stands for “`Australian Broadcasting Corporation <https://en.wikipedia.org/wiki/ABC_Commercial>`__.”)
 
 	.. code:: html
 
