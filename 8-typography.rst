@@ -823,12 +823,26 @@ Numbers, measurements, and math
 
 			<p>The 1st, 2nd, 3rd, 4th.</p>
 
-#.	Numbers in a non-mathematical context are spelled out if they are less than or equal to 100. Numbers over 100 are set with digits.
+#.	Numbers in a non-mathematical context are spelled out in the following cases:
 
-	.. code:: html
+	- If they are from 0–100.
 
-		<p>“They had a gun on the West Front⁠—a seventy-five,” said O’Keefe.</p>
-		<p>Allowing her 12,000 miles of straight-line travel through Uranus’ frigid soupy atmosphere.</p>
+	- If they are whole numbers from 0–100 and are made greater by being paired with words like :string:`hundred`, :string:`thousand`, :string:`million`, and so on.
+
+	- If they begin a sentence.
+
+	- If they are simple fractions.
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<p>“They had a gun on the West Front⁠—a seventy-five,” said O’Keefe.</p>
+			<p>Allowing her twelve thousand miles of straight-line travel through Uranus’ frigid soupy atmosphere.</p>
+			<p>He died in the year 619.</p>
+			<p>The vote needed two-thirds majority.</p>
+			<p>The army consisted of 113,000 soldiers.</p>
+			<p>He reached out of the unlived depths of nineteen hundred years.</p>
 
 	#.	If a series of numbers is close together in a sentence, and one would be spelled out but another wouldn’t, spell out all numbers within that context to maintain visual consistency.
 
