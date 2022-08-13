@@ -622,11 +622,19 @@ Quotation marks
 
 			<p><i xml:lang="haw">ʻŌlelo Hawaiʻi</i></p>
 
-	#.	Some *very rare* last names in English were once contractions, and now are no longer contractions but actual last names in their own right. In these cases a left single quotation mark (:utf:`‘` or U+2018) is used to clarify pronunciation, but to make clear that the word is not a contraction. Whether or not to apply this *very rarely applied rule* depends on how the name would appear in print in older sources like newspapers or books.
+	#.	Rarely, in older texts some commonly-recongizable last names were rendered using a left single quotation mark (:utf:`‘` or U+2018) instead of a superscript :string:`c`. This is a matter of typography and not actual spelling, and is to the expected modern spelling of the last name.
 
-		.. code:: html
+		.. class:: wrong
 
-			<p>His friends were James M‘Donald and Sam M‘Daniel.</p>
+			.. code:: html
+
+				<p>His friends were James M‘Donald and Sam M‘Daniel.</p>
+
+		.. class:: corrected
+
+			.. code:: html
+
+				<p>His friends were James McDonald and Sam McDaniel.</p>
 
 #.	Ditto marks are set with the right double quotation mark glyph (:utf:`”` or U+201D), This is not to be confused with the ditto mark glyph (:utf:`〃` or U+3003), which is for non-Latin scripts only, or the quotation mark glyph (:utf:`"` or U+0022).
 
@@ -644,6 +652,10 @@ Quotation marks
 					</tr>
 				</tbody>
 			</table>
+
+#.	Some idiomatic phrases are not set with scare quotes:
+
+	- :string:`... to a T.`
 
 Ellipses
 ========
