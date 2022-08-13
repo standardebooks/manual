@@ -200,7 +200,7 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Rijksmuseum <https://www.rijksmuseum.nl/en/search?q=&f=1&p=1&ps=12&type=painting&imgonly=True&st=Objects>`__ (Open the “Object Data” section and check the “Copyright” entry under the “Acquisition and right” section to confirm CC0.)
 
--	`Met Museum <https://www.metmuseum.org/art/collection/search#!/search?material=Paintings&showOnly=withImage%7Copenaccess&sortBy=Relevance&sortOrder=asc&perPage=20&offset=0&pageSize=0>`__ (CC0 items have the CC0 logo under the image.)
+-	`Met Museum <https://www.metmuseum.org/art/collection/search?showOnly=withImage%7CopenAccess&material=Paintings>`__ (CC0 items have an “OA Public Domain” icon under the picture, which leads to the Met's Open Access Initiative page that clarifies a CC0 license.)
 
 -	`National Museum Sweden <https://www.nationalmuseum.se/en/samlingarna/fria-bilder>`__ (CC-PD items have the CC-PD mark in the lower left of the item’s detail view.)
 
