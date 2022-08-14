@@ -263,6 +263,26 @@ The :html:`<dc:description>` element contains a short, single-sentence summary o
 
 #.	The description is a single complete sentence ending in a period, not a sentence fragment or restatement of the title.
 
+#.	The description summarizes the main theme or plot thread in the book, in an active voice, without using proper names.
+
+	.. class:: wrong
+
+		.. code:: html
+
+			Sally the witch curses Bob Smith. He is turned in to a frog. His career as a barber is put on hold.
+
+	.. class:: wrong
+
+		.. code:: html
+
+			This is a book about love, loss, and recovering from tragedy.
+
+	.. class:: corrected
+
+		.. code:: html
+
+			An evil witch transforms a garrulous barber into a frog, putting his career on hold as he comes to grips with his new station in life.
+
 #.	For collections, compilations, and omnibuses, a sentence fragment is acceptable as a description.
 
 #.	The description is typogrified, i.e. it contains Unicode curly quotes, em dashes, and the like.
