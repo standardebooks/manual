@@ -6,7 +6,7 @@ Books consist of three major partitions: Front Matter, Body Matter, and Back Mat
 
 The list below is ordered in the manner in which the items appear in a typical book. Some books may make exceptions to this ordering.
 
-These terms become important when building the Table of Contents (ToC). The Landmarks section of the ToC requires items to be labeled with the appropriate partition identifier. See `ToC Patterns </manual/VERSION/7-table-of-contents-patterns>`__ for more information about the ToC.
+These terms become important when building the Table of Contents (ToC). The Landmarks section of the ToC requires items to be labeled with the appropriate partition identifier. See `ToC Patterns </manual/VERSION/6-standard-ebooks-section-patterns#6.2>`__ for more information about the ToC.
 
 Front matter
 ************
