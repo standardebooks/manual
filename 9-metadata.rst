@@ -520,7 +520,7 @@ Producer metadata
 
 These elements describe the SE producer who produced the ebook for the Standard Ebooks project.
 
-#.	Producer names must sound like complete real names. Anonymous producers are allowed, and if the producer is anonymous then the value for the producer’s :html:`<dc:contributor>` element is :string:`Anonymous`.
+#.	Producer names must sound like complete real names, i.e., they must have at least a first initial and full last name. Anonymous producers are allowed, and if the producer is anonymous then the value for the producer’s :html:`<dc:contributor>` element is :string:`Anonymous`.
 
 #.	If there is more than one producer, the first producer is :value:`producer-1`, the second :value:`producer-2`, and so on.
 
