@@ -232,6 +232,10 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Aberdeen Archives, Gallery & Museums <https://emuseum.aberdeencity.gov.uk/collections/102307/open-access-images--fine-art>`__ (CC0 items say “Out of copyright - CC0” on the copyright line.)
 
+-	`Brighton & Hove Museums <https://collections.brightonmuseums.org.uk/?q=&departments=>`__ (CC0 items have the URL of the CC0 license in the “License” field.)
+
+-	`Grand Rapids Public Museum <https://www.grpmcollections.org/Browse/Collections>`__ (CC0 items have a link to the CC0 license in the “Rights” section.)
+
 Clearance FAQ
 ~~~~~~~~~~~~~
 
