@@ -96,25 +96,31 @@ Italics
 Italicizing individual letters
 ==============================
 
-#.	Individual letters that used in context as a `grapheme <https://www.merriam-webster.com/dictionary/grapheme>`__ are italicized with an :html:`<i epub:type="z3998:grapheme">` element. They are typically lowercased and not followed by periods.
+#.	Individual letters that are used in context as a `phoneme <https://www.merriam-webster.com/dictionary/phoneme>`__ are italicized with an :html:`<i epub:type="z3998:phoneme">` element. They are sentence-cased and not followed by periods.
 
 	.. code:: html
 
-		<p>He often rolled his <i epub:type="z3998:grapheme">r</i>’s.</p>
+		<p>“<i xml:lang="ru-Latn">Mamochka</i>, let’s play <i xml:lang="ru-Latn">priatki</i>,” (hide and seek), cried Lelechka, pronouncing the <i epub:type="z3998:phoneme">r</i> like the <i epub:type="z3998:phoneme">l</i>, so that the word sounded “pliatki.”</p>
 
-	#.	Plural graphemes are formed with :string:`’s`, to aid in clarity.
+	#.	Plural phonemes are formed with :string:`’s`, to aid in clarity.
 
 		.. class:: wrong
 
 			.. code:: html
 
-				<p>Her <i epub:type="z3998:grapheme">a</i>s were nasally.</p>
+				<p>Her <i epub:type="z3998:phoneme">a</i>s were nasally.</p>
 
 		.. class:: corrected
 
 			.. code:: html
 
-				<p>Her <i epub:type="z3998:grapheme">a</i>’s were nasally.</p>
+				<p>Her <i epub:type="z3998:phoneme">a</i>’s were nasally.</p>
+
+#.	`Graphemes <https://www.merriam-webster.com/dictionary/grapheme>`__ are italicized with an :html:`<i epub:type="z3998:grapheme">` element.
+
+	.. code:: html
+
+		<p><p>“It’s such a pity,” she would say pensively, “that July hasn’t got an <i epub:type="z3998:grapheme">r</i> in it.</p>
 
 	#.	When a word is being spelled out, the individual letters of the word are set as graphemes.
 
@@ -122,7 +128,7 @@ Italicizing individual letters
 
 			<p>I rattled off, “<i epub:type="z3998:grapheme">t</i>-<i epub:type="z3998:grapheme">h</i>-<i epub:type="z3998:grapheme">i</i>-<i epub:type="z3998:grapheme">r</i>-<i epub:type="z3998:grapheme">d</i>, third.”</p>
 
-#.	Individual letters that are *not* graphemes (for example letters that might be referring to names, the shapes of the letters themselves, musical notes or keys, or concepts) are *not* italicized.
+#.	Individual letters that are *not* graphemes or phonemes (for example letters that might be referring to names, the shapes of the letters themselves, musical notes or keys, or concepts) are *not* italicized.
 
 	.. code:: html
 
@@ -145,8 +151,6 @@ Italicizing individual letters
 	.. code:: html
 
 		<p>The <i>n</i>th degree.</p>
-
-#.	Phonemes, or individual speech sounds that may be spelled with more than one letter, are italicized with an :html:`<i epub:type="z3998:phoneme">` element.
 
 Italicizing non-English words and phrases
 =========================================
