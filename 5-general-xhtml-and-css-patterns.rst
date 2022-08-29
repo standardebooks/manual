@@ -84,7 +84,7 @@ This section covers general patterns used when producing XHTML and CSS that are 
 
 #	Other non :html:`<dt>` children of semantic :value:`glossary` elements do not have standardized :html:`id` attributes, but rather should be set descriptively based on context.
 
-#.	If an element whose :html:`id` attribute is not otherwise standardized requires an :html:`id` attribute, then the attribute’s value is formed by taking the :html:`id` attribute of the closest parent :html:`<section>`, :html:`<article>`, or :val:`endnote`, appending :value:`-`, then the name of the element, then :value:`-N`, where :value:`N` is the sequence number of the element starting at :value:`1` in the *flattened document tree order* of its closest parent sectioning element.
+#.	If an element whose :html:`id` attribute is not otherwise standardized requires an :html:`id` attribute, then the attribute’s value is formed by taking the :html:`id` attribute of the closest parent :html:`<section>`, :html:`<article>`, or :value:`endnote`, appending :value:`-`, then the name of the element, then :value:`-N`, where :value:`N` is the sequence number of the element starting at :value:`1` in the *flattened document tree order* of its closest parent sectioning element.
 
 	.. class:: corrected
 
