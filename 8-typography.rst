@@ -120,7 +120,7 @@ Italicizing individual letters
 
 	.. code:: html
 
-		<p><p>“It’s such a pity,” she would say pensively, “that July hasn’t got an <i epub:type="z3998:grapheme">r</i> in it.</p>
+		<p>“It’s such a pity,” she would say pensively, “that July hasn’t got an <i epub:type="z3998:grapheme">r</i> in it.</p>
 
 	#.	When a word is being spelled out, the individual letters of the word are set as graphemes.
 
