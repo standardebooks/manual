@@ -1368,7 +1368,7 @@ Latinisms
 
 #.	:string:`&c.` is not used, and is replaced with :string:`etc.`.
 
-#.	For :string:`Ibid.`, `see Endnotes </manual/VERSION/7-high-level-structural-patterns#7.9>`__.
+#.	For :string:`Ibid.`, `see Endnotes </manual/VERSION/7-high-level-structural-patterns#7.10>`__.
 
 #.	Latinisms that are abbreviations are set in lowercase with periods between words and no spaces between them, except :string:`BC`, :string:`AD`, :string:`BCE`, and :string:`CE`, which are set without periods, in small caps, and wrapped with :html:`<abbr epub:type="se:era">`:
 

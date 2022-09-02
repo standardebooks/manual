@@ -495,7 +495,7 @@ Epigraphs in section headers
 				</blockquote>
 			</header>
 
-#.	In addition to the `CSS used for all epigraphs </manual/VERSION/7-high-level-structural-patterns#7.3.1>`__, this additional CSS is included for epigraphs in section headers:
+#.	In addition to the `CSS used for all epigraphs </manual/VERSION/7-high-level-structural-patterns#7.4.1>`__, this additional CSS is included for epigraphs in section headers:
 
 	.. code:: css
 
@@ -528,7 +528,7 @@ Full-page epigraphs
 
 #.	Full-page epigraphs that contain multiple quotations are represented by multiple :html:`<blockquote>` elements.
 
-#.	In addition to the `CSS used for all epigraphs </manual/VERSION/7-high-level-structural-patterns#7.3.1>`__, this additional CSS is included for full-page epigraphs:
+#.	In addition to the `CSS used for all epigraphs </manual/VERSION/7-high-level-structural-patterns#7.4.1>`__, this additional CSS is included for full-page epigraphs:
 
 	.. code:: css
 
