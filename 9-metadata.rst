@@ -573,7 +573,7 @@ The :html:`<spine>` element is a required part of the EPUB spec that defines the
 Accessibility metadata
 **********************
 
-Accessibility metadata is added to bring the final ebook into conformance with the `EPUB Accessibility spec <http://www.idpf.org/epub/latest/accessibility>`__, with the following considerations.
+Accessibility metadata is added to bring the final ebook into conformance with the `EPUB Accessibility spec <https://www.w3.org/TR/epub-a11y-11>`__, with the following considerations.
 
 #.	Accessibility metadata is arranged in the metadata file in groups by property, with items in each group ordered by their text values. The groups appear in this order:
 
