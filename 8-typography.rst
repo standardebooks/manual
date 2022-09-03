@@ -1362,7 +1362,7 @@ Latinisms
 
 -	`See here for times </manual/VERSION/8-typography#8.11>`__.
 
-#.	Latinisms (except :string:`sic`) that can be found in a modern dictionary are not italicized, `with some exceptions </manual/VERSION/8>`__. Examples include :string:`e.g.`, :string:`i.e.`, :string:`ad hoc`, :string:`viz.`, :string:`ibid.`, :string:`etc.`.
+#.	Latinisms (except :string:`sic`) that can be found in a modern dictionary are not italicized, `with some exceptions </manual/VERSION/8-typography#8.2.9.9>`__. Examples include :string:`e.g.`, :string:`i.e.`, :string:`ad hoc`, :string:`viz.`, :string:`ibid.`, :string:`etc.`.
 
 #.	Whole passages of Latin language and Latinisms that aren’t found in a modern dictionary are italicized.
 
