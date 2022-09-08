@@ -236,6 +236,8 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Grand Rapids Public Museum <https://www.grpmcollections.org/Browse/Collections>`__ (CC0 items have a link to the CC0 license in the “Rights” section.)
 
+-	`Staatliche Kunsthalle Karlsruhe <https://www.kunsthalle-karlsruhe.de/en/collection/>`__ (CC0 items have a CC0 icon below the picture.)
+
 Clearance FAQ
 ~~~~~~~~~~~~~
 
