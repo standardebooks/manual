@@ -238,6 +238,12 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Grand Rapids Public Museum <https://www.grpmcollections.org/Browse/Collections>`__ (CC0 items have a link to the CC0 license in the “Rights” section.)
 
+-	`Thorvaldsens Museum <https://kataloget.thorvaldsensmuseum.dk/en/results?q=&level%5B%5D=B>`__ (CC0 items have a “0” icon under the picture, which links to the “Copyright” page, which links to the CC0 license.)
+
+-	`Musea Brugge <https://www.museabrugge.be/en/collections/browse>`__ (CC0 items indicate the images are published under the CC0 license in the “Copyright” line.)
+
+-	`Yale Center for British Art <https://collections.britishart.yale.edu/?utf8=%E2%9C%93&f%5Bcollection_ss%5D%5B%5D=Paintings+and+Sculpture&range%5BearliestDate_is%5D%5Bbegin%5D=1614&range%5BearliestDate_is%5D%5Bend%5D=1900&search_field=all_fields&q=>`__ (CC0 items have a “0 Public Domain” icon under the picture, which links to the CC0 license.)
+
 Clearance FAQ
 ~~~~~~~~~~~~~
 
