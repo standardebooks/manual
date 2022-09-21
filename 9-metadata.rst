@@ -326,7 +326,9 @@ The :html:`<meta property="se:long-description">` element contains a much longer
 Book language
 *************
 
-#.	The :html:`<dc:language>` element follows the long description block. It contains the `IETF language tag <https://en.wikipedia.org/wiki/IETF_language_tag>`__ for the language that the work is in. Usually this is either :html:`en-US` or :html:`en-GB`.
+#.	The :html:`<dc:language>` element follows the long description block. It contains the `IETF language tag <https://en.wikipedia.org/wiki/IETF_language_tag>`__ for the language that the work is in.
+
+#.	If a book contains files that are in a variety of languages or dialects, then :html:`<dc:language>` is set to the predominant language of the book.
 
 Book transcription and page scan sources
 ****************************************
