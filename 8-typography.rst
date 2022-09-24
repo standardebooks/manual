@@ -1076,6 +1076,12 @@ Math
 
 				<p>6 − 2 × 2 ≡ 2</p>
 
+	#.	Simple in-line variables are set individually with the :html:`<var>` tag.
+
+		.. code:: html
+
+			<p>If the value of the labour = <var>x</var> and the force of demand = <var>y</var>, the exchangeable value of the commodity is <var>x</var><var>y</var></p>
+
 #.	In works that are math-oriented or that have a significant amount of math, *all* variables, equations, and other mathematical objects are set using MathML.
 
 	#.	When MathML is used in a file, the :value:`m` namespace is declared at the top of the file and used for all subsequent MathML code, as follows:
