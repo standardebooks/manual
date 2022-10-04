@@ -1368,7 +1368,13 @@ Latinisms
 
 -	`See here for times </manual/VERSION/8-typography#8.11>`__.
 
-#.	Latinisms (except :string:`sic`) that can be found in a modern dictionary are not italicized, `with some exceptions </manual/VERSION/8-typography#8.2.9.9>`__. Examples include :string:`e.g.`, :string:`i.e.`, :string:`ad hoc`, :string:`viz.`, :string:`ibid.`, :string:`etc.`.
+#.	Latinisms that can be found in a modern dictionary are not italicized, `with some exceptions </manual/VERSION/8-typography#8.2.9.9>`__. Examples of Latinisms that are not italicized include :string:`e.g.`, :string:`i.e.`, :string:`ad hoc`, :string:`viz.`, :string:`ibid.`, :string:`etc.`.
+
+	#.	Exception: :string:`inst.`, the abbrevation of :string:`instante mense`, is not italicized.
+
+		.. code:: html
+
+			<p>The two bade adieu to their landlady upon Tuesday, the 4th <abbr xml:lang="la">inst.</abbr>, and departed to Euston Station with the avowed intention of catching the Liverpool express.</p>
 
 #.	Whole passages of Latin language and Latinisms that aren’t found in a modern dictionary are italicized.
 
