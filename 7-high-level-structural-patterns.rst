@@ -1084,7 +1084,7 @@ Letter headers
 
 		<p><b epub:type="z3998:salutation">Dear Mother</b>, I was so happy to hear from you.</p>
 
-#.	The name of the recipient of the letter, when set out other than within a saluation (for example a letter headed “To: John Smith Esquire”), is given the semantic inflection of :value:`z3998:recipient`. Sometimes this may occur at the end of a letter, particularly for more formal communications, in which case it is placed within a :html:`<footer>` element.
+#.	The name of the recipient of the letter, when set out other than within a salutation (for example a letter headed “To: John Smith Esquire”), is given the semantic inflection of :value:`z3998:recipient`. Sometimes this may occur at the end of a letter, particularly for more formal communications, in which case it is placed within a :html:`<footer>` element.
 
 Letter footers
 ==============
