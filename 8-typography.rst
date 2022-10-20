@@ -577,6 +577,16 @@ Punctuation and spacing
 
 			<p>Bosinney ventured: “It’s the first spring day.”</p>
 
+	#.	If dialog ends in a semicolon, the semicolon is placed within the closing quotation mark. Otherwise, semicolons always go outside of quotation marks.
+
+		.. code:: html
+
+			<p>“I’ve ask Him, and ask Him, but der help don’t come. I can do no more;” and a tempest of despairing sobs shook her gaunt frame.</p>
+
+		.. code:: html
+
+			<p>A premonition told him that this misfortune had befallen the little “Family”; he quickly drew on a coat and ran over to the “Ark.”</p>
+
 #.	Ampersands are preceded by a no-break space (U+00A0).
 
 	.. code:: html
