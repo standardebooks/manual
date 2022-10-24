@@ -693,7 +693,7 @@ There are many kinds of dashes, and the run-of-the-mill hyphen is often not the 
 
 		<p>His number is 555‒1234.</p>
 
-#.	Hyphens (:utf:`-` or U+002D) are used to join words, including double-barrel names, or to separate syllables in a word.
+#.	Hyphens (:utf:`-` or U+002D) are used to join words, including double-barrel names, or to separate syllables in a word. The Unicode hyphen (U+2010) is not used.
 
 	.. code:: html
 
