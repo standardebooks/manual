@@ -1559,6 +1559,14 @@ The glossary file
 
 	.. code:: css
 
+		dl{
+			margin: 1em 0;
+		}
+
+		dd{
+			margin-left: 40px;
+		}
+
 		dd + dt{
 			margin-top: 1em;
 		}
