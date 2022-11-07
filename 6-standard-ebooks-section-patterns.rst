@@ -274,7 +274,7 @@ The titlepage
 
 #.	The title page has a :html:`<title>` element with the value :string:`Titlepage`.
 
-#.	The titlepage contains one :html:`<section id="titlepage" epub:type="titlepage">` element which in turn contains one :html:`<h1 epub:type="title">` element,  author information, as well as one :html:`<img src="../images/titlepage.svg">` element.
+#.	The titlepage contains one :html:`<section id="titlepage" epub:type="titlepage">` element which in turn contains one :html:`<h1 epub:type="title">` element, author information, as well as one :html:`<img src="../images/titlepage.svg">` element.
 
 #.	The titlepage does not contain the subtitle, if there is one.
 

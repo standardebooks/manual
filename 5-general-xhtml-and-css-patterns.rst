@@ -107,7 +107,7 @@ This section covers general patterns used when producing XHTML and CSS that are 
 				</section>
 			</section>
 
-#.	For poems  with the :value:`z3998:poem` semantic in which a child has an :html:`id` attribute referring to a specific line number, the :html:`id` attribute’s value is formed by taking the :html:`id` attribute of the closest parent :html:`<section>` or :html:`<article>` that contains the :value:`z3998:poem` semantic, appending :value:`-line`, then :value:`-N`, where :value:`N` is the sequence number of the line starting at :value:`1` in the *flattened document tree order* of the selected sectioning element, *excluding :html:`<header>` elements*.
+#.	For poems with the :value:`z3998:poem` semantic in which a child has an :html:`id` attribute referring to a specific line number, the :html:`id` attribute’s value is formed by taking the :html:`id` attribute of the closest parent :html:`<section>` or :html:`<article>` that contains the :value:`z3998:poem` semantic, appending :value:`-line`, then :value:`-N`, where :value:`N` is the sequence number of the line starting at :value:`1` in the *flattened document tree order* of the selected sectioning element, *excluding :html:`<header>` elements*.
 
 	.. class:: corrected
 

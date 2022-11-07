@@ -1422,7 +1422,7 @@ Examples
 			<link href="../css/local.css" rel="stylesheet" type="text/css"/>
 		</head>
 		<body epub:type="backmatter">
-			<nav id="loi"  epub:type="loi">
+			<nav id="loi" epub:type="loi">
 				<h2 epub:type="title">List of Illustrations</h2>
 				<ol>
 					<li>
