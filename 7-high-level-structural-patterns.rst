@@ -1305,7 +1305,7 @@ Images
 		.. code:: css
 
 			figure{
-				margin: 1em auto;
+				margin: 1em 40px;
 				text-align: center;
 			}
 
@@ -1341,7 +1341,7 @@ Examples
 	/* If the image is meant to be aligned block-level with the text, use this selector... */
 	figure{
 		break-inside: avoid;
-		margin: 1em auto;
+		margin: 1em 40px;
 		text-align: center;
 	}
 
