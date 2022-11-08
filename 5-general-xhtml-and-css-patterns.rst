@@ -70,7 +70,7 @@ This section covers general patterns used when producing XHTML and CSS that are 
 			<p>Cook, <i epub:type="se:name.publication.book">A Voyage Towards the South Pole</i>, Introduction. <a href="introduction.xhtml#noteref-1" epub:type="backlink">↩</a></p>
 		</li>
 
-#.	:html:`<dt>` elements have their :html:`id` attribute set to the URL-safe version of the text contents of their child :`<dfn>` element.
+#.	:html:`<dt>` elements have their :html:`id` attribute set to the URL-safe version of the text contents of their child :html:`<dfn>` element.
 
 	.. code:: html
 
@@ -82,7 +82,7 @@ This section covers general patterns used when producing XHTML and CSS that are 
 			</dl>
 		</section>
 
-#	Other non :html:`<dt>` children of semantic :value:`glossary` elements do not have standardized :html:`id` attributes, but rather should be set descriptively based on context.
+#.	Other non :html:`<dt>` children of semantic :value:`glossary` elements do not have standardized :html:`id` attributes, but rather should be set descriptively based on context.
 
 #.	If an element whose :html:`id` attribute is not otherwise standardized requires an :html:`id` attribute, then the attribute’s value is formed by taking the :html:`id` attribute of the closest parent :html:`<section>`, :html:`<article>`, or :value:`endnote`, appending :value:`-`, then the name of the element, then :value:`-N`, where :value:`N` is the sequence number of the element starting at :value:`1` in the *flattened document tree order* of its closest parent sectioning element.
 
