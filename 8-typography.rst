@@ -1498,7 +1498,7 @@ Exceptions
 
 	-	:string:`AC` and :string:`DC`, when referring to electrical current.
 
-	-	:string:`G`, when used in the sense of :string:`G-force`. Also see `8.8.5.4.2 <#8.8.5.4.2>`__.
+	-	:string:`G`, when used in the sense of :string:`G-force`. Also see `8.8.7.4.2 <#8.8.7.4.2>`__.
 
 	-	Stock ticker symbols.
 
