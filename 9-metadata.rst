@@ -375,7 +375,7 @@ Readability metadata
 
 These two elements are automatically computed by the :bash:`se prepare-release` tool.
 
-#.	The :html:`<meta property="se:word-count">` element contains an integer representing the ebooks total word count, excluding some SE files like the colophon and Uncopyright.
+#.	The :html:`<meta property="se:word-count">` element contains an integer representing the ebook’s total word count, excluding some SE files like the colophon and Uncopyright.
 
 #.	The :html:`<meta property="se:reading-ease.flesch">` element contains a decimal representing the computed Flesch reading ease for the book.
 
