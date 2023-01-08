@@ -163,7 +163,9 @@ The :html:`<dc:subject>` element
 
 	#.	:html:`<meta property="authority" refines="#subject-N">` contains the source for the category. For Library of Congress categories, the value is :value:`LCSH`.
 
-	#.	:html:`<meta property="term" refines="#subject-N">` contains term ID for that subject heading.
+	#.	:html:`<meta property="term" refines="#subject-N">` contains the term ID for that subject heading.
+
+		#.	Term IDs of subject headings that do not have LCSH identifiers in the Library of Congress system are set to `Unknown`.
 
 	.. class:: no-numbering
 
