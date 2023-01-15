@@ -165,7 +165,9 @@ The :html:`<dc:subject>` element
 
 	#.	:html:`<meta property="term" refines="#subject-N">` contains the term ID for that subject heading.
 
-		#.	Term IDs of subject headings that do not have LCSH identifiers in the Library of Congress system are set to `Unknown`.
+		#.	For subject headings that are proper names, the Library of Congress uses the `NACOAF identifer in place of a regular subject heading <https://www.loc.gov/aba/publications/FreeSHM/H0405.pdf>`__. In such cases, the terms are set to a NACOAF identifier (a string starting with :value:`n`), but the authority is still set to :value:`LCSH`.
+
+		#.	Term IDs of subject headings that do not have LCSH identifiers or NACOAF identifiers in the Library of Congress system are set to `Unknown`.
 
 	.. class:: no-numbering
 
