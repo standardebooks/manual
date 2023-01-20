@@ -220,7 +220,7 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`National Museum in Krakow <https://zbiory.mnk.pl/>`__ (CC0 items say CC0 - Public Domain under the Copyright section.)
 
--	`National Gallery of Denmark <https://collection.smk.dk/#/en/>`__ (CC0 items have a Public Domain logo under the pictures, which leads to a CC0 license.)
+-	`National Gallery of Denmark <https://open.smk.dk/en/>`__ (CC0 items have “No copyright” icon and a “Free to use” notice, and the About page states that such images are released via CC0.)
 
 -	`Finnish National Gallery <https://www.kansallisgalleria.fi>`__ (CC0 items say “CC Copyright Free,” and the general rights statement in the original Finnish indicates that such images are CC0 licensed.)
 
