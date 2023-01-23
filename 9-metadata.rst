@@ -101,7 +101,7 @@ Books with subtitles
 	<meta property="file-as" refines="#subtitle">Nightmare, A</meta>
 	<meta property="title-type" refines="#subtitle">subtitle</meta>
 	<dc:title id="fulltitle">The Man Who Was Thursday: A Nightmare</dc:title>
-	<meta property="file-as" refines="#fulltitle">Man Who Was Thursday, The</meta>
+	<meta property="file-as" refines="#fulltitle">Man Who Was Thursday: A Nightmare, The</meta>
 	<meta property="title-type" refines="#fulltitle">extended</meta>
 
 Books with a more popular alternate title
