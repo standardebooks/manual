@@ -326,7 +326,7 @@ Taxonomy
 
 		<p>A bonobo monkey is <i epub:type="z3998:taxonomy">Pan paniscus</i>.</p>
 
-#.	Family, order, class, phylum or division, and kingdom names are capitalized but not italicized.
+#.	Genus, tribe, subfamily, family, order, class, phylum or division, and kingdom names are capitalized but not italicized.
 
 	.. code:: html
 
