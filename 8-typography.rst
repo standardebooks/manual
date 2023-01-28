@@ -1126,7 +1126,7 @@ Math
 					</m:math>
 				</p>
 
-	#.	When possible, Content MathML is used over Presentational MathML. (This may not always be possible depending on the complexity of the work.)
+	#.	When possible, Content MathML is provided in an additional :html:`<m:annotation-xml>` element. (This may not always be possible depending on the complexity of the work.)
 
 		.. class:: corrected
 
@@ -1134,15 +1134,26 @@ Math
 
 				<p>
 					<m:math alttext="x + 1 = y">
-						<m:apply>
-							<m:eq/>
-							<m:apply>
-								<m:plus/>
-								<m:ci>x</m:ci>
-								<m:cn>1</m:cn>
-							</m:apply>
-							<m:ci>y</m:ci>
-						</m:apply>
+						<m:semantics>
+							<m:mrow>
+								<m:mi>x</m:mi>
+								<m:mo>+</m:mo>
+								<m:mn>1</m:mn>
+								<m:mo>=</m:mo>
+								<m:mi>y</m:mi>
+							</m:mrow>
+							<m:annotation-xml encoding="MathML-Content">
+								<m:apply>
+									<m:eq/>
+									<m:apply>
+										<m:plus/>
+										<m:ci>x</m:ci>
+										<m:cn>1</m:cn>
+									</m:apply>
+									<m:ci>y</m:ci>
+								</m:apply>
+							</m:annotation-xml>
+						</m:semantics>
 					</m:math>
 				</p>
 
