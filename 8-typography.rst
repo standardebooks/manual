@@ -1125,7 +1125,7 @@ Math
 				<p>
 					<m:math alttext="x + 1 = y">
 						<m:apply>
-							<m:equals/>
+							<m:eq/>
 							<m:apply>
 								<m:plus/>
 								<m:ci>x</m:ci>
