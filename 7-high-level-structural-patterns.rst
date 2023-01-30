@@ -315,6 +315,15 @@ Header patterns
 			<h3 epub:type="subtitle">Some Reminiscences of Sherlock Holmes</h3>
 		</hgroup>
 
+#.	Headers for sections in which the book’s main author shares a byline:
+
+	.. code:: html
+
+		<header>
+			<h2 epub:type="title">Happy Ending</h2>
+			<p epub:type="contributors">By Mack Reynolds and Frederic Brown</p>
+		</header>
+
 Bridgeheads
 ===========
 
