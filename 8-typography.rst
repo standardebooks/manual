@@ -1149,7 +1149,7 @@ Math
 					<p>
 						<m:math alttext="x+1=y">
 							<m:apply>
-								<m:equals/>
+								<m:eq/>
 								<m:apply>
 									<m:plus/>
 									<m:ci>x</m:ci>
@@ -1167,7 +1167,7 @@ Math
 					<p>
 						<m:math alttext="x + 1 = y">
 							<m:apply>
-								<m:equals/>
+								<m:eq/>
 								<m:apply>
 									<m:plus/>
 									<m:ci>x</m:ci>
@@ -1211,11 +1211,11 @@ Math
 				<p>
 					<m:math alttext="f(x)">
 						<m:mi>f</m:mi>
-						<m:row>
+						<m:mrow>
 							<m:mo fence="true">(</m:mo>
 							<m:mi>x</m:mi>
 							<m:mo fence="true">)</m:mo>
-						</m:row>
+						</m:mrow>
 					</m:math>
 				</p>
 
@@ -1227,15 +1227,15 @@ Math
 					<m:math alttext="f(x)">
 						<m:mi>f</m:mi>
 						<m:mo>⁡:utf:`U+2061`<!--hidden U+2061 function application--></m:mo>
-						<m:row>
+						<m:mrow>
 							<m:mo fence="true">(</m:mo>
 							<m:mi>x</m:mi>
 							<m:mo fence="true">)</m:mo>
-						</m:row>
+						</m:mrow>
 					</m:math>
 				</p>
 
-	#.	Expressions grouped by parenthesis or brackets are wrapped in an :html:`<m:row>` element, and fence characters are set using the :html:`<m:mo fence="true">` element. Separators are set using the :html:`<m:mo separator="true">` element. :html:`<m:mfenced>`, which used to imply both fences and separators, is deprecated in the MathML spec and thus is not used.
+	#.	Expressions grouped by parenthesis or brackets are wrapped in an :html:`<m:mrow>` element, and fence characters are set using the :html:`<m:mo fence="true">` element. Separators are set using the :html:`<m:mo separator="true">` element. :html:`<m:mfenced>`, which used to imply both fences and separators, is deprecated in the MathML spec and thus is not used.
 
 		.. class:: wrong
 
@@ -1245,10 +1245,10 @@ Math
 					<m:math alttext="f(x,y)">
 						<m:mi>f</m:mi>
 						<m:mo>⁡:utf:`U+2061`<!--hidden U+2061 function application--></m:mo>
-						<m:fenced>
+						<m:mfenced>
 							<m:mi>x</m:mi>
 							<m:mi>y</m:mi>
-						</m:fenced>
+						</m:mfenced>
 					</m:math>
 				</p>
 
@@ -1260,13 +1260,13 @@ Math
 					<m:math alttext="f(x,y)">
 						<m:mi>f</m:mi>
 						<m:mo>⁡:utf:`U+2061`<!--hidden U+2061 function application--></m:mo>
-						<m:row>
+						<m:mrow>
 							<m:mo fence="true">(</m:mo>
 							<m:mi>x</m:mi>
 							<m:mo separator="true">,</m:mo>
 							<m:mi>x</m:mi>
 							<m:mo fence="true">)</m:mo>
-						</m:row>
+						</m:mrow>
 					</m:math>
 				</p>
 
