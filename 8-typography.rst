@@ -1116,7 +1116,7 @@ Math
 					</m:math>
 				</p>
 
-	#.	When possible, Content MathML is used over Presentational MathML. (This may not always be possible depending on the complexity of the work.)
+	#.	When possible, Content MathML is used over Presentation MathML. (This may not always be possible depending on the complexity of the work.)
 
 		.. class:: corrected
 
@@ -1178,7 +1178,7 @@ Math
 						</m:math>
 					</p>
 
-	#.	When using Presentational MathML, :html:`<m:mrow>` is used to group subexpressions, but only when necessary. Many elements in MathML, like :html:`<m:math>` and :html:`<m:mtd>`, *imply* :html:`<m:mrow>`, and redundant elements are not desirable. See `this section of the MathML spec <https://www.w3.org/Math/draft-spec/mathml.html#chapter3_presm.reqarg>`__ for more details.
+	#.	When using Presentation MathML, :html:`<m:mrow>` is used to group subexpressions, but only when necessary. Many elements in MathML, like :html:`<m:math>` and :html:`<m:mtd>`, *imply* :html:`<m:mrow>`, and redundant elements are not desirable. See `this section of the MathML spec <https://www.w3.org/Math/draft-spec/mathml.html#chapter3_presm.reqarg>`__ for more details.
 
 		.. class:: wrong
 
@@ -1202,7 +1202,7 @@ Math
 					</m:math>
 				</p>
 
-	#.	If a Presentational MathML expression contains a function, the invisible Unicode function application glyph (U+2061) is used as an operator between the function name and its operand. This element looks exactly like the following, including the comment for readability: :html:`<m:mo>⁡<!--hidden U+2061 function application--></m:mo>`. (Note that the preceding element contains an *invisible* Unicode character! It can be revealed with the :bash:`se unicode-names` tool.)
+	#.	If a Presentation MathML expression contains a function, the invisible Unicode function application glyph (U+2061) is used as an operator between the function name and its operand. This element looks exactly like the following, including the comment for readability: :html:`<m:mo>⁡<!--hidden U+2061 function application--></m:mo>`. (Note that the preceding element contains an *invisible* Unicode character! It can be revealed with the :bash:`se unicode-names` tool.)
 
 		.. class:: wrong
 
