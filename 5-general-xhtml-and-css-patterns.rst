@@ -56,7 +56,7 @@ This section covers general patterns used when producing XHTML and CSS that are 
 			<figure id="figure-2">...</figure>
 		</section>
 
-#.	Noteref elements have their :html:`id` attributes set to :value:`notref-N`, where :value:`N` is the sequence number of the noteref *across the entire ebook*, starting at :value:`1`.
+#.	Noteref elements have their :html:`id` attributes set to :value:`noteref-N`, where :value:`N` is the sequence number of the noteref *across the entire ebook*, starting at :value:`1`.
 
 	.. code:: html
 
