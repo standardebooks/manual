@@ -134,7 +134,7 @@ To actually demonstrate that a painting is PD, you must locate a reproduction of
 
 This can be quite difficult. Many people find this to be the most time-consuming part of the ebook production process.
 
-Because of the difficulty, finding suitable cover at is *all about compromise*. You’re unlikely to find the perfect cover image. You’ll find a lot of paintings that would be great matches, but that you can’t find reproductions of and thus we can’t use. So, be ready to compromise.
+Because of the difficulty, finding suitable cover art is *all about compromise*. You’re unlikely to find the perfect cover image. You’ll find a lot of paintings that would be great matches, but that you can’t find reproductions of and thus we can’t use. So, be ready to compromise.
 
 Note that in :path:`./images/cover.svg`, the black title and author box always goes in the lower half of the work. Thus, paintings in which some important detail would be obscured by the box cannot be used.
 
