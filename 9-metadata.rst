@@ -390,9 +390,9 @@ General contributor rules
 
 The following apply to all contributors, including the author(s), translator(s), and illustrator(s).
 
-#.	If there is exactly one contributor in a set (for example, only one author, or only one translator) then the :html:`<meta property="display-seq">` element is omitted for that contributor.
+#.	If there is exactly one contributor in a set (for example, only one author in a possible set of authors, or only one translator in a possible set of translators) then the :html:`<meta property="display-seq">` element is omitted for that contributor.
 
-#.	If there is more than one contributor in a set (for example, multiple authors, or translators) then the :html:`<meta property="display-seq">` element is specified for each contributor, with a value equal to their position in the SE identifier.
+#.	If there is more than one contributor in a set (for example, multiple authors, or multiple translators) then the :html:`<meta property="display-seq">` element is specified for each contributor in that set, with a value equal to their position in the SE identifier.
 
 #.	The EPUB spec specifies that in a set of contributors, if at least one has the :value:`display-seq` property, then other contributors in the set without the :value:`display-seq` value are ignored. For SE purposes, this also means they will be excluded from the SE identifier.
 
