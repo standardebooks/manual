@@ -469,7 +469,7 @@ CSS rules
 
 	.. class:: corrected
 
-		.. code: css
+		.. code:: css
 
 			figure{
 				height: 100vh;
