@@ -311,8 +311,6 @@ The :html:`<title>` element
 
 #.	The value of the title element is determined by the algorithm used to determine the file's ToC entry, except that no XHTML tags are allowed in the :html:`<title>` element.
 
-#.	The :html:`<title>` element has its :html:`epub:type` attribute set to :value:`z3998:roman` if the contents of the :html:`<title>` element is entirely a Roman numeral.
-
 Headers
 *******
 
