@@ -636,7 +636,7 @@ Quotation marks
 
 			<p><i xml:lang="haw">ʻŌlelo Hawaiʻi</i></p>
 
-	#.	Rarely, in older texts some commonly-recongizable last names were rendered using a left single quotation mark (:utf:`‘` or U+2018) instead of a superscript :string:`c`. This is a matter of typography and not actual spelling, and is to the expected modern spelling of the last name.
+	#.	Rarely, in older texts some common last names are rendered using a left single quotation mark (:utf:`‘` or U+2018) instead of a superscript :string:`c`. This is a matter of typography, and is not the actual spelling of such names. These names are changed to their equivalent modern spelling.
 
 		.. class:: wrong
 
