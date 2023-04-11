@@ -1246,7 +1246,7 @@ Images
 
 #.	:html:`<img>` element whose image is black-on-white line art (i.e. exactly two colors, **not** grayscale!) are PNG files with a transparent background. They have the :value:`se:image.color-depth.black-on-transparent` semantic inflection.
 
-	#.	If such an image is drawn in a “realistic” style (i.e., like a Gustave Doré or John Tenniel woodcut, and not like a flat map in an Agatha Christie murder mystery), it has the additional semanti of :value:`se:image.style.realistic`.
+	#.	If such an image is drawn in a “realistic” style (i.e., like a Gustave Doré or John Tenniel woodcut, and not like a flat map in an Agatha Christie murder mystery), it has the additional semantic of :value:`se:image.style.realistic`.
 
 #.	:html:`<img>` elements that are meant to be aligned on the block level or displayed as full-page images are contained in a parent :html:`<figure>` element, with an optional :html:`<figcaption>` sibling.
 
