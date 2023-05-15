@@ -421,7 +421,7 @@ Tables can often be difficult to represent semantically. For understanding the h
 
 #.	:html:`<table>` elements that display a total or summary row at the bottom have that row contained in a :html:`<tfoot>` element.
 
-#.	:html:`<table>` elements that are not used to format plays/dramas, and that do not otherwise inherit a visible margin (for example, they are not children of :html:`<blockquote>`), have :css:`margin: 1em;` or :css:`margin: 1em auto 1em auto;`.
+#.	:html:`<table>` elements that are not used to format plays/dramas, and that do not otherwise inherit a visible margin (for example, they are not children of :html:`<blockquote>`), have :css:`margin: 1em;` (if the table is wide enough to extend to the full width of the page) or :css:`margin: 1em auto;` (if it is not).
 
 Blockquotes
 ***********
