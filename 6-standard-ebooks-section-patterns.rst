@@ -429,7 +429,7 @@ The colophon
 
 #.	The colophon has a :html:`<title>` element with the value :string:`Colophon`.
 
-#.	The half title page contains one :html:`<section id="colophon" epub:type="colophon">` element, which in turn contains one :html:`<header>` element with the Standard Ebooks logo, followed by a series of :html:`<p>` elements containing the colophon’s content.
+#.	The colophon contains one :html:`<section id="colophon" epub:type="colophon">` element, which in turn contains one :html:`<header>` element with the Standard Ebooks logo, followed by a series of :html:`<p>` elements containing the colophon’s content.
 
 Names
 =====
