@@ -4,7 +4,7 @@ The Standard Ebooks Manual of Style describes a complete approach to editing and
 
 It is not a how-to manual; that is, it does not aim to give instructions on how to accomplish the various goals it describes. For example, it would not contain step by step guides, or guides on Inkscape usage, or SE toolset usage. Instead, the manual describes in declarative language how a Standard Ebook should appear after it is produced.
 
-Each directive is numbered and can contain any number of sub directives. Directives declare what the expected final appeareance *is*, not how a producer *should achieve the final appearance*.
+Each directive is numbered and can contain any number of sub directives. Directives declare what the expected final appearance *is*, not how a producer *should achieve the final appearance*.
 
 For example:
 

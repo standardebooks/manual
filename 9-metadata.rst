@@ -165,7 +165,7 @@ The :html:`<dc:subject>` element
 
 	#.	:html:`<meta property="term" refines="#subject-N">` contains the term ID for that subject heading.
 
-		#.	For subject headings that are proper names, the Library of Congress uses the `NACOAF identifer in place of a regular subject heading <https://www.loc.gov/aba/publications/FreeSHM/H0405.pdf>`__. In such cases, the terms are set to a NACOAF identifier (a string starting with :value:`n`), but the authority is still set to :value:`LCSH`.
+		#.	For subject headings that are proper names, the Library of Congress uses the `NACOAF identifier in place of a regular subject heading <https://www.loc.gov/aba/publications/FreeSHM/H0405.pdf>`__. In such cases, the terms are set to a NACOAF identifier (a string starting with :value:`n`), but the authority is still set to :value:`LCSH`.
 
 		#.	Term IDs of subject headings that do not have LCSH identifiers or NACOAF identifiers in the Library of Congress system are set to `Unknown`.
 
@@ -495,7 +495,7 @@ Occasionally a book may have other contributors besides the author, translator, 
 
 #.	The `MARC relator tag <http://www.loc.gov/marc/relators/relacode.html>`__ is one that is appropriate for the role of the additional contributor. Common roles for ebooks are: :string:`wpr`, :string:`ann`, and :string:`aui`.
 
-#.	If a contributor is a collaborator on part of the book, for example if they share a byline on a short story, the :string:`ctb` MARC relator tag is used, and the contributor is given :string:`display-seq` set to :string:`0` to pevent them from appearing in the book’s overall byline.
+#.	If a contributor is a collaborator on part of the book, for example if they share a byline on a short story, the :string:`ctb` MARC relator tag is used, and the contributor is given :string:`display-seq` set to :string:`0` to prevent them from appearing in the book’s overall byline.
 
 Transcriber metadata
 ********************
@@ -604,7 +604,7 @@ Accessibility metadata is added to bring the final ebook into conformance with t
 		<meta property="schema:accessMode">visual</meta>
 		<meta property="schema:accessibilityFeature">alternativeText</meta>
 
-	The cover, titlepage, and publisher logo are ignored because they are present in most ebooks; if they were to be counted in accessibilty metadata, that metadata would appear in most ebooks, making it meaningless.
+	The cover, titlepage, and publisher logo are ignored because they are present in most ebooks; if they were to be counted in accessibility metadata, that metadata would appear in most ebooks, making it meaningless.
 
 	.. tip::
 

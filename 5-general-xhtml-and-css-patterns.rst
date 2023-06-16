@@ -342,7 +342,7 @@ Ordered/numbered and unordered lists
 Tables
 ******
 
-Tables can often be difficult to represent semantically. For understanding the high-level concepts of tables and the semantic meaning of the various table-related elements, refer to the `HTML Living Standard secton on tables <https://html.spec.whatwg.org/multipage/tables.html>`__. For detailed examples on how to represent complex tables in a semantic and accessible way, refer to the `Web Accessibility Initiative guide on creating accessible tables <https://www.w3.org/WAI/tutorials/tables/>`__.
+Tables can often be difficult to represent semantically. For understanding the high-level concepts of tables and the semantic meaning of the various table-related elements, refer to the `HTML Living Standard section on tables <https://html.spec.whatwg.org/multipage/tables.html>`__. For detailed examples on how to represent complex tables in a semantic and accessible way, refer to the `Web Accessibility Initiative guide on creating accessible tables <https://www.w3.org/WAI/tutorials/tables/>`__.
 
 #.	:html:`<table>` elements have a direct child :html:`<tbody>` element.
 
