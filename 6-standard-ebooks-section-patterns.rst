@@ -529,7 +529,7 @@ Subsections
 
 		#.	If the Standard ebooks producer also transcribed the book *in its entirety*, then the first line becomes: :html:`<p>This ebook was transcribed and produced for<br/>`.
 
-		#.	If an ebook is based on multiple sources or transcriptions (for example, a short story collection of a voluminous author), then the source sentence is altered to reflect that either the transcriptions, the page scans, or both, came from various sources. Individual transcriber names are ommitted.
+		#.	If an ebook is based on multiple sources or transcriptions (for example, a short story collection of a voluminous author), then the source sentence is altered to reflect that either the transcriptions, the page scans, or both, came from various sources. Individual transcriber names are omitted.
 
 			#.	If the transcriptions or page scans all came from the same source (i.e., all of the transcriptions came from Project Gutenberg):
 

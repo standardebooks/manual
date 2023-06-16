@@ -210,7 +210,7 @@ Italicizing non-English words and phrases
 		</blockquote>
 
 
-#.	Words that are in a non-English “alien” language (i.e. one that is made up, like in a science fiction or fantasy work) are italicized and given an IETF languate tag in a custom namespace. Custom namespaces begin consist of :value:`x-TAG`, where :value:`TAG` is a custom descriptor of 8 characters or less.
+#.	Words that are in a non-English “alien” language (i.e. one that is made up, like in a science fiction or fantasy work) are italicized and given an IETF language tag in a custom namespace. Custom namespaces begin consist of :value:`x-TAG`, where :value:`TAG` is a custom descriptor of 8 characters or less.
 
 	.. code:: html
 
@@ -1391,7 +1391,7 @@ Latinisms
 
 #.	Latinisms that can be found in a modern dictionary are not italicized, `with some exceptions </manual/VERSION/8-typography#8.2.9.9>`__. Examples of Latinisms that are not italicized include :string:`e.g.`, :string:`i.e.`, :string:`ad hoc`, :string:`viz.`, :string:`ibid.`, :string:`etc.`.
 
-	#.	Exception: :string:`inst.`, the abbrevation of :string:`instante mense`, is not italicized.
+	#.	Exception: :string:`inst.`, the abbreviation of :string:`instante mense`, is not italicized.
 
 		.. code:: html
 
@@ -1639,7 +1639,7 @@ Temperatures
 Abbreviated units of temperature
 ================================
 
-#.	Units of temperature measurement, like Farenheit or Celsius, may be abbreviated to :string:`F` or :string:`C`.
+#.	Units of temperature measurement, like Fahrenheit or Celsius, may be abbreviated to :string:`F` or :string:`C`.
 
 #.	Units of temperature measurement do not have trailing periods.
 
