@@ -244,6 +244,9 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Yale Center for British Art <https://collections.britishart.yale.edu/?utf8=%E2%9C%93&f%5Bcollection_ss%5D%5B%5D=Paintings+and+Sculpture&range%5BearliestDate_is%5D%5Bbegin%5D=1614&range%5BearliestDate_is%5D%5Bend%5D=1900&search_field=all_fields&q=>`__ (CC0 items have a “0 Public Domain” icon under the picture, which links to the CC0 license.)
 
+-	`Staatliche Kunsthalle Karlsruhe <https://www.kunsthalle-karlsruhe.de/en/collection/>`__ (CC0 items have a CC0 icon below the picture.)
+
+
 Clearance FAQ
 ~~~~~~~~~~~~~
 
