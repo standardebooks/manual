@@ -1243,11 +1243,11 @@ Images
 
 			.. code:: html
 
-				<img alt="An apple and a pear inside a bowl, resting on a table." src="..." />
+				<img alt="An apple and a pear are arranged inside a bowl, which is resting on a table." src="..." />
 
 		#.	The :html:`alt` attribute does not contain no-break spaces or word joiners.
 
-	#.	The :html:`alt` attribute is one or more complete sentences ended with periods or other appropriate punctuation. It is not composed of sentence fragments or complete sentences without ending punctuation.
+	#.	The :html:`alt` attribute is one or more complete sentences ended with periods or other appropriate punctuation. It is typically one or more complete sentences. It may be a sentence fragment if the image has no clear visual “protagonist” (for example, like a musical score, or alien writing that is inline with the text). It always has ending punctuation.
 
 	#.	The :html:`alt` attribute is not necessarily the same as text in the image’s sibling :html:`<figcaption>` element, if one is present.
 
@@ -1379,7 +1379,7 @@ Examples
 
 	<p>...</p>
 	<figure id="illustration-10">
-		<img alt="An apple and a pear inside a bowl, resting on a table." src="../images/illustration-10.jpg" epub:type="z3998:photograph"/>
+		<img alt="An apple and a pear are arranged inside a bowl, which is resting on a table." src="../images/illustration-10.jpg" epub:type="z3998:photograph"/>
 		<figcaption>The Monk’s Repast</figcaption>
 	</figure>
 
@@ -1387,7 +1387,7 @@ Examples
 
 	<p>...</p>
 	<figure class="full-page" id="image-11">
-		<img alt="A massive whale breaching the water, with a sailor floating in the water directly within the whale’s mouth." src="../images/illustration-11.jpg" epub:type="z3998:illustration"/>
+		<img alt="A massive whale breaches the water, with a sailor floating in the water directly within the whale’s mouth." src="../images/illustration-11.jpg" epub:type="z3998:illustration"/>
 		<figcaption>The Whale eats Sailor Jim.</figcaption>
 	</figure>
 
