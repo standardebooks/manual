@@ -204,7 +204,7 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Met Museum <https://www.metmuseum.org/art/collection/search?showOnly=withImage%7CopenAccess&material=Paintings>`__ (CC0 items have an “OA Public Domain” icon under the picture, which leads to the Met's Open Access Initiative page that clarifies a CC0 license.)
 
--	`National Museum Sweden <https://www.nationalmuseum.se/en/samlingarna/fria-bilder>`__ (CC-PD items have the CC-PD mark in the lower left of the item’s detail view.)
+-	`National Museum Sweden <https://www.nationalmuseum.se/en/explore-art-and-design/images/free-images>`__ (CC-PD items have the CC-PD mark in the lower left of the item’s detail view.)
 
 -	`Minneapolis Institute of Art <https://collections.artsmia.org/>`__ (Public domain items are listed as such under “Rights.”)
 
@@ -224,7 +224,7 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`National Gallery of Denmark <https://open.smk.dk/en/>`__ (CC0 items have “No copyright” icon and a “Free to use” notice, and the About page states that such images are released via CC0.)
 
--	`Finnish National Gallery <https://www.kansallisgalleria.fi>`__ (CC0 items say “CC Copyright Free,” and the general rights statement in the original Finnish indicates that such images are CC0 licensed.)
+-	`Finnish National Gallery <https://kansallisgalleria.fi/en>`__ (CC0 items say “CC Copyright Free,” and the general rights statement in the original Finnish indicates that such images are CC0 licensed.)
 
 -	`National Gallery of Art <https://www.nga.gov>`__ (CC0 items have a “0 Public Domain” icon under the picture, which leads to an Open Access policy mentioning a CC0 license.)
 
