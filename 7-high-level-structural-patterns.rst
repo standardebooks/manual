@@ -116,22 +116,11 @@ Headers
 
 #.	Each :html:`<h1>`–:html:`<h6>` element has a direct parent :html:`<section>`, :html:`<article>`, :html:`<header>`, or :html:`<hgroup>` element.
 
-#.	:html:`<hgroup>` elements are used to group :html:`<h1>`–:html:`<h6>` elements together when a section’s title has multiple components, for example a header that contains an ordinal and a title, or a header that includes a title and a subtitle.
+#.	:html:`<hgroup>` elements are used to group a :html:`<h1>`–:html:`<h6>` element together with subheading elements when a section’s title has multiple components, for example a header that contains an ordinal and a title, or a header that includes a title and a subtitle.
 
-	#.	:html:`<hgroup>` elements only have :html:`<h1>`–:html:`<h6>` children.
+	#.	:html:`<hgroup>` elements have one :html:`<h1>`–:html:`<h6>` child, followed by :html:`<p>` children.
 
-	#.	:html:`<hgroup>` elements are only present if *more than one* :html:`<h1>`–:html:`<h6>` element must be grouped together.
-
-	#.	The first :html:`<h1>`–:html:`<h6>` child of an :html:`<hgroup>` element is the header level for the entire :html:`<hgroup>`. For example, the following :html:`<hgroup>` is at the :html:`<h3>` header level, even though it contains an :html:`<h4>`:
-
-		.. code:: html
-
-			<hgroup>
-				<h3 epub:type="ordinal z3998:roman">III</h3>
-				<h4 epub:type="title">At the Villa Geneviève</h4>
-			</hgroup>
-
-	#.	:html:`<hgroup>` elements in which :html:`<h6>` is the first child have all subsequent children as :html:`<h6>` as well.
+	#.	:html:`<hgroup>` elements are only present if *more than one* title element must be grouped together, like both a title and a subtitle, or an ordinal and a title.
 
 #.	Headers follow regular rules for italics, with the exception that headers that are entirely non-English-language are not italicized. Even though they are not italicized, they retain :html:`xml:lang` semantics on the parent element.
 
@@ -139,21 +128,21 @@ Headers
 
 		<hgroup>
 			<h3 epub:type="ordinal z3998:roman">XI</h3>
-			<h4 epub:type="title">The <i epub:type="se:name.vessel.ship">Nautilus</i></h4>
+			<p epub:type="title">The <i epub:type="se:name.vessel.ship">Nautilus</i></p>
 		</hgroup>
 
 	.. code:: html
 
 		<hgroup>
 			<h3 epub:type="ordinal z3998:roman">XI</h3>
-			<h4 epub:type="title" xml:lang="la">Christus Nos Liberavit</h4>
+			<p epub:type="title" xml:lang="la">Christus Nos Liberavit</p>
 		</hgroup>
 
 	.. code:: html
 
 		<hgroup>
 			<h3 epub:type="ordinal z3998:roman">XI</h3>
-			<h4 epub:type="title">Miss Thorne’s <i xml:lang="fr">Fête Champêtre</i></h4>
+			<p epub:type="title">Miss Thorne’s <i xml:lang="fr">Fête Champêtre</i></p>
 		</hgroup>
 
 #.	If a section does not have any header content, including epigraphs or other non-prose material, then it has :css:`margin-top: 8em;`.
@@ -193,7 +182,7 @@ Within section titles, we distinguish between labels, ordinals, titles, and subt
 
 		<hgroup>
 			<h2 epub:type="ordinal z3998:roman">IV</h2>
-			<h3 epub:type="title">The Letter Signed “Bella”</h3>
+			<p epub:type="title">The Letter Signed “Bella”</p>
 		</hgroup>
 
 #.	Subtitles are supplementary titles in addition to the main title.
@@ -202,7 +191,7 @@ Within section titles, we distinguish between labels, ordinals, titles, and subt
 
 		<hgroup>
 			<h2 epub:type="title">Between the Scenes</h2>
-			<h3 epub:type="subtitle">Progress of the Story Through the Post</h3>
+			<p epub:type="subtitle">Progress of the Story Through the Post</p>
 		</hgroup>
 
 Header patterns
@@ -226,7 +215,7 @@ Header patterns
 
 		<hgroup>
 			<h2 epub:type="ordinal z3998:roman">XI</h2>
-			<h3 epub:type="title">Who Stole the Tarts?</h3>
+			<p epub:type="title">Who Stole the Tarts?</p>
 		</hgroup>
 
 #.	Sections titles and subtitles but no ordinals:
@@ -235,7 +224,7 @@ Header patterns
 
 		<hgroup>
 			<h2 epub:type="title">An Adventure</h2>
-			<h3 epub:type="subtitle">(A Driver’s Story)</h3>
+			<p epub:type="subtitle">(A Driver’s Story)</p>
 		</hgroup>
 
 #.	Sections with labels and ordinals:
@@ -256,7 +245,7 @@ Header patterns
 				<span epub:type="label">Book</span>
 				<span epub:type="ordinal z3998:roman">II</span>
 			</h2>
-			<h3 epub:type="title">The Man in the Street</h3>
+			<p epub:type="title">The Man in the Street</p>
 		</hgroup>
 
 #.	Sections that have a non-unique title, but that are required to be identifed in the ToC with a unique title (e.g., multiple poems identified as “Sonnet” in the body matter, which require their ToC entry to contain the poem’s first line to differentiate them):
@@ -265,7 +254,7 @@ Header patterns
 
 		<hgroup>
 			<h2 epub:type="title">Sonnet</h2>
-			<h3 hidden="hidden" epub:type="subtitle">Happy Is England!</h3>
+			<p hidden="hidden" epub:type="subtitle">Happy Is England!</p>
 		</hgroup>
 
 #.	Sections that require titles, but that are not in the table of contents:
@@ -312,7 +301,7 @@ Header patterns
 
 		<hgroup epub:type="fulltitle">
 			<h2 epub:type="title">His Last Bow</h2>
-			<h3 epub:type="subtitle">Some Reminiscences of Sherlock Holmes</h3>
+			<p epub:type="subtitle">Some Reminiscences of Sherlock Holmes</p>
 		</hgroup>
 
 #.	Headers for sections in which the book’s main author shares a byline:

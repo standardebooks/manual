@@ -194,7 +194,7 @@ Result: :html:`A Daughter of Albion`
 				<span epub:type="label">Book</span>
 				<span epub:type="ordinal z3998:roman">I</span>
 			</h2>
-			<h3 epub:type="title">The Coming of the Martians</h3>
+			<p epub:type="title">The Coming of the Martians</p>
 		</hgroup>
 		<p>...</p>
 	</section>
@@ -206,7 +206,7 @@ Result: :html:`Book <span epub:type="z3998:roman">I</span>: The Coming of the Ma
 	<section id="chapter-1" epub:type="chapter">
 		<hgroup>
 			<h2 epub:type="ordinal z3998:roman">I</h2>
-			<h3 epub:type="title">A Fellow Traveller</h3>
+			<p epub:type="title">A Fellow Traveller</p>
 		</hgroup>
 		<p>...</p>
 	</section>
@@ -218,7 +218,7 @@ Result: :html:`<span epub:type="z3998:roman">I</span>: A Fellow Traveller`
 	<section id="epilogue" epub:type="epilogue">
 		<hgroup>
 			<h3 epub:type="title">Epilogue</h3>
-			<h4 epub:type="subtitle">A Morning Call</h4>
+			<p epub:type="subtitle">A Morning Call</p>
 		</hgroup>
 		<p>...</p>
 	</section>
@@ -393,7 +393,7 @@ The half title page
 
 #.	The half title page has a :html:`<title>` element containing the full title of the ebook.
 
-#.	The half title page contains one :html:`<section id="halftitlepage" epub:type="halftitlepage">` element, which in turn contains either one :html:`<h2 epub:type="fulltitle">` element containing the full title of the ebook, or one :html:`<hgroup epub:type="fulltitle">` element containing one :html:`<h2 epub:type="title">` element and one :html:`<h3 epub:type="subtitle">` element.
+#.	The half title page contains one :html:`<section id="halftitlepage" epub:type="halftitlepage">` element, which in turn contains either one :html:`<h2 epub:type="fulltitle">` element containing the full title of the ebook, or one :html:`<hgroup epub:type="fulltitle">` element containing one :html:`<h2 epub:type="title">` element and one :html:`<p epub:type="subtitle">` element.
 
 #.	If the ebook has a subtitle, it is included in the half title page.
 
@@ -416,7 +416,7 @@ The half title page
 				<section id="halftitlepage" epub:type="halftitlepage">
 					<hgroup epub:type="fulltitle">
 						<h2 epub:type="title">His Last Bow</h2>
-						<h3 epub:type="subtitle">Some Reminiscences of Sherlock Holmes</h3>
+						<p epub:type="subtitle">Some Reminiscences of Sherlock Holmes</p>
 					</hgroup>
 				</section>
 			</body>
