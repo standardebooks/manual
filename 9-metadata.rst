@@ -398,7 +398,7 @@ The following apply to all contributors, including the author(s), translator(s),
 
 #.	By SE convention, contributors with :html:`<meta property="display-seq">0</meta>` are excluded from the SE identifier.
 
-#.	The EPUB spec allows for up to one (but not more than one) role to be specified for a contributor using the :html:`<meta property="role" refines="..." scheme="marc:relators">`. element. However, it is not uncommon for one contributor to have multiple roles; for example, an author (:value:`aut`) who also illustrated (:value:`ill`) the book. In these cases, the primary role is assigned using the :value:`role` property, and additional roles are assigned using the :value:`se:role` property.
+#.	It is not uncommon for one contributor to have multiple roles; for example, an author (:value:`aut`) who also illustrated (:value:`ill`) the book. In these cases, additional roles are assigned using additional :value:`role` properties.
 
 .. class:: no-numbering
 
@@ -410,9 +410,9 @@ Example
 	<dc:creator id="author">Jonathan Swift</dc:creator>
 	...
 	<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
-	<meta property="se:role" refines="#author" scheme="marc:relators">ill</meta>
-	<meta property="se:role" refines="#author" scheme="marc:relators">win</meta>
-	<meta property="se:role" refines="#author" scheme="marc:relators">wpr</meta>
+	<meta property="role" refines="#author" scheme="marc:relators">ill</meta>
+	<meta property="role" refines="#author" scheme="marc:relators">win</meta>
+	<meta property="role" refines="#author" scheme="marc:relators">wpr</meta>
 
 The author metadata block
 *************************
@@ -462,7 +462,7 @@ The translator metadata block
 
 #.	The `MARC relator tag <http://www.loc.gov/marc/relators/relacode.html>`__ is :string:`trl`: :html:`<meta property="role" refines="#translator" scheme="marc:relators">trl</meta>`.
 
-#.	Translators often annotate the work; if this is the case, the additional `MARC relator tag <http://www.loc.gov/marc/relators/relacode.html>`__ :string:`ann` is included in a separate :html:`<meta property="se:role" refines="#translator" scheme="marc:relators">` element.
+#.	Translators often annotate the work; if this is the case, the additional `MARC relator tag <http://www.loc.gov/marc/relators/relacode.html>`__ :string:`ann` is included in a separate :html:`<meta property="role" refines="#translator" scheme="marc:relators">` element.
 
 The illustrator metadata block
 ******************************
@@ -540,15 +540,15 @@ These elements describe the SE producer who produced the ebook for the Standard 
 
 	-	:string:`bkp`: The producer produced the ebook as :value:`role`.
 
-	-	:string:`blw`: The producer wrote the blurb (the long description) as :value:`se:role`.
+	-	:string:`blw`: The producer wrote the blurb (the long description) as :value:`role`.
 
-	-	:string:`cov`: The producer selected the cover art as :value:`se:role`.
+	-	:string:`cov`: The producer selected the cover art as :value:`role`.
 
-	-	:string:`mrk`: The producer wrote the HTML markup for the ebook as :value:`se:role`.
+	-	:string:`mrk`: The producer wrote the HTML markup for the ebook as :value:`role`.
 
-	-	:string:`pfr`: The producer proofread the ebook as :value:`se:role`.
+	-	:string:`pfr`: The producer proofread the ebook as :value:`role`.
 
-	-	:string:`tyg`: The producer reviewed the typography of the ebook as :value:`se:role`.
+	-	:string:`tyg`: The producer reviewed the typography of the ebook as :value:`role`.
 
 The ebook manifest
 ******************
