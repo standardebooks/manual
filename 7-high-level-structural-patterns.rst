@@ -334,10 +334,10 @@ Bridgeheads are sections in a chapter header that give an abstract or summary of
 			font-style: normal;
 		}
 
+		[epub|type~="z3998:hymn"] [epub|type~="bridgehead"],
 		[epub|type~="z3998:poem"] [epub|type~="bridgehead"],
-		[epub|type~="z3998:verse"] [epub|type~="bridgehead"],
 		[epub|type~="z3998:song"] [epub|type~="bridgehead"],
-		[epub|type~="z3998:hymn"] [epub|type~="bridgehead"]{
+		[epub|type~="z3998:verse"] [epub|type~="bridgehead"]{
 			text-align: justify;
 		}
 
@@ -686,6 +686,17 @@ Unfortunately there’s no great way to semantically format poetry in HTML. As s
 				<span>A light, a glory, a fair luminous cloud,</span>
 			</p>
 		</blockquote>
+
+#.	If a poem contains an :html:`<hgroup>` element which in turn contains a :html:`<p>` element, then the following CSS is included to correct the desired centered alignment of headers:
+
+	.. code:: css
+
+		[epub|type~="z3998:hymn"] hgroup p,
+		[epub|type~="z3998:poem"] hgroup p,
+		[epub|type~="z3998:song"] hgroup p,
+		[epub|type~="z3998:verse"] hgroup p{
+			text-align: center;
+		}
 
 .. class:: no-numbering
 
