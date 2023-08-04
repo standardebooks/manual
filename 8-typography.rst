@@ -688,7 +688,7 @@ Ellipses
 
 	.. code:: html
 
-		<p>“I’m so hungry:ws:`wj`:ws:`hairsp`:ws:`wj`…:ws:`hairsp`! What were you saying about eating:ws:`wj`:ws:`hairsp`:ws:`wj`…?”
+		<p>“I’m so hungry:ws:`wj`:ws:`hairsp`:ws:`wj`…:ws:`hairsp`! Let’s eat:ws:`wj`:ws:`hairsp`:ws:`wj`…”
 
 Dashes
 ======
