@@ -80,7 +80,7 @@ Headers
 
 #.	A section containing an :html:`<h1>`–:html:`<h6>` appears in the table of contents.
 
-#.	The book’s title is implicitly at the :html:`<h1>` level, even if :html:`<h1>` is not present in the ebook. An :html:`<h1>` element is only present if the ebook contains a half title page. Because of the implicit :html:`<h1>`, all other sections begin at :html:`<h2>`.
+#.	The book’s title on the title page is at the :html:`<h1>` level. All other sections, include the half title page if any, begin at :html:`<h2>`.
 
 #.	Each :html:`<h1>`–:html:`<h6>` element uses the correct number for the section’s heading level in the overall book, *not* the section’s heading level in the individual file. For example, given an ebook with a file named :path:`part-2.xhtml` containing:
 
