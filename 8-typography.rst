@@ -455,7 +455,7 @@ Indentation
 
 #.	Paragraphs that directly follow another paragraph are indented by 1em.
 
-#.	The first line of body text in a section, or any text following a visible break in text flow (like a header, a scene break, a figurem etc.), is not indented, with the exception of block quotations.
+#.	The first line of body text in a section, or any text following a visible break in text flow (like a header, a scene break, a figure etc.), is not indented, with the exception of block quotations.
 
 	#.	Body text following a block quotation is indented only if the text begins a new semantic paragraph. Otherwise, if the body text following a block quotation is semantically part of the paragraph preceding the block quotation, it is not indented. Such non-indented paragraphs have :html:`class="continued"`, which removes the default indentation.
 
@@ -1664,7 +1664,7 @@ Scansion
 
 Scansion is the representation of the metrical stresses in lines of verse.
 
-#.	When scansion marks are next to, instead of above, letters, :utf:`×` (U+00d7) indicates an unstressed sylllable and :utf:`/` (U+002f) indicates a stressed syllable. They are separated from each other with no-break spaces (U+00A0).
+#.	When scansion marks are next to, instead of above, letters, :utf:`×` (U+00d7) indicates an unstressed syllable and :utf:`/` (U+002f) indicates a stressed syllable. They are separated from each other with no-break spaces (U+00A0).
 
 	.. code:: html
 
