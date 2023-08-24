@@ -246,6 +246,8 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Staatliche Kunsthalle Karlsruhe <https://www.kunsthalle-karlsruhe.de/en/collection/>`__ (CC0 items have a CC0 icon below the picture.)
 
+-	`Getty Museum Collection <https://www.getty.edu/art/collection>`__ (CC0 items have a “0 public domain” icon that links to a CC0 license. **Beware, some items say “no copyright” which is not the same as CC0 and cannot be used!**)
+
 
 Clearance FAQ
 ~~~~~~~~~~~~~
