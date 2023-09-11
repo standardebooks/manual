@@ -1247,7 +1247,7 @@ Images
 
 		#.	The :html:`alt` attribute does not contain no-break spaces or word joiners.
 
-	#.	The :html:`alt` attribute is one or more complete sentences ended with periods or other appropriate punctuation. It is typically one or more complete sentences. It may be a sentence fragment if the image has no clear visual “protagonist” (for example, like a musical score, or alien writing that is inline with the text). It always has ending punctuation.
+	#.	The :html:`alt` attribute is one or more complete sentences ended with periods or other appropriate punctuation. It may be a sentence fragment if the image has no clear visual “protagonist” (for example an image of a musical score, or an image of alien writing that is inline with the text). It always has ending punctuation.
 
 	#.	The :html:`alt` attribute is not necessarily the same as text in the image’s sibling :html:`<figcaption>` element, if one is present.
 
