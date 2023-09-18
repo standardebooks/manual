@@ -1398,17 +1398,17 @@ Examples
 List of Illustrations (the LoI)
 *******************************
 
-If an ebook has any illustrations that are *major structural components* of the work (even just one!), then the ebook includes an :path:`loi.xhtml` file at the end of the ebook. This file lists the illustrations in the ebook, along with a short caption or description.
+If an ebook has any illustrations that a reader may wish to return to while reading (even just one!), then the ebook includes an :path:`loi.xhtml` file at the end of the ebook. This file lists the illustrations in the ebook, along with a short caption or description.
 
 #.	The LoI is an XHTML file named :path:`./src/epub/text/loi.xhtml`.
 
 #.	The LoI file has the :value:`backmatter` semantic inflection.
 
-#.	The LoI only contains links to images that are major structural components of the work.
+#.	The LoI only contains links to images that a reader may wish to return to during reading.
 
-	#.	An illustration is a major structural component if, for example: it is an illustration of events in the book, like a full-page drawing or end-of-chapter decoration; it is essential to the plot, like a diagram of a murder scene or a map; or it is a component of the text, like photographs in a documentary narrative.
+	Examples of illustrations that a reader may wish to return to: illustrations of events in the book, like full-page drawings; illustrations essential to the plot, like diagrams of a murder scene; maps; components of the text, like photographs in a documentary narrative.
 
-	#.	An illustration is *not* a major structural components if, for example: it is a drawing used to represent a person’s signature, like an X mark; it is an inline drawing representing text in alien languages; it is a drawing used as a layout element to illustrate forms, tables, or diagrams.
+	Examples of illustration that might *not* belong in an LoI: drawings used to represent a person’s signature, like an X mark; inline drawings representing text in made-up languages; drawings used as layout elements to illustrate forms, tables, or diagrams; illustrative musical scores; decorative end-of-chapter flourishes.
 
 #.	The LoI file contains a single :html:`<nav id="loi" epub:type="loi">` element, which in turn contains an :html:`<h2 epub:type="title">List of Illustrations</h2>` element, followed by an :html:`<ol>` element, which in turn contains list items representing the images.
 
