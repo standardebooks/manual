@@ -297,7 +297,7 @@ The titlepage
 					<p>By <b epub:type="z3998:author">AUTHOR</b>.</p>
 					<p>Translated by <b epub:type="z3998:translator">TRANSLATOR</b>.</p>
 					<p>Illustrated by <b>ILLUSTRATOR</b>.</p>
-					<img alt="" src="../images/titlepage.svg" epub:type="se:color-depth.black-on-transparent"/>
+					<img alt="" src="../images/titlepage.svg" epub:type="se:image.color-depth.black-on-transparent"/>
 				</section>
 			</body>
 		</html>
@@ -374,7 +374,7 @@ The imprint
 				<section id="imprint" epub:type="imprint">
 					<header>
 						<h2 epub:type="title">Imprint</h2>
-						<img alt="The Standard Ebooks logo" src="../images/logo.svg" epub:type="z3998:publisher-logo se:color-depth.black-on-transparent"/>
+						<img alt="The Standard Ebooks logo" src="../images/logo.svg" epub:type="z3998:publisher-logo se:image.color-depth.black-on-transparent"/>
 					</header>
 					<p>This ebook is the product of many hours of hard work by volunteers for <a href="https://standardebooks.org">Standard Ebooks</a>, and builds on the hard work of other literature lovers made possible by the public domain.</p>
 					<p>This particular ebook is based on a transcription from <a href="PG_URL">Project Gutenberg</a> and on digital scans from the <a href="IA_URL">Internet Archive</a>.</p>
@@ -652,7 +652,7 @@ An example of a complete colophon
 			<section id="colophon" epub:type="colophon">
 				<header>
 					<h2 epub:type="title">Colophon</h2>
-					<img alt="The Standard Ebooks logo" src="../images/logo.svg" epub:type="z3998:publisher-logo se:color-depth.black-on-transparent"/>
+					<img alt="The Standard Ebooks logo" src="../images/logo.svg" epub:type="z3998:publisher-logo se:image.color-depth.black-on-transparent"/>
 				</header>
 				<p><i epub:type="se:name.publication.book">The Black Tulip</i><br/>
 				was published in 1850 by<br/>
