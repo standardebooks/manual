@@ -436,7 +436,7 @@ Names
 
 #.	Within :html:`<p>` elements, proper names except for the book title and cover art title are wrapped in an :html:`<a>` element pointing to the name’s Wikipedia page, or to a link representing the name, like a personal homepage.
 
-#.	If a name does not have a Wikipedia entry, the name is wrapped in :html:`<b epub:type="z3998:personal-name">`.
+#.	If a name does not have an English-language Wikipedia entry, the name is wrapped in :html:`<b epub:type="z3998:personal-name">`.
 
 #.	Two names are separated by :string:`and`. Three or more names are separated by commas, with the final name separated by :string:`, and`. (I.e., with an Oxford comma.)
 
