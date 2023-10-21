@@ -159,7 +159,7 @@ Italicizing non-English words and phrases
 
 	.. code:: html
 
-		<p>The <i xml:lang="fr">corps de ballet</i> was flung into consternation.</p>
+		<p>I have so much to tell you, <i xml:lang="fr">mon petit chou</i> darling.</p>
 
 #.	Non-English words that are proper names, or are in proper names, are not italicized, unless the name itself would be italicized according to the rules for italicizing or quoting names and titles. If words in the name might be mispronounced in English pronunciation, they are wrapped in a :html:`<span xml:lang="LANGUAGE">` element to assist screen readers with pronunciation. Most proper names of people or places do not require this, but occasionally there may be some that do.
 
