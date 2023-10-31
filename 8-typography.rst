@@ -1511,11 +1511,13 @@ Exceptions
 
 #.	The following are not abbreviations, and are set without periods or spaces.
 
+	-	:string:`A1`
+
+	-	:string:`BB`, when referring to a BB gun or its projectiles.
+
 	-	:string:`OK`
 
 	-	:string:`SOS`
-
-	-	:string:`BB`, when referring to a BB gun or its projectiles.
 
 	-	:string:`SS`, when referring to `collars of SS <https://www.merriam-webster.com/dictionary/collar%20of%20SS>`__.
 
