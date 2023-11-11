@@ -248,6 +248,7 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Getty Museum Collection <https://www.getty.edu/art/collection>`__ (CC0 items have a “0 public domain” icon that links to a CC0 license. **Beware, some items say “no copyright” which is not the same as CC0 and cannot be used!**)
 
+-	`KMSKA <https://kmska.be/en>`__ (CC0 items say “This image may be downloaded for free” in the “Copyright and legal” section, which has a link to a disclaimer stating that KMSKA releases the photo under a CC0 license.)
 
 Clearance FAQ
 ~~~~~~~~~~~~~
