@@ -252,6 +252,8 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`National Museum in Warsaw <https://cyfrowe.mnw.art.pl/en/home>`__ (CC0 items say “CC0 — Public domain” under the “Copyrights’ section.)
 
+-	`Lillehammer Kunstmuseum <https://digitaltmuseum.no>`__ (CC0 items say “License: CC CC0 1.0” under the “License information” section. In the art metadata, “Owner of collection” *must* be “Lillehammer Kunstmuseum.”)
+
 Clearance FAQ
 ~~~~~~~~~~~~~
 
