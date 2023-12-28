@@ -253,6 +253,8 @@ Italicizing non-English words and phrases
 
 	- :string:`in vitro`
 
+	- :string:`inter alia`
+
 	- :string:`more suo`
 
 Italicizing or quoting newly-used English words
