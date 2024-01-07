@@ -157,7 +157,7 @@ Note that in :path:`./images/cover.svg`, the black title and author box always g
 Gotchas
 ^^^^^^^
 
--	In older books it was common to have *etchings* of paintings. Etchings are not strict reproductions, and so we cannot count them for PD clearance.
+-	In older books it was common to have *etchings* of paintings. Etchings are not strict reproductions, and so we cannot count them for PD clearance. Etchings can sometimes be identified by: (1) having more clearly defined lines, or shading with more contrast; (2) having shading done with a stipple effect; (3) differences in small amorphous details like the shape of clouds, trees, or fabric compared to the original painting.
 
 	Additionally, it was common for painters to produce several different versions of the same artwork. These different versions are also not enough for PD clearance. The version you find in print must exactly match the scan you located online.
 
