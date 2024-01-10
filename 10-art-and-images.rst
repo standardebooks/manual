@@ -254,7 +254,9 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Lillehammer Kunstmuseum <https://digitaltmuseum.no>`__ (CC0 items say “License: CC CC0 1.0” under the “License information” section. In the art metadata, “Owner of collection” *must* be “Lillehammer Kunstmuseum.”)
 
--	`Yale University Art Gallery <https://artgallery.yale.edu/>`__ (CC0 items say “No Copyright - United States” under the “Object copyright” section, which links to the CC0 license.)
+-	`Yale University Art Gallery <https://artgallery.yale.edu/>`__ (CC0 items say “No Copyright - United States” under the “Object copyright” section, which links to a CC0 license.)
+
+-	`Getty Center <https://www.getty.edu>`__ (CC0 items say “Public Domain” below the thumbnail, which links to a CC0 license.)
 
 Clearance FAQ
 ~~~~~~~~~~~~~
