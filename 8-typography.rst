@@ -797,10 +797,6 @@ A partially-obscured word is a word that the author chooses to not divulge by co
 
 		<p>He performed Mozart’s famous canon, “Leck mich im A‑sche.”</p>
 
-	.. warning::
-
-		When adding non-breaking hyphens for obscured letters, beware that :bash:`se typogrify` will incorrectly convert them to regular hyphens!
-
 #.	A two-em dash (:utf:`⸺` or U+2E3A) preceded by a word joiner glyph (U+2060) is used in *partially* obscured words.
 
 	.. code:: html
