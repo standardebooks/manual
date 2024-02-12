@@ -258,6 +258,8 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Getty Center <https://www.getty.edu>`__ (CC0 items say “Public Domain” below the thumbnail, which links to a CC0 license.)
 
+-	`Lenbachhaus <https://www.lenbachhaus.de/en/discover/collection-online>`__ (CC0 items say “CC0 1.0” to the lower right of the thumbnail, which links to a CC0 license.)
+
 Clearance FAQ
 ~~~~~~~~~~~~~
 
