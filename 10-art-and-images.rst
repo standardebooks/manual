@@ -116,6 +116,8 @@ Cover art
 
 #.	Cover art is in the “fine art oil painting” style, and in full color. Art not in this style, like ink drawings, woodcuts, medieval-style “flat” paintings, pencil sketches, modern CG art, or black-and-white scans, is not acceptable. Generally watercolor is not acceptable, though some watercolor *may* be acceptable if its appearance is oil-paining-like.
 
+	#.	AI generated art will not be approved, even if it appears to be in the correct style.
+
 	#.	Cover art is not a very famous or easily-recognizable painting, like Da Vinci’s :italics:`Mona Lisa` or Van Gogh’s :italics:`Starry Night`.
 
 #.	:path:`./images/cover.source.svg` is the unmodified source image used to create :path:`./images/cover.jpg`. This image is kept in case changes to the source images are to be made in the future.
@@ -125,166 +127,15 @@ Cover art
 US-PD clearance
 ---------------
 
-The paintings we use are all in the U.S. public domain (US-PD). Your task is to locate a painting suitable for the kind of book you’re producing, and then demonstrate that the painting is indeed in the U.S. public domain.
+The paintings we use are all in the U.S. public domain (US-PD). Your task is to locate a painting suitable for the kind of book you’re producing, and then demonstrate that the painting is indeed in the U.S. public domain. 
 
-U.S. copyright law is complicated. Because of this, **we require that you provide a link to a page scan of a book published before PD_STRING that reproduces the painting you selected.** *This is a hard requirement* to demonstrate that the painting you selected is in fact in the U.S. public domain. Just because a painting is very old, or Wikipedia says it’s PD, or it’s PD in a country besides the U.S., doesn’t necessarily mean it actually *is* PD in the U.S.
+U.S. copyright law is complicated. Because of this, we require that you demonstrate that a work is in the U.S. public domain by providing a link to either **a page scan of a book published before PD_STRING that reproduces the painting you selected** or **a CC-0 license statement made by the museum holding the original artwork.** *This is a hard requirement* to demonstrate that the painting you selected is in fact in the U.S. public domain. Even if you are certain that a work is in the public domain, it cannot be used unless it can be proven by one of these two methods. You can simplify the process by choosing a cover image from the `SE art database <https://standardebooks.org/artworks>`__. 
 
-Clearance procedure
-~~~~~~~~~~~~~~~~~~~
+If using a printed book, the exact painting must be reproduced, not a similar painting by the same artist and not an etching based on a painting. If relying on a museum declaration, it must be a Creative Commons CC0 declaration.
 
-To actually demonstrate that a painting is PD, you must locate a reproduction of that painting in a book published before PD_STRING.
+All cover art, including art from the SE database, should be approved on the mailing list **before** it is committed to your repository.
 
-This can be quite difficult. Many people find this to be the most time-consuming part of the ebook production process.
-
-Because of the difficulty, finding suitable cover art is *all about compromise*. You’re unlikely to find the perfect cover image. You’ll find a lot of paintings that would be great matches, but that you can’t find reproductions of and thus we can’t use. So, be ready to compromise.
-
-Note that in :path:`./images/cover.svg`, the black title and author box always goes in the lower half of the work. Thus, paintings in which some important detail would be obscured by the box cannot be used.
-
--	Before you can go looking for a reproduction of a specific painting to prove its PD status, you have to find a suitable painting to begin with. `Wikiart <https://www.wikiart.org/>`__ and `Artvee <https://artvee.com>`__ are great resources for searching for paintings by keyword. Museum online collections are another good place to look for inspiration.
-
-	Once you find a potential candidate you can start researching its PD status.
-
--	Many museum online catalogs have a “bibliography” or “references” section for each painting in their collection. This is usually a list of books in which the painting was either mentioned or reproduced. This is a good shortcut to finding the names of books in which a painting was reproduced, and if you’re lucky, a search for the book title in Google Books will turn up scans.
-
--	Visit `Google Books <https://books.google.com/>`__, `HathiTrust <https://www.hathitrust.org>`__, and the `Internet Archive <https://archive.org>`__ to begin searching for books where your art is reproduced.
-
-	(Note that if your IP address is not in the U.S., many book archives like Google Books and HathiTrust may disable book previews.)
-
-	When searching for cover art, remember that artist names and painting titles may be spelled in many different ways. Often a painting went by multiple titles, or if the title was not in English, by many different translations. Your best bet is to simply search for an artist’s last name, and not the painting title.
-
--	Once you locate a book with reproductions, open the book up in thumbnail view and quickly eyeball the pages to see if the artwork is reproduced there.
-
-Gotchas
-^^^^^^^
-
--	In older books it was common to have *etchings* of paintings. Etchings are not strict reproductions, and so we cannot count them for PD clearance. Etchings can sometimes be identified by: (1) having more clearly defined lines, or shading with more contrast; (2) having shading done with a stipple effect; (3) differences in small amorphous details like the shape of clouds, trees, or fabric compared to the original painting.
-
-	Additionally, it was common for painters to produce several different versions of the same artwork. These different versions are also not enough for PD clearance. The version you find in print must exactly match the scan you located online.
-
-	Before completing PD clearance, carefully compare the reproduction in the page scan with the high-resolution scan to ensure they are the same painting. Small details like the position of trees, clouds, reflections, or water are good ways to check if the painting is identical, or if you’re looking at a different version.
-
--	Sometimes the catalog record for a book has an incorrect publication year. Please verify the page scan of the copyright page to ensure the book was published before PD_STRING.
-
-Resources for locating high resolution scans
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
--	`Wikimedia Commons <https://commons.wikimedia.org>`__
-
--	`Google Art Project <https://www.google.com/culturalinstitute/project/art-project>`__
-
--	`WikiArt <https://www.wikiart.org>`__
-
--	`Artvee <https://artvee.com/>`__
-
-Resources for locating print reproductions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
--	`Google Books <https://books.google.com>`__
-
-	`Use this shortcut <https://www.google.com/webhp?tbs=cdr:1,cd_min:,cd_max:PD_YEAR&amp;tbm=bks>`__ to search for books that were published before PD_STRING.
-
-	Google Books is a convenient first stop because its thumbnail view is very fast, and it does a better job of highlighting search results than HathiTrust or Internet Archive.
-
--	`HathiTrust <https://www.hathitrust.org>`__
-
-	`Use this shortcut <https://babel.hathitrust.org/cgi/ls?a=srchls&amp;anyall1=all&amp;q1=&amp;field1=ocr&amp;op3=AND&amp;yop=before&amp;pdate_end=PD_YEAR>`__ to search for books that were published before PD_STRING.
-
--	`Internet Archive <https://archive.org>`__
-
-	`Use this shortcut <https://archive.org/search.php?query=+date%3A%5B1850-01-01+TO+PD_YEAR-12-31%5D&amp;sin=TXT&amp;sort=-date>`__ to search for books that were published before PD_STRING.
-
--	Our own `list of uncategorized art books </contribute/uncategorized-art-resources>`__ may be helpful to browse through for inspiration and easy US-PD clearance.
-
-Museums with CC0 collections
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Images that are explicitly marked as CC0 from these museums can be used without further research. Not all of their images are CC0; you must confirm the presence of a CC0 license on the specific image you want to use.
-
--	`Rijksmuseum <https://www.rijksmuseum.nl/en/search?q=&f=1&p=1&ps=12&type=painting&imgonly=True&st=Objects>`__ (Open the “Object Data” section and check the “Copyright” entry under the “Acquisition and right” section to confirm CC0.)
-
--	`Met Museum <https://www.metmuseum.org/art/collection/search?showOnly=withImage%7CopenAccess&material=Paintings>`__ (CC0 items have an “OA Public Domain” icon under the picture, which leads to the Met's Open Access Initiative page that clarifies a CC0 license.)
-
--	`National Museum Sweden <https://www.nationalmuseum.se/en/explore-art-and-design/images/free-images>`__ (CC-PD items have the CC-PD mark in the lower left of the item’s detail view.)
-
--	`Minneapolis Institute of Art <https://collections.artsmia.org/>`__ (Public domain items are listed as such under “Rights.”)
-
--	`The Walters Art Museum <https://art.thewalters.org/>`__ (Public domain items are listed as "CC Creative Commons License" which links to a CC0 rights page.)
-
--	`Art Institute of Chicago <https://www.artic.edu/collection?q=test&is_public_domain=1&department_ids=European+Painting+and+Sculpture>`__ (CC0 items say CC0 in the lower left of the painting in the art detail page.)
-
--	`Cleveland Museum of Art <http://www.clevelandart.org/art/collection/search?only-open-access=1&filter-type=Painting>`__ (CC0 items have the CC0 logo near the download button.)
-
--	`Paris Musées <http://parismuseescollections.paris.fr/en/recherche/image-libre/true/avec-image/true/denominations/peinture-166168?mode=mosaique&solrsort=ds_created%20desc>`__ (CC0 items have the CC0 logo near the download button.)
-
--	`The Smithsonian <https://www.si.edu/search/collection-images?edan_q=landscape&edan_fq[0]=object_type%3A"Paintings">`__ (CC0 items say CC0 under the Usage header in the item details.)
-
--	`Birmingham Museums <https://dams.birminghammuseums.org.uk/asset-bank/action/viewDefaultHome>`__ (CC0 items say CC0 under the Usage Rights section in the item details.)
-
--	`National Museum in Krakow <https://zbiory.mnk.pl/>`__ (CC0 items say CC0 - Public Domain under the Copyright section.)
-
--	`National Gallery of Denmark <https://open.smk.dk/en/>`__ (CC0 items have “No copyright” icon and a “Free to use” notice, and the About page states that such images are released via CC0.)
-
--	`Finnish National Gallery <https://kansallisgalleria.fi/en>`__ (CC0 items say “CC Copyright Free,” and the general rights statement in the original Finnish indicates that such images are CC0 licensed.)
-
--	`National Gallery of Art <https://www.nga.gov>`__ (CC0 items have a “0 Public Domain” icon under the picture, which leads to an Open Access policy mentioning a CC0 license.)
-
--	`Nivaagaards Malerisamling <https://www.nivaagaard.dk/en/samling/>`__ (CC0 items say “Public Domain” by the picture, which leads to a license details page, which links to a CC0 license.)
-
--	`RISD Museum <https://risdmuseum.org/art-design/collection>`__ (CC0 items have a link to the CC0 license in the “Use” section.)
-
--	`Aberdeen Archives, Gallery & Museums <https://emuseum.aberdeencity.gov.uk/collections/102307/open-access-images--fine-art>`__ (CC0 items say “Out of copyright - CC0” on the copyright line.)
-
--	`Brighton & Hove Museums <https://collections.brightonmuseums.org.uk/?q=&departments=>`__ (CC0 items have the URL of the CC0 license in the “License” field.)
-
--	`Grand Rapids Public Museum <https://www.grpmcollections.org/Browse/Collections>`__ (CC0 items have a link to the CC0 license in the “Rights” section.)
-
--	`Thorvaldsens Museum <https://kataloget.thorvaldsensmuseum.dk/en/results?q=&level%5B%5D=B>`__ (CC0 items have a “0” icon under the picture, which links to the “Copyright” page, which links to the CC0 license.)
-
--	`Musea Brugge <https://www.museabrugge.be/en/collections/browse>`__ (CC0 items indicate the images are published under the CC0 license in the “Copyright” line.)
-
--	`Yale Center for British Art <https://collections.britishart.yale.edu/?utf8=%E2%9C%93&f%5Bcollection_ss%5D%5B%5D=Paintings+and+Sculpture&range%5BearliestDate_is%5D%5Bbegin%5D=1614&range%5BearliestDate_is%5D%5Bend%5D=1900&search_field=all_fields&q=>`__ (CC0 items have a “0 Public Domain” icon under the picture, which links to the CC0 license.)
-
--	`Staatliche Kunsthalle Karlsruhe <https://www.kunsthalle-karlsruhe.de/en/collection/>`__ (CC0 items have a CC0 icon below the picture.)
-
--	`Getty Museum Collection <https://www.getty.edu/art/collection>`__ (CC0 items have a “0 public domain” icon that links to a CC0 license. **Beware, some items say “no copyright” which is not the same as CC0 and cannot be used!**)
-
--	`KMSKA <https://kmska.be/en>`__ (CC0 items say “This image may be downloaded for free” in the “Copyright and legal” section, which has a link to a disclaimer stating that KMSKA releases the photo under a CC0 license.)
-
--	`National Museum in Warsaw <https://cyfrowe.mnw.art.pl/en/home>`__ (CC0 items say “CC0 — Public domain” under the “Copyrights’ section.)
-
--	`Lillehammer Kunstmuseum <https://digitaltmuseum.no>`__ (CC0 items say “License: CC CC0 1.0” under the “License information” section. In the art metadata, “Owner of collection” *must* be “Lillehammer Kunstmuseum.”)
-
--	`Yale University Art Gallery <https://artgallery.yale.edu/>`__ (CC0 items say “No Copyright - United States” under the “Object copyright” section, which links to a CC0 license.)
-
--	`Getty Center <https://www.getty.edu>`__ (CC0 items say “Public Domain” below the thumbnail, which links to a CC0 license.)
-
-Clearance FAQ
-~~~~~~~~~~~~~
-
--	**I found a great painting, and Wikipedia says it’s public domain, but I can’t find a reproduction in a book. Can I use it?**
-
-	No. You must find a reproduction of your selected painting in a book published before PD_STRING.
-
--	**I found a great painting, and it’s really old, and the author died a long time ago, but I can’t find a reproduction in a book. Can I use it?**
-
-	No. You must find a reproduction of your selected painting in a book published before PD_STRING.
-
--	**I’ve found a reproduction in a book, but the book was published after PD_STRING. Is that OK?**
-
-	No. You must find a reproduction of your selected painting in a book published before PD_STRING.
-
--	**I’ve found a painting on a museum site and it says they think it’s in the public domain, but there’s no other license information. Is that OK?**
-
-	No. You must find a reproduction of your selected painting in a book published before PD_STRING.
-
--	**I’ve found a painting on a museum site, and it has a CC license other than CC0. Is that OK?**
-
-	No. You must find a reproduction of your selected painting in a book published before PD_STRING.
-
--	**But...**
-
-	No. You must find a reproduction of your selected painting in a book published before PD_STRING.
-
+For more information on finding and copyright clearing images, see `How to choose and create a cover image <https://standardebooks.org/contribute/how-tos/how-to-choose-and-create-a-cover-image>`__.
 
 The titlepage image
 *******************
