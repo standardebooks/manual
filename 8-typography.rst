@@ -1833,9 +1833,11 @@ Non-Latin Scripts and Transliterations
 Greek
 =====
 
-#.	Rough breathing marks are set using their precomposed character, if available; for example, :utf:`Ἁ`, :utf:`ἇ`, and :utf:`Ἧ`. If a precomposed character is not available, :utf:`̔` (U+0314) is used when the mark must be combined with a character, and :utf:`ʽ` (U+02BD) is used in all other cases.
+#.	Rough and smooth breathing marks are set using their precomposed character, if available; for example, :utf:`Ἁ`, :utf:`Ἀ`, :utf:`ἇ`, :utf:`ἄ`, and :utf:`Ἧ`.
 
-#.	Smooth breathing marks are set with :utf:`’` (U+2019) in all cases.
+	#.	If a precomposed rough breathing character is not available, :utf:`̔` (U+0314) is used when the mark must be combined with a character, and :utf:`ʽ` (U+02BD) is used in all other cases.
+
+	#.	If a precompsed smooth breathing character is not available, :utf:` ̓` (U+0313) is used when the mark must be combined with a character, and :utf:`ʼ` (U+02BC) is used in all other cases.
 
 Chinese
 =======
