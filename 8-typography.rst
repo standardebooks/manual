@@ -1496,7 +1496,7 @@ Initials and abbreviations
 
 		.. code:: html
 
-			<p>He called on <abbr>Mrs.</abbr>:ws:`nbsp`Jones yesterday.</p>
+			<p>He called on <abbr epub:type="z3998:name-title">Mrs.</abbr>:ws:`nbsp`Jones yesterday.</p>
 
 #.	Compass points are separated by periods and spaces. The group of points are wrapped in an :html:`<abbr epub:type="se:compass">` element.
 
@@ -1545,7 +1545,7 @@ Exceptions
 
 	.. code:: html
 
-		<p><abbr>MM.</abbr>:ws:`nbsp`Guy and Luc were putting the finishing touches on the <abbr>MS.</abbr> of their new novel.</p>
+		<p><abbr epub:type="z3998:name-title>MM.</abbr>:ws:`nbsp`Guy and Luc were putting the finishing touches on the <abbr>MS.</abbr> of their new novel.</p>
 
 #.	:string:`A.B.C.`, when used in the sense of the alphabet, is not an abbreviation, and is set with periods between the letters. But other uses, like :string:`A.B.C. shops`, *are* abbreviations. (The abbreviation in :string:`A.B.C. shop` stands for “`Australian Broadcasting Corporation <https://en.wikipedia.org/wiki/ABC_Commercial>`__.”)
 
