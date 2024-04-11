@@ -787,9 +787,9 @@ A partially-obscured word is a word that the author chooses to not divulge by co
 
 	.. code:: html
 
-		<p>It was the year 192:ws:`wj`‒ in the town of Metropolis.</p>
+		<p>It was the year 192‒ in the town of Metropolis.</p>
 
-		<p>His birthday was August 1:ws:`wj`‒, 1911.</p>
+		<p>His birthday was August 1‒, 1911.</p>
 
 #.	A non-breaking hyphen (:utf:`‑` or U+2011) is used when a single letter is obscured in a word.
 
