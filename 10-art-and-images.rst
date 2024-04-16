@@ -13,7 +13,7 @@ Complete list of files
 
 A complete set of image source files consists of:
 
--	:path:`./images/cover.source.jpg`: The full source image used for the cover art, in as high a resolution as possible. Can be of any image format, but typically we end up with JPGs.
+-	:path:`./images/cover.source.(jpg|png|bmp|tif)`: The full source image used for the cover art, in as high a resolution as possible. Can be of any image format, but typically we end up with JPGs.
 
 -	:path:`./images/cover.jpg`: A cropped part of the source image that will serve as the actual image file we use in the cover. Must be exactly 1400w × 2100h.
 
@@ -118,7 +118,7 @@ Cover art
 
 	#.	Cover art is not a very famous or easily-recognizable painting, like Da Vinci’s :italics:`Mona Lisa` or Van Gogh’s :italics:`Starry Night`.
 
-#.	:path:`./images/cover.source.svg` is the unmodified source image used to create :path:`./images/cover.jpg`. This image is kept in case changes to the source images are to be made in the future.
+#.	:path:`./images/cover.source.(jpg|png|bmp|tif)` is the unmodified source image used to create :path:`./images/cover.jpg`. This image is kept in case changes to the source images are to be made in the future.
 
 #.	The cropped :path:`./images/cover.jpg` is not larger than 1.5 MB.
 
