@@ -1676,6 +1676,16 @@ Scansion is the representation of the metrical stresses in lines of verse.
 
 		<p>I̍f wĕ sha̍dŏws ha̍ve ŏffe̍ndĕd, / Thi̍nk bŭt thi̍s ănd a̍ll ĭs me̍ndĕd.</p>
 
+#.	In verse scansion, the grave accent is used when a silent vowel is pronounced to fit the meter, typically applied to words ending in -ed.
+
+	.. code:: html
+
+		...
+		<span>The wingèd hounds of Winter ceased to bay.</span>
+		<br/>
+		<span>The stupor of a doom completed lay</span>
+		...
+
 #.	Lines of poetry listed on a single line (like in a quotation) are separated by a space, then a forward slash, then a space. Capitalization is preserved for each line.
 
 	.. code:: html
