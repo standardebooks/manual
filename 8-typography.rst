@@ -1364,6 +1364,26 @@ Money
 
 #.	Abbreviated currencies used in £sd shorthand are followed by periods.
 
+.. tip::
+
+	£sd notation *may* contain actual fractions, but more often include solidi (:utf:`/` or U+002F) to represent a unit of account, *not* a fractional value. Make sure to use fractional number style (e.g. fractional glyphs like :utf:`½` or super/subscript with a fraction slash like :utf:`²⁄₆`) only when referring to *actual fractions*.
+
+	.. class:: wrong
+
+		.. code:: html
+
+			<p>£2/³⁄₆ is two pounds, three shillings, and sixpence.</p><!--Incorrect, here / is a unit of account and not a fractional number.-->
+			<p>²⁄₆ is two shillings and six pence.</p><!--Incorrect, here / is a unit of account and not a fractional number.-->
+			<p>1 1/2d is a penny halfpenny.</p><!--Incorrect, here / is a fraction for "one half."-->
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<p>£2/3/6 is two pounds, three shillings, and sixpence.</p>
+			<p>2/6 is two shillings and six pence.</p>
+			<p>1½<abbr>d.</abbr> is a penny halfpenny.</p>
+
 Dates
 =====
 
