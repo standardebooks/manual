@@ -365,7 +365,7 @@ Additional book metadata
 
 	#.	The :html:`id` attribute is :value:`collection-N` where :value:`N` is a positive integer starting at :value:`1`.
 
-	#.	The element is further refined by a :html:`<meta property="collection-type" refines="#collection-N">` element with the value of :html:`set` or :html:`series`. `See the EPUB spec for more details <https://www.w3.org/publishing/epub32/epub-packages.html#sec-collection-type>`__.
+	#.	The element is further refined by a :html:`<meta property="collection-type" refines="#collection-N">` element with the value of :html:`set` or :html:`series`. `See the EPUB spec for more details <https://www.w3.org/TR/epub/#sec-collection-type>`__.
 
 	#.	:html:`<meta property="se:is-a-collection">true</meta>` is present if the ebook is a collection of items which a reader may wish to search by item title. For example, this would include ebooks like a collection of short stories, or a collection of short works by an author from antiquity.
 

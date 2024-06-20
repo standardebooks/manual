@@ -1197,7 +1197,7 @@ Math
 						</m:math>
 					</p>
 
-	#.	When using Presentation MathML, :html:`<m:mrow>` is used to group subexpressions, but only when necessary. Many elements in MathML, like :html:`<m:math>` and :html:`<m:mtd>`, *imply* :html:`<m:mrow>`, and redundant elements are not desirable. See `this section of the MathML spec <https://www.w3.org/Math/draft-spec/mathml.html#chapter3_presm.reqarg>`__ for more details.
+	#.	When using Presentation MathML, :html:`<m:mrow>` is used to group subexpressions, but only when necessary. Many elements in MathML, like :html:`<m:math>` and :html:`<m:mtd>`, *imply* :html:`<m:mrow>`, and redundant elements are not desirable. See `this section of the MathML spec <https://www.w3.org/TR/MathML3/chapter3.html#presm.reqarg>`__ for more details.
 
 		.. class:: wrong
 
