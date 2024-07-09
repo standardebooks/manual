@@ -566,7 +566,7 @@ Subsections
 					<a href="https://www.robinwhittleton.com/">Robin Whittleton</a>,<br/>
 					and is based on transcriptions from<br/>
 					<a href="EBOOK_URL#transcriptions">Project Gutenberg</a><br/>
-					and on page scans from the<br/>
+					and on digital scans from the<br/>
 					<a href="EBOOK_URL#page-scans">Internet Archive</a>.</p>
 
 			#.	If the transcriptions or page scans came from different sources:
