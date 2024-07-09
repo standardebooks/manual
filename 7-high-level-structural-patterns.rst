@@ -1206,22 +1206,9 @@ Examples
 Images
 ******
 
-#.	Each image has a unique :html:`id` attribute.
+#.	Each :html:`<figure>` element has a unique :html:`id` attribute.
 
 	#.	That attribute's name is :value:`illustration-` followed by :value:`-N`, where :value:`N` is the sequence number of the element starting at :value:`1`.
-
-	#.	If the image is inline with the text, the :html:`id` attribute is on the :html:`<img>` element.
-
-			.. code:: html
-
-				<img alt="..." src="..." id="illustration-1" />
-
-	#.	When contained in a :html:`<figure>` element, the :html:`<img>` element does not have an :html:`id` attribute; instead the :html:`<figure>` element has the :html:`id` attribute.
-
-			.. code:: html
-
-				<figure id="illustration-3">
-					<img alt="..." src="..." />
 
 #.	:html:`<img>` elements have an :html:`alt` attribute that uses prose to describe the image in detail; this is what screen reading software will read aloud.
 
