@@ -6,7 +6,7 @@ The Standard Ebooks Manual of Style
 
 The Standard Ebooks Manual of Style describes a complete approach to editing and producing ebooks, from internal code style to semantic enhancement and typography rules.
 
-If a rule is not covered in this manual, the directive is to follow the rules in the `Chicago Manual of Style, 16th edition <https://www.chicagomanualofstyle.org/16/contents.html>`__.
+If a rule is not covered in this manual, the directive is to follow the rules in the `latest edition of the Chicago Manual of Style <https://www.chicagomanualofstyle.org/>`__.
 
 These rules align closely with the style rules used in modern publishing. However, books from the turn of the 20th century and older may appear to follow different rules. Producers are expected to adjust those older conventions to match this manual.
 
