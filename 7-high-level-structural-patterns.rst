@@ -1234,7 +1234,15 @@ Images
 
 		#.	The :html:`alt` attribute does not contain no-break spaces or word joiners.
 
-	#.	The :html:`alt` attribute is one or more complete sentences ended with periods or other appropriate punctuation. It may be a sentence fragment if the image has no clear visual “protagonist” (for example an image of a musical score, or an image of alien writing that is inline with the text). It always has ending punctuation.
+	#.	The :html:`alt` attribute is one or more complete sentences ended with periods or other appropriate punctuation. It may be a sentence fragment if the image has no clear visual “protagonist” (for example an image of a musical score, or an image of alien writing that is inline with the text).
+
+	#.	The :html:`alt` attribute always has ending punctuation, unless the image is inline with running text (for example, like a musical notation symbol used in a prose context). In that case, the :html:`alt` attribute is written to make sense when read in place with the running prose, and may be a sentence fragment without punctuation.
+
+		.. class:: corrected
+
+			.. code:: html
+
+				<p>The notation that I have adopted is, for the enharmonic diesis, <img alt="half sharp" src="../images/illustration-4.svg" epub:type="z3998:illustration se:image.color-depth.black-on-transparent"/> quarter tone or half sharp.</p>
 
 	#.	The :html:`alt` attribute is not necessarily the same as text in the image’s sibling :html:`<figcaption>` element, if one is present.
 
