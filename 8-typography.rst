@@ -739,15 +739,11 @@ There are many kinds of dashes, and the run-of-the-mill hyphen is often not the 
 
 		<p>I saw the torpedo-boat in the Ems⁠:ws:`wj`–:ws:`wj`⁠Jade Canal.</p>
 
-#.	Non-break hyphens (:utf:`‑` or U+2011) are used when a single word is stretched out by a speaker for prosodic effect.
+#.	Non-breaking hyphens (:utf:`‑` or U+2011) are used when a single word is stretched out by a speaker for prosodic effect.
 
 	.. code:: html
 
 		<p>When you wa‑ake, you shall ha‑ave, all the pretty little hawsiz—</p>
-
-	.. warning::
-
-		When adding non-breaking hyphens to stretch out words, beware that :bash:`se typogrify` will incorrectly convert them to regular hyphens!
 
 #.	Horizontal bars (:utf:`―` or U+2015), also known as quotation dashes, are used in prose whose style uses dashes instead of quotation marks for dialogue (for example, `Ulysses <https://standardebooks.org/ebooks/james-joyce/ulysses>`__.
 
