@@ -1492,7 +1492,7 @@ Initials and abbreviations
 
 	#.	Abbreviations without lowercase letters are set without spaces and without a trailing period.
 
-	#.	Abbreviations that describes the next word, like :string:`Mr.`, :string:`Mrs.`, :string:`Mt.`, and :string:`St.`, are set with a no-break space (U+00A0) between the abbreviation and its target.
+	#.	Abbreviations that describe the next word, like :string:`Mr.`, :string:`Mrs.`, :string:`Mt.`, and :string:`St.`, are set with a no-break space (U+00A0) between the abbreviation and its target.
 
 		.. code:: html
 
