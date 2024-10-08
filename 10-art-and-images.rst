@@ -207,7 +207,8 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Met Museum <https://www.metmuseum.org/art/collection/search?showOnly=withImage%7CopenAccess&material=Paintings>`__ (CC0 items have an “OA Public Domain” icon under the picture, which leads to the Met's Open Access Initiative page that clarifies a CC0 license.)
 
--	`National Museum Sweden <https://www.nationalmuseum.se/en/explore-art-and-design/images/free-images>`__ (CC-PD items have the CC-PD mark in the lower left of the item’s detail view.)
+..
+	At one time, National Musuem Sweden had items marked with the CC-PD mark, but later switched to claiming copyright on previously PD images - while at the same time conflicting with PD license information they provided to Wikimedia for the exact same images. They appear very unreliable when it comes to licensing practices therefore they are banned as a source. `National Museum Sweden <https://www.nationalmuseum.se/en/explore-art-and-design/images/free-images>`__ (CC-PD items have the CC-PD mark in the lower left of the item’s detail view.)
 
 -	`Minneapolis Institute of Art <https://collections.artsmia.org/>`__ (Public domain items are listed as such under “Rights.”)
 
