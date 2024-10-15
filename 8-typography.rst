@@ -414,7 +414,7 @@ Capitalization
 
 #.	Titlecasing, or the capitalization of titles, follows the formula used in the :bash:`se titlecase` tool.
 
-#.	Text in all caps is almost never correct typography. Instead, such text is changed to the correct case and surround with a semantically-meaningful element like :html:`<em>` (for emphasis), :html:`<strong>` (for strong emphasis, like shouting) or :html:`<b>` (for unsemantic formatting required by the text). :html:`<strong>` and :html:`<b>` are styled in small-caps by default in Standard Ebooks.
+#.	Text in all caps is almost never correct typography. Instead, such text is changed to the correct case and surrounded with a semantically-meaningful element like :html:`<em>` (for emphasis), :html:`<strong>` (for strong emphasis, like shouting) or :html:`<b>` (for unsemantic formatting required by the text). :html:`<strong>` and :html:`<b>` are styled in small-caps by default in Standard Ebooks.
 
 	.. class:: wrong
 
