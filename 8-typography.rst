@@ -455,7 +455,7 @@ Capitalization
 Indentation
 ***********
 
-#.	Paragraphs that directly follow another paragraph are indented by 1em.
+#.	Paragraphs that directly follow another paragraph are indented by `1em`.
 
 #.	The first line of body text in a section, or any text following a visible break in text flow (like a header, a scene break, a figure etc.), is not indented, with the exception of block quotations.
 
