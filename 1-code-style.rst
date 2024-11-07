@@ -298,6 +298,74 @@ Properties
 				font-variant: all-small-caps;
 			}
 
+#.	Property values that are numbers do not have a leading :html:`0`.
+
+	.. class:: wrong
+
+		.. code:: css
+
+			margin: 0.5em
+
+	.. class:: corrected
+
+		.. code:: css
+
+			margin: .5em
+
+Fonts
+-----
+
+#.	Font sizes are never less than :html:`1em` where possible.
+
+#.	When font size is changed in isolation, the keywords :html:`larger` and :html:`smaller` are used instead of specific unit measurements. Font sizes that are changed relatively in close proximity to each other may be specied in unit measurements to show their size relative to each other.
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<header>
+				<h2 epub:type="title">The Dance of Death</h2>
+				<blockquote epub:type="epigraph">
+					<p>“Many words for few things!”</p>
+				</blockquote>
+				<blockquote epub:type="epigraph">
+					<p>“Death ends all; judgment comes to all.”</p>
+				</blockquote>
+				<p>Death Speaks</p>
+			</header>
+
+		.. code:: css
+
+			header blockquote + p{
+				font-size: larger;
+				font-variant: small-caps;
+				font-weight: bold;
+				text-indent: 0;
+			}
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<p class="continued">After sixty seconds I shouted:</p>
+			<blockquote>
+				<p>“Transvaaltruppentropentransporttrampelthiertreibertrauungsthraenentragoedie!”</p>
+			</blockquote>
+			<p class="continued">—and lit up the green fire! After waiting only forty seconds this time, I spread my arms abroad and thundered out the devastating syllables of this word of words:</p>
+			<blockquote>
+				<p>“Mekkamuselmannenmassenmenchenmoerdermohrenmuttermarmormonumentenmacher!”</p>
+			</blockquote>
+
+		.. code:: css
+
+			blockquote:nth-of-type(1) p{
+				font-size: 1.2em;
+			}
+
+			blockquote:nth-of-type(2) p{
+				font-size: 1.5em;
+			}
+
 SVG Formatting
 **************
 
