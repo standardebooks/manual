@@ -1271,7 +1271,7 @@ Images
 			}
 
 			figcaption{
-				font-size: .75em;
+				font-size: smaller;
 				font-style: italic;
 				margin: 1em;
 			}
@@ -1361,7 +1361,7 @@ Examples
 	}
 
 	figcaption{
-		font-size: .75em;
+		font-size: smaller;
 		font-style: italic;
 		margin: 1em;
 	}
