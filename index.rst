@@ -1,4 +1,4 @@
-.. version: 1.8.0
+.. version: 1.8.1
 
 ###################################
 The Standard Ebooks Manual of Style
