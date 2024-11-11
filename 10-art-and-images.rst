@@ -254,8 +254,6 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`KMSKA <https://kmska.be/en>`__ (CC0 items say “This image may be downloaded for free” in the “Copyright and legal” section, which has a link to a disclaimer stating that KMSKA releases the photo under a CC0 license.)
 
--	`National Museum in Warsaw <https://cyfrowe.mnw.art.pl/en/home>`__ (CC0 items say “CC0 — Public domain” under the “Copyrights’ section.)
-
 -	`Lillehammer Kunstmuseum <https://digitaltmuseum.no>`__ (CC0 items say “License: CC CC0 1.0” under the “License information” section. In the art metadata, “Owner of collection” *must* be “Lillehammer Kunstmuseum.”)
 
 -	`Yale University Art Gallery <https://artgallery.yale.edu/>`__ (CC0 items say “No Copyright - United States” under the “Object copyright” section, which links to a CC0 license.)
