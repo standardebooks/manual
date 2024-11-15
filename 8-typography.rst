@@ -745,7 +745,7 @@ There are many kinds of dashes, and the run-of-the-mill hyphen is often not the 
 
 		<p>When you wa‑ake, you shall ha‑ave, all the pretty little hawsiz—</p>
 
-#.	Horizontal bars (:utf:`―` or U+2015), also known as quotation dashes, are used in prose whose style uses dashes instead of quotation marks for dialogue (for example, `Ulysses <https://standardebooks.org/ebooks/james-joyce/ulysses>`__.
+#.	Horizontal bars (:utf:`―` or U+2015), also known as quotation dashes, are used in prose whose style uses dashes instead of quotation marks for dialogue (for example, `Ulysses <https://standardebooks.org/ebooks/james-joyce/ulysses>`__).
 
 Em dashes
 ---------
