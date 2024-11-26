@@ -47,13 +47,14 @@ XHTML file naming conventions
 
 #.	Numbers in filenames don’t include leading :path:`0`\s.
 
-#.	Files containing a short story, essay, or other short work in a larger collection, are named with the URL-safe title of the work, excluding any subtitles.
+#.	Files containing a short story, essay, or other short work in a larger collection, are named with the URL-safe title of the work, excluding any subtitles. Works that are a single part (such as a one-act play) likewise have their one bodymatter file named as such.
 
 	=============================================================================================== =========================================
 	Work                                                                                            Filename
 	=============================================================================================== =========================================
 	A short story named “The Variable Man”                                                          :path:`the-variable-man.xhtml`
 	A short story named “The Sayings of Limpang-Tung (The God of Mirth and of Melodious Minstrels)” :path:`the-sayings-of-limpang-tung.xhtml`
+	A one-act play named "The Libation Bearers"                                                     :path:`the-libation-bearers.xhtml`
 	=============================================================================================== =========================================
 
 #.	Works that are divided into larger parts (sometimes called “parts,” “books,” “volumes,” “sections,” etc.) have their part divisions contained in individual files named after the type of part, followed by a number starting at :path:`1`.
