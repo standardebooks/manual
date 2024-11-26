@@ -1306,6 +1306,14 @@ Images
 				}
 			}
 
+			@supports(display: grid){
+				figure.full-page{
+					display: grid;
+					grid-template-rows: 1fr auto;
+					max-height: 100%;
+				}
+			}
+
 	#.	:html:`<figure>` elements that are meant to be aligned block-level with the text have this additional CSS:
 
 		.. code:: css
@@ -1341,6 +1349,14 @@ Examples
 		figure.full-page img{
 			height: 100vh;
 			object-fit: contain;
+		}
+	}
+
+	@supports(display: grid){
+		figure.full-page{
+			display: grid;
+			grid-template-rows: 1fr auto;
+			max-height: 100%;
 		}
 	}
 
