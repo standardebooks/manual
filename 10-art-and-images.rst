@@ -52,7 +52,7 @@ SVG patterns
 
 	.. tip::
 
-		To apply transforms, try the `Inkscape Apply Transforms extension <https://github.com/Klowner/inkscape-applytransforms>`__, or using Inkscape to save as an “Optimized SVG.”
+		To apply transforms, try the `Inkscape Apply Transforms extension <https://github.com/Klowner/inkscape-applytransforms>`__, or using Inkscape to save as an “Optimized SVG.” Alternatively, you can use the command line tool `SVGO (SVG Optimizer) <https://github.com/svg/svgo>`__ or the `online version of the tool <https://jakearchibald.github.io/svgomg/>`__.
 
 The cover image
 ***************
