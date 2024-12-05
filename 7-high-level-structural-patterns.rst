@@ -954,7 +954,7 @@ Stage direction
 
 		abbr[epub|type~="z3998:stage-direction"]::before,
 		abbr[epub|type~="z3998:stage-direction"]::after{
-			content: '';
+			content: "";
 		}
 
 Stage direction rows
