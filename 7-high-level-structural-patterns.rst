@@ -1133,6 +1133,26 @@ Letter footers
 			<p epub:type="z3998:sender"><span epub:type="z3998:signature">John Doe</span>, President</p>
 		</footer>
 
+#.  When the valediction and signature are a single clause, they are contained within a single :html:`<p>`, separated by a :html:`<br/>`.
+
+	.. class:: wrong
+
+		.. code:: html
+
+			<footer>
+				<p epub:type="z3998:valediction">Very sincerely yours,</p>
+				<p epub:type="z3998:sender z3998:signature">Sherlock Holmes</p>
+			</footer>
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<footer>
+				<p><span epub:type="z3998:valediction">Very sincerely yours,</span><br/>
+				<b epub:type="z3998:sender z3998:signature">Sherlock Holmes</b></p>
+			</footer>
+
 #.	Postscripts have the semantic inflection of :value:`z3998:postscript` and the following CSS:
 
 	.. code:: css
