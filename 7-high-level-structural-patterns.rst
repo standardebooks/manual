@@ -65,10 +65,7 @@ Book 1, Part 2, Chapter 3 (:path:`chapter-1-2-3.xhtml`):
 .. code:: html
 
 	<section data-parent="part-1-2" id="chapter-1-2-3" epub:type="chapter">
-		<h4>
-			<span epub:type="label">Chapter</span>
-			<span epub:type="ordinal z3998:roman">III</span>
-		</h4>
+		<h4 epub:type="ordinal z3998:roman">III</h4>
 		<p>...</p>
 		<p>...</p>
 	</section>
@@ -162,7 +159,7 @@ Within section titles, we distinguish between labels, ordinals, titles, and subt
 
 	.. code:: html
 
-		<h2><span epub:type="label">Chapter</span> <span epub:type="ordinal z3998:roman">IV</span></h2>
+		<h2><span epub:type="label">Book</span> <span epub:type="ordinal z3998:roman">IV</span></h2>
 
 	Ordinals may also appear without a label:
 
