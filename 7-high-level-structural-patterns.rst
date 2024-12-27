@@ -836,7 +836,7 @@ Plays and drama
 Dialog rows
 ===========
 
-#.	The first child of a row of dialog is a :html:`<td>` element with the semantic inflection of :value:`z3998:persona`.
+#.	The first child of a row of dialog is a :html:`<td>` element with the semantic inflection of :value:`z3998:persona` containing the name of the speaker, without ending punctuation.
 
 #.	The second child of a row of dialog is a :html:`<td>` element containing the actual dialog. Elements that contain only one line of dialog do not have a block-level child (like :html:`<p>`).
 
