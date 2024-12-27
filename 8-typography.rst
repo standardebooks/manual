@@ -1035,7 +1035,7 @@ Punctuation in abbreviated measurements
 
 		<p>A 12:ws:`nbsp`<abbr>mm</abbr> pistol.</p>
 
-#.	Abbreviated `English <https://en.wikipedia.org/wiki/English_units>`__, `Imperial <https://en.wikipedia.org/wiki/Imperial_units>`__, or `US customary <https://en.wikipedia.org/wiki/United_States_customary_units>`__ units that are one word are set in lowercase with a trailing period. They are not initialisms.
+#.	Abbreviated `English <https://en.wikipedia.org/wiki/English_units>`__, `Imperial <https://en.wikipedia.org/wiki/Imperial_units>`__, or `U.S. customary <https://en.wikipedia.org/wiki/United_States_customary_units>`__ units that are one word are set in lowercase with a trailing period. They are not initialisms.
 
 	.. code:: html
 
@@ -1047,7 +1047,7 @@ Punctuation in abbreviated measurements
 
 		<p>There’s a force of over a hundred thousand <abbr epub:type="z3998:initialism">G</abbr>’s.</p>
 
-#.	Abbreviated English, Imperial, or US customary units that are more than one word (like :string:`hp` for :string:`horse power` or :string:`mph` for :string:`miles per hour`) are set in lowercase without periods. They are not initialisms.
+#.	Abbreviated English, Imperial, or U.S. customary units that are more than one word (like :string:`hp` for :string:`horse power` or :string:`mph` for :string:`miles per hour`) are set in lowercase without periods. They are not initialisms.
 
 	.. code:: html
 
@@ -1502,7 +1502,7 @@ Initials and abbreviations
 
 		- :string:`LL.D.` does not have a period in :string:`LL`, because it indicates the plural :string:`Legum`.
 
-#.	Postal codes and abbreviated US states are set in all caps, without periods or spaces, and are wrapped in an :html:`<abbr epub:type="z3998:place">` element.
+#.	Postal codes and abbreviated U.S. states are set in all caps, without periods or spaces, and are wrapped in an :html:`<abbr epub:type="z3998:place">` element.
 
 	.. code:: html
 
