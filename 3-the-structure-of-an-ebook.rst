@@ -121,6 +121,6 @@ The colophon contains information about the publisher of the book, the author, t
 Copyright Page
 ==============
 
-The copyright page includes information about the copyright status of the work. All Standard Ebooks are in the US Public domain, and use a standardized “copyright” page to explain this.
+The copyright page includes information about the copyright status of the work. All Standard Ebooks are in the U.S. Public domain, and use a standardized “copyright” page to explain this.
 
 Copyright pages are usually part of the front matter of a book, but in the case of Standard Ebooks productions they are back matter, and the last item in the book.
