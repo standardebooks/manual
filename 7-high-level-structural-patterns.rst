@@ -1065,7 +1065,7 @@ Letters require particular attention to styling and semantic inflection. Letters
 
 #.	Letters are wrapped in a :html:`<blockquote>` element with the appropriate semantic inflection, usually :value:`z3998:letter`.
 
-#.	Letters that are telegrams are set with :css:`font-variant: all-small-caps;`.
+#.	Letters that are telegrams have :html:`class="telegram"` are set with :css:`.telegram{ font-variant: all-small-caps; }`.
 
 Letter headers
 ==============
