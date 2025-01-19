@@ -1416,14 +1416,14 @@ Examples
 .. code:: html
 
 	<p>...</p>
-	<figure class="full-page" id="image-11">
+	<figure class="full-page" id="illustration-11">
 		<img alt="A massive whale breaches the water, with a sailor floating in the water directly within the whale’s mouth." src="../images/illustration-11.jpg" epub:type="z3998:illustration"/>
 		<figcaption>The Whale eats Sailor Jim.</figcaption>
 	</figure>
 
 .. code:: html
 
-	<p>He saw strange alien text that looked like this: <img alt="A line of alien heiroglyphs." src="../images/alien-text.svg" epub:type="z3998:illustration se:image.color-depth.black-on-transparent" />. There was nothing else amongst the ruins.</p>
+	<p>He saw strange alien text that looked like this: <img alt="A line of alien heiroglyphs." src="../images/illustration-1.svg" epub:type="z3998:illustration se:image.color-depth.black-on-transparent" />. There was nothing else amongst the ruins.</p>
 
 List of Illustrations (the LoI)
 *******************************
