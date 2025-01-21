@@ -1225,6 +1225,13 @@ Examples
 Images
 ******
 
+..
+	`<figure>` test cases:
+
+	https://standardebooks.org/ebooks/george-grey/polynesian-mythology
+	https://standardebooks.org/ebooks/lewis-carroll/a-tangled-tale
+	https://standardebooks.org/ebooks/geronimo/geronimos-story-of-his-life
+
 #.	Each :html:`<figure>` element has a unique :html:`id` attribute.
 
 	#.	That attribute's name is :value:`illustration-` followed by :value:`-N`, where :value:`N` is the sequence number of the element starting at :value:`1`.
@@ -1275,17 +1282,19 @@ Images
 
 	#.	An optional :html:`<figcaption>` element containing a concise context-dependent caption may follow the :html:`<img>` element within a :html:`<figure>` element. This caption depends on the surrounding context, and is not necessarily (or even ideally) identical to the :html:`<img>` element’s :html:`alt` attribute.
 
-	#.	All figure elements, regardless of positioning, have this CSS:
+	#.	All figure elements have this CSS:
 
 		.. code:: css
 
 			figure{
 				break-inside: avoid;
+				margin: 1em 2.5em;
 			}
 
 			figure img{
 				display: block;
 				margin: auto;
+				max-height: 100vh;
 				max-width: 100%;
 			}
 
@@ -1293,6 +1302,7 @@ Images
 				font-size: smaller;
 				font-style: italic;
 				margin: 1em;
+				text-align: center;
 			}
 
 			figcaption p + p{
@@ -1306,38 +1316,6 @@ Images
 			figure.full-page{
 				break-after: page;
 				break-before: page;
-				margin: 0;
-				max-height: 100vh;
-				text-align: center;
-			}
-
-			@supports(display: flex){
-				figure.full-page{
-					display: flex;
-					flex-direction: column;
-				}
-
-				figure.full-page img{
-					height: 100vh;
-					object-fit: contain;
-				}
-			}
-
-			@supports(display: grid){
-				figure.full-page{
-					display: grid;
-					grid-template-rows: 1fr auto;
-					max-height: 100%;
-				}
-			}
-
-	#.	:html:`<figure>` elements that are meant to be aligned block-level with the text have this additional CSS:
-
-		.. code:: css
-
-			figure{
-				margin: 1em 40px;
-				text-align: center;
 			}
 
 .. class:: no-numbering
@@ -1347,49 +1325,15 @@ Examples
 
 .. code:: css
 
-	/* If the image is meant to be on its own page, use this selector... */
-	figure.full-page{
-		break-after: page;
-		break-before: page;
-		margin: 0;
-		max-height: 100vh;
-		text-align: center;
-	}
-
-	@supports(display: flex){
-		figure.full-page{
-			display: flex;
-			flex-direction: column;
-		}
-
-		figure.full-page img{
-			height: 100vh;
-			object-fit: contain;
-		}
-	}
-
-	@supports(display: grid){
-		figure.full-page{
-			display: grid;
-			grid-template-rows: 1fr auto;
-			max-height: 100%;
-		}
-	}
-
-	/* If the image is meant to be aligned block-level with the text, use this selector... */
-	figure{
-		margin: 1em 40px;
-		text-align: center;
-	}
-
-	/* In all cases, also include the below styles */
 	figure{
 		break-inside: avoid;
+		margin: 1em 2.5em;
 	}
 
 	figure img{
 		display: block;
 		margin: auto;
+		max-height: 100vh;
 		max-width: 100%;
 	}
 
@@ -1397,10 +1341,17 @@ Examples
 		font-size: smaller;
 		font-style: italic;
 		margin: 1em;
+		text-align: center;
 	}
 
 	figcaption p + p{
 		text-indent: 0;
+	}
+
+	/* If the image is meant to be on its own page, also include this selector... */
+	figure.full-page{
+		break-after: page;
+		break-before: page;
 	}
 
 .. code:: html
