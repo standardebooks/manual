@@ -1,11 +1,11 @@
-	<?= Template::Header(['title' => 'MANUAL_TITLE', 'highlight' => 'contribute', 'manual' => true]) ?>
-	<? if(Manual::GetRequestedVersion() !== Manual::GetLatestVersion()){ ?>
-	<main class="manual outdated">
-		<aside class="alert">
-			<p>This is an outdated version of the manual that is no longer current.</p>
-			<p><a href="/manual/latest">Read the latest version instead.</a></p>
-		</aside>
-	<? }else{ ?>
-	<main class="manual">
-	<? } ?>
-		<article>
+<?= Template::Header(['title' => 'MANUAL_TITLE', 'highlight' => 'contribute', 'manual' => true]) ?>
+<? if(Manual::GetRequestedVersion() !== Manual::GetLatestVersion()){ ?>
+<main class="manual outdated">
+	<aside class="alert">
+		<p>This is an outdated version of the manual that is no longer current.</p>
+		<p><a href="/manual/latest">Read the latest version instead.</a></p>
+	</aside>
+<? }else{ ?>
+<main class="manual">
+<? } ?>
+	<article>
