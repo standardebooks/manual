@@ -262,6 +262,8 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Lenbachhaus <https://www.lenbachhaus.de/en/discover/collection-online>`__ (CC0 items say “CC0 1.0” to the lower right of the thumbnail, which links to a CC0 license.)
 
+-	`Royal Albert Memorial Museum <https://rammcollections.org.uk/>`__ (CC0 items link to the license just below an artwork’s thumbnail.)
+
 Clearance FAQ
 ~~~~~~~~~~~~~
 
