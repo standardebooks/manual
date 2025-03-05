@@ -1,4 +1,4 @@
-<?= Template::Header(['title' => 'MANUAL_TITLE', 'highlight' => 'contribute', 'manual' => true]) ?>
+<?= Template::Header(title: 'MANUAL_TITLE', highlight: 'contribute', isManual: true]) ?>
 <? if(Manual::GetRequestedVersion() !== Manual::GetLatestVersion()){ ?>
 <main class="manual outdated">
 	<aside class="alert">
