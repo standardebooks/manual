@@ -1466,7 +1466,7 @@ Examples
 				<ol>
 					<li>
 						<p>
-							<a href="preface.xhtml#the-edge-of-the-world">The Edge of the World</a>
+							<a href="preface.xhtml#illustration-1">The Edge of the World</a>
 						</p>
 					</li>
 					...

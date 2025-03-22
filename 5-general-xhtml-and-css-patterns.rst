@@ -38,22 +38,22 @@ This section covers general patterns used when producing XHTML and CSS that are 
 
 #.	:html:`id` attributes are not used as hooks for CSS styling.
 
-#.	:html:`<figure>` elements have an :html:`id` attribute set to :value:`figure-N`, where :value:`N` is the sequence number of the figure *across the entire ebook*, starting at :value:`1`.
+#.	:html:`<figure>` elements have an :html:`id` attribute set to :value:`illustration-N`, where :value:`N` is the sequence number of the figure *across the entire ebook*, starting at :value:`1`.
 
 	.. code:: html
 
 		<!-- chapter-1.xhtml -->
 		<section id="chapter-1" epub:type="chapter">
 			<p>...</p>
-			<figure id="figure-1">...</figure>
+			<figure id="illustration-1">...</figure>
 			<p>...</p>
 		</section>
 
-		<!-- chapter-2.xhtml -->
-		<section id="chapter-2" epub:type="chapter">
+		<!-- chapter-3.xhtml -->
+		<section id="chapter-3" epub:type="chapter">
 			<p>...</p>
 			<p>...</p>
-			<figure id="figure-2">...</figure>
+			<figure id="illustration-2">...</figure>
 		</section>
 
 #.	Noteref elements have their :html:`id` attributes set to :value:`noteref-N`, where :value:`N` is the sequence number of the noteref *across the entire ebook*, starting at :value:`1`.
