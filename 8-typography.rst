@@ -365,9 +365,9 @@ Exceptions
 			}
 
 			[epub|type~="epigraph"] cite{
-				margin-top: 1em;
 				font-style: normal;
 				font-variant: small-caps;
+				margin-top: 1em;
 			}
 
 			[epub|type~="epigraph"] cite i{
@@ -395,9 +395,9 @@ Exceptions
 			}
 
 			[epub|type~="epigraph"] cite{
-				margin-top: 1em;
 				font-style: normal;
 				font-variant: small-caps;
+				margin-top: 1em;
 			}
 
 			[epub|type~="epigraph"] cite i{
@@ -1891,8 +1891,8 @@ For ditto marks, see `8.7.5.4 <#8.7.5.4>`__.
 		.. code:: css
 
 			table td:last-child{
-				text-align: right;
 				font-variant-numeric: tabular-nums;
+				text-align: right;
 			}
 
 		.. code:: html
