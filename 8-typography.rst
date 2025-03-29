@@ -276,7 +276,7 @@ Italicizing or quoting newly-used English words
 Italics in names and titles
 ===========================
 
-#.	Place names, like pubs, bars, or buildings, are not quoted.
+#.	Place names, like pubs, bars, or buildings, are not italicized or quoted.
 
 #.	The names of publications, music, and art that can stand alone are italicized; additionally, the names of transport vessels are italicized. These include, but are not limited to:
 
