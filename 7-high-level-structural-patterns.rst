@@ -1202,7 +1202,7 @@ Examples
 		<p epub:type="z3998:salutation">Dearest Auntie,</p>
 		<p>Please may we have some things for a picnic? Gerald will bring them. I would come myself, but I am a little tired. I think I have been growing rather fast.</p>
 		<footer>
-			<p><span> epub:type="z3998:valediction">Your loving niece,</span><br/>
+			<p><span epub:type="z3998:valediction">Your loving niece,</span><br/>
 			<b epub:type="z3998:sender z3998:signature">Mabel</b></p>
 			<p epub:type="z3998:postscript"><abbr epub:type="z3998:initialism">P.S.</abbr>:ws:`wj`—Lots, please, because some of us are very hungry.</p>
 		</footer>
