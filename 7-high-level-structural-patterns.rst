@@ -1072,13 +1072,15 @@ Letter headers
 
 #.	Parts of a letter prior to the body of the letter, for example the location where it is written, the date, and the salutation, are wrapped in a :html:`<header>` element.
 
-#.	 If there is only a salutation and no other header content, the :html:`<header>` element is omitted.
+	#. If the letter is within a :html:`<blockquote>`, any :html:`<header>` and :html:`<footer>` elements have :html:`role="presentation"`.
+
+#.	If there is only a salutation and no other header content, the :html:`<header>` element is omitted.
 
 #.	The location and date of a letter have the semantic inflection of :value:`se:letter.dateline`. Dates are in a :html:`<time>` element with a computer-readable date.
 
 	.. code:: html
 
-		<header>
+		<header role="presentation">
 			<p epub:type="se:letter.dateline">Blarney Castle, <time datetime="1863-10-11">11th of October, 1863</time></p>
 		</header>
 
@@ -1120,13 +1122,13 @@ Letter footers
 
 	.. code:: html
 
-		<footer>
+		<footer role="presentation">
 			<p epub:type="z3998:sender z3998:signature"><abbr epub:type="z3998:given-name">R. A.</abbr> Johnson</p>
 		</footer>
 
 	.. code:: html
 
-		<footer>
+		<footer role="presentation">
 			<p epub:type="z3998:sender"><span epub:type="z3998:signature">John Doe</span>, President</p>
 		</footer>
 
@@ -1136,7 +1138,7 @@ Letter footers
 
 		.. code:: html
 
-			<footer>
+			<footer role="presentation">
 				<p epub:type="z3998:valediction">Very sincerely yours,</p>
 				<p epub:type="z3998:sender z3998:signature">Sherlock Holmes</p>
 			</footer>
@@ -1145,7 +1147,7 @@ Letter footers
 
 		.. code:: html
 
-			<footer>
+			<footer role="presentation">
 				<p><span epub:type="z3998:valediction">Very sincerely yours,</span><br/>
 				<b epub:type="z3998:sender z3998:signature">Sherlock Holmes</b></p>
 			</footer>
@@ -1201,7 +1203,7 @@ Examples
 	<blockquote epub:type="z3998:letter">
 		<p epub:type="z3998:salutation">Dearest Auntie,</p>
 		<p>Please may we have some things for a picnic? Gerald will bring them. I would come myself, but I am a little tired. I think I have been growing rather fast.</p>
-		<footer>
+		<footer role="presentation">
 			<p><span epub:type="z3998:valediction">Your loving niece,</span><br/>
 			<b epub:type="z3998:sender z3998:signature">Mabel</b></p>
 			<p epub:type="z3998:postscript"><abbr epub:type="z3998:initialism">P.S.</abbr>:ws:`wj`—Lots, please, because some of us are very hungry.</p>
@@ -1211,12 +1213,12 @@ Examples
 .. code:: html
 
 	<blockquote epub:type="z3998:letter">
-		<header>
+		<header role="presentation">
 			<p epub:type="se:letter.dateline">Gracechurch-street, <time datetime="08-02">August 2</time>.</p>
 		</header>
 		<p><span epub:type="z3998:salutation">My dear Brother</span>, At last I am able to send you some tidings of my niece, and such as, upon the whole, I hope will give you satisfaction. Soon after you left me on Saturday, I was fortunate enough to find out in what part of London they were. The particulars, I reserve till we meet. It is enough to know they are discovered, I have seen them both⁠:ws:`wj`—</p>
 		<p>I shall write again as soon as anything more is determined on.</p>
-		<footer>
+		<footer role="presentation">
 			<p><span epub:type="z3998:valediction">Yours, <abbr>etc.</abbr></span><br/>
 			<b epub:type="z3998:sender z3998:signature">Edward Gardner</b></p>
 		</footer>
