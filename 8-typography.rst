@@ -223,7 +223,7 @@ Italicizing non-English words and phrases
 #.	Words that are in an unknown language have their :html:`xml:lang` attribute set to :value:`und`.
 
 
-#.	Some phrases that are not English in origin but that that are common in English prose, and which begin in a word that could be confused with an English word, are always italicized to prevent confusion. An incomplete list follows:
+#.	Some phrases that are not English in origin but that that are common in English prose, and which begin in a word that could be confused with an English word, are always italicized (with their appropriate :html:`xml:lang` attribute) to prevent confusion. An incomplete list follows:
 
 	- :string:`sic`
 
