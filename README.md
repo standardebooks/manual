@@ -16,18 +16,29 @@ Bad: `Don’t put periods or spaces in “OK”` or `“OK” shouldn’t be set
 
 The `master` branch is reserved for typo fixes, clarifications, and version releases. Anything else should be committed to the `next` branch, which is periodically merged into `master` as a version release.
 
-# Building
+# Installing
 
-The following `pip` packages are required:
+## Ubuntu 24.04
+
+```shell
+sudo apt install python3-natsort pipx python3-bs4 python3-pygments
+
+# We require the Pip version of `rst2html5` as it's a new and improved version of the `docutils-common` apt package. See <https://pypi.org/project/rst2html5/>.
+pipx install rst2html5
+````
+
+## Ubuntu 20.04
 
 ```shell
 pip3 install beautifulsoup4 pygments natsort regex rst2html5
 ```
 
-To build the final PHP files, invoke the `build-manual.py` executable:
+# Building
+
+To build the final PHP files, invoke the `build-manual` executable:
 
 ```shell
-./build-manual.py SOURCE_DIR DEST_DIR
+./build-manual SOURCE_DIR DEST_DIR
 ```
 
 To generate the syntax highlighting stylesheet:
@@ -38,7 +49,7 @@ pygmentize -S monokai -f html > monokai.css
 
 # Versioning
 
-The overall version of the manual is stored as a comment in the `index.rst` file. This comment is used by `build-manual.py` to set the version number of the manual.
+The overall version of the manual is stored as a comment in the `index.rst` file. This comment is used by `build-manual` to set the version number of the manual.
 
 Within `.rst` files, the string `VERSION` is replaced with the version number when built. For example, a link to another part of the manual could be: `` `The SE identifier </manual/VERSION/9-metadata#9.2>`__ ``.
 
@@ -82,7 +93,7 @@ Several additional RST roles are available for use in the manual:
 
 - String: `` :string:`A string that is not syntax highlighted` ``
 
-While they are not defined in each `.rst` file to avoid header clutter, they are defined by `build-manual.py` during the build process.
+While they are not defined in each `.rst` file to avoid header clutter, they are defined by `build-manual` during the build process.
 
 You may also create a tip or warning block:
 

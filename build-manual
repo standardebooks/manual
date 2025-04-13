@@ -147,16 +147,38 @@ def main() -> int:
 	Entry point for the executable.
 	"""
 
-	parser = argparse.ArgumentParser(description="Build the Standard Ebooks Manual of Style from a set of .rst files.")
-	parser.add_argument("source_directory", metavar="SOURCE_DIRECTORY", help="a directory containing .rst files comprising the Standard Ebooks Manual of Style")
-	parser.add_argument("dest_directory", metavar="DEST_DIRECTORY", help="a directory to place the output .php files")
+	parser = argparse.ArgumentParser(description="Build the Standard Ebooks Manual of Style from a set of ReStructuredText files.")
+	parser.add_argument("source_directory", metavar="SOURCE_DIRECTORY", nargs="?", help="a directory containing ReStructuredText files comprising the Standard Ebooks Manual of Style; omit to use `/standardebooks.org/manual`")
+	parser.add_argument("dest_directory", metavar="DEST_DIRECTORY", nargs="?", help="a directory to place the output PHP files; omit to use `/standardebooks.org/web/www/manual/<latest-git-tag>`")
 	args = parser.parse_args()
 
 	return_code = 0
 
+	if not args.source_directory:
+		args.source_directory = "/standardebooks.org/manual"
+
 	if not os.path.isdir(args.source_directory):
 		print(f"Not a directory: `{args.source_directory}`")
 		return 1
+
+	if not args.dest_directory:
+		args.dest_directory = "/standardebooks.org/web/www/manual"
+
+		result = subprocess.run(["git", "describe", "--tags", "--abbrev=0"], cwd=args.source_directory, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=False)
+
+		errors = result.stderr.decode().strip()
+		if errors:
+			print(f"Error determining last Git tag of `{args.source_directory}`. Git says: {errors}");
+			return 1
+
+		args.dest_directory += "/" + result.stdout.decode().strip()
+
+		if not os.path.isdir(args.dest_directory):
+			try:
+				os.makedirs(args.dest_directory)
+			except:
+				print(f"Couldn’t create `{args.dest_directory}`")
+				return 1
 
 	if not os.path.isdir(args.dest_directory):
 		print(f"Not a directory: `{args.dest_directory}`")
@@ -205,7 +227,7 @@ def main() -> int:
 
 			html = result.stdout.decode().strip()
 
-			matches = regex.findall(r"<h1>(.+?)</h1>", html)
+			matches = regex.findall(r"<h1[^>]*?>(.+?)</h1>", html)
 			if matches:
 				title = matches[0]
 
