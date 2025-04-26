@@ -427,6 +427,7 @@ Blockquotes
 ***********
 
 -	`See here for poetry </manual/VERSION/7-high-level-structural-patterns#7.5>`__.
+-	`See here for letters </manual/VERSION/7-high-level-structural-patterns#7.7>`__.
 
 #.	:html:`<blockquote>` elements must contain at least one block-level child, like :html:`<p>`.
 
