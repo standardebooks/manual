@@ -267,7 +267,7 @@ The :html:`<dc:description>` element contains a short, single-sentence summary o
 
 #.	The description is a single complete sentence ending in a period, not a sentence fragment or restatement of the title.
 
-#.	The description summarizes the main theme or plot thread in the book, in an active voice, without using proper names.
+#.	The description summarizes the main theme or plot thread in the book, in an active voice, without using proper names. (Exceptions for proper names can be made for well-known people, e.g. Julius Caesar.)
 
 	.. class:: wrong
 
