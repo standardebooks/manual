@@ -267,7 +267,7 @@ The :html:`<dc:description>` element contains a short, single-sentence summary o
 
 #.	The description is a single complete sentence ending in a period, not a sentence fragment or restatement of the title.
 
-#.	The description summarizes the main theme or plot thread in the book, in an active voice, without using proper names. (Exceptions for proper names can be made for well-known people, e.g. Julius Caesar.)
+#.	The description summarizes the main theme or plot thread in the book, in an active voice, without using proper names.
 
 	.. class:: wrong
 
@@ -286,6 +286,10 @@ The :html:`<dc:description>` element contains a short, single-sentence summary o
 		.. code:: html
 
 			An evil witch transforms a garrulous barber into a frog, putting his career on hold as he comes to grips with his new station in life.
+
+	.. tip::
+
+		Exceptions for proper names can be made for well-known people with which the reader can be assumed to be familiar, e.g. Julius Caesar. A rule of thumb is that if replacing a famous proper name with a general description would be surprising, then consider keeping the proper name. For example, if you wrote :html:`A famous Roman general recounts the Gallic Wars` then a reader might be surprised to learn that the description refers to not just *any* famous Roman general... but to one of the most important figures in all of Western history!
 
 #.	For collections, compilations, and omnibuses, a sentence fragment is acceptable as a description.
 
