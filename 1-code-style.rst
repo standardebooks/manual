@@ -317,7 +317,7 @@ Fonts
 
 #.	Font sizes are never less than :html:`1em` where possible.
 
-#.	When font size is changed in isolation, the keywords :html:`larger` and :html:`smaller` are used instead of specific unit measurements. Font sizes that are changed relatively in close proximity to each other may be specied in unit measurements to show their size relative to each other.
+#.	When font size is changed in isolation, the keywords :html:`larger` and :html:`smaller` are used instead of specific unit measurements. Font sizes that are changed relatively in close proximity to each other may be specified in unit measurements to show their size relative to each other.
 
 	.. class:: corrected
 
