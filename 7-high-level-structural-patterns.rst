@@ -1284,7 +1284,7 @@ Images
 
 	#.	An optional :html:`<figcaption>` element containing a concise context-dependent caption may follow the :html:`<img>` element within a :html:`<figure>` element. This caption depends on the surrounding context, and is not necessarily (or even ideally) identical to the :html:`<img>` element’s :html:`alt` attribute.
 
-	#.	All figure elements have this CSS:
+	#.	All :html:`<figure>` elements have this CSS:
 
 		.. code:: css
 
