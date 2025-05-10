@@ -11,7 +11,7 @@ Sectioning
 
 #.	Major structural divisions of a larger work, like parts, volumes, books, chapters, or subchapters, are contained in a :html:`<section>` element.
 
-#.	Individual items in a larger collection (like a poem in a poetry collection) are contained in a :html:`<article>` element.
+#.	Individual items in a larger collection (like a poem in a poetry collection) are contained in an :html:`<article>` element.
 
 	#.	Collections of very short work, like collections of poems, have all of their content in a single file, and :css:`break-*` CSS is added to generate page breaks between items:
 
