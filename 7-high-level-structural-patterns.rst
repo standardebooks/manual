@@ -628,7 +628,7 @@ Unfortunately there’s no great way to semantically format poetry in HTML. As s
 			text-indent: -1em;
 		}
 
-#.	Poems, songs, and verse that are shorter part of a longer work, like a novel, are wrapped in a :html:`<blockquote>` element.
+#.	Poems, songs, and verse that are a shorter part of a longer work, like a novel, are wrapped in a :html:`<blockquote>` element.
 
 	.. code:: html
 
