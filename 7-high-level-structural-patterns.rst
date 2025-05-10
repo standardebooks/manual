@@ -215,7 +215,7 @@ Header patterns
 			<p epub:type="title">Who Stole the Tarts?</p>
 		</hgroup>
 
-#.	Sections titles and subtitles but no ordinals:
+#.	Sections with titles and subtitles but no ordinals:
 
 	.. code:: html
 
