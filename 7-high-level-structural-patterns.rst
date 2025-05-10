@@ -1468,7 +1468,7 @@ Individual endnotes
 
 #.	An endnote is an :html:`<li id="note-n" epub:type="endnote">` element containing one or more block-level text elements and one backlink element.
 
-#.	Each endnote’s contains a backlink, which has the semantic inflection :value:`backlink`, contains the text :string:`↩`, and has the :html:`href` attribute pointing to the corresponding noteref hash.
+#.	Each endnote contains a backlink, which has the semantic inflection :value:`backlink`, contains the text :string:`↩`, and has the :html:`href` attribute pointing to the corresponding noteref hash.
 
 	#.	In endnotes where the last block-level element is a :html:`<p>` element, the backlink goes at the end of the :html:`<p>` element, preceded by exactly one space.
 
