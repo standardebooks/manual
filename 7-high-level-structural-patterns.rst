@@ -1389,7 +1389,7 @@ If an ebook has any illustrations that a reader may wish to return to while read
 
 	Examples of illustrations that a reader may wish to return to: illustrations of events in the book, like full-page drawings; illustrations essential to the plot, like diagrams of a murder scene; maps; components of the text, like photographs in a documentary narrative.
 
-	Examples of illustration that might *not* belong in an LoI: drawings used to represent a person’s signature, like an X mark; inline drawings representing text in made-up languages; drawings used as layout elements to illustrate forms, tables, or diagrams; illustrative musical scores; decorative end-of-chapter flourishes.
+	Examples of illustrations that might *not* belong in an LoI: drawings used to represent a person’s signature, like an X mark; inline drawings representing text in made-up languages; drawings used as layout elements to illustrate forms, tables, or diagrams; illustrative musical scores; decorative end-of-chapter flourishes.
 
 #.	The LoI file contains a single :html:`<nav id="loi" epub:type="loi">` element, which in turn contains an :html:`<h2 epub:type="title">List of Illustrations</h2>` element, followed by an :html:`<ol>` element, which in turn contains list items representing the images.
 
