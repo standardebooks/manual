@@ -1374,7 +1374,7 @@ Examples
 
 .. code:: html
 
-	<p>He saw strange alien text that looked like this: <img alt="A line of alien heiroglyphs." src="../images/illustration-1.svg" epub:type="z3998:illustration se:image.color-depth.black-on-transparent" />. There was nothing else amongst the ruins.</p>
+	<p>He saw strange alien text that looked like this: <img alt="A line of alien hieroglyphs." src="../images/illustration-1.svg" epub:type="z3998:illustration se:image.color-depth.black-on-transparent" />. There was nothing else amongst the ruins.</p>
 
 List of Illustrations (the LoI)
 *******************************
