@@ -288,7 +288,7 @@ Italics in names and titles
 
 	-	Long musical compositions or audio, like operas, music albums, or radio shows.
 
-	-	Long visual art, like films or a TV show series.
+	-	Long cinematic art, like full-length films or a TV show series.
 
 	-	Visual art, like paintings or sculptures.
 
@@ -304,7 +304,7 @@ Italics in names and titles
 
 	-	Essays or individual articles in a newspaper or journal.
 
-	-	Short visual art, like short films or episodes in a TV series.
+	-	Short cinematic art, like short films or episodes in a TV series.
 
 .. class:: no-numbering
 
