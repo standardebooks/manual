@@ -214,7 +214,7 @@ Italicizing non-English words and phrases
 		</blockquote>
 
 
-#.	Words that are in a non-English “alien” language (i.e. one that is made up, like in a science fiction or fantasy work) are italicized and given an IETF language tag in a custom namespace. Custom namespaces begin consist of :value:`x-TAG`, where :value:`TAG` is a custom descriptor of 8 characters or less.
+#.	Words that are in a non-English “alien” language (i.e. one that is made up, like in a science fiction or fantasy work) are italicized and given an IETF language tag in a custom namespace. Custom namespaces consist of :value:`x-TAG`, where :value:`TAG` is a custom descriptor of 8 characters or less.
 
 	.. code:: html
 
