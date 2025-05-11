@@ -664,7 +664,7 @@ Quotation marks
 				<tbody>
 					<tr>
 						<td>3</td>
-						<td>lbs.</td>
+						<td><abbr>lbs.</abbr></td>
 					</tr>
 					<tr>
 						<td>12</td>
