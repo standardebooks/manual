@@ -1078,7 +1078,7 @@ Math
 
 			.. code:: html
 
-				<p>6 -	2 x 2 == 2</p>
+				<p>6 - 2 x 2 == 2</p>
 
 		.. class:: corrected
 
