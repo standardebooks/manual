@@ -177,7 +177,7 @@ Italicizing non-English words and phrases
 
 		.. code:: html
 
-			<p>“<i xml:lang="fr">Où est le métro?</i>” he asked, and she pointed to <span xml:lang="fr">Place de Clichy</span>, next to the <span xml:lang="fr">Le Bon Petit Déjeuner</span> restaurant.
+			<p>“<i xml:lang="fr">Où est le métro?</i>” he asked, and she pointed to <span xml:lang="fr">Place de Clichy</span>, next to the <span xml:lang="fr">Le Bon Petit Déjeuner</span> restaurant.</p>
 
 #.	If certain non-English words are used so frequently in the text that italicizing them at each instance would be distracting to the reader, then only the first instance is italicized. Subsequent instances are wrapped in a :html:`<span xml:lang="LANGUAGE">` element.
 
