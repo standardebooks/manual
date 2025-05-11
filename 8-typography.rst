@@ -478,7 +478,7 @@ Indentation
 			<p>He opened the cover in which the message was enclosed and, having read it, he took his pen and wrote on the back of it⁠—</p>
 			<blockquote epub:type="z3998:letter">
 				<p epub:type="z3998:salutation">For the Earl of ⸻,</p>
-				<footer>
+				<footer role="presentation">
 					<p epub:type="z3998:valediction">With the Earl of ⸻’s compliments</p>
 				</footer>
 			</blockquote>
