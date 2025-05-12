@@ -1690,7 +1690,7 @@ Scansion is the representation of the metrical stresses in lines of verse.
 
 	.. code:: html
 
-		<p>Several of his types, however, constantly occur; <abbr>e.g.</abbr> A and a variant (/ × | / ×) (/ × × | / ×); B and a variant (× / | × /) (× × / | × /); a variant of D (/ × | / × ×); E (/ × × | /). </p>
+		<p>Several of his types, however, constantly occur; <abbr>e.g.</abbr> A and a variant (/ × | / ×) (/ × × | / ×); B and a variant (× / | × /) (× × / | × /); a variant of D (/ × | / × ×); E (/ × × | /).</p>
 
 #.	When scansion marks are above letters, a combining breve, :utf:`◌̆` (U+0306), is used to indicate an unstressed syllable and a combining vertical line above, :utf:`◌̍` (U+030D), is used to indicate a stressed syllable. Vertical lines are always above letters, not next to them. Indicating unstressed symbols is optional.
 
