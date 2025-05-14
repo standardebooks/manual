@@ -64,7 +64,7 @@ Books without subtitles
 
 #.	The :html:`<dc:title id="title">` element contains the title.
 
-#.	The :html:`<meta property="file-as" refines="#title">` element contains alpha-sorted title, even if the alpha-sorted title is identical to the unsorted title.
+#.	The :html:`<meta property="file-as" refines="#title">` element contains the alpha-sorted title, even if the alpha-sorted title is identical to the unsorted title.
 
 .. code:: html
 
