@@ -81,7 +81,7 @@ Books with subtitles
 
 #.	The :html:`<meta property="title-type" refines="#title">main</meta>` element identifies the main part of the title.
 
-#.	A second :html:`<dc:title id="subtitle">` element contain the subtitle, and is refined with :html:`<meta property="title-type" refines="#subtitle">subtitle</meta>`.
+#.	A second :html:`<dc:title id="subtitle">` element contains the subtitle, and is refined with :html:`<meta property="title-type" refines="#subtitle">subtitle</meta>`.
 
 #.	A third :html:`<dc:title id="fulltitle">` element contains the complete title on one line, with the main title and subtitle separated by a colon and space, and is refined with :html:`<meta property="title-type" refines="#fulltitle">extended</meta>`.
 
