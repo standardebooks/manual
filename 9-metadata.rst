@@ -301,16 +301,25 @@ The :html:`<meta property="se:long-description">` element contains a much longer
 	.. tip::
 
 		-	**Describe the premise, not the plot.** The first part of the description should describe things as they stand within the first chapter or two of the book and prompt interest in a potential reader. It should explain what within the book makes it worth reading, so consider the following questions:
+
 			-	Where are main characters at the start, and what is the world those characters inhabit?
-			-	What interesting thing happens that kicks off the plot?
-			What unanswered questions within the book would make a reader want to continue past the first chapter?
+
+			-	What interesting thing happens that kicks off the plot? What unanswered questions within the book would make a reader want to continue past the first chapter?
+
 			-	What are the thematic questions being addressed by this book?
+
 		-	**Explain why you've produced this book.** With all of the books to choose from, what was it about this book that made you want to choose it? The second part of the description should explain what makes this book notable and worth reading for its context, so consider the following questions:
-			-	Where does this book sit in the author's canon?
-			Has this book been adapted or inspired other works?
+
+			-	Where does this book sit in the author's canon? Has this book been adapted or inspired other works?
+
 			-	What cultural impact has this or other works by the author had?
-			-	What was happening in the world that informs the context of this book? -	What inspired its writing?
+
+			-	What was happening in the world that informs the context of this book?
+
+			-	What inspired its writing?
+
 		-	**For collected works, do the above in abbreviated form.** Consider a handful of short sentence-long premises of some of the most interesting stories or essays. Discuss how the stories were published (in different volumes or magazines?). Discuss how the collection of works relates to the totality of the author's works.
+
 		-	**For nonfiction, much of the above applies.** A memoir or travelogue still has enough narrative events that you can give a premise. A collection of essays has plenty of themes to discuss. Collections of mythology can talk about why the author collected those stories. Scientific books (e.g. Darwin) can distill the ideas first introduced in those books.
 
 #.	The long description is typogrified, i.e. it contains Unicode curly quotes, em dashes, and the like.
