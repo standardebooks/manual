@@ -142,7 +142,20 @@ Headers
 			<p epub:type="title">Miss Thorne’s <i xml:lang="fr">Fête Champêtre</i></p>
 		</hgroup>
 
-#.	If a section does not have any header content, including epigraphs or other non-prose material, then it has :css:`margin-top: 8em;`.
+#.	Sections without any header content, including epigraphs or other non-prose material, have :css:`margin-top: 20vh` applied to their sectioning container.
+
+	.. code:: css
+
+		section[epub|type~="preface"]{
+			margin-top: 20vh;
+		}
+
+	.. code:: html
+
+		<section epub:type="preface">
+			<p>Being observations or memorials of the most remarkable occurrences...</p>
+			<p>...</p>
+		</section>
 
 Parts of a section title
 ========================
@@ -193,6 +206,8 @@ Within section titles, we distinguish between labels, ordinals, titles, and subt
 
 Header patterns
 ===============
+
+For sections without heading material, see `7.2.8 </manual/VERSION/7-high-level-structural-patterns#7.2.8>`__.
 
 #.	Sections with ordinals but without titles:
 
@@ -269,21 +284,6 @@ Header patterns
 		<header>
 			<p>The Title of a Short Poem</p>
 		</header>
-
-#.	Sections without any titles at all have :css:`margin-top: 20vh` applied to their sectioning container.
-
-	.. code:: css
-
-		section[epub|type~="preface"]{
-			margin-top: 20vh;
-		}
-
-	.. code:: html
-
-		<section epub:type="preface">
-			<p>Being observations or memorials of the most remarkable occurrences...</p>
-			<p>...</p>
-		</section>
 
 #.	Half title pages without subtitles:
 
