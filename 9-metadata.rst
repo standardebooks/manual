@@ -24,11 +24,11 @@ General URL rules
 The ebook identifier
 ********************
 
-#.	The :html:`<dc:identifier>` element contains the unique identifier for the ebook. The identifier is the Standard Ebooks URL for the ebook, prefaced by :html:`url:`.
+#.	The :html:`<dc:identifier>` element contains the unique identifier for the ebook. The identifier is the Standard Ebooks URL for the ebook.
 
 	.. code:: html
 
-		<dc:identifier id="uid">url:https://standardebooks.org/ebooks/anton-chekhov/short-fiction/constance-garnett</dc:identifier>
+		<dc:identifier id="uid">https://standardebooks.org/ebooks/anton-chekhov/short-fiction/constance-garnett</dc:identifier>
 
 Forming the SE URL
 ==================
