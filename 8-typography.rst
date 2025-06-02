@@ -261,6 +261,8 @@ Italicizing non-English words and phrases
 
 	- :string:`more suo`
 
+	- :string:`pace`
+
 Italicizing or quoting newly-used English words
 ===============================================
 
