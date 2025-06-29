@@ -634,6 +634,36 @@ Subsections
 
 			<p>The volunteer-driven Standard Ebooks project relies on readers like you to submit typos, corrections, and other improvements. Anyone can contribute at <a href="https://standardebooks.org">standardebooks.org</a>.</p>
 
+Dates
+=====
+
+#.	Dates in the colophon have time semantics added.
+
+	#.	If the date is a year with four digits it is wrapped in a :html:`<time>` element without a :html:`datetime` attribute.
+
+	.. code:: html
+
+		<p><i epub:type="se:name.publication.book">Ben Hur</i><br/>
+		was published in <time>1880</time> by<br/>
+		<a href="https://en.wikipedia.org/wiki/Lew_Wallace">Lew Wallace</a>.</p>
+
+	#.	If a year has less than four digits, the :html:`<time>` element has a :html:`datetime` attribute that contains the year padded with zeros up to four digits.
+
+	.. code:: html
+
+		<p><i epub:type="se:name.publication.poem">Beowulf</i><br/>
+		is thought to have been written between <time datetime="0975">975</time> and <time>1010</time>.<br/>
+
+	#.	Years before 1 CE are not supported in HTML, so they are not wrapped in a :html:`<time>` element and will need a lint exception added.
+
+	.. code:: html
+
+		<p><i epub:type="se:name.publication.play">Oedipus at Colonus</i><br/>
+		was written in 406 <abbr epub:type="se:era">BCE</abbr> by<br/>
+		<a href="https://en.wikipedia.org/wiki/Sophocles">Sophocles</a>.<br/>
+		It was translated from Ancient Greek in <time>1912</time> by<br/>
+		<b epub:type="z3998:personal-name">Francis Storr</b>.</p>
+
 .. class:: no-numbering
 
 An example of a complete colophon
@@ -655,15 +685,15 @@ An example of a complete colophon
 					<img alt="The Standard Ebooks logo" src="../images/logo.svg" epub:type="z3998:publisher-logo se:image.color-depth.black-on-transparent"/>
 				</header>
 				<p><i epub:type="se:name.publication.book">The Black Tulip</i><br/>
-				was published in 1850 by<br/>
+				was published in <time>1850</time> by<br/>
 				<a href="https://en.wikipedia.org/wiki/Alexandre_Dumas">Alexandre Dumas</a>.<br/>
-				It was translated from French in 1902 by<br/>
+				It was translated from French in <time>1902</time> by<br/>
 				<a href="https://en.wikipedia.org/wiki/Peter_F._Collier"><abbr epub:type="z3998:given-name">P. F.</abbr> Collier and Son</a>.</p>
 				<p>This ebook was produced for<br/>
 				<a href="https://standardebooks.org">Standard Ebooks</a><br/>
 				by<br/>
 				<a href="https://www.robinwhittleton.com/">Robin Whittleton</a>,<br/>
-				and is based on a transcription produced in 1997 by<br/>
+				and is based on a transcription produced in <time>1997</time> by<br/>
 				<b>An Anonymous Volunteer</b> and <b epub:type="z3998:personal-name">David Widger</b><br/>
 				for<br/>
 				<a href="https://www.gutenberg.org/ebooks/965">Project Gutenberg</a><br/>
@@ -671,14 +701,14 @@ An example of a complete colophon
 				<a href="https://archive.org/details/worksofdumas24dumaiala">Internet Archive</a>.</p>
 				<p>The cover page is adapted from<br/>
 				<i epub:type="se:name.visual-art.painting">Floral Still Life</i>,<br/>
-				a painting completed in 1639 by<br/>
+				a painting completed in <time>1639</time> by<br/>
 				<a href="https://en.wikipedia.org/wiki/Hans_Gillisz._Bollongier">Hans Bollongier</a>.<br/>
 				The cover and title pages feature the<br/>
 				<b epub:type="se:name.visual-art.typeface">League Spartan</b> and <b epub:type="se:name.visual-art.typeface">Sorts Mill Goudy</b><br/>
-				typefaces created in 2014 and 2009 by<br/>
+				typefaces created in <time>2014</time> and <time>2009</time> by<br/>
 				<a href="https://www.theleagueofmoveabletype.com">The League of Moveable Type</a>.</p>
 				<p>The first edition of this ebook was released on<br/>
-				<b>May 11, 2018, 2:13 <abbr class="eoc">a.m.</abbr></b><br/>
+				<b><time datetime="2018-05-11T02:13">May 11, 2018, 2:13 <abbr class="eoc">a.m.</abbr></time></b><br/>
 				You can check for updates to this ebook, view its revision history, or download it for different ereading systems at<br/>
 				<a href="https://standardebooks.org/ebooks/alexandre-dumas/the-black-tulip/p-f-collier-and-son">standardebooks.org/ebooks/alexandre-dumas/the-black-tulip/p-f-collier-and-son</a>.</p>
 				<p>The volunteer-driven Standard Ebooks project relies on readers like you to submit typos, corrections, and other improvements. Anyone can contribute at <a href="https://standardebooks.org">standardebooks.org</a>.</p>
