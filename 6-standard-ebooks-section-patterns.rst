@@ -637,9 +637,9 @@ Subsections
 Dates
 =====
 
-#.	Dates in the colophon have time semantics added.
+#.	Dates in the colophon that are after the year 1 CE are wrapped in :html:`<time>` elements.
 
-	#.	If the date is a year with four digits it is wrapped in a :html:`<time>` element without a :html:`datetime` attribute.
+	#.	If the date is a year with four digits, the :html:`<time>` element does not have a :html:`datetime` attribute.
 
 	.. code:: html
 
@@ -647,14 +647,14 @@ Dates
 		was published in <time>1880</time> by<br/>
 		<a href="https://en.wikipedia.org/wiki/Lew_Wallace">Lew Wallace</a>.</p>
 
-	#.	If a year has less than four digits, the :html:`<time>` element has a :html:`datetime` attribute that contains the year padded with zeros up to four digits.
+	#.	If the date is a year with less than four digits, the :html:`<time>` element has a :html:`datetime` attribute that contains the year padded with zeros up to four digits.
 
 	.. code:: html
 
 		<p><i epub:type="se:name.publication.poem">Beowulf</i><br/>
 		is thought to have been written between <time datetime="0975">975</time> and <time>1010</time>.<br/>
 
-	#.	Years before 1 CE are not supported in HTML, so they are not wrapped in a :html:`<time>` element and will need a lint exception added.
+	#.	Years before 1 CE are not supported by the :html:`<time>` element, therefore they are not wrapped in a :html:`<time>` elements in the colophon.
 
 	.. code:: html
 
