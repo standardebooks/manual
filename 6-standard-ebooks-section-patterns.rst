@@ -455,11 +455,13 @@ Names
 Anonymous contributors
 ----------------------
 
-#.	Anonymous or unknown primary contributors (like the author or cover artist) are listed as :html:`<b>Anonymous</b>`.
+#.	Anonymous or unknown primary contributors (like the author) are listed as :html:`<b>Anonymous</b>`.
+
+#.	Anonymous or unknown cover artists are listed as :html:`<b>An Unknown Artist</b>`. Note that their *metadata entries* are still listed as :string:`Anonymous`, even though their *colophon entries* differ.
 
 #.	Anonymous volunteers working on digitization or the actual ebook production are listed as :html:`<b>An Anonymous Volunteer</b>`. Note that their *metadata entries* are still listed as :string:`Anonymous`, even though their *colophon entries* differ.
 
-#.	Both types of volunteer string are not names, therefore their parent :html:`<b>` elements do not have name semantics.
+#.	Both types of volunteer strings are not names, therefore their parent :html:`<b>` elements do not have name semantics.
 
 Sponsors
 ========
