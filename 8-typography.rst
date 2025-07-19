@@ -805,7 +805,7 @@ A partially-obscured word is a word that the author chooses to not divulge by co
 
 		<p>Sally J:ws:`wj`⸺ walked through town.</p>
 
-	#.	If both the start and end of a partially-obscured word are visible, a word joiner is placed on both sides of the two-em-dash.
+	#.	If both the start and end of a partially-obscured word are visible, a word joiner is placed on both sides of the two-em dash.
 
 		.. code:: html
 
