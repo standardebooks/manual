@@ -546,7 +546,7 @@ Chapter headers
 Ligatures
 *********
 
-Ligatures are two or more letters that are combined into a single letter, usually for stylistic purposes. In general they are not used in modern English spelling, and are replaced with their expanded characters.
+Ligatures are two or more letters that are combined into a single letter, usually for stylistic purposes. In general they are not used in modern English spelling, and are replaced with their expanded characters. Latin ligatures are for presentation only, so they are replaced as well, including in Latin publication names.
 
 Words in non-English languages like French may use ligatures to differentiate words or pronunciations. In these cases, ligatures are retained.
 
