@@ -1086,13 +1086,15 @@ Letter headers
 
 #.	The salutation (for example, “Dear Sir” or “My dearest Jane”) has the semantic inflection of :value:`z3998:salutation`.
 
-#.	The first line of a letter after the salutation is not indented.
+#.	Salutations that are on a separate line are set in small caps.
 
-#.	Salutations that are within the first line of the letter are wrapped in a :html:`<span epub:type="z3998:salutation">` element (or a :html:`<b epub:type="z3998:salutation">` element if small-caps are desired).
+#.	Salutations that are contained within the first, larger line of the letter are wrapped in a :html:`<span epub:type="z3998:salutation">` element (or a :html:`<b epub:type="z3998:salutation">` element if small-caps are desired).
 
 	.. code:: html
 
 		<p><b epub:type="z3998:salutation">Dear Mother</b>, I was so happy to hear from you.</p>
+
+#.	The first line of a letter after the salutation is not indented.
 
 #.	The name of the recipient of the letter, when set out other than within a salutation (for example a letter headed “To: John Smith Esquire”), is given the semantic inflection of :value:`z3998:recipient`. Sometimes this may occur at the end of a letter, particularly for more formal communications, in which case it is placed within a :html:`<footer>` element.
 
