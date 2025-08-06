@@ -452,6 +452,52 @@ Definition lists, i.e. combinations of the :html:`<dl>`, :html:`<dt>`, and :html
 CSS rules
 *********
 
+- When targeting the entire contents of an element, and not a substring within it, then CSS is applied to the whole element instead of adding a new child element.
+
+	.. class:: wrong
+
+		.. code:: html
+
+			<blockquote>
+				<p>
+					<b>It’s me Piglet, Help Help.</b>
+				</p>
+			</blockquote>
+
+	.. class:: corrected
+
+		.. code:: css
+
+			#chapter-9 blockquote {
+				font-variant: small-caps;
+			}
+
+		.. code:: html
+
+			<blockquote>
+				<p>It’s me Piglet, Help Help.</p>
+			</blockquote>
+
+- Conversely, when formatting and semantics need to be applied to only a portion of an element, put the semantic on the appropriate formatting element, rather than using a generic :html:`<span>` and targeting the semantic in CSS.
+
+	.. class:: wrong
+
+		.. code:: css
+
+			[epub|type~="z3998:salutation] {
+				font-variant: small-caps;
+			}
+
+		.. code:: html
+
+			<p><span epub:type="z3998:salutation">Dear Poirot</span>, I think I'm on the track of Number Four.</p>
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<p><b epub:type="z3998:salutation">Dear Poirot</b>, I think I'm on the track of Number Four.</p>
+
 - :css:`text-align: initial;` is used instead of :css:`text-align: left;` whenever it's necessary to explicitly set left-aligned text. This allows the reading system to opt to use :css:`text-align: justify;` if the user prefers.
 
 - The :css:`vh` unit is used instead of percent units when specifying :css:`height`, :css:`max-height`, :css:`top`, or :css:`bottom`.
