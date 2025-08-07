@@ -468,7 +468,7 @@ CSS rules
 
 		.. code:: css
 
-			#chapter-9 blockquote {
+			#chapter-9 blockquote{
 				font-variant: small-caps;
 			}
 
@@ -478,13 +478,13 @@ CSS rules
 				<p>It’s me Piglet, Help Help.</p>
 			</blockquote>
 
-- Conversely, when formatting and semantics need to be applied to only a portion of an element, put the semantic on the appropriate formatting element, rather than using a generic :html:`<span>` and targeting the semantic in CSS.
+- When formatting needs to be applied to only a substring or portion of an element, and an element with the required formatting is available, then that element is used instead of :html:`<span>` with CSS.
 
 	.. class:: wrong
 
 		.. code:: css
 
-			[epub|type~="z3998:salutation] {
+			[epub|type~="z3998:salutation]{
 				font-variant: small-caps;
 			}
 
