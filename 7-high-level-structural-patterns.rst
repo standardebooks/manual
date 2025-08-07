@@ -1173,24 +1173,16 @@ Examples
 
 .. code:: css
 
-	[epub|type~="z3998:letter"] header{
- 		text-align: right;
-	}
-
 	footer{
 		margin-top: 1em;
 		text-align: right;
 	}
 
-	[epub|type~="z3998:salutation"] + p,
-	[epub|type~="z3998:letter"] header + p{
+	[epub|type~="z3998:salutation"] + p{
 		text-indent: 0;
 	}
 
-	[epub|type~="z3998:sender"],
-	[epub|type~="z3998:recipient"],
-	[epub|type~="z3998:salutation"],
-	[epub|type~="z3998:signature"]{
+	p[epub|type~="z3998:salutation"]{
 		font-variant: small-caps;
 	}
 
@@ -1212,13 +1204,28 @@ Examples
 		</footer>
 	</blockquote>
 
+.. code:: css
+
+	[epub|type~="z3998:letter"] header{
+ 		text-align: right;
+	}
+
+	footer{
+		margin-top: 1em;
+		text-align: right;
+	}
+
+	[epub|type~="z3998:letter"] header + p{
+		text-indent: 0;
+	}
+
 .. code:: html
 
 	<blockquote epub:type="z3998:letter">
 		<header role="presentation">
 			<p epub:type="se:letter.dateline">Gracechurch-street, <time datetime="08-02">August 2</time>.</p>
 		</header>
-		<p><span epub:type="z3998:salutation">My dear Brother</span>, At last I am able to send you some tidings of my niece, and such as, upon the whole, I hope will give you satisfaction. Soon after you left me on Saturday, I was fortunate enough to find out in what part of London they were. The particulars, I reserve till we meet. It is enough to know they are discovered, I have seen them both⁠:ws:`wj`—</p>
+		<p><b epub:type="z3998:salutation">My dear Brother</b>, At last I am able to send you some tidings of my niece, and such as, upon the whole, I hope will give you satisfaction. Soon after you left me on Saturday, I was fortunate enough to find out in what part of London they were. The particulars, I reserve till we meet. It is enough to know they are discovered, I have seen them both⁠:ws:`wj`—</p>
 		<p>I shall write again as soon as anything more is determined on.</p>
 		<footer role="presentation">
 			<p><span epub:type="z3998:valediction">Yours, <abbr>etc.</abbr></span><br/>
