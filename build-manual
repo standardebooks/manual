@@ -113,6 +113,10 @@ def make_one_page(dest_directory, header_html: str, footer_html: str):
 			section_text = section_text[:section_text.rfind("</section>")]
 			section_text += "</section>"
 
+			# Format hrefs for onepager
+			section_text = regex.sub(r"(?<=href=\")/manual/[^\"]+#(?P<section>[0-9.]+)(?=\")", r"#\g<section>", section_text)
+			section_text = regex.sub(r"(?<=href=\")/manual/[^\"]+/(?P<chapter>\d+)-[/0-9a-z-\.]+(?=\")", r"#\g<chapter>", section_text)
+
 			bodymatter.append(section_text)
 
 	# Writing the one page manual php file (overwrites if exist)
