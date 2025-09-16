@@ -1016,7 +1016,7 @@ Works that are complete plays
 			</section>
 		</body>
 
-#.	Dramatis personae are presented as a :html:`<ul>` element listing the characters.
+#.	Dramatis personae are presented as a :html:`<ul>` element listing the characters. Where the published text does not include a dramatis personae, one should be created that lists all characters mentioned in the play (whether or not they speak) in the order they appear.
 
 	.. code:: css
 
