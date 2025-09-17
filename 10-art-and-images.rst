@@ -203,66 +203,66 @@ Museums with CC0 collections
 
 Images that are explicitly marked as CC0 from these museums can be used without further research. Not all of their images are CC0; you must confirm the presence of a CC0 license on the specific image you want to use.
 
--	`Rijksmuseum <https://www.rijksmuseum.nl/en/search?q=&f=1&p=1&ps=12&type=painting&imgonly=True&st=Objects>`__ (Open the “Object Data” section and check the “Copyright” entry under the “Acquisition and right” section to confirm CC0.)
-
--	`Met Museum <https://www.metmuseum.org/art/collection/search?showOnly=withImage%7CopenAccess&material=Paintings>`__ (CC0 items have an “OA Public Domain” icon under the picture, which leads to the Met's Open Access Initiative page that clarifies a CC0 license.)
-
 ..
-	At one time, National Musuem Sweden had items marked with the CC-PD mark, but later switched to claiming copyright on previously PD images - while at the same time conflicting with PD license information they provided to Wikimedia for the exact same images. They appear very unreliable when it comes to licensing practices therefore they are banned as a source. `National Museum Sweden <https://www.nationalmuseum.se/en/explore-art-and-design/images/free-images>`__ (CC-PD items have the CC-PD mark in the lower left of the item’s detail view.)
-
--	`Minneapolis Institute of Art <https://collections.artsmia.org/>`__ (Public domain items are listed as such under “Rights.”)
-
--	`The Walters Art Museum <https://art.thewalters.org/>`__ (Public domain items are listed as "CC Creative Commons License" which links to a CC0 rights page.)
-
--	`Art Institute of Chicago <https://www.artic.edu/collection?q=test&is_public_domain=1&department_ids=European+Painting+and+Sculpture>`__ (CC0 items say CC0 in the lower left of the painting in the art detail page.)
-
--	`Cleveland Museum of Art <http://www.clevelandart.org/art/collection/search?only-open-access=1&filter-type=Painting>`__ (CC0 items have the CC0 logo near the download button.)
-
--	`Paris Musées <http://parismuseescollections.paris.fr/en/recherche/image-libre/true/avec-image/true/denominations/peinture-166168?mode=mosaique&solrsort=ds_created%20desc>`__ (CC0 items have the CC0 logo near the download button.)
-
--	`The Smithsonian <https://www.si.edu/search/collection-images?edan_q=landscape&edan_fq[0]=object_type%3A"Paintings">`__ (CC0 items say CC0 under the Usage header in the item details.)
-
--	`Birmingham Museums <https://dams.birminghammuseums.org.uk/asset-bank/action/viewDefaultHome>`__ (CC0 items say CC0 under the Usage Rights section in the item details.)
-
--	`National Museum in Krakow <https://zbiory.mnk.pl/>`__ (CC0 items say CC0 - Public Domain under the Copyright section.)
-
--	`National Gallery of Denmark <https://open.smk.dk/en/>`__ (CC0 items have “No copyright” icon and a “Free to use” notice, and the About page states that such images are released via CC0.)
-
--	`Finnish National Gallery <https://kansallisgalleria.fi/en>`__ (CC0 items say “CC Copyright Free,” and the general rights statement in the original Finnish indicates that such images are CC0 licensed.)
-
--	`National Gallery of Art <https://www.nga.gov>`__ (CC0 items have a “0 Public Domain” icon under the picture, which leads to an Open Access policy mentioning a CC0 license.)
-
--	`Nivaagaards Malerisamling <https://www.nivaagaard.dk/en/samling/>`__ (CC0 items say “Public Domain” by the picture, which leads to a license details page, which links to a CC0 license.)
-
--	`RISD Museum <https://risdmuseum.org/art-design/collection>`__ (CC0 items have a link to the CC0 license in the “Use” section.)
+	At one time, National Museum Sweden had items marked with the CC-PD mark, but later switched to claiming copyright on previously PD images - while at the same time conflicting with PD license information they provided to Wikimedia for the exact same images. They appear very unreliable when it comes to licensing practices therefore they are banned as a source. `National Museum Sweden <https://www.nationalmuseum.se/en/explore-art-and-design/images/free-images>`__ (CC-PD items have the CC-PD mark in the lower left of the item’s detail view.)
 
 -	`Aberdeen Archives, Gallery & Museums <https://emuseum.aberdeencity.gov.uk/collections/102307/open-access-images--fine-art>`__ (CC0 items say “Out of copyright - CC0” on the copyright line.)
 
+-	`Art Institute of Chicago <https://www.artic.edu/collection?q=test&is_public_domain=1&department_ids=European+Painting+and+Sculpture>`__ (CC0 items say CC0 in the lower left of the painting in the art detail page.)
+
+-	`Birmingham Museums <https://dams.birminghammuseums.org.uk/asset-bank/action/viewDefaultHome>`__ (CC0 items say CC0 under the Usage Rights section in the item details.)
+
 -	`Brighton & Hove Museums <https://collections.brightonmuseums.org.uk/?q=&departments=>`__ (CC0 items have the URL of the CC0 license in the “License” field.)
 
--	`Grand Rapids Public Museum <https://www.grpmcollections.org/Browse/Collections>`__ (CC0 items have a link to the CC0 license in the “Rights” section.)
+-	`Cleveland Museum of Art <http://www.clevelandart.org/art/collection/search?only-open-access=1&filter-type=Painting>`__ (CC0 items have the CC0 logo near the download button.)
 
--	`Thorvaldsens Museum <https://kataloget.thorvaldsensmuseum.dk/en/results?q=&level%5B%5D=B>`__ (CC0 items have a “0” icon under the picture, which links to the “Copyright” page, which links to the CC0 license.)
-
--	`Musea Brugge <https://www.museabrugge.be/en/collections/browse>`__ (CC0 items indicate the images are published under the CC0 license in the “Copyright” line.)
-
--	`Yale Center for British Art <https://collections.britishart.yale.edu/?utf8=%E2%9C%93&f%5Bcollection_ss%5D%5B%5D=Paintings+and+Sculpture&range%5BearliestDate_is%5D%5Bbegin%5D=1614&range%5BearliestDate_is%5D%5Bend%5D=1900&search_field=all_fields&q=>`__ (CC0 items have a “0 Public Domain” icon under the picture, which links to the CC0 license.)
-
--	`Staatliche Kunsthalle Karlsruhe <https://www.kunsthalle-karlsruhe.de/en/collection/>`__ (CC0 items have a CC0 icon below the picture.)
-
--	`Getty Museum Collection <https://www.getty.edu/art/collection>`__ (CC0 items have a “0 public domain” icon that links to a CC0 license. **Beware, some items say “no copyright” which is not the same as CC0 and cannot be used!**)
-
--	`KMSKA <https://kmska.be/en>`__ (CC0 items say “This image may be downloaded for free” in the “Copyright and legal” section, which has a link to a disclaimer stating that KMSKA releases the photo under a CC0 license.)
-
--	`Lillehammer Kunstmuseum <https://digitaltmuseum.no>`__ (CC0 items say “License: CC CC0 1.0” under the “License information” section. In the art metadata, “Owner of collection” *must* be “Lillehammer Kunstmuseum.”)
-
--	`Yale University Art Gallery <https://artgallery.yale.edu/>`__ (CC0 items say “No Copyright - United States” under the “Object copyright” section, which links to a CC0 license.)
+-	`Finnish National Gallery <https://kansallisgalleria.fi/en>`__ (CC0 items say “CC Copyright Free,” and the general rights statement in the original Finnish indicates that such images are CC0 licensed.)
 
 -	`Getty Center <https://www.getty.edu>`__ (CC0 items say “Public Domain” below the thumbnail, which links to a CC0 license.)
 
+-	`Getty Museum Collection <https://www.getty.edu/art/collection>`__ (CC0 items have a “0 public domain” icon that links to a CC0 license. **Beware, some items say “no copyright” which is not the same as CC0 and cannot be used!**)
+
+-	`Grand Rapids Public Museum <https://www.grpmcollections.org/Browse/Collections>`__ (CC0 items have a link to the CC0 license in the “Rights” section.)
+
+-	`KMSKA <https://kmska.be/en>`__ (CC0 items say “This image may be downloaded for free” in the “Copyright and legal” section, which has a link to a disclaimer stating that KMSKA releases the photo under a CC0 license.)
+
 -	`Lenbachhaus <https://www.lenbachhaus.de/en/discover/collection-online>`__ (CC0 items say “CC0 1.0” to the lower right of the thumbnail, which links to a CC0 license.)
 
+-	`Lillehammer Kunstmuseum <https://digitaltmuseum.no>`__ (CC0 items say “License: CC CC0 1.0” under the “License information” section. In the art metadata, “Owner of collection” *must* be “Lillehammer Kunstmuseum.”)
+
+-	`Met Museum <https://www.metmuseum.org/art/collection/search?showOnly=withImage%7CopenAccess&material=Paintings>`__ (CC0 items have an “OA Public Domain” icon under the picture, which leads to the Met's Open Access Initiative page that clarifies a CC0 license.)
+
+-	`Minneapolis Institute of Art <https://collections.artsmia.org/>`__ (Public domain items are listed as such under “Rights.”)
+
+-	`Musea Brugge <https://www.museabrugge.be/en/collections/browse>`__ (CC0 items indicate the images are published under the CC0 license in the “Copyright” line.)
+
+-	`National Gallery of Art <https://www.nga.gov>`__ (CC0 items have a “0 Public Domain” icon under the picture, which leads to an Open Access policy mentioning a CC0 license.)
+
+-	`National Gallery of Denmark <https://open.smk.dk/en/>`__ (CC0 items have “No copyright” icon and a “Free to use” notice, and the About page states that such images are released via CC0.)
+
+-	`National Museum in Krakow <https://zbiory.mnk.pl/>`__ (CC0 items say CC0 - Public Domain under the Copyright section.)
+
+-	`Nivaagaards Malerisamling <https://www.nivaagaard.dk/en/samling/>`__ (CC0 items say “Public Domain” by the picture, which leads to a license details page, which links to a CC0 license.)
+
+-	`Paris Musées <http://parismuseescollections.paris.fr/en/recherche/image-libre/true/avec-image/true/denominations/peinture-166168?mode=mosaique&solrsort=ds_created%20desc>`__ (CC0 items have the CC0 logo near the download button.)
+
+-	`Rijksmuseum <https://www.rijksmuseum.nl/en/search?q=&f=1&p=1&ps=12&type=painting&imgonly=True&st=Objects>`__ (Open the “Object Data” section and check the “Copyright” entry under the “Acquisition and right” section to confirm CC0.)
+
+-	`RISD Museum <https://risdmuseum.org/art-design/collection>`__ (CC0 items have a link to the CC0 license in the “Use” section.)
+
 -	`Royal Albert Memorial Museum <https://rammcollections.org.uk/>`__ (CC0 items link to the license just below an artwork’s thumbnail.)
+
+-	`The Smithsonian <https://www.si.edu/search/collection-images?edan_q=landscape&edan_fq[0]=object_type%3A"Paintings">`__ (CC0 items say CC0 under the Usage header in the item details.)
+
+-	`Staatliche Kunsthalle Karlsruhe <https://www.kunsthalle-karlsruhe.de/en/collection/>`__ (CC0 items have a CC0 icon below the picture.)
+
+-	`Thorvaldsens Museum <https://kataloget.thorvaldsensmuseum.dk/en/results?q=&level%5B%5D=B>`__ (CC0 items have a “0” icon under the picture, which links to the “Copyright” page, which links to the CC0 license.)
+
+-	`The Walters Art Museum <https://art.thewalters.org/>`__ (Public domain items are listed as "CC Creative Commons License" which links to a CC0 rights page.)
+
+-	`Yale Center for British Art <https://collections.britishart.yale.edu/?utf8=%E2%9C%93&f%5Bcollection_ss%5D%5B%5D=Paintings+and+Sculpture&range%5BearliestDate_is%5D%5Bbegin%5D=1614&range%5BearliestDate_is%5D%5Bend%5D=1900&search_field=all_fields&q=>`__ (CC0 items have a “0 Public Domain” icon under the picture, which links to the CC0 license.)
+
+-	`Yale University Art Gallery <https://artgallery.yale.edu/>`__ (CC0 items say “No Copyright - United States” under the “Object copyright” section, which links to a CC0 license.)
 
 Clearance FAQ
 ~~~~~~~~~~~~~
