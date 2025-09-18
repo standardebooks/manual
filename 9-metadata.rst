@@ -35,13 +35,19 @@ Forming the SE URL
 
 The SE URL is formed by the following algorithm.
 
-(Note: Strings can be made URL-safe using the :bash:`se make-url-safe` tool.)
+.. tip::
+
+	Strings can be made URL-safe using the :bash:`se make-url-safe` tool.)
 
 -	Start with the URL-safe author of the work, as it appears on the titlepage. If there is more than one author, continue appending subsequent URL-safe authors, separated by an underscore. Do not alpha-sort the author name.
 
 -	Append a forward slash, then the URL-safe title of the work. Do not alpha-sort the title.
 
--	If the work is translated, append a forward slash, then the URL-safe translator. If there is more than one translator, continue appending subsequent URL-safe translators, separated by an underscore. Do not alpha-sort translator names.
+-	If the work is translated, append a forward slash, then the URL-safe translator.
+
+	- If the work is a collection or omnibus and there is more than one translator, or if there are more than three translators, use the string `various_translators` instead.
+
+	- Otherwise, if there is more than one translator, continue appending subsequent URL-safe translators, separated by an underscore. Do not alpha-sort translator names.
 
 -	If the work is illustrated, append a forward slash, then the URL-safe illustrator. If there is more than one illustrator, continue appending subsequent URL-safe illustrators, separated by an underscore. Do not alpha-sort illustrator names.
 
