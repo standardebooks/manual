@@ -273,6 +273,12 @@ Italicizing or quoting newly-used English words
 
 #.	English neologisms in works where a special vocabulary is a regular part of the narrative are not italicized. For example science fiction works may necessarily contain made-up English technology words, and those are not italicized.
 
+#.	Words used as words are quoted.
+
+	.. code:: html
+
+		<p>She said “diseased” for “deceased,” quite seriously, and she called Krokowski the “Asst.”</p>
+
 Italics in names and titles
 ===========================
 
