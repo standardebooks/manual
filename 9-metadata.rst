@@ -512,7 +512,7 @@ Occasionally a book may have other contributors besides the author, translator, 
 
 #.	The :html:`id` attribute of the :html:`<dc:contributor>` is the lowercase, URL-safe, fully-spelled out version of the `MARC relator tag <http://www.loc.gov/marc/relators/relacode.html>`__. For example, if the MARC relator tag is :string:`wpr`, the :html:`id` attribute would be :value:`writer-of-preface`.
 
-#.	The `MARC relator tag <http://www.loc.gov/marc/relators/relacode.html>`__ is one that is appropriate for the role of the additional contributor. Common roles for ebooks are: :string:`wpr`, :string:`ann`, and :string:`aui`.
+#.	The `MARC relator tag <http://www.loc.gov/marc/relators/relacode.html>`__ is one that is appropriate for the role of the additional contributor. Common roles for ebooks are: :string:`wpr`, :string:`ann`, and :string:`win`.
 
 #.	If a contributor is a collaborator on part of the book, for example if they share a byline on a short story, the :string:`ctb` MARC relator tag is used, and the contributor is given :string:`display-seq` set to :string:`0` to prevent them from appearing in the book’s overall byline.
 
