@@ -193,7 +193,7 @@ Classes denote a group of elements sharing a similar style.
 					<p>...</p>
 					<p>...</p>
 					<blockquote class="business-card">
-						<p>John Doe, <abbr class="eoc">Esq.</abbr></p>
+						<p>John Doe, <abbr epub:type="z3998:name-title" class="eoc">Esq.</abbr></p>
 					</blockquote>
 				</section>
 			</body>
@@ -216,7 +216,7 @@ Classes denote a group of elements sharing a similar style.
 					<p>...</p>
 					<p>...</p>
 					<blockquote>
-						<p>John Doe, <abbr class="eoc">Esq.</abbr></p>
+						<p>John Doe, <abbr epub:type="z3998:name-title" class="eoc">Esq.</abbr></p>
 					</blockquote>
 				</section>
 			</body>
@@ -239,12 +239,12 @@ Classes denote a group of elements sharing a similar style.
 					<p>...</p>
 					<p>...</p>
 					<blockquote class="business-card">
-						<p>Jane Doe, <abbr class="eoc">Esq.</abbr></p>
+						<p>Jane Doe, <abbr epub:type="z3998:name-title" class="eoc">Esq.</abbr></p>
 					</blockquote>
 					<p>...</p>
 					<p>...</p>
 					<blockquote class="business-card">
-						<p>John Doe, <abbr class="eoc">Esq.</abbr></p>
+						<p>John Doe, <abbr epub:type="z3998:name-title" class="eoc">Esq.</abbr></p>
 					</blockquote>
 				</section>
 			</body>
