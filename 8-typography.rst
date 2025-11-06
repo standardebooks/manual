@@ -384,7 +384,7 @@ Exceptions
 
 			<blockquote epub:type="epigraph">
 				<p>“<i xml:lang="fr">En administration, toutes les sottises sont mères.</i>”</p>
-				<cite><i epub:type="se:name.publication.book">Maximes</i>, <i xml:lang="la">fr</i> <abbr epub:type="z3998:given-name">M. G.</abbr> De Levis.</cite>
+				<cite><i epub:type="se:name.publication.book" xml:lang="fr">Maximes</i>, <i xml:lang="la">fr</i> <abbr epub:type="z3998:given-name">M. G.</abbr> De Levis.</cite>
 			</blockquote>
 
 	.. class:: corrected
@@ -414,7 +414,7 @@ Exceptions
 
 			<blockquote epub:type="epigraph">
 				<p xml:lang="fr">“En administration, toutes les sottises sont mères.”</p>
-				<cite><i epub:type="se:name.publication.book">Maximes</i>, <i xml:lang="la">fr</i> <abbr epub:type="z3998:given-name">M. G.</abbr> De Levis.</cite>
+				<cite><i epub:type="se:name.publication.book" xml:lang="fr">Maximes</i>, <i xml:lang="la">fr</i> <abbr epub:type="z3998:given-name">M. G.</abbr> De Levis.</cite>
 			</blockquote>
 
 Capitalization
