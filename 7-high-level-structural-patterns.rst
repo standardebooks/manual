@@ -1008,7 +1008,7 @@ Works that are complete plays
 		<body epub:type="bodymatter z3998:fiction z3998:drama">
 			<section id="act-1" epub:type="chapter z3998:scene">
 				<h2><span epub:type="label">Act</span> <span epub:type="ordinal z3998:roman">I</span></h2>
-				<p>Scene: Morning-room in Algernon’s flat in Half-Moon Street. The room is luxuriously and artistically furnished. The sound of a piano is heard in the adjoining room.</p>
+				<p>Scene: Morning-room in <b epub:type="z3998:persona">Algernon’s</b> flat in Half-Moon Street. The room is luxuriously and artistically furnished. The sound of a piano is heard in the adjoining room.</p>
 				<table>
 					...
 				</table>
