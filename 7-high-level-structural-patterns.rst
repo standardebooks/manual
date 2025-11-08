@@ -474,12 +474,6 @@ Epigraphs in section headers
 
 	.. class:: corrected
 
-		.. code:: css
-
-			header [epub|type~="epigraph"] cite{
-				font-variant: small-caps;
-			}
-
 		.. code:: html
 
 			<header>
