@@ -476,7 +476,7 @@ Epigraphs in section headers
 
 		.. code:: css
 
-			header [epub|type~="epigraph"] cite{
+			[epub|type~="epigraph"] cite{
 				font-variant: small-caps;
 			}
 
