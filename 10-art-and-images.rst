@@ -184,17 +184,17 @@ Resources for locating print reproductions
 
 -	`Google Books <https://books.google.com>`__
 
-	`Use this shortcut <https://www.google.com/webhp?tbs=cdr:1,cd_min:,cd_max:PD_YEAR&amp;tbm=bks>`__ to search for books that were published before PD_STRING.
+	`Use this shortcut <https://www.google.com/search?q=test&tbs=cdr%3A1%2Ccd_min%3A%2Ccd_max%3APD_YEAR&tbm=bks>`__ to search for books that were published before PD_STRING.
 
 	Google Books is a convenient first stop because its thumbnail view is very fast, and it does a better job of highlighting search results than HathiTrust or Internet Archive.
 
 -	`HathiTrust <https://www.hathitrust.org>`__
 
-	`Use this shortcut <https://babel.hathitrust.org/cgi/ls?a=srchls&amp;anyall1=all&amp;q1=&amp;field1=ocr&amp;op3=AND&amp;yop=before&amp;pdate_end=PD_YEAR>`__ to search for books that were published before PD_STRING.
+	`Use this shortcut <https://babel.hathitrust.org/cgi/ls?a=srchls&anyall1=all&q1=test&field1=ocr&op3=AND&yop=before&pdate_end=PD_YEAR>`__ to search for books that were published before PD_STRING.
 
 -	`Internet Archive <https://archive.org>`__
 
-	`Use this shortcut <https://archive.org/search.php?query=+date%3A%5B1850-01-01+TO+PD_YEAR-12-31%5D&amp;sin=TXT&amp;sort=-date>`__ to search for books that were published before PD_STRING.
+	`Use this shortcut <https://archive.org/search.php?query=test+date%3A%5B1850-01-01+TO+PD_YEAR-12-31%5D&amp;sin=TXT&amp;sort=-date>`__ to search for books that were published before PD_STRING.
 
 -	Our own `list of uncategorized art books </contribute/uncategorized-art-resources>`__ may be helpful to browse through for inspiration and easy US-PD clearance.
 
