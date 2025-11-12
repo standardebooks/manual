@@ -419,6 +419,8 @@ The following apply to all contributors, including the author(s), translator(s),
 
 #.	It is not uncommon for one contributor to have multiple roles; for example, an author (:value:`aut`) who also illustrated (:value:`ill`) the book. In these cases, additional roles are assigned using additional :value:`role` properties.
 
+	#.	Multiple roles are ordered alphabetically by role.
+
 .. class:: no-numbering
 
 Example
