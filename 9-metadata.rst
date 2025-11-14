@@ -618,15 +618,6 @@ Accessibility metadata is added to bring the final ebook into conformance with t
 
 	5.	:value:`schema:accessibilitySummary`
 
-#.	If the ebook has images *not including* the cover, titlepage, and publisher logo, then the following metadata is included in addition to any boilerplate accessibility metadata:
+.. tip::
 
-	.. code:: html
-
-		<meta property="schema:accessMode">visual</meta>
-		<meta property="schema:accessibilityFeature">alternativeText</meta>
-
-	The cover, titlepage, and publisher logo are ignored because they are present in most ebooks; if they were to be counted in accessibility metadata, that metadata would appear in most ebooks, making it meaningless.
-
-	.. tip::
-
-		Remember that accessibility metadata is grouped by property, and ordered alphabetically by value within those groups!
+	Remember that accessibility metadata is grouped by property, and ordered alphabetically by value within those groups!
