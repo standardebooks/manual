@@ -323,6 +323,18 @@ Examples
 
 		<p>He read <i epub:type="se:name.publication.book">Candide</i> while having a pint at the King’s Head.</p>
 
+.. class:: wrong
+
+	.. code:: html
+
+		<p>If Edgar Allen Poe had put her into <i epub:type="se:name.publication.short-story">The Fall of the House of Usher</i>, she would have fitted it like the paper on the wall.</p>
+
+.. class:: corrected
+
+	.. code:: html
+
+		<p>If Edgar Allen Poe had put her into “<span epub:type="se:name.publication.short-story">The Fall of the House of Usher</span>,” she would have fitted it like the paper on the wall.</p>
+
 Taxonomy
 ========
 
