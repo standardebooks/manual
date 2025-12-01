@@ -65,6 +65,8 @@ There are several elements in the metadata describing the publication date, upda
 Book titles
 ***********
 
+#.	Book titles and subtitles are in :value:`en-US` spelling.
+
 Books without subtitles
 =======================
 
