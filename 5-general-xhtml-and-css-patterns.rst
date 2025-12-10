@@ -484,7 +484,7 @@ CSS rules
 
 		.. code:: css
 
-			[epub|type~="z3998:salutation]{
+			[epub|type~="z3998:salutation"]{
 				font-variant: small-caps;
 			}
 
