@@ -171,9 +171,9 @@ This section covers general patterns used when producing XHTML and CSS that are 
 :html:`class` attributes
 ************************
 
-Classes denote a group of elements sharing a similar style.
+Classes denote a *class of multiple elements* sharing a similar style.
 
-#.	Classes are *not* used as single-use style hooks. There is almost always a way to compose a CSS selector to select a single element without the use of a one-off class.
+#.	Classes are *not* used as single-use style hooks to style a single element. There is almost always a way to compose a CSS selector to select a single element without the use of a one-off class.
 
 	.. class:: wrong
 
@@ -221,7 +221,7 @@ Classes denote a group of elements sharing a similar style.
 				</section>
 			</body>
 
-#.	Classes are used to style a recurring *class* of elements, i.e. a class of element that appears more than once in an ebook.
+#.	Classes *are* used to style a recurring *class* of elements, i.e. a class of element that appears more than once in an ebook.
 
 	.. class:: corrected
 
