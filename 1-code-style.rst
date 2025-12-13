@@ -142,31 +142,6 @@ Attributes
 
 #.	The string :string:`utf-8` is lowercase.
 
-Classes
--------
-
-#.	Classes are not used as one-time style hooks. There is almost always a clever selector that can be constructed instead of taking the shortcut of adding a class to an element.
-
-#.	Classes are named semantically, describing *what they are styling* instead of the *resulting visual style*.
-
-	.. class:: wrong
-
-		.. code:: html
-
-			<p>There was one great tomb more lordly than all the rest; huge it was, and nobly proportioned. On it was but one word</p>
-			<blockquote class="small-caps">
-				<p>Dracula.</p>
-			</blockquote>
-
-	.. class:: corrected
-
-		.. code:: html
-
-			<p>There was one great tomb more lordly than all the rest; huge it was, and nobly proportioned. On it was but one word</p>
-			<blockquote class="tomb">
-				<p>Dracula.</p>
-			</blockquote>
-
 CSS formatting
 **************
 
