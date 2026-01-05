@@ -1285,7 +1285,7 @@ Images
 
 #.	:html:`<img>` elements have semantic inflection denoting the type of image. Common values are :value:`z3998:illustration` or :value:`z3998:photograph`.
 
-#.	:html:`<img>` element whose image is black-on-white line art (i.e. exactly two colors, **not** grayscale!) are PNG files with a transparent background. They have the :value:`se:image.color-depth.black-on-transparent` semantic inflection.
+#.	:html:`<img>` element whose image is black-on-white line art (i.e. exactly two colors, **not** grayscale!) are SVG files with a transparent background. They have the :value:`se:image.color-depth.black-on-transparent` semantic inflection.
 
 	#.	If such an image is drawn in a “realistic” style (i.e., like a Gustave Doré or John Tenniel woodcut, and not like a flat map in an Agatha Christie murder mystery), it has the additional semantic of :value:`se:image.style.realistic`.
 
