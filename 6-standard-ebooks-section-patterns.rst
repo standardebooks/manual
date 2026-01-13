@@ -289,7 +289,7 @@ The titlepage
 			<head>
 				<title>Titlepage</title>
 				<link href="../css/core.css" rel="stylesheet" type="text/css"/>
-				<link href="../css/local.css" rel="stylesheet" type="text/css"/>
+				<link href="../css/se.css" rel="stylesheet" type="text/css"/>
 			</head>
 			<body epub:type="frontmatter">
 				<section id="titlepage" epub:type="titlepage">
