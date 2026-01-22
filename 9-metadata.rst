@@ -388,7 +388,9 @@ Additional book metadata
 
 	#.	The element is further refined by a :html:`<meta property="collection-type" refines="#collection-N">` element with the value of :html:`set` or :html:`series`. `See the EPUB spec for more details <https://www.w3.org/TR/epub/#sec-collection-type>`__.
 
-	#.	:html:`<meta property="se:is-a-collection">true</meta>` is present if the ebook is a collection of items which a reader may wish to search by item title. For example, this would include ebooks like a collection of short stories, or a collection of short works by an author from antiquity.
+	#.	If the ebook is part of a series under a different title, for example, if the ebook is a short story omnibus containing a short story that is the actual entry in the collection, then the element is further refined by a :html:`<meta property="se:title-in-collection" refines="#collection-N">` element with the value of the title under which the ebook appears in the collection.
+
+#.	:html:`<meta property="se:is-a-collection">true</meta>` is present if the ebook is a collection of items which a reader may wish to search by item title. For example, this would include ebooks like a collection of short stories, or a collection of short works by an author from antiquity.
 
 Book production notes
 =====================
