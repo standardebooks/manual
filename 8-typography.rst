@@ -1544,6 +1544,8 @@ Initials and abbreviations
 
 		<p>He traveled <abbr epub:type="se:compass">S.</abbr>, <abbr epub:type="se:compass">N. W.</abbr>, then <abbr class="eoc" epub:type="se:compass">E. S. E.</abbr></p>
 
+#.	Strings of assigned numbers and letters used to uniquely identify an item within a class of related items, for example radio station call signs (:string:`WBEZ`, :string:`2LO`) or aircraft model numbers (:string:`Embraer E190-E2`, :string:`Gulfstream G700`) are not abbreviations and are therefore not within an :html:`<abbr>` element. They may or may not be set with periods, whichever is customary for that particular string.
+
 Exceptions
 ==========
 
