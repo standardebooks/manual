@@ -240,6 +240,8 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`National Gallery of Denmark <https://open.smk.dk/en/>`__ (CC0 items have “No copyright” icon and a “Free to use” notice, and the About page states that such images are released via CC0.)
 
+-	`National Museum of Sweden <https://www.nationalmuseum.se/>`__ (Public domain items say “Public Domain” under the image, which links to a CC-PD license.)
+
 -	`National Museum in Krakow <https://zbiory.mnk.pl/>`__ (CC0 items say CC0 - Public Domain under the Copyright section.)
 
 -	`Nivaagaards Malerisamling <https://www.nivaagaard.dk/en/samling/>`__ (CC0 items say “Public Domain” by the picture, which leads to a license details page, which links to a CC0 license.)
