@@ -833,6 +833,39 @@ Plays and drama
 			width: 75%;
 		}
 
+		@media(max-width: 400px){
+			[epub|type~="z3998:drama"] td,
+			[epub|type~="z3998:drama"] td[epub|type~="z3998:persona"],
+			[epub|type~="z3998:drama"] td:last-child{
+				display: block;
+				padding: 0;
+				text-align: initial;
+				width: 100%;
+			}
+
+			[epub|type~="z3998:drama"] td[epub|type~="z3998:persona"]{
+				break-after: avoid;
+				margin-top: 1.5em;
+			}
+
+			/* `together` rows get a pseudo-stage-direction. */
+			[epub|type~="z3998:drama"] tr.together td[epub|type~="z3998:persona"]::after{
+				content: " (Together.)";
+				font-style: italic;
+				font-variant: normal;
+			}
+
+			[epub|type~="z3998:drama"] .together td:last-child{
+				border: none;
+				padding: 0;
+			}
+
+			/* Rows that are only stage direction get a top margin. */
+			[epub|type~="z3998:drama"] td:first-child:not([epub|type]) + td{
+				margin-top: 1.5em;
+			}
+		}
+
 Dialog rows
 ===========
 
