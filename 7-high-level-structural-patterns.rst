@@ -1107,6 +1107,14 @@ Letter headers
 
 	#. If the letter is within a :html:`<blockquote>`, any :html:`<header>` and :html:`<footer>` elements have :html:`role="presentation"`.
 
+#.	The :html:`<header>` element has the following CSS:
+
+	.. code:: css
+
+		[epub|type~="z3998:letter"] header{
+			text-align: right;
+		}
+
 #.	If there is only a salutation and no other header content, the :html:`<header>` element is omitted.
 
 #.	The location and date of a letter have the semantic inflection of :value:`se:letter.dateline`. Dates are in a :html:`<time>` element with a computer-readable date.
@@ -1240,7 +1248,7 @@ Examples
 .. code:: css
 
 	[epub|type~="z3998:letter"] header{
- 		text-align: right;
+		text-align: right;
 	}
 
 	footer{
