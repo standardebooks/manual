@@ -1413,14 +1413,14 @@ Dates
 
 		.. code:: html
 
-			<p>Tutankhamun ruled till 1,325 <abbr epub:type="se:era">BC</abbr>.</p>
+			<p>Tutankhamun ruled till 1,325 <abbr epub:type="se:era z3998:initialism">BC</abbr>.</p>
 
 
 	.. class:: corrected
 
 		.. code:: html
 
-			<p>Tutankhamun ruled till 1325 <abbr epub:type="se:era">BC</abbr>, but ancient aliens built the pyramids in 12,633 <abbr epub:type="se:era">BC</abbr>.</p>
+			<p>Tutankhamun ruled till 1325 <abbr epub:type="se:era z3998:initialism">BC</abbr>, but ancient aliens built the pyramids in 12,633 <abbr epub:type="se:era z3998:initialism">BC</abbr>.</p>
 
 Latinisms
 *********
@@ -1441,7 +1441,7 @@ Latinisms
 
 #.	For :string:`Ibid.`, `see Endnotes </manual/VERSION/7-high-level-structural-patterns#7.10>`__.
 
-#.	Latinisms that are abbreviations are set in lowercase with periods between words and no spaces between them, except :string:`BC`, :string:`AD`, :string:`BCE`, and :string:`CE`, which are set without periods, in small caps, and wrapped with :html:`<abbr epub:type="se:era">`:
+#.	Latinisms that are abbreviations are set in lowercase with periods between words and no spaces between them, except :string:`BC`, :string:`AD`, :string:`BCE`, and :string:`CE`, which are set without periods, in small caps, and wrapped with :html:`<abbr epub:type="se:era z3998:initialism">`:
 
 	.. code:: css
 
@@ -1451,7 +1451,7 @@ Latinisms
 
 	.. code:: html
 
-		<p>Julius Caesar was born around 100 <abbr epub:type="se:era">BC</abbr>.</p>
+		<p>Julius Caesar was born around 100 <abbr epub:type="se:era z3998:initialism">BC</abbr>.</p>
 
 Initials and abbreviations
 **************************

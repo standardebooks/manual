@@ -661,7 +661,7 @@ Dates
 	.. code:: html
 
 		<p><i epub:type="se:name.publication.play">Oedipus at Colonus</i><br/>
-		was written in 406 <abbr epub:type="se:era">BCE</abbr> by<br/>
+		was written in 406 <abbr epub:type="se:era z3998:initialism">BCE</abbr> by<br/>
 		<a href="https://en.wikipedia.org/wiki/Sophocles">Sophocles</a>.<br/>
 		It was translated from Ancient Greek in <time>1912</time> by<br/>
 		<b epub:type="z3998:personal-name">Francis Storr</b>.</p>
