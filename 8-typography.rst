@@ -1509,13 +1509,13 @@ Initials and abbreviations
 			<p>Dec 12, 1933</p>
 		</footer>
 
-#.	Post-nominal letters, including academic degrees, honors, and memberships, are wrapped in an :html:`<abbr epub:type="z3998:name-title">` element. Post-nominal letters that consist of initials are set with a period after each initial. Post-nominal letters that consist of initials followed by abbreviated words are set with a hair space before the word. 
+#.	Post-nominal letters, including academic degrees, honors, and memberships, are wrapped in an :html:`<abbr epub:type="z3998:name-title">` element. They may also require the :value:`z3998:initialism` semantic if they are initialisms, i.e. are wholly composed of initials and not abbreviated words like :string:`Phil.`. Post-nominal letters that consist of initials are set with a period after each initial. Post-nominal letters that contain abbreviated words (like :string: `Ph.` or `Phil.`) are set with a hair space between the word and any preceding or following initials.
 
 	.. code:: html
 
-		<p>Judith Douglas, <abbr class="eoc" epub:type="z3998:name-title">D.D.S.</abbr></p>
-		<p>Abraham Van Helsing, <abbr epub:type="z3998:name-title">M.D.</abbr>, <abbr epub:type="z3998:name-title">D.:ws:`hairsp`Ph.</abbr>, <abbr epub:type="z3998:name-title">D.:ws:`hairsp`Lit.</abbr>, <abbr>etc.</abbr>, <abbr class="eoc">etc.</abbr></p>
-		<p>Charles Lyell, <abbr epub:type="z3998:name-title">Esq.</abbr>, <abbr epub:type="z3998:name-title">F.R.S.</abbr><p>
+		<p>Judith Douglas, <abbr class="eoc" epub:type="z3998:name-title z3998:initialism">D.D.S.</abbr></p>
+		<p>Abraham Van Helsing, <abbr epub:type="z3998:name-title z3998:initialism">M.D.</abbr>, <abbr epub:type="z3998:name-title">D.:ws:`hairsp`Ph.</abbr>, <abbr epub:type="z3998:name-title">D.:ws:`hairsp`Lit.</abbr>, <abbr>etc.</abbr>, <abbr class="eoc">etc.</abbr></p>
+		<p>Charles Lyell, <abbr epub:type="z3998:name-title">Esq.</abbr>, <abbr epub:type="z3998:name-title">Ph.:ws:`hairsp`D.</abbr>, <abbr epub:type="z3998:name-title z3998:initialism">F.R.S.</abbr><p>
 
 	#.	Some degrees are exceptions:
 
