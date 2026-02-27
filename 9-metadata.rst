@@ -49,7 +49,9 @@ The SE URL is formed by the following algorithm.
 
 	- Otherwise, if there is more than one translator, continue appending subsequent URL-safe translators, separated by an underscore. Do not alpha-sort translator names.
 
--	If the work is illustrated, append a forward slash, then the URL-safe illustrator. If there is more than one illustrator, continue appending subsequent URL-safe illustrators, separated by an underscore. Do not alpha-sort illustrator names.
+-	If the work has an editor with the `display-seq` property set, append a forward slash, then the URL-safe editor. If there is more than one editor, continue appending subsequent URL-safe editors, separated by an underscore. Do not alpha-sort editor names.
+
+-	If the work has an illustrator with the `display-seq` property set, *and* this contributor is not already an author, translator, or editor, append a forward slash, then the URL-safe illustrator. If there is more than one illustrator, continue appending subsequent URL-safe illustrators, separated by an underscore. Do not alpha-sort illustrator names.
 
 -	Finally, *do not* append a trailing forward slash.
 
@@ -415,15 +417,13 @@ The following apply to all contributors, including the author(s), translator(s),
 
 #.	If there is exactly one contributor in a set (for example, only one author in a possible set of authors, or only one translator in a possible set of translators) then the :html:`<meta property="display-seq">` element is omitted for that contributor.
 
-#.	If there is more than one contributor in a set (for example, multiple authors, or multiple translators) then the :html:`<meta property="display-seq">` element is specified for each contributor in that set, with a value equal to their position in the SE identifier.
-
-#.	The EPUB spec specifies that in a set of contributors, if at least one has the :value:`display-seq` property, then other contributors in the set without the :value:`display-seq` value are ignored. For SE purposes, this also means they will be excluded from the SE identifier.
-
 #.	By SE convention, contributors with :html:`<meta property="display-seq">0</meta>` are excluded from the SE identifier.
 
 #.	It is not uncommon for one contributor to have multiple roles; for example, an author (:value:`aut`) who also illustrated (:value:`ill`) the book. In these cases, additional roles are assigned using additional :value:`role` properties.
 
 	#.	Multiple roles are ordered alphabetically by role.
+
+#.	By default, only authors and translators are included in the SE identifier, titlepage, and cover. To include other contributors, assign a non-zero :value:`display-seq` to them.
 
 .. class:: no-numbering
 
