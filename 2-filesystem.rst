@@ -154,7 +154,7 @@ The :bash:`se lint` tool makes best guesses to alert the user to potential issue
 
 #.	The :html:`<se-lint-ignore>` root element contains one or more :html:`<file>` elements.
 
-	#.	:html:`<file>` elements have a :html:`path` attribute containing a filename to match in :path:`./src/epub/text/`.
+	#.	:html:`<file>` elements have a :html:`path` attribute containing a filename to match relative to the repository root.
 
 		.. code:: html
 
@@ -168,38 +168,35 @@ The :bash:`se lint` tool makes best guesses to alert the user to potential issue
 			<file path="chapter-*.xhtml">
 			</file>
 
-	#.	Each :html:`<file>` element contains one or more :html:`<ignore>` elements. Each :html:`<ignore>` element contains one :html:`<code>` element and one :html:`<reason>` element.
+	#.	Each :html:`<file>` element contains one or more :html:`<ignore>` elements.
 
-		#.	The value of :html:`<code>` is the error/warning code provided by :bash:`se lint`. This code will be ignored for its parent file(s) when :bash:`se lint` is next run.
+		#.	:html:`<ignore>` elements have a :html:`<code>` attribute containing the lint code to ignore. This code will be ignored for its parent file(s) when :bash:`se lint` is next run.
 
-		#.	The value of :html:`<reason>` is a prose explanation about why the code was ignored. This aids future producers or reviewers in understanding the reasoning behind why an error code was ignored.
+		#.	:html:`<ignore>` elements may contain zero or more :html:`<line>` elements whose text is the line number to ignore for the given code.
 
-			#.	:html:`<reason>` is required to have a non-whitespace value.
+		#.	:html:`<ignore>` elements have one :html:`<reason>` element whose text is a prose explanation about why the code was ignored. This aids future producers or reviewers in understanding the reasoning behind why an error code was ignored.
 
 .. class:: no-numbering
 
 Example
 =======
 
-The following is an example of a complete :path:`se-lint-ignore.xml` file from :italics:`Tractatus Logico-Philosophicus </ebooks/ludwig-wittgenstein/tractatus-logico-philosophicus/c-k-ogden>`.
-
 .. code:: xml
 
 	<?xml version="1.0" encoding="utf-8"?>
 	<se-lint-ignore>
 		<file path="introduction.xhtml">
-			<ignore>
-				<code>t-002</code>
+			<ignore code="t-002">
 				<reason>Punctuation is deliberately placed outside of quotes in this ebook to prevent confusion with mathematical symbols and formulas.</reason>
 			</ignore>
 		</file>
 		<file path="tractatus-logico-philosophicus.xhtml">
-			<ignore>
-				<code>s-021</code>
+			<ignore code="s-021">
 				<reason>The &lt;title&gt; tag is accurate; the work title appears in the half title.</reason>
 			</ignore>
-			<ignore>
-				<code>t-002</code>
+			<ignore code="t-002">
+				<line>3</line>
+				<line>18</line>
 				<reason>Punctuation is deliberately placed outside of quotes in this ebook to prevent confusion with mathematical symbols and formulas.</reason>
 			</ignore>
 		</file>
