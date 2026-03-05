@@ -1121,6 +1121,17 @@ Letter headers
 
 #.	Salutations that are on a separate line are set in small caps.
 
+	.. code:: css
+
+		p[epub|type~="z3998:salutation"]{
+			font-variant: small-caps;
+		}
+
+	.. code:: html
+
+		<p epub:type="z3998:salutation">Dearest Auntie,</p>
+		<p>Please may we have some things for a picnic? Gerald will bring them. I would come myself, but I am a little tired. I think I have been growing rather fast.</p>
+
 #.	Salutations that are contained within the first, larger line of the letter are wrapped in a :html:`<span epub:type="z3998:salutation">` element (or a :html:`<b epub:type="z3998:salutation">` element if small-caps are desired).
 
 	.. code:: html
