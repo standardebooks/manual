@@ -170,7 +170,7 @@ The :bash:`se lint` tool makes best guesses to alert the user to potential issue
 
 	#.	Each :html:`<file>` element contains one or more :html:`<ignore>` elements.
 
-		#.	:html:`<ignore>` elements have a :html:`<code>` attribute containing the lint code to ignore. This code will be ignored for its parent file(s) when :bash:`se lint` is next run.
+		#.	:html:`<ignore>` elements have a :html:`code` attribute containing the lint code to ignore. This code will be ignored for its parent file(s) when :bash:`se lint` is next run.
 
 		#.	:html:`<ignore>` elements may contain zero or more :html:`<line>` elements whose text is the line number to ignore for the given code.
 
