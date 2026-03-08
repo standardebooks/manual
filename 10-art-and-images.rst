@@ -378,6 +378,8 @@ The source image is an unedited, raw copy of the image that is in the highest-re
 
 #.	There is always a source image for each corresponding distributable image, even if they are identical.
 
+#.	Where the image is generated from a non-image source, such as sheet music generated from a MusicXML file, the non-image source file is included as the image source in an editable state.
+
 Distributable images
 ====================
 
