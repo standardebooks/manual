@@ -236,6 +236,8 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Musea Brugge <https://www.museabrugge.be/en/collections/browse>`__ (CC0 items indicate the images are published under the CC0 license in the “Copyright” line.)
 
+-	`Museum Wales <https://images.museumwales.ac.uk/>`__ (CC0 items have a CC0 license below the art details section.)
+
 -	`National Gallery of Art <https://www.nga.gov>`__ (CC0 items have a “0 Public Domain” icon under the picture, which leads to an Open Access policy mentioning a CC0 license.)
 
 -	`National Gallery of Denmark <https://open.smk.dk/en/>`__ (CC0 items have “No copyright” icon and a “Free to use” notice, and the About page states that such images are released via CC0.)
