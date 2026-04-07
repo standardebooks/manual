@@ -260,7 +260,7 @@ For sections without heading material, see `7.2.8 </manual/VERSION/7-high-level-
 			<p epub:type="title">The Man in the Street</p>
 		</hgroup>
 
-#.	Sections that have a non-unique title, but that are required to be identifed in the ToC with a unique title (e.g., multiple poems identified as “Sonnet” in the body matter, which require their ToC entry to contain the poem’s first line to differentiate them):
+#.	Sections that have a non-unique title, but that are required to be identified in the ToC with a unique title (e.g., multiple poems identified as “Sonnet” in the body matter, which require their ToC entry to contain the poem’s first line to differentiate them):
 
 	.. code:: html
 
