@@ -1147,11 +1147,11 @@ Letter footers
 
 #.	The valediction (for example, “Yours Truly” or “With best regards”) has the semantic inflection of :value:`z3998:valediction`.
 
-#.	The sender’s name has semantic inflection of :value:`z3998:sender`. If the name appears to be a signature to the letter, it has the :value:`z3998:signature` semantic inflection and corresponding CSS.
+#.	The sender’s name has semantic inflection of :value:`z3998:sender`. If the name appears to be a signature to the letter, it has the :value:`z3998:signature` semantic inflection. If it is the only element in a paragraph, it also has corresponding CSS.
 
 	.. code:: css
 
-		[epub|type~="z3998:signature"]{
+		p[epub|type~="z3998:signature"]{
 			font-variant: small-caps;
 		}
 
