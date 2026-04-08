@@ -419,7 +419,7 @@ The following apply to all contributors, including the author(s), translator(s),
 
 #.	By SE convention, contributors with :html:`<meta property="display-seq">0</meta>` are excluded from the SE identifier.
 
-#.	It is not uncommon for one contributor to have multiple roles; for example, an author (:value:`aut`) who also illustrated (:value:`ill`) the book. In these cases, additional roles are assigned using additional :value:`role` properties.
+#.	It is not uncommon for one contributor to have multiple roles; for example, an author (:value:`aut`) who also illustrated (:value:`ill`) the book and wrote a dedication (:value:`dto`). In these cases, additional roles are assigned using additional :value:`role` properties.
 
 	#.	Multiple roles are ordered alphabetically by role.
 
@@ -435,6 +435,7 @@ Example
 	<dc:creator id="author">Jonathan Swift</dc:creator>
 	...
 	<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+	<meta property="role" refines="#author" scheme="marc:relators">dto</meta>
 	<meta property="role" refines="#author" scheme="marc:relators">ill</meta>
 	<meta property="role" refines="#author" scheme="marc:relators">win</meta>
 	<meta property="role" refines="#author" scheme="marc:relators">wpr</meta>
