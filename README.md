@@ -2,9 +2,9 @@
 
 The Standard Ebooks Manual of Style describes a complete approach to editing and producing ebooks, from internal code style to semantic enhancement and typography rules.
 
-It is not a how-to manual; that is, it does not aim to give instructions on how to accomplish the various goals it describes. For example, it would not contain step by step guides, or guides on Inkscape usage, or SE toolset usage. Instead, the manual describes in declarative language how a Standard Ebook should appear after it is produced.
+It is not a how-to manual; that is, it does not aim to give instructions on how to accomplish the various goals it describes. For example, it would not contain step-by-step guides, guides on using Inkscape, or guides on using the SE toolset. Instead, the manual describes in declarative language how a Standard Ebook should appear after it is produced.
 
-Each directive is numbered and can contain any number of sub directives. Directives declare what the expected final appearance *is*, not how a producer *should achieve the final appearance*.
+Each directive is numbered and can contain any number of sub-directives. Directives declare what the expected final appearance *is*, not how a producer *should achieve the final appearance*.
 
 For example:
 
@@ -23,9 +23,9 @@ The `master` branch is reserved for typo fixes, clarifications, and version rele
 ```shell
 sudo apt install python3-natsort pipx python3-bs4 python3-pygments
 
-# We require the Pip version of `rst2html5` as it's a new and improved version of the `docutils-common` apt package. See <https://pypi.org/project/rst2html5/>.
+# We require the pip version of `rst2html5` because it is a newer, improved version of the `docutils-common` apt package. See <https://pypi.org/project/rst2html5/>.
 pipx install rst2html5
-````
+```
 
 ## Ubuntu 20.04
 

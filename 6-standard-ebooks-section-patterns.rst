@@ -101,7 +101,7 @@ The :html:`<nav>` element’s top-level :html:`<ol>` element contains a list of 
 					<a href="text/father-goriot.xhtml">Father Goriot</a>
 				</li>
 
-:html:`<li>` descendents
+:html:`<li>` descendants
 ------------------------
 
 #.	Each :html:`<li>` contains an :html:`<a>` element pointing to a file or hash, and optionally also contains an :html:`<ol>` element representing a nested series of ToC items.
@@ -157,7 +157,7 @@ The :html:`<nav>` element’s top-level :html:`<ol>` element contains a list of 
 				</ol>
 			</li>
 
-:html:`<a>` descendents
+:html:`<a>` descendants
 -----------------------
 
 #.	The :value:`title`, :value:`subtitle`, :value:`ordinal`, and any `related title epub semantics <https://www.w3.org/TR/epub-ssv-11/#sec-titles>`__ are not included in ToC entries. Their usage context is only within actual heading content.
@@ -234,7 +234,7 @@ After the first :html:`<nav>` element, there is a second :html:`<nav>` element w
 
 #.	The second child is an :html:`<ol>` element listing the major structural divisions of the book.
 
-:html:`<li>` descendents
+:html:`<li>` descendants
 ------------------------
 
 Each :html:`<li>` element contains a link to either the start of the main text (i.e. the start of the bodymatter, excluding a half titlepage), or to a major reference section (i.e. backmatter including endnotes, bibliography, glossary, index, LoI, etc.). `See the IDPF a11y best practices document <http://idpf.org/epub/a11y/techniques/#sem-003>`__ for more information.
