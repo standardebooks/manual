@@ -160,7 +160,7 @@ The :html:`<nav>` element’s top-level :html:`<ol>` element contains a list of 
 :html:`<a>` descendants
 -----------------------
 
-#.	The :value:`title`, :value:`subtitle`, :value:`ordinal`, and any `related title epub semantics <https://www.w3.org/TR/epub-ssv-11/#sec-titles>`__ are not included in ToC entries. Their usage context is only within actual heading content.
+#.	The :value:`title`, :value:`subtitle`, :value:`z3998:ordinal`, and any `related title epub semantics <https://www.w3.org/TR/epub-ssv-11/#sec-titles>`__ are not included in ToC entries. Their usage context is only within actual heading content.
 
 #.	The text of the :html:`<a>` element is decided as follows:
 
@@ -191,8 +191,8 @@ Result: :html:`A Daughter of Albion`
 	<section id="book-1" epub:type="part">
 		<hgroup>
 			<h2>
-				<span epub:type="label">Book</span>
-				<span epub:type="ordinal z3998:roman">I</span>
+				<span epub:type="se:label">Book</span>
+				<span epub:type="z3998:ordinal z3998:roman">I</span>
 			</h2>
 			<p epub:type="title">The Coming of the Martians</p>
 		</hgroup>
@@ -205,7 +205,7 @@ Result: :html:`Book <span epub:type="z3998:roman">I</span>: The Coming of the Ma
 
 	<section id="chapter-1" epub:type="chapter">
 		<hgroup>
-			<h2 epub:type="ordinal z3998:roman">I</h2>
+			<h2 epub:type="z3998:ordinal z3998:roman">I</h2>
 			<p epub:type="title">A Fellow Traveller</p>
 		</hgroup>
 		<p>...</p>

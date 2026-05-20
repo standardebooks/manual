@@ -66,7 +66,7 @@ This section covers general patterns used when producing XHTML and CSS that are 
 
 	.. code:: html
 
-		<li id="note-1" epub:type="endnote">
+		<li id="note-1">
 			<p>Cook, <i epub:type="se:name.publication.book">A Voyage Towards the South Pole</i>, Introduction. <a href="introduction.xhtml#noteref-1" epub:type="backlink">↩</a></p>
 		</li>
 
@@ -93,7 +93,7 @@ This section covers general patterns used when producing XHTML and CSS that are 
 			<section id="chapter-1" epub:type="chapter">
 				<header>
 					<h2 epub:type="title">...</h2>
-					<p epub:type="bridgehead">...</p>
+					<p epub:type="se:bridgehead">...</p>
 				</header>
 				<p id="chapter-1-p-2">...</p>
 				<section id="chapter-1-1" epub:type="z3998:subchapter">

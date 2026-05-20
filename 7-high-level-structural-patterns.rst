@@ -44,8 +44,8 @@ Book 1 (:path:`book-1.xhtml`):
 
 	<section id="book-1" epub:type="division">
 		<h2>
-			<span epub:type="label">Book</span>
-			<span epub:type="ordinal z3998:roman">I</span>
+			<span epub:type="se:label">Book</span>
+			<span epub:type="z3998:ordinal z3998:roman">I</span>
 		</h2>
 	</section>
 
@@ -55,8 +55,8 @@ Book 1, Part 2 (:path:`part-1-2.xhtml`):
 
 	<section data-parent="book-1" id="part-1-2" epub:type="part">
 		<h3>
-			<span epub:type="label">Part</span>
-			<span epub:type="ordinal z3998:roman">II</span>
+			<span epub:type="se:label">Part</span>
+			<span epub:type="z3998:ordinal z3998:roman">II</span>
 		</h3>
 	</section>
 
@@ -65,7 +65,7 @@ Book 1, Part 2, Chapter 3 (:path:`chapter-1-2-3.xhtml`):
 .. code:: html
 
 	<section data-parent="part-1-2" id="chapter-1-2-3" epub:type="chapter">
-		<h4 epub:type="ordinal z3998:roman">III</h4>
+		<h4 epub:type="z3998:ordinal z3998:roman">III</h4>
 		<p>...</p>
 		<p>...</p>
 	</section>
@@ -84,7 +84,7 @@ Headers
 	.. code:: html
 
 		<section id="part-2" epub:type="part">
-			<h2><span epub:type="label">Part</span> <span epub:type="ordinal z3998:roman">II</span></h2>
+			<h2><span epub:type="se:label">Part</span> <span epub:type="z3998:ordinal z3998:roman">II</span></h2>
 		</section>
 
 	Consider this example for the file :path:`chapter-2-3.xhtml`:
@@ -95,7 +95,7 @@ Headers
 
 			<section id="part-2" epub:type="part">
 				<section id="chapter-2-3" epub:type="chapter">
-					<h2 epub:type="ordinal z3998:roman">III</h2>
+					<h2 epub:type="z3998:ordinal z3998:roman">III</h2>
 					...
 				</section>
 			</section>
@@ -106,7 +106,7 @@ Headers
 
 			<section id="part-2" epub:type="part">
 				<section id="chapter-2-3" epub:type="chapter">
-					<h3 epub:type="ordinal z3998:roman">III</h3>
+					<h3 epub:type="z3998:ordinal z3998:roman">III</h3>
 					...
 				</section>
 			</section>
@@ -124,21 +124,21 @@ Headers
 	.. code:: html
 
 		<hgroup>
-			<h3 epub:type="ordinal z3998:roman">XI</h3>
+			<h3 epub:type="z3998:ordinal z3998:roman">XI</h3>
 			<p epub:type="title">The <i epub:type="se:name.vessel.ship">Nautilus</i></p>
 		</hgroup>
 
 	.. code:: html
 
 		<hgroup>
-			<h3 epub:type="ordinal z3998:roman">XI</h3>
+			<h3 epub:type="z3998:ordinal z3998:roman">XI</h3>
 			<p epub:type="title" xml:lang="la">Christus Nos Liberavit</p>
 		</hgroup>
 
 	.. code:: html
 
 		<hgroup>
-			<h3 epub:type="ordinal z3998:roman">XI</h3>
+			<h3 epub:type="z3998:ordinal z3998:roman">XI</h3>
 			<p epub:type="title">Miss Thorne’s <i xml:lang="fr">Fête Champêtre</i></p>
 		</hgroup>
 
@@ -162,23 +162,23 @@ Parts of a section title
 
 Within section titles, we distinguish between labels, ordinals, titles, and subtitles.
 
-#.	Labels are the part of a title that precedes the ordinal. Because they only appear next to ordinals, they are usually wrapped in :html:`<span epub:type="label">` within their parent :html:`<h1>`–:html:`<h6>` element.
+#.	Labels are the part of a title that precedes the ordinal. Because they only appear next to ordinals, they are usually wrapped in :html:`<span epub:type="se:label">` within their parent :html:`<h1>`–:html:`<h6>` element.
 
 	.. code:: html
 
-		<h2><span epub:type="label">Canto</span> <span epub:type="ordinal z3998:roman">III</span></h2>
+		<h2><span epub:type="se:label">Canto</span> <span epub:type="z3998:ordinal z3998:roman">III</span></h2>
 
-#.	Ordinals are the number specifying the section’s numeric order in a sequence. They are usually wrapped in :html:`<span epub:type="ordinal">` or :html:`<span epub:type="ordinal z3998:roman">`, if the ordinal is a Roman numeral.
+#.	Ordinals are the number specifying the section’s numeric order in a sequence. They are usually wrapped in :html:`<span epub:type="ordinal">` or :html:`<span epub:type="z3998:ordinal z3998:roman">`, if the ordinal is a Roman numeral.
 
 	.. code:: html
 
-		<h2><span epub:type="label">Book</span> <span epub:type="ordinal z3998:roman">IV</span></h2>
+		<h2><span epub:type="se:label">Book</span> <span epub:type="z3998:ordinal z3998:roman">IV</span></h2>
 
 	Ordinals may also appear without a label:
 
 	.. code:: html
 
-		<h2 epub:type="ordinal z3998:roman">IV</h2>
+		<h2 epub:type="z3998:ordinal z3998:roman">IV</h2>
 
 #.	Labels and ordinals are wrapped in an :html:`<h1>`–:html:`<h6>` element, but that wrapper element is not a semantic title.
 
@@ -191,7 +191,7 @@ Within section titles, we distinguish between labels, ordinals, titles, and subt
 	.. code:: html
 
 		<hgroup>
-			<h2 epub:type="ordinal z3998:roman">IV</h2>
+			<h2 epub:type="z3998:ordinal z3998:roman">IV</h2>
 			<p epub:type="title">The Letter Signed “Bella”</p>
 		</hgroup>
 
@@ -213,7 +213,7 @@ For sections without heading material, see `7.2.8 </manual/VERSION/7-high-level-
 
 	.. code:: html
 
-		<h2 epub:type="ordinal z3998:roman">XI</h2>
+		<h2 epub:type="z3998:ordinal z3998:roman">XI</h2>
 
 #.	Sections with titles but without ordinals:
 
@@ -226,7 +226,7 @@ For sections without heading material, see `7.2.8 </manual/VERSION/7-high-level-
 	.. code:: html
 
 		<hgroup>
-			<h2 epub:type="ordinal z3998:roman">XI</h2>
+			<h2 epub:type="z3998:ordinal z3998:roman">XI</h2>
 			<p epub:type="title">Who Stole the Tarts?</p>
 		</hgroup>
 
@@ -244,8 +244,8 @@ For sections without heading material, see `7.2.8 </manual/VERSION/7-high-level-
 	.. code:: html
 
 		<h2>
-			<span epub:type="label">Book</span>
-			<span epub:type="ordinal z3998:roman">II</span>
+			<span epub:type="se:label">Book</span>
+			<span epub:type="z3998:ordinal z3998:roman">II</span>
 		</h2>
 
 #.	Sections with labels, ordinals, and titles:
@@ -254,8 +254,8 @@ For sections without heading material, see `7.2.8 </manual/VERSION/7-high-level-
 
 		<hgroup>
 			<h2>
-				<span epub:type="label">Book</span>
-				<span epub:type="ordinal z3998:roman">II</span>
+				<span epub:type="se:label">Book</span>
+				<span epub:type="z3998:ordinal z3998:roman">II</span>
 			</h2>
 			<p epub:type="title">The Man in the Street</p>
 		</hgroup>
@@ -319,7 +319,7 @@ Bridgeheads are sections in a chapter header that give an abstract or summary of
 
 	.. code:: css
 
-		[epub|type~="bridgehead"]{
+		[epub|type~="se:bridgehead"]{
 			display: inline-block;
 			font-style: italic;
 			max-width: 60%;
@@ -327,29 +327,29 @@ Bridgeheads are sections in a chapter header that give an abstract or summary of
 			text-indent: 0;
 		}
 
-		[epub|type~="bridgehead"] i{
+		[epub|type~="se:bridgehead"] i{
 			font-style: normal;
 		}
 
-		[epub|type~="z3998:hymn"] [epub|type~="bridgehead"],
-		[epub|type~="z3998:poem"] [epub|type~="bridgehead"],
-		[epub|type~="z3998:song"] [epub|type~="bridgehead"],
-		[epub|type~="z3998:verse"] [epub|type~="bridgehead"]{
+		[epub|type~="z3998:hymn"] [epub|type~="se:bridgehead"],
+		[epub|type~="z3998:poem"] [epub|type~="se:bridgehead"],
+		[epub|type~="z3998:song"] [epub|type~="se:bridgehead"],
+		[epub|type~="z3998:verse"] [epub|type~="se:bridgehead"]{
 			text-align: justify;
 		}
 
 	.. code:: html
 
 		<header>
-			<h2 epub:type="ordinal z3998:roman">I</h2>
-			<p epub:type="bridgehead">Which treats of the character and pursuits of the famous gentleman Don Quixote of La Mancha.</p>
+			<h2 epub:type="z3998:ordinal z3998:roman">I</h2>
+			<p epub:type="se:bridgehead">Which treats of the character and pursuits of the famous gentleman Don Quixote of La Mancha.</p>
 		</header>
 
 	.. code:: html
 
 		<header>
-			<h2 epub:type="ordinal z3998:roman">X</h2>
-			<p epub:type="bridgehead">Our first night⁠:ws:`wj`—Under canvas⁠:ws:`wj`—An appeal for help⁠:ws:`wj`—Contrariness of teakettles, how to overcome⁠:ws:`wj`—Supper⁠:ws:`wj`—How to feel virtuous⁠:ws:`wj`—Wanted! a comfortably-appointed, well-drained desert island, neighbourhood of South Pacific Ocean preferred⁠:ws:`wj`—Funny thing that happened to George’s father⁠:ws:`wj`—A restless night.</p>
+			<h2 epub:type="z3998:ordinal z3998:roman">X</h2>
+			<p epub:type="se:bridgehead">Our first night⁠:ws:`wj`—Under canvas⁠:ws:`wj`—An appeal for help⁠:ws:`wj`—Contrariness of teakettles, how to overcome⁠:ws:`wj`—Supper⁠:ws:`wj`—How to feel virtuous⁠:ws:`wj`—Wanted! a comfortably-appointed, well-drained desert island, neighbourhood of South Pacific Ocean preferred⁠:ws:`wj`—Funny thing that happened to George’s father⁠:ws:`wj`—A restless night.</p>
 		</header>
 
 #.	Bridgeheads are typically set in italics. `Exceptions are allowed according to rules for italics </manual/VERSION/8-typography#8.2.13>`__.
@@ -361,8 +361,8 @@ Bridgeheads are sections in a chapter header that give an abstract or summary of
 	.. code:: html
 
 		<header>
-			<h2 epub:type="ordinal z3998:roman">XI</h2>
-			<p epub:type="bridgehead">How George, once upon a time, got up early in the morning⁠:ws:`wj`—George, Harris, and Montmorency do not like the look of the cold water⁠:ws:`wj`—Heroism and determination on the part of <abbr epub:type="z3998:given-name">J.</abbr>⁠:ws:`wj`—George and his shirt: story with a moral⁠:ws:`wj`—Harris as cook⁠:ws:`wj`—Historical retrospect, specially inserted for the use of schools.</p>
+			<h2 epub:type="z3998:ordinal z3998:roman">XI</h2>
+			<p epub:type="se:bridgehead">How George, once upon a time, got up early in the morning⁠:ws:`wj`—George, Harris, and Montmorency do not like the look of the cold water⁠:ws:`wj`—Heroism and determination on the part of <abbr epub:type="z3998:given-name">J.</abbr>⁠:ws:`wj`—George and his shirt: story with a moral⁠:ws:`wj`—Harris as cook⁠:ws:`wj`—Historical retrospect, specially inserted for the use of schools.</p>
 		</header>
 
 Dedications
@@ -465,7 +465,7 @@ Epigraphs in section headers
 		.. code:: html
 
 			<header>
-				<h2 epub:type="ordinal z3998:roman">II</h2>
+				<h2 epub:type="z3998:ordinal z3998:roman">II</h2>
 				<blockquote epub:type="epigraph">
 					<p>“Desire no more than to thy lot may fall. …”</p>
 					<cite>—Chaucer.</cite>
@@ -483,7 +483,7 @@ Epigraphs in section headers
 		.. code:: html
 
 			<header>
-				<h2 epub:type="ordinal z3998:roman">II</h2>
+				<h2 epub:type="z3998:ordinal z3998:roman">II</h2>
 				<blockquote epub:type="epigraph">
 					<p>“Desire no more than to thy lot may fall. …”</p>
 					<cite>Chaucer</cite>
@@ -1040,7 +1040,7 @@ Works that are complete plays
 
 		<body epub:type="bodymatter z3998:fiction z3998:drama">
 			<section id="act-1" epub:type="chapter z3998:scene">
-				<h2><span epub:type="label">Act</span> <span epub:type="ordinal z3998:roman">I</span></h2>
+				<h2><span epub:type="se:label">Act</span> <span epub:type="z3998:ordinal z3998:roman">I</span></h2>
 				<p>Scene: Morning-room in <b epub:type="z3998:persona">Algernon’s</b> flat in Half-Moon Street. The room is luxuriously and artistically furnished. The sound of a piano is heard in the adjoining room.</p>
 				<table>
 					...
@@ -1519,7 +1519,7 @@ The endnotes file
 Individual endnotes
 ===================
 
-#.	An endnote is an :html:`<li id="note-n" epub:type="endnote">` element containing one or more block-level text elements and one backlink element.
+#.	An endnote is an :html:`<li id="note-n">` element containing one or more block-level text elements and one backlink element.
 
 #.	Each endnote contains a backlink, which has the semantic inflection :value:`backlink`, contains the text :string:`↩`, and has the :html:`href` attribute pointing to the corresponding noteref hash.
 
@@ -1551,10 +1551,10 @@ Examples
 			<section id="endnotes" epub:type="endnotes">
 				<h2 epub:type="title">Endnotes</h2>
 				<ol>
-					<li id="note-1" epub:type="endnote">
+					<li id="note-1">
 						<p>For more detailed observations on these points refer to <abbr epub:type="z3998:given-name">G.</abbr> Volkens, “Uber die Karolinen Insel Yap.” <cite>—<abbr class="eoc" epub:type="z3998:personal-name">W. T. G.</abbr></cite> <a href="chapter-2.xhtml#noteref-1" epub:type="backlink">↩</a></p>
 					</li>
-					<li id="note-2" epub:type="endnote">
+					<li id="note-2">
 						<blockquote epub:type="z3998:verse">
 							<p>
 								<span>“Who never ceases still to strive,</span>

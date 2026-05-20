@@ -11,25 +11,25 @@ Section titles and ordinals
 
 #.	Section titles do not have trailing periods.
 
-#.	Chapter titles omit the word :string:`Chapter`, unless the word used is a stylistic choice for prose style purposes. Chapters with unique identifiers (i.e. not :string:`Chapter`, but something unique to the style of the book, like :string:`Book` or :string:`Stave`) *do* include that unique identifier in the title, wrapped in :html:`<span epub:type="label">`.
+#.	Chapter titles omit the word :string:`Chapter`, unless the word used is a stylistic choice for prose style purposes. Chapters with unique identifiers (i.e. not :string:`Chapter`, but something unique to the style of the book, like :string:`Book` or :string:`Stave`) *do* include that unique identifier in the title, wrapped in :html:`<span epub:type="se:label">`.
 
 	.. class:: wrong
 
 		.. code:: html
 
-			<h2>Chapter <span epub:type="ordinal z3998:roman">II</span></h2>
+			<h2>Chapter <span epub:type="z3998:ordinal z3998:roman">II</span></h2>
 
 	.. class:: corrected
 
 		.. code:: html
 
-			<h2 epub:type="ordinal z3998:roman">II</h2>
+			<h2 epub:type="z3998:ordinal z3998:roman">II</h2>
 
 		.. code:: html
 
 			<h2>
-				<span epub:type="label">Stave</span>
-				<span epub:type="ordinal z3998:roman">III</span>
+				<span epub:type="se:label">Stave</span>
+				<span epub:type="z3998:ordinal z3998:roman">III</span>
 			</h2>
 
 	In special cases it may be desirable to retain :string:`Chapter` for clarity. For example, :italics:`Frankenstein </ebooks/mary-shelley/frankenstein>` has “Chapter” in titles to differentiate them from the “Letter” sections.
@@ -512,17 +512,17 @@ Headers
 		<h2 epub:type="title" xml:lang="la">Ex Oblivione</h2>
 
 		<hgroup>
-			<h2 epub:type="ordinal z3998:roman">XI</h2>
+			<h2 epub:type="z3998:ordinal z3998:roman">XI</h2>
 			<p epub:type="title">The <i epub:type="se:name.vessel.ship">Nautilus</i></p>
 		</hgroup>
 
 		<hgroup>
-			<h2 epub:type="ordinal z3998:roman">XXXV</h2>
+			<h2 epub:type="z3998:ordinal z3998:roman">XXXV</h2>
 			<p epub:type="title">Miss Thorne’s <i xml:lang="fr">Fête Champêtre</i></p>
 		</hgroup>
 
 		<hgroup>
-			<h2 epub:type="ordinal z3998:roman">XI</h2>
+			<h2 epub:type="z3998:ordinal z3998:roman">XI</h2>
 			<p epub:type="title" xml:lang="la">Christus Nos Liberavit</p>
 		</hgroup>
 
@@ -536,7 +536,7 @@ Chapter headers
 		.. code:: html
 
 			<header>
-				<h2 epub:type="ordinal z3998:roman">II</h2>
+				<h2 epub:type="z3998:ordinal z3998:roman">II</h2>
 				<blockquote epub:type="epigraph">
 					<p>“Desire no more than to thy lot may fall. …”</p>
 					<cite>—Chaucer.</cite>
@@ -554,7 +554,7 @@ Chapter headers
 		.. code:: html
 
 			<header>
-				<h2 epub:type="ordinal z3998:roman">II</h2>
+				<h2 epub:type="z3998:ordinal z3998:roman">II</h2>
 				<blockquote epub:type="epigraph">
 					<p>“Desire no more than to thy lot may fall. …”</p>
 					<cite>Chaucer</cite>
