@@ -1,7 +1,9 @@
-#!/usr/bin/env python3
+#!/standardebooks.org/web/.venv/bin/python
 """
 This executable builds takes RST files comprising the SE manual and outputs final PHP files for publication to the SE website.
 """
+
+from __future__ import annotations
 
 import os
 import argparse
@@ -10,9 +12,14 @@ from pathlib import Path
 import subprocess
 import sys
 import tempfile
+
 from bs4 import BeautifulSoup, NavigableString, Tag
 from natsort import natsorted
 import regex
+
+import se
+from se.se_help_formatter import SeHelpFormatter
+
 
 BLOCK_LEVEL_ELEMENTS = ["p", "figure", "ol", "ul", "section", "pre", "blockquote", "table"]
 
@@ -151,9 +158,9 @@ def main() -> int:
 	Entry point for the executable.
 	"""
 
-	parser = argparse.ArgumentParser(description="Build the Standard Ebooks Manual of Style from a set of ReStructuredText files.")
-	parser.add_argument("source_directory", metavar="SOURCE_DIRECTORY", nargs="?", help="a directory containing ReStructuredText files comprising the Standard Ebooks Manual of Style; omit to use `/standardebooks.org/manual`")
-	parser.add_argument("dest_directory", metavar="DEST_DIRECTORY", nargs="?", help="a directory to place the output PHP files; omit to use `/standardebooks.org/web/www/manual/<latest-git-tag>`")
+	parser = argparse.ArgumentParser(description="Build the Standard Ebooks Manual of Style from a set of ReStructuredText files.", formatter_class=SeHelpFormatter)
+	parser.add_argument("source_directory", metavar="SOURCE_REPO_DIRECTORY", nargs="?", help="A directory containing a Git repository with the ReStructuredText files comprising the Standard Ebooks Manual of Style; defaults to [path]/standardebooks.org/manual[/].")
+	parser.add_argument("dest_directory", metavar="DESTINATION_DIRECTORY", nargs="?", help="A directory to place the output PHP files; defaults to [path]/standardebooks.org/web/www/manual/<LATEST_GIT_TAG>[/].")
 	args = parser.parse_args()
 
 	return_code = 0
@@ -162,8 +169,8 @@ def main() -> int:
 		args.source_directory = "/standardebooks.org/manual"
 
 	if not os.path.isdir(args.source_directory):
-		print(f"Not a directory: `{args.source_directory}`")
-		return 1
+		se.print_error(f"Not a directory: [path][link=file://{args.source_directory}]{args.source_directory}[/][/].")
+		return se.InvalidInputException.code
 
 	if not args.dest_directory:
 		args.dest_directory = "/standardebooks.org/web/www/manual"
@@ -172,8 +179,8 @@ def main() -> int:
 
 		errors = result.stderr.decode().strip()
 		if errors:
-			print(f"Error determining last Git tag of `{args.source_directory}`. Git says: {errors}");
-			return 1
+			se.print_error(f"Couldn’t determine last Git tag of [path][link=file://{args.source_directory}]{args.source_directory}[/][/]. Git says: {errors}")
+			return se.RemoteCommandErrorException.code
 
 		args.dest_directory += "/" + result.stdout.decode().strip()
 
@@ -181,15 +188,15 @@ def main() -> int:
 			try:
 				os.makedirs(args.dest_directory)
 			except:
-				print(f"Couldn’t create `{args.dest_directory}`")
-				return 1
+				se.print_error(f"Couldn’t create [path][link=file://{args.dest_directory}]{args.dest_directory}[/][/].")
+				return se.FileExistsException.code
 
 	if not os.path.isdir(args.dest_directory):
-		print(f"Not a directory: `{args.dest_directory}`")
-		return 1
+		se.print_error(f"Not a directory: [path][link=file://{args.dest_directory}]{args.dest_directory}[/][/].")
+		return se.InvalidInputException.code
 
 	toc = []
-
+	version = ""
 	header_path = Path(args.source_directory) / "templates" / "header.html"
 	footer_path = Path(args.source_directory) / "templates" / "footer.html"
 
@@ -197,15 +204,15 @@ def main() -> int:
 		with open(header_path, "r", encoding="utf-8") as file:
 			header_html = file.read()
 	except:
-		print(f"Couldn’t open `{header_path}`")
-		return 1
+		se.print_error(f"Couldn’t open file: [path][link=file://{header_path}]{header_path}[/][/].")
+		return se.InvalidFileException.code
 
 	try:
 		with open(footer_path, "r", encoding="utf-8") as file:
 			footer_html = file.read()
 	except:
-		print(f"Couldn’t open `{footer_path}`")
-		return 1
+		se.print_error(f"Couldn’t open file: [path][link=file://{footer_path}]{footer_path}[/][/].")
+		return se.InvalidFileException.code
 
 	with tempfile.TemporaryDirectory() as work_directory:
 		for filename in os.listdir(args.source_directory):
@@ -222,15 +229,15 @@ def main() -> int:
 
 			errors = result.stderr.decode().strip()
 			if errors:
-				print(filename)
 				# Because we add the RST roles to the top of the file, we have to subtract those lines to get the
 				# *real* line number in the RST file that the error occurs in.
 				errors = regex.sub("<stdin>:([0-9]+)", lambda exp: "\tLine {}".format(int(exp.groups()[0]) - RST_ROLES_LINE_COUNT), errors).rstrip()
-				print(errors)
-				return_code = 1
+				se.print_error(f"Error when converting RST to HTML. File: [path][link=file://{Path(args.source_directory) / filename}]{filename}[/][/]. Error:\n{errors}", verbose=True)
+				return_code = se.BuildFailedException.code
 
 			html = result.stdout.decode().strip()
 
+			title = ""
 			matches = regex.findall(r"<h1[^>]*?>(.+?)</h1>", html)
 			if matches:
 				title = matches[0]
@@ -274,7 +281,7 @@ def main() -> int:
 				# Record the number and its h2 children in the ToC
 				toc_item = TocItem(root_number, title, filename.replace(".rst", ""))
 				for header in soup.select("h2"):
-					toc_item.items.append(TocItem(header.parent["id"], header.text, None))
+					toc_item.items.append(TocItem(header.parent["id"], header.text, ""))
 
 				toc.append(toc_item)
 
@@ -385,7 +392,8 @@ def main() -> int:
 
 			# Check if pygments generated any errors (for example, missing quotes in an HTML attribute)
 			if "class=\"err\"" in html:
-				print(f"Error colorized code in `{filename}`. Search the file for `class=\"err\"`.")
+				se.print_error(f"Failed to colorize code in [path][link=file://{Path(work_directory) / filename}]{filename}[/][/]. Search the file for [xhtml]class=\"err\"[/].")
+				return_code = se.BuildFailedException.code
 
 			with open(Path(args.dest_directory) / filename, "w", encoding="utf-8") as file:
 				file.write(html)
