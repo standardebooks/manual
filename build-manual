@@ -257,6 +257,9 @@ def main() -> int:
 			# Remove comments.
 			html = regex.sub(r"<!--.+?-->", "", html)
 
+			# Pygments does not add colors to HTML that is just a bare attribute-value pair, like the `:html:` role with `epub:type="glossdef"`. Add that here.
+			html = regex.sub(r"""<code class="html">([a-zA-Z\-:]+?)="([^"]+?)"</code>""", r"""<code class="html"><span class="na">\1</span><span class="o">=</span><span class="s">&quot;\2&quot;</span></code>""", html)
+
 			# Pygments does not add colors to HTML that is just a namespaced attribute, like the `:html:` role with `xml:lang`. Add that here.
 			html = regex.sub(r"""<code class="html">([a-zA-Z\-:]+?)</code>""", r"""<code class="html"><span class="na">\1</span></code>""", html)
 
