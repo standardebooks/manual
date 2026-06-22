@@ -351,24 +351,26 @@ Commits and Commit Messages
 
 #.	Commits are broken into single units of work. A single unit of work may be, for example, "fixing typos across 10 files", or "adding cover art", or "working on metadata".
 
-#.	Commits that introduce material changes to the ebook text are prefaced with the string :string:`[Editorial]`, followed by a space, then the commit message. This makes it easy to search the repo history for commits that make editorial changes to the work.
+#.	Commits that introduce changes to the ebook text that might affect the meaning of the work are prefaced with the string :string:`[Editorial]`, followed by a space, then the commit message. This makes it easy to search the repo history for commits that make editorial changes to the work. A rule of thumb is that if you think knowing about a change would be of interest to an informed but not necessarily professional or academic reader, then mark it as :string:`[Editorial]`.
+
+	Examples of things that *would* be marked as editorial changes:
+
+	- Modernizing spelling and hyphenation.
+
+	- Fixing what *might* be, but what might also *not be*, typos that are present in the source page scans.
+
+	- Changing capitalization for better readability.
+
+	- Correcting mismatched dashes or diacritics.
 
 	Examples of things that *would not* be marked as editorial changes:
 
-	- Fixing typos introduced in the transcription.
+	- Fixing typos introduced by the transcription.
+
+	- Fixing obvious, indisputable printer’s typos.
 
 	- Converting British-style quotation to American-style.
 
 	- Moving punctuation inside quotation marks.
 
 	- Changing section ordinals to Roman numerals.
-
-	Examples of things that *would* be marked as editorial changes:
-
-	- Modernizing spelling and hyphenation.
-
-	- Fixing probable typos that are present in the source scans.
-
-	- Changing capitalization for better readability.
-
-	- Correcting mismatched dashes or diacritics.
