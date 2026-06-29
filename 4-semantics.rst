@@ -115,7 +115,7 @@ For example, an ebook producer may want to convey that the contents of a certain
 
 #.	The epub spec includes a `vocabulary <https://www.w3.org/TR/epub-ssv-11/>`__ that can be used in the :html:`epub:type` attribute. This vocabulary has priority when selecting a semantic keyword, even if other vocabularies contain the same one.
 
-#.	The epub spec might not contain a keyword necessary to describe the semantics of a particular element. In that case, the `z3998 vocabulary <http://www.daisy.org/z3998/2012/vocab/structure/>`__ is consulted next.
+#.	The epub spec might not contain a keyword necessary to describe the semantics of a particular element. In that case, the `z3998 vocabulary <https://www.daisy.org/z3998/2012/vocab/structure/>`__ is consulted next.
 
 	Keywords using this vocabulary are preceded by the :value:`z3998` namespace.
 

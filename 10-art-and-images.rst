@@ -214,7 +214,7 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Brighton & Hove Museums <https://collections.brightonmuseums.org.uk/?q=&departments=>`__ (CC0 items have the URL of the CC0 license in the “License” field.)
 
--	`Cleveland Museum of Art <http://www.clevelandart.org/art/collection/search?only-open-access=1&filter-type=Painting>`__ (CC0 items have the CC0 logo near the download button.)
+-	`Cleveland Museum of Art <https://www.clevelandart.org/art/collection/search?only-open-access=1&filter-type=Painting>`__ (CC0 items have the CC0 logo near the download button.)
 
 -	`Finnish National Gallery <https://kansallisgalleria.fi/en>`__ (CC0 items say “CC Copyright Free,” and the general rights statement in the original Finnish indicates that such images are CC0 licensed.)
 
@@ -248,7 +248,7 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Nivaagaards Malerisamling <https://www.nivaagaard.dk/en/samling/>`__ (CC0 items say “Public Domain” by the picture, which leads to a license details page, which links to a CC0 license.)
 
--	`Paris Musées <http://parismuseescollections.paris.fr/en/recherche/image-libre/true/avec-image/true/denominations/peinture-166168?mode=mosaique&solrsort=ds_created%20desc>`__ (CC0 items have the CC0 logo near the download button.)
+-	`Paris Musées <https://parismuseescollections.paris.fr/en/recherche/image-libre/true/avec-image/true/denominations/peinture-166168?mode=mosaique&solrsort=ds_created%20desc>`__ (CC0 items have the CC0 logo near the download button.)
 
 -	`Rijksmuseum <https://www.rijksmuseum.nl/en/search?q=&f=1&p=1&ps=12&type=painting&imgonly=True&st=Objects>`__ (Open the “Object Data” section and check the “Copyright” entry under the “Acquisition and right” section to confirm CC0.)
 

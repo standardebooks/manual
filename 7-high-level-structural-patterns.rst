@@ -1576,12 +1576,12 @@ Glossaries
 
 Glossaries may be included if there are a large number of domain-specific terms that are unlikely to be in a common dictionary, or which have unique meanings to the work.
 
-Glossaries follow the `EPUB Dictionaries and Glossaries 1.0 spec <http://idpf.org/epub/dict/epub-dict.html#sec-2.5.3>`__.
+Glossaries follow the `EPUB Dictionaries and Glossaries 1.0 spec <https://idpf.org/epub/dict/epub-dict.html#sec-2.5.3>`__.
 
 The glossary search key map file
 ================================
 
-When including a glossary, a search key map file is required according to the `EPUB Dictionaries and Glossaries 1.0 spec <http://idpf.org/epub/dict/epub-dict.html#sec-2.5.3>`__.
+When including a glossary, a search key map file is required according to the `EPUB Dictionaries and Glossaries 1.0 spec <https://idpf.org/epub/dict/epub-dict.html#sec-2.5.3>`__.
 
 #.	The search key map file is named :path:`./src/epub/glossary-search-key-map.xml`.
 
