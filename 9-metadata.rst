@@ -353,6 +353,8 @@ The :html:`<dc:description>` element contains a much longer description of the e
 
 		The :bash:`se clean` tool will escape HTML in the description for you. You can write regular HTML in the description, then run :bash:`se clean` to escape it automatically.
 
+#.	The description begins with a :html:`<p>` element, and can only contain :html:`<p>`, :html:`<i>`, :html:`<em>`, :html:`<b>`, :html:`<strong>`, :html:`<u>`, :html:`<s>`, and :html:`<a>`. The only permitted attribute is :html:`a@href`.
+
 #.	The description HTML follows the `general code style conventions </manual/VERSION/1-code-style>`__.
 
 #.	The first occurrence of the author’s name is linked to the Standard Ebooks author page. For example, for Arthur Conan Doyle this would look like :html:`<a href="https://standardebooks.org/ebooks/arthur-conan-doyle">Arthur Conan Doyle</a>`. If the description references other authors, books and story collections that already have pages on Standard Ebooks then the first occurrence of these are linked as well.
