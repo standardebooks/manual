@@ -418,7 +418,6 @@ Epigraphs
 		[epub|type~="epigraph"]{
 			font-style: italic;
 			hyphens: none;
-			-epub-hyphens: none;
 		}
 
 		[epub|type~="epigraph"] em,
@@ -799,7 +798,6 @@ Plays and drama
 
 		[epub|type~="z3998:drama"] td[epub|type~="z3998:persona"]{
 			hyphens: none;
-			-epub-hyphens: none;
 			text-align: right;
 			width: 20%;
 		}
