@@ -338,9 +338,6 @@ def main() -> int:
 			html = regex.sub(r".+?<body>", "", html, flags=regex.DOTALL)
 			html = regex.sub(r"</body>.*", "", html, flags=regex.DOTALL)
 
-			# If we use CSS properties like `-epub-hyphens`, the colorizer considers them errors and adds error coloring. Remove that here.
-			html = regex.sub(r"""<span class="err">-</span><span class="n">(.+?)</span>""", r"""<span class="k">-\1</span>""", html)
-
 			# Convert spaces to tabs.
 			html = regex.sub(r"    ", "\t", html)
 
