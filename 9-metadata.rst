@@ -415,7 +415,7 @@ Additional book metadata
 
 				<meta property="schema:hasPart" refines="#collection-N" id="collection-N-entry-X">schema:hasPart</meta>
 				<meta property="rdf:type" refines="#collection-N-entry-X">http://schema.org/CreativeWork</meta>
-				<meta property="schema:name" refines="#collection-B-entry-X">WORK_TITLE</meta>
+				<meta property="schema:name" refines="#collection-N-entry-X">WORK_TITLE</meta>
 
 		For example, this is how the omnibus of Edgar Allan Poe’s Short Fiction models the location of one of its constituent stories in a Greatest Books collection:
 
