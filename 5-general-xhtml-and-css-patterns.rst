@@ -449,10 +449,35 @@ Definition lists, i.e. combinations of the :html:`<dl>`, :html:`<dt>`, and :html
 
 #.	:html:`<dd>` elements have at least one direct child block-level element. This is usually a :html:`<p>` element, but not necessarily.
 
+Links
+*****
+
+#.	When linking to broad targets, like a :html:`<section>` or :html:`<p>`, the target has an :html:`id` attribute and the URL targets that ID with an anchor. Values for :html:`id` attributes are calculated using the `method described here </manual/VERSION/5-general-xhtml-and-css-patterns#5.1>`__.
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<p>This is a link to <a href="chapter-2.xhtml#chapter-2-3">subchapter 3 of chapter 2</a>.</p>
+
+#.	When linking to specific runs of text, the target is identified using an `intra-publication EPUB Canonical Fragment Identifier <https://w3c.github.io/epub-specs/epub33/epubcfi/>`__ instead of a possibly inaccurate or over-broad :html:`id` attribute.
+
+	.. class:: wrong
+
+		.. code:: html
+
+			<p>In <a href="chapter-4-6#p-144">this sentence</a>, the author refers to a famous book.</p>
+
+	.. class:: corrected
+
+		.. code:: html
+
+			<p>In <a href="../content.opf#epubcfi(/6/94!/4/2%5Bchapter-4-6%5D/16/1,:495,:514)">this sentence</a>, the author refers to a famous book.</p>
+
 CSS rules
 *********
 
-- When targeting the entire contents of an element, and not a substring within it, then CSS is applied to the whole element instead of adding a new child element.
+#.	When targeting the entire contents of an element, and not a substring within it, then CSS is applied to the whole element instead of adding a new child element.
 
 	.. class:: wrong
 
@@ -478,7 +503,7 @@ CSS rules
 				<p>It’s me Piglet, Help Help.</p>
 			</blockquote>
 
-- When formatting needs to be applied to only a substring or portion of an element, and an element with the required formatting is available, then that element is used instead of :html:`<span>` with CSS.
+#.	When formatting needs to be applied to only a substring or portion of an element, and an element with the required formatting is available, then that element is used instead of :html:`<span>` with CSS.
 
 	.. class:: wrong
 
@@ -498,9 +523,9 @@ CSS rules
 
 			<p><b epub:type="z3998:salutation">Dear Poirot</b>, I think I'm on the track of Number Four.</p>
 
-- :css:`text-align: initial;` is used instead of :css:`text-align: left;` whenever it's necessary to explicitly set left-aligned text. This allows the reading system to opt to use :css:`text-align: justify;` if the user prefers.
+#.	:css:`text-align: initial;` is used instead of :css:`text-align: left;` whenever it's necessary to explicitly set left-aligned text. This allows the reading system to opt to use :css:`text-align: justify;` if the user prefers.
 
-- The :css:`vh` unit is used instead of percent units when specifying :css:`height`, :css:`max-height`, :css:`top`, or :css:`bottom`.
+#.	The :css:`vh` unit is used instead of percent units when specifying :css:`height`, :css:`max-height`, :css:`top`, or :css:`bottom`.
 
 	.. class:: wrong
 
