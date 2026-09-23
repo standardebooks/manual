@@ -474,6 +474,10 @@ Links
 
 			<p>In <a href="../content.opf#epubcfi(/6/94!/4/2%5Bchapter-4-6%5D/16/1,:495,:514)">this sentence</a>, the author refers to a famous book.</p>
 
+	.. tip::
+
+		The `Standard Ebooks Sublime Text plugin <https://github.com/standardebooks/sublime-text-se-plugin>`__ has a context menu entry to copy an EPUB CFI URL to the clipboard for the current caret position or selection.
+
 CSS rules
 *********
 
