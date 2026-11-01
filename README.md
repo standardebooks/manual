@@ -49,7 +49,7 @@ pygmentize -S monokai -f html > monokai.css
 
 # Versioning
 
-The overall version of the manual is stored as a comment in the `index.rst` file. This comment is used by `build-manual` to set the version number of the manual.
+The overall version of the manual is determined by the latest Git tag returned by `git describe --tags --abbrev=0`. This tag is used by `build-manual` for generated links and the default output directory.
 
 Within `.rst` files, the string `VERSION` is replaced with the version number when built. For example, a link to another part of the manual could be: `` `The SE identifier </manual/VERSION/9-metadata#9.2>`__ ``.
 
