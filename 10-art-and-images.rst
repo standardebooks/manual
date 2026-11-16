@@ -250,6 +250,8 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Paris Musées <https://parismuseescollections.paris.fr/en/recherche/image-libre/true/avec-image/true/denominations/peinture-166168?mode=mosaique&solrsort=ds_created%20desc>`__ (CC0 items have the CC0 logo near the download button.)
 
+-	`Städel Museum <https://sammlung.staedelmuseum.de/en>`__ (Open the “Property and Acquisition” section and check “Picture Coptright” entry. Public domain items say “Public Domain” which are clarified to be CC-PD items in the site terms.)
+
 -	`Rijksmuseum <https://www.rijksmuseum.nl/en/search?q=&f=1&p=1&ps=12&type=painting&imgonly=True&st=Objects>`__ (Open the “Object Data” section and check the “Copyright” entry under the “Acquisition and right” section to confirm CC0.)
 
 -	`RISD Museum <https://risdmuseum.org/art-design/collection>`__ (CC0 items have a link to the CC0 license in the “Use” section.)
