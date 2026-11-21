@@ -310,6 +310,21 @@ For sections without heading material, see `7.2.8 </manual/VERSION/7-high-level-
 			<p epub:type="contributors">By Mack Reynolds and Frederic Brown</p>
 		</header>
 
+	.. code:: css
+
+		hgroup:has(+ [epub|type~="contributors"]),
+		h2:has(+ [epub|type~="contributors"]),
+		h3:has(+ [epub|type~="contributors"]),
+		h4:has(+ [epub|type~="contributors"]),
+		h5:has(+ [epub|type~="contributors"]),
+		h6:has(+ [epub|type~="contributors"]){
+			margin-bottom: 1em;
+		}
+
+		[epub|type~="contributors"]{
+			font-style: italic;
+		}
+
 Bridgeheads
 ===========
 
