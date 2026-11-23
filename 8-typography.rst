@@ -1934,3 +1934,58 @@ For ditto marks, see `8.7.5.4 <#8.7.5.4>`__.
 					</tr>
 				</tbody>
 			</table>
+
+
+Lists
+*****
+
+#.	:html:`<ol>` elements in which the markers are displayed inline with their paragraphs have the following CSS:
+
+	.. class:: corrected
+
+		.. code:: css
+
+			ol.inline{
+				list-style-position: inside;
+				margin: 0;
+				padding-left: 0;
+			}
+
+			ol.inline > li{
+				text-indent: 1em;
+			}
+
+			ol.inline > li > p:first-child{
+				display: inline;
+			}
+
+			h2 + ol.inline > li:first-child,
+			h3 + ol.inline > li:first-child,
+			h4 + ol.inline > li:first-child,
+			h5 + ol.inline > li:first-child,
+			h6 + ol.inline > li:first-child,
+			header + ol.inline > li:first-child,
+			hr + ol.inline > li:first-child,
+			hgroup + ol.inline > li:first-child,
+			ol.inline:first-child > li:first-child{
+				text-indent: 0;
+			}
+
+			@supports selector(::marker){
+				ol.inline > li::marker{
+					font-variant-numeric: inherit;
+					white-space: normal;
+				}
+			}
+
+		.. code:: html
+
+			<ol class="inline">
+				<li>
+					<p>The first item is very important.</p>
+				</li>
+				<li>
+					<p>So is this second item.</p>
+				</li>
+			</ol>
+
