@@ -403,7 +403,7 @@ Dedications are frequently styled uniquely by authors. Therefore there is freedo
 			max-width: 80%;
 		}
 
-		@supports(display: flex){
+		@supports(display: flex) and (min-height: calc(98vh - 3em)){
 			section[epub|type~="dedication"]{
 				align-items: center;
 				box-sizing: border-box;
@@ -554,7 +554,7 @@ Full-page epigraphs
 			text-align: initial;
 		}
 
-		@supports(display: flex){
+		@supports(display: flex) and (min-height: calc(98vh - 3em)){
 			section[epub|type~="epigraph"]{
 				align-items: center;
 				box-sizing: border-box;
