@@ -230,6 +230,8 @@ Images that are explicitly marked as CC0 from these museums can be used without 
 
 -	`Lillehammer Kunstmuseum <https://digitaltmuseum.no>`__ (CC0 items say “License: CC CC0 1.0” under the “License information” section. In the art metadata, “Owner of collection” *must* be “Lillehammer Kunstmuseum.”)
 
+-	`McCord Stewart Museum Montreal <https://collections.musee-mccord-stewart.ca/>`__ (CC0 items say “Public Domain” under the image, which links to a copyright page, which links to a CCo license in the FAQ section.)
+
 -	`Met Museum <https://www.metmuseum.org/art/collection/search?showOnly=withImage%7CopenAccess&material=Paintings>`__ (CC0 items have an “OA Public Domain” icon under the picture, which leads to the Met's Open Access Initiative page that clarifies a CC0 license.)
 
 -	`Minneapolis Institute of Art <https://collections.artsmia.org/>`__ (Public domain items are listed as such under “Rights.”)
